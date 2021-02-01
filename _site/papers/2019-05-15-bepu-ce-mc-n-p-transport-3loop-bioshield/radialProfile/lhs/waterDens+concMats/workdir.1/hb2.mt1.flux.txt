@@ -1,0 +1,40 @@
+        Mesh Tally Statistical Checks  - relative uncertainty density function
+
+                 zeta     mean     var of      FOM     passed
+         batch   value   rel unc   rel unc   (/min)   1 2 3 4
+        ------  ------  --------  --------  --------  -------
+             1  0.7427
+             2  0.7865  2.27E-01  5.75E-05  1.02E+01         
+             3  0.8187  2.70E-01  6.14E-05  4.79E+00         
+             4  0.8292  2.71E-01  6.12E-05  3.57E+00         
+             5  0.8385  2.74E-01  6.17E-05  2.78E+00         
+             6  0.8562  2.76E-01  6.37E-05  2.27E+00         
+             7  0.8677  2.74E-01  6.22E-05  1.96E+00         
+             8  0.8698  2.67E-01  6.23E-05  1.81E+00         
+             9  0.8854  2.70E-01  6.51E-05  1.57E+00         
+            10  0.8854  2.64E-01  6.45E-05  1.48E+00  X - - -
+
+            11  0.8969  2.62E-01  6.36E-05  1.38E+00  X - - -
+            12  0.9208  2.77E-01  7.14E-05  1.14E+00  - - - -
+            13  0.9260  2.74E-01  7.02E-05  1.07E+00  - - - -
+            14  0.9281  2.71E-01  6.98E-05  1.02E+00  - - - -
+            15  0.9302  2.66E-01  6.95E-05  9.94E-01  - - - -
+            16  0.9323  2.62E-01  6.92E-05  9.65E-01  - - - -
+            17  0.9375  2.61E-01  6.97E-05  9.16E-01  - - - -
+            18  0.9417  2.59E-01  6.93E-05  8.78E-01  - - - -
+            19  0.9417  2.56E-01  6.92E-05  8.46E-01  X - - -
+            20  0.9437  2.55E-01  6.69E-05  8.20E-01  X - - -
+        ------  ------  --------  --------  --------  -------
+
+
+        Mesh Tally Statistical Checks - relative variance density function
+            (fits are over the last half of the simulation)
+
+        quantity                 check                     goal    actual    R**2  pass
+        -----------------------  -----------------------  -----  --------  ------  ----
+        1 fraction with score    rel slope of linear fit   0.00    0.0881           yes
+        2 mean rel. uncert.      exponent of power fit    -0.50   -0.1063  0.0000    no
+        3 var. of rel. uncert.   exponent of power fit    -1.00    0.0242  0.0000    no
+        4 figure-of-merit (FOM)  rel slope of linear fit   0.00   -1.0095            no
+        -----------------------  -----------------------  -----  --------  ------  ----
+

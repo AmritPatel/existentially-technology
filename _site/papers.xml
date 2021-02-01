@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Existentially, technology</title>
+    <link>https://existentially-tech.netlify.app/</link>
+    <atom:link href="https://existentially-tech.netlify.app/papers.xml" rel="self" type="application/rss+xml"/>
+    <description>Working towards a technological future that uses powerful
+and far-reaching systems for the benefit of everybody.
+</description>
+    <image>
+      <title>Existentially, technology</title>
+      <url>https://existentially-tech.netlify.app/images/favicon.ico</url>
+      <link>https://existentially-tech.netlify.app/</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall</title>
+      <dc:creator>Amrit Patel</dc:creator>
+      <link>https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield</link>
+      <description/>
+      <guid>https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield</guid>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      <media:content url="https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1344" height="537"/>
+    </item>
+    <item>
+      <title>Criticality Code Validation of Spent Fuel Pool Criticality Safety Analyses for ATF Fuel System Concepts with Greater Than 5% Enriched Uranium</title>
+      <dc:creator>Amrit Patel</dc:creator>
+      <link>https://existentially-tech.netlify.app/papers/2018-10-01-atf-sfp-csa-validation</link>
+      <description>Licensing proposed ATF fuel concepts under the current regulatory framework will likely require the adoption of state-of-the-art criticality safety validation techniques, which may result in a significant reduction in operating margin.</description>
+      <guid>https://existentially-tech.netlify.app/papers/2018-10-01-atf-sfp-csa-validation</guid>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <media:content url="https://existentially-tech.netlify.app/papers/2018-10-01-atf-sfp-csa-validation/atf-sfp-csa-validation_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Comparison of Pressurized Water Reactor Depletion Code Validation Approaches</title>
+      <dc:creator>Amrit Patel</dc:creator>
+      <link>https://existentially-tech.netlify.app/papers/2016-06-09-depletion-uncertainty-meta-analysis</link>
+      <description/>
+      <guid>https://existentially-tech.netlify.app/papers/2016-06-09-depletion-uncertainty-meta-analysis</guid>
+      <pubDate>Thu, 09 Jun 2016 00:00:00 +0000</pubDate>
+      <media:content url="https://existentially-tech.netlify.app/papers/2016-06-09-depletion-uncertainty-meta-analysis/depletion-uncertainty-meta-analysis_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Case Studies Examining Spent Fuel Pool Criticality Uncertainty Analysis</title>
+      <dc:creator>Amrit Patel</dc:creator>
+      <dc:creator>Scott T. Krepel</dc:creator>
+      <link>https://existentially-tech.netlify.app/papers/2015-05-15-case-studies-examining-spent-fuel-pool-criticality-uncertainty-analysis</link>
+      <description>Commercial nuclear power plant (NPP) operating strategies, spent fuel pool (SFP) management practices, and nuclear fuel design have evolved to a point where it is common for SFP nuclear criticality safety (NCS) analyses to show little remaining margin to regulatory limits for subcriticality. As a result, ensuring that all significant sources of uncertainty or bias are properly considered and accounted for in the NCS analyses has taken on increased significance. A large amount of SFP NCS analysis work has been performed in recent years that includes investigation of a broad variety of SFP storage configurations and possible reactivity sensitivities that could result in erosion of existing subcriticality margins. Due to ongoing efforts to develop detailed guidance for performing SFP NCS analyses that will be used by commercial NPP licensees, NRC staff has been performing a review of documents submitted to the NRC with uncertainty and sensitivity related information, including approved license amendment requests and publicly available studies. This paper presents some of the resulting findings and recommendations for future study.</description>
+      <guid>https://existentially-tech.netlify.app/papers/2015-05-15-case-studies-examining-spent-fuel-pool-criticality-uncertainty-analysis</guid>
+      <pubDate>Fri, 15 May 2015 00:00:00 +0000</pubDate>
+      <media:content url="https://existentially-tech.netlify.app/papers/2015-05-15-case-studies-examining-spent-fuel-pool-criticality-uncertainty-analysis/sfp-criticality-uncertainty-analysis-case-studies_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+  </channel>
+</rss>

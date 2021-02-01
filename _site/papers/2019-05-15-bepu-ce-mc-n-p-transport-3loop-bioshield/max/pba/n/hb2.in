@@ -1,0 +1,33 @@
+environment
+  tabular_data
+    tabular_data_file = 'hb2.dat'
+
+method
+  global_interval_est ego
+
+variables
+   continuous_interval_uncertain = 15
+   num_intervals          = 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+   interval_probabilities = 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1    
+     lower_bounds =       0.6511		350		1.938		0.35		0.07		5.95		20.58		0.0329		0.371		0.154		0.14		0.14		0.14		0.42		0
+     upper_bounds =       0.8809		650		2.622		0.65		0.13		11.05		38.22		0.0611		0.689		0.286		0.26		0.26		0.26		0.78		1.91135
+     descriptors =        'h2oDens'		'ppmB'	'concDens'	'concFe'	'concC'		'concSi'	'concCa'	'concK'		'concAl'	'concMg'	'concNa'	'concP'		'concS'		'concH'		'linerR'
+
+interface
+  fork
+  asynchronous evaluation_concurr = 15
+  analysis_drivers = 'driver.bat'
+  parameters_file = 'hb2_input'
+  results_file = 'maxes.out'
+  work_directory
+    directory_tag
+    #directory_save
+    copy_files 'driver.bat' 'getMaxes.bat' 'hb2.template' 'getMax.pl' 'mtMaxN.inp' 'mtMaxP.inp'
+    named 'workdir'
+  file_save
+
+responses
+  num_response_functions = 1	
+  response_descriptors =  'maxN'
+  no_gradients				
+  no_hessians

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Existentially, technology</title>
+    <link>https://existentially-tech.netlify.app/</link>
+    <atom:link href="https://existentially-tech.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Working towards a technological future that uses powerful
+and far-reaching systems for the benefit of everybody.
+</description>
+    <image>
+      <title>Existentially, technology</title>
+      <url>https://existentially-tech.netlify.app/images/favicon.ico</url>
+      <link>https://existentially-tech.netlify.app/</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Welcome to Existentially, technology!</title>
+      <link>https://existentially-tech.netlify.app/posts/welcome</link>
+      <description>Working towards a technological future that uses powerful
+and far-reaching systems for the benefit of everybody.</description>
+      <guid>https://existentially-tech.netlify.app/posts/welcome</guid>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+environment
+  tabular_data
+    tabular_data_file = 'hb2.dat'
+
+method
+  sampling
+  sample_type lhs
+    samples = 240
+
+variables
+   normal_uncertain = 15
+   means =                0.766			500		2.28		0.5			0.1			8.5			29.4		0.047		0.53		0.22		0.2			0.2			0.2			0.6			0.635 
+   std_deviations =       0.0383		50		0.228		0.05		0.01		0.85		2.94		0.0047		0.053		0.022		0.02		0.02		0.02		0.06		0.42545
+     lower_bounds =       0.6511		350		1.938		0.35		0.07		5.95		20.58		0.0329		0.371		0.154		0.14		0.14		0.14		0.42		0
+     upper_bounds =       0.8809		650		2.622		0.65		0.13		11.05		38.22		0.0611		0.689		0.286		0.26		0.26		0.26		0.78		1.91135
+     descriptors =        'h2oDens'		'ppmB'	'concDens'	'concFe'	'concC'		'concSi'	'concCa'	'concK'		'concAl'	'concMg'	'concNa'	'concP'		'concS'		'concH'		'linerR'
+
+interface
+  fork
+  asynchronous evaluation_concurr = 15
+  analysis_drivers = 'driver.bat'
+  parameters_file = 'hb2_input'
+  results_file = 'maxes.out'
+  work_directory
+    directory_tag
+    #directory_save
+    copy_files 'driver.bat' 'getMaxes.bat' 'hb2.template' 'getMaxRadial.pl' 'getMaxRadialErr.pl' 'mtPullN.inp' 'mtPullP.inp'
+    named 'workdir'
+  file_save
+
+responses
+  response_functions = 4
+  field_responses = 4
+  lengths = 20 20 20 20
+  num_coordinates_per_field = 1
+  read_field_coordinates
+  #num_response_functions = 5	
+  response_descriptors = 'maxNradial' 'maxNradialErr' 'maxPradial' 'maxPradialErr'
+  no_gradients				
+  no_hessians

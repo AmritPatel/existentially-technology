@@ -1,0 +1,1835 @@
+'*******************************************************************************
+' 
+' Detailed comments go here
+'
+'*******************************************************************************
+
+'===============================================================================
+' Bring in the result of the kewaunee.origen.inp calculation
+'===============================================================================
+'=shell
+'    copy "C:UsersAmrit PatelDesktopMAVRICMAVRIC62trainingkewaunee.origen.f71"  .
+'end
+
+'===============================================================================
+' Basic MAVRIC Sequence items: title and SCALE Library
+'===============================================================================
+=mavric
+H. B. Robinson-2: Pressure Vessel Benchmark
+v7-27n19g
+
+'-------------------------------------------------------------------------------
+' Composition Block - standard SCALE input
+'-------------------------------------------------------------------------------
+read composition
+ uo2      1  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4    1 0.1004 579 end
+ inconel  1 0.00281 579   end
+ h2o      1  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 1 523.109247e-06 579 end
+
+ uo2      71  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4    71 0.1004 579 end
+ inconel  71 0.00281 579   end
+ h2o      71  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 71 523.109247e-06 579 end
+
+  uo2     86  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4    86 0.1004 579 end
+ inconel  86 0.00281 579   end
+ h2o      86  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 86 523.109247e-06 579 end
+
+ uo2     101  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4   101 0.1004 579 end
+ inconel 101 0.00281 579   end
+ h2o     101  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 101 523.109247e-06 579 end
+
+ uo2      43  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4    43 0.1004 579 end
+ inconel  43 0.00281 579   end
+ h2o      43  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 43 523.109247e-06 579 end
+
+ uo2      56  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4    56 0.1004 579 end
+ inconel  56 0.00281 579   end
+ h2o      56  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 56 523.109247e-06 579 end
+
+ uo2      70  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4    70 0.1004 579 end
+ inconel  70 0.00281 579   end
+ h2o      70  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 70 523.109247e-06 579 end
+
+ uo2      85  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4    85 0.1004 579 end
+ inconel  85 0.00281 579   end
+ h2o      85  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 85 523.109247e-06 579 end
+
+ uo2     100  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4   100 0.1004 579 end
+ inconel 100 0.00281 579   end
+ h2o     100  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 100 523.109247e-06 579 end
+
+ uo2     114  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4   114 0.1004 579 end
+ inconel 114 0.00281 579   end
+ h2o     114  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 114 523.109247e-06 579 end
+
+ uo2     127  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4   127 0.1004 579 end
+ inconel 127 0.00281 579   end
+ h2o     127  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 127 523.109247e-06 579 end
+
+ uo2     154  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4   154 0.1004 579 end
+ inconel 154 0.00281 579   end
+ h2o     154  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 154 523.109247e-06 579 end
+
+ uo2     147  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4   147 0.1004 579 end
+ inconel 147 0.00281 579   end
+ h2o     147  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 147 523.109247e-06 579 end
+
+ uo2     138  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4   138 0.1004 579 end
+ inconel 138 0.00281 579   end
+ h2o     138  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 138 523.109247e-06 579 end
+
+ uo2     30  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4   30 0.1004 579 end
+ inconel 30 0.00281 579   end
+ h2o     30  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 30 523.109247e-06 579 end
+ 
+ uo2     19  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4   19 0.1004 579 end
+ inconel 19 0.00281 579   end
+ h2o     19  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 19 523.109247e-06 579 end
+
+ uo2     10  den=10.418 0.2997 579
+      92235 2.9
+      92238 97.1 end
+ zirc4   10 0.1004 579 end
+ inconel 10 0.00281 579   end
+ h2o     10  den=0.767913 0.5886 579 end
+ arbmb 0.767913 1 1 0 0 5000 100 10 523.109247e-06 579 end
+  
+' water 
+ h2o   3  den=0.767913 1 579 end
+ h2o   31 den=0.767913 1 579 end
+ h2o   32 den=0.788646 1 579 end
+' gap
+ n  4 den=0.00125 1 595 end
+' guide tube
+ zirc4 5 1 579 end 
+ wtptss304    20 8.03 4
+'        iron
+         26000 69
+'        nickel
+         28000 10
+'        chromium
+         24000 19
+'        manganese
+         25000 2
+         1 293 end
+ wtptcsa533b  21 7.83 4
+'        iron
+         26000 97.9
+'        nickel
+         28000 0.55
+'        manganese
+         25000 1.30
+'        carbon
+         6000  0.25
+         1 293 end
+ wtptinsulation    25 8.03 4
+'        iron
+         26000 69
+'        nickel
+         28000 10
+'        chromium
+         24000 19
+'        manganese
+         25000 2
+         0.03 293 end 
+ wtptconcrete 40 2.246052 12
+         26000 0.485883 
+          6000 0.095868
+         14000 8.476880
+         20000 28.508587
+         19000 0.044817
+         13000 0.594366
+         12000 0.240807
+         11023 0.171308
+         15000 0.196524
+         16000 0.155661
+         8016  60.428564
+         1001  0.600735	
+         1.0 293.0 end
+ u-238 95 1.0 293.0 end
+ ni-58 96 1.0 293.0 end
+ fe-54 97 1.0 293.0 end
+ ti-46 98 1.0 293.0 end
+ cu-63 99 1.0 293.0 end
+end composition
+
+'-------------------------------------------------------------------------------
+' Geometry Block - SCALE standard geometry package (SGGP)
+'-------------------------------------------------------------------------------
+read geometry
+' fuel assembly (main)
+  unit 10
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 1 1 20
+  boundary 20
+' fuel assembly (src test)
+  unit 710
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 71 1 20
+  boundary 20
+  unit 860
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 86 1 20
+  boundary 20
+  unit 1010
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 101 1 20
+  boundary 20
+  unit 430
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 43 1 20
+  boundary 20
+  unit 560
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 56 1 20
+  boundary 20
+  unit 700
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 70 1 20
+  boundary 20
+  unit 850
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 85 1 20
+  boundary 20
+  unit 1000
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 100 1 20
+  boundary 20
+  unit 1140
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 114 1 20
+  boundary 20
+  unit 1270
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 127 1 20
+  boundary 20
+  unit 100
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 10 1 20
+  boundary 20
+  unit 190
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 19 1 20
+  boundary 20
+  unit 300
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 30 1 20
+  boundary 20
+  unit 1380
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 138 1 20
+  boundary 20
+  unit 1470
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 147 1 20
+  boundary 20
+  unit 1540
+  com='assembly'
+  cuboid 20 4p10.752 182.88 -182.88
+  media 154 1 20
+  boundary 20
+' dummy fuel assembly for building array 
+  unit 33
+  com='dummy assembly'
+  cuboid 10 10.752 -10.752 10.752 -10.752 182.88 -182.88
+  media 31 1 10
+  boundary 10  
+' baffle sections: units 20-31
+  unit 20
+'  cuboid 1  35.1615	0	 164.138 161.28	 182.88	-182.88
+  cuboid 1  35.1615	0	 164.1855    161.3275	 182.88	-182.88
+  media 20 1 1
+  boundary 1
+  unit 21
+  cuboid 2  35.1615     32.3035  161.28  142.634 182.88	-182.88
+  media 20 1 2
+  boundary 2
+  unit 22
+  cuboid 3  78.1695     32.3035  142.634 139.776 182.88	-182.88
+  media 20 1 3
+  boundary 3
+  unit 23
+  cuboid 4  78.1695     75.3115  139.776 118.272 182.88	-182.88
+  media 20 1 4
+  boundary 4
+  unit 24
+  cuboid 5  99.6735    78.1695  121.13 118.272 182.88	-182.88
+  media 20 1 5
+  boundary 5
+  unit 25
+  cuboid 6  99.6735    96.8155 118.272 96.768  182.88	-182.88
+  media 20 1 6
+  boundary 6
+  unit 26
+  cuboid 7  121.1775    99.6735 99.626  96.768  182.88	-182.88
+  media 20 1 7
+  boundary 7
+  unit 27
+  cuboid 8  121.1775    118.3195 96.768  75.264   182.88	-182.88
+  media 20 1 8
+  boundary 8
+  unit 28
+  cuboid 9  142.6815    121.1775 78.122   75.264  182.88	-182.88
+  media 20 1 9
+  boundary 9
+  unit 29
+  cuboid 10 142.6815    139.8235 75.264  32.256  182.88	-182.88
+  media 20 1 10
+  boundary 10
+  unit 30
+  cuboid 11 164.1855    142.6815 35.114  32.256  182.88	-182.88 
+  media 20 1 11
+  boundary 11
+  unit 31
+  cuboid 12 164.1855    161.3275 32.256  0       182.88	-182.88 
+  media 20 1 12
+  boundary 12
+' detector well
+  unit 60 
+''' inside steel cylinder
+  cylinder 10 9.2075  182.88	-182.88 origin x=0.000000 y=0.000000 z=0
+                                        rotate a1=45 a2=0 a3=0
+  media 0 1 10
+''' steel cylinder wall
+  cylinder 15 9.525   182.88    -182.88 origin x=0.000000 y=0.000000 z=0
+                                        rotate a1=45 a2=0 a3=0
+  media 20 1 15 -10
+''' detector well
+  cuboid   19 94.121014  -0.249022 18.788964 -18.788964 182.88    -182.88 rotate a1=45 a2=0 a3=0
+  cuboid   20 93.909978   -0.249022  19    -19     182.88    -182.88 rotate a1=45 a2=0 a3=0
+  media 0  1 19 -15
+  media 20 1 20 -19
+  boundary 20
+' voided sphere for point detector tallies
+  unit 65
+  sphere 1 0.1
+  media 0 1 1
+  boundary 1
+' core w/ baffle
+  global unit 999
+''' core bypass region
+  cylinder 100 170.023  182.88	-182.88
+''' core
+  array 2 100 place 9 9 1 0 0 0
+''' baffle upper right quadrant
+  hole 20
+  hole 21
+  hole 22
+  hole 23
+  hole 24
+  hole 25
+  hole 26
+  hole 27
+  hole 28
+  hole 29
+  hole 30
+  hole 31
+''' baffle lower right quadrant
+  hole 20 rotate a1=-90 a2=0 a3=0 
+  hole 21 rotate a1=-90 a2=0 a3=0 
+  hole 22 rotate a1=-90 a2=0 a3=0 
+  hole 23 rotate a1=-90 a2=0 a3=0 
+  hole 24 rotate a1=-90 a2=0 a3=0 
+  hole 25 rotate a1=-90 a2=0 a3=0 
+  hole 26 rotate a1=-90 a2=0 a3=0 
+  hole 27 rotate a1=-90 a2=0 a3=0 
+  hole 28 rotate a1=-90 a2=0 a3=0 
+  hole 29 rotate a1=-90 a2=0 a3=0 
+  hole 30 rotate a1=-90 a2=0 a3=0 
+  hole 31 rotate a1=-90 a2=0 a3=0 
+''' baffle lower left quadrant
+  hole 20 rotate a1=-180 a2=0 a3=0
+  hole 21 rotate a1=-180 a2=0 a3=0
+  hole 22 rotate a1=-180 a2=0 a3=0
+  hole 23 rotate a1=-180 a2=0 a3=0
+  hole 24 rotate a1=-180 a2=0 a3=0
+  hole 25 rotate a1=-180 a2=0 a3=0
+  hole 26 rotate a1=-180 a2=0 a3=0
+  hole 27 rotate a1=-180 a2=0 a3=0
+  hole 28 rotate a1=-180 a2=0 a3=0
+  hole 29 rotate a1=-180 a2=0 a3=0
+  hole 30 rotate a1=-180 a2=0 a3=0
+  hole 31 rotate a1=-180 a2=0 a3=0
+''' baffle upper left quadrant
+  hole 20 rotate a1=-270 a2=0 a3=0
+  hole 21 rotate a1=-270 a2=0 a3=0
+  hole 22 rotate a1=-270 a2=0 a3=0
+  hole 23 rotate a1=-270 a2=0 a3=0
+  hole 24 rotate a1=-270 a2=0 a3=0
+  hole 25 rotate a1=-270 a2=0 a3=0
+  hole 26 rotate a1=-270 a2=0 a3=0
+  hole 27 rotate a1=-270 a2=0 a3=0
+  hole 28 rotate a1=-270 a2=0 a3=0
+  hole 29 rotate a1=-270 a2=0 a3=0
+  hole 30 rotate a1=-270 a2=0 a3=0
+  hole 31 rotate a1=-270 a2=0 a3=0
+''' core barrel
+  cylinder 150 175.184  182.88	-182.88
+  media 20  1 150 -100
+''' downcomer region 1
+  cylinder 200 181.135  182.88	-182.88 
+  media 32  1 200 -150
+''' thermal shield
+  cylinder 250 187.96   182.88	-182.88
+  media 20  1 250 -200
+''' downcomer region 2
+  cylinder 300 197.485  182.88	-182.88
+  media 32  1 300 -250
+''' pressure vessel cladding
+  cylinder 350 197.881  182.88	-182.88
+  media 20  1 350 -300
+''' pressure vessel
+  cylinder 400 217.566  182.88	-182.88
+  media 21  1 400 -350 
+''' cavity
+'  cylinder 450 218.875  182.88	-182.88
+'  media 0   1 450 -400 
+''' vessel insulation
+'  cylinder 500 230.584  182.88	-182.88
+'  media 25  1 500 -450 
+''' cavity
+  cylinder 550 226  182.88	-182.88
+  media 0   1 550 -400 
+''' ss liner
+  cylinder 560 226.211036  182.88	-182.88
+  media 20  1 560 -550
+''' biological shield
+  cylinder 600 326.211036  182.88	-182.88
+  media 40   1 600 -560 
+'  hole 60
+'  hole 60 rotate a1=-45 a2=0 a3=0
+'  hole 65 origin x=237.09 y=20.74 z=0
+  boundary 600
+end geometry
+
+read array
+  ara=2 nux=17 nuy=17 nuz=1 typ=cuboidal
+  fill
+  33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 
+  33 33 33 33 33 33 33 10 10 10 33 33 33 33 33 33 33
+  33 33 33 33 33 10 10 10 10 10 10 1540 33 33 33 33 33
+  33 33 33 33 10 10 10 10 10 10 10 10 1470 33 33 33 33
+  33 33 33 10 10 10 10 10 10 10 10 10 10 1380 33 33 33
+  33 33 10 10 10 10 10 10 10 10 10 10 10 10 1270 33 33  
+  33 33 10 10 10 10 10 10 10 10 10 10 10 10 1140 33 33
+  33 10 10 10 10 10 10 10 10 10 10 10 10 10 1000 1010 33
+  33 10 10 10 10 10 10 10 10 10 10 10 10 10 850 860 33
+  33 10 10 10 10 10 10 10 10 10 10 10 10 10 700 710 33
+  33 33 10 10 10 10 10 10 10 10 10 10 10 10 560 33 33
+  33 33 10 10 10 10 10 10 10 10 10 10 10 10 430 33 33
+  33 33 33 10 10 10 10 10 10 10 10 10 10 300 33 33 33
+  33 33 33 33 10 10 10 10 10 10 10 10 190 33 33 33 33
+  33 33 33 33 33 10 10 10 10 10 10 100 33 33 33 33 33 
+  33 33 33 33 33 33 33 10 10 10 33 33 33 33 33 33 33
+  33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33
+  end fill
+end array
+
+'-------------------------------------------------------------------------------
+' Definitions Block
+'-------------------------------------------------------------------------------
+read definitions
+
+  location 1
+    position 237.09 20.74 0
+  end location
+
+  location 2
+    position 249.05 21.79 0
+  end location
+
+  location 3
+    position 254.03 22.22 0
+  end location
+
+  location 4
+    position 259.01 22.66 0
+  end location
+
+  location 5
+    position 264.99 23.18 0
+  end location
+
+  location 6
+    position 270.96 23.71 0
+  end location
+
+  location 7
+    position 273.93 23.97 0
+  end location
+
+  distribution 1
+    special="wattSpectrum"
+    parameters 0.988 2.249 end
+    runSampleTest
+  end distribution
+
+'  distribution 1
+'    title="result from kewaunee.origen.inp, case 64, total neutron"
+'    special="origensBinaryConcentrationFile"
+'    filename="kewaunee.origen.f71"
+'    parameters 64 1 end
+'    runSampleTest
+'  end distribution
+
+   distribution 2
+    title="average axial power shape of 3 peripheral assemblies -- taken from benchmark spec"
+    abscissa 182.88 152.4 121.92 91.44 60.96 30.480 0.00 -30.48 -60.96 -91.44 -121.92 -152.4 -182.88 end
+    truePDF 0.678 0.984 1.066 1.080 1.089 1.081 1.104 1.086 1.099 1.074 0.990 0.670 end
+    runSampleTest
+   end distribution
+
+'  distribution 2
+'    special="pwrNeutronAxialProfile"
+'    runSampleTest
+'  end distribution
+
+  gridgeometry 1
+    title="problem domain"
+    xPlanes -333.312 -311.808 -290.304 -268.8 -247.296 -225.792 -204.288 -182.784 -161.28 -139.776
+            -118.272 -96.768 -75.264 -53.76 -32.256 -10.752 10.752 32.256 53.76 75.264
+              96.768 118.272 119.7056 121.1392 122.5728 124.0064 125.44 126.8736 128.3072 129.7408
+             131.1744 132.608 134.0416 135.4752 136.9088 138.3424 139.776 141.2096 142.6432
+             144.0768 145.5104 146.944 148.3776 149.8112 151.2448 152.6784 154.112 155.5456
+             156.9792 158.4128 159.8464 161.28 166.28 171.28 176.28 181.28 186.28 191.28 196.28
+             201.28 206.28 211.28 216.28 221.28 226.28 228.28 230.28 232.28 234.28 235.28 236.28
+             237.28 238.28 248.28 258.28 268.28 278.28 288.28 298.28 308.28 318.28 328.28 end
+    yPlanes -333.312 -311.808 -290.304 -268.8 -247.296 -225.792 -204.288 -182.784 -161.28 -139.776
+            -118.272 -96.768 -75.264 -53.76 -32.256 -10.752 10.752 32.256 53.76 75.264
+              96.768 118.272 139.776 161.28 182.784 204.288 225.792 247.296 268.8 290.304
+             311.808 333.312 end
+    zLinear 20 -182.88 182.88
+  end gridgeometry
+  
+  cylgeometry 1
+    title="bioshield tally"
+    radiusLinear 20 226 300
+    degreeLinear 1 5 10
+    zLinear 1 -18.288 0
+  end cylgeometry 
+  
+  response 7
+    neutron
+    title="total neutron flux above 0.1 MeV, neutrons/cm2-sec"
+    bounds 1.00E-05 1.00E-01 4.14E-01 8.76E-01 1.86E+00 5.04E+00 1.07E+01
+           3.73E+01 1.01E+02 2.14E+02 4.54E+02 1.59E+03 3.36E+03 7.10E+03 
+           1.50E+04 2.19E+04 2.42E+04 2.61E+04 3.18E+04 4.09E+04 6.74E+04
+           1.00E+05 1.11E+05 1.83E+05 2.97E+05 3.69E+05 4.98E+05 6.08E+05
+           7.43E+05 8.21E+05 1.00E+06 1.35E+06 1.65E+06 1.92E+06 2.23E+06
+           2.35E+06 2.37E+06 2.47E+06 2.73E+06 3.01E+06 3.68E+06 4.97E+06
+           6.07E+06 7.41E+06 8.61E+06 1.00E+07 1.22E+07 1.42E+07 1.73E+07 end
+    values 21r0.0 27r1.0 end
+  end response
+
+  response 8
+    title="Claiborne-Trubey conversion factors (rad/h)/(photons/cm2/s)"
+    doseData=9503
+  end response
+
+  response 9
+    title="Henderson conversion factors (rad/h)/(photons/cm2/s)"
+    doseData=9502
+  end response
+
+  response 10
+    title="Claiborne-Trubey conversion factors (rad/h)/(photons/cm2/s) - noExtrapolation"
+    doseData=9503 noExtrapolation
+  end response
+
+  response 11
+    title="Henderson conversion factors (rad/h)/(photons/cm2/s) - noExtrapolation"
+    doseData=9502 noExtrapolation
+  end response
+
+  energyBounds 1
+    bounds 1.00E-05 1.00E-01 4.14E-01 8.76E-01 1.86E+00 5.04E+00 1.07E+01
+           3.73E+01 1.01E+02 2.14E+02 4.54E+02 1.59E+03 3.36E+03 7.10E+03 
+           1.50E+04 2.19E+04 2.42E+04 2.61E+04 3.18E+04 4.09E+04 6.74E+04
+           1.00E+05 1.11E+05 1.83E+05 2.97E+05 3.69E+05 4.98E+05 6.08E+05
+           7.43E+05 8.21E+05 1.00E+06 1.35E+06 1.65E+06 1.92E+06 2.23E+06
+           2.35E+06 2.37E+06 2.47E+06 2.73E+06 3.01E+06 3.68E+06 4.97E+06
+           6.07E+06 7.41E+06 8.61E+06 1.00E+07 1.22E+07 1.42E+07 1.73E+07 end
+  end energyBounds
+
+end definitions
+
+'-------------------------------------------------------------------------------
+' Sources Block 
+'-------------------------------------------------------------------------------
+read sources
+  src 1
+    title="neutron source"
+    neutron
+    strength=1.72118E+20
+
+    cuboid  161.3275 -161.3275  161.3275 -161.3275  182.88	-182.88
+    mixture=1
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7101
+    title="neutron source"
+    neutron
+    strength=4.58581E+16
+
+    cuboid  141.2096 139.776 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7102
+    title="neutron source"
+    neutron
+    strength=4.45036E+16
+
+    cuboid  142.6432 141.2096 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7103
+    title="neutron source"
+    neutron
+    strength=4.30596E+16
+
+    cuboid  144.0768 142.6432 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7104
+    title="neutron source"
+    neutron
+    strength=4.10338E+16
+
+    cuboid  145.5104 144.0768 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7105
+    title="neutron source"
+    neutron
+    strength=3.84949E+16
+
+    cuboid  146.944 145.5104 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7106
+    title="neutron source"
+    neutron
+    strength=3.60366E+16
+
+    cuboid  148.3776 146.944 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7107
+    title="neutron source"
+    neutron
+    strength=3.35993E+16
+
+    cuboid  149.8112 148.3776 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7108
+    title="neutron source"
+    neutron
+    strength=3.09963E+16
+
+    cuboid  151.2448 149.8112 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7109
+    title="neutron source"
+    neutron
+    strength=2.88004E+16
+
+    cuboid  152.6784 151.2448 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7110
+    title="neutron source"
+    neutron
+    strength=2.64479E+16
+
+    cuboid  154.112 152.6784 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7111
+    title="neutron source"
+    neutron
+    strength=2.40753E+16
+
+    cuboid  155.5456 154.112 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7112
+    title="neutron source"
+    neutron
+    strength=2.16609E+16
+
+    cuboid  156.9792 155.5456 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7113
+    title="neutron source"
+    neutron
+    strength=1.87054E+16
+
+    cuboid  158.4128 156.9792 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7114
+    title="neutron source"
+    neutron
+    strength=1.49694E+16
+
+    cuboid  159.8464 158.4128 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 7115
+    title="neutron source"
+    neutron
+    strength=1.00698E+16
+
+    cuboid  161.28 159.8464 161.3275 -161.3275  182.88	-182.88
+    mixture=71
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8601
+    title="neutron source"
+    neutron
+    strength=6.17044E+16
+
+    cuboid  141.2096 139.776 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8602
+    title="neutron source"
+    neutron
+    strength=5.98818E+16
+
+    cuboid  142.6432 141.2096 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8603
+    title="neutron source"
+    neutron
+    strength=5.79388E+16
+
+    cuboid  144.0768 142.6432 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8604
+    title="neutron source"
+    neutron
+    strength=5.5213E+16
+
+    cuboid  145.5104 144.0768 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8605
+    title="neutron source"
+    neutron
+    strength=5.17968E+16
+
+    cuboid  146.944 145.5104 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8606
+    title="neutron source"
+    neutron
+    strength=4.84891E+16
+
+    cuboid  148.3776 146.944 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8607
+    title="neutron source"
+    neutron
+    strength=4.52095E+16
+
+    cuboid  149.8112 148.3776 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8608
+    title="neutron source"
+    neutron
+    strength=4.17071E+16
+
+    cuboid  151.2448 149.8112 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8609
+    title="neutron source"
+    neutron
+    strength=3.87523E+16
+
+    cuboid  152.6784 151.2448 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8610
+    title="neutron source"
+    neutron
+    strength=3.5587E+16
+
+    cuboid  154.112 152.6784 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8611
+    title="neutron source"
+    neutron
+    strength=3.23946E+16
+
+    cuboid  155.5456 154.112 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8612
+    title="neutron source"
+    neutron
+    strength=2.91459E+16
+
+    cuboid  156.9792 155.5456 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8613
+    title="neutron source"
+    neutron
+    strength=2.51691E+16
+
+    cuboid  158.4128 156.9792 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8614
+    title="neutron source"
+    neutron
+    strength=2.01421E+16
+
+    cuboid  159.8464 158.4128 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 8615
+    title="neutron source"
+    neutron
+    strength=1.35494E+16
+
+    cuboid  161.28 159.8464 161.3275 -161.3275  182.88	-182.88
+    mixture=86
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10101
+    title="neutron source"
+    neutron
+    strength=4.64584E+16
+
+    cuboid  141.2096 139.776 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10102
+    title="neutron source"
+    neutron
+    strength=4.50861E+16
+
+    cuboid  142.6432 141.2096 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10103
+    title="neutron source"
+    neutron
+    strength=4.36232E+16
+
+    cuboid  144.0768 142.6432 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10104
+    title="neutron source"
+    neutron
+    strength=4.15709E+16
+
+    cuboid  145.5104 144.0768 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10105
+    title="neutron source"
+    neutron
+    strength=3.89987E+16
+
+    cuboid  146.944 145.5104 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10106
+    title="neutron source"
+    neutron
+    strength=3.65083E+16
+
+    cuboid  148.3776 146.944 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10107
+    title="neutron source"
+    neutron
+    strength=3.40391E+16
+
+    cuboid  149.8112 148.3776 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10108
+    title="neutron source"
+    neutron
+    strength=3.1402E+16
+
+    cuboid  151.2448 149.8112 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10109
+    title="neutron source"
+    neutron
+    strength=2.91773E+16
+
+    cuboid  152.6784 151.2448 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10110
+    title="neutron source"
+    neutron
+    strength=2.67941E+16
+
+    cuboid  154.112 152.6784 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10111
+    title="neutron source"
+    neutron
+    strength=2.43905E+16
+
+    cuboid  155.5456 154.112 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10112
+    title="neutron source"
+    neutron
+    strength=2.19445E+16
+
+    cuboid  156.9792 155.5456 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10113
+    title="neutron source"
+    neutron
+    strength=1.89503E+16
+
+    cuboid  158.4128 156.9792 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10114
+    title="neutron source"
+    neutron
+    strength=1.51653E+16
+
+    cuboid  159.8464 158.4128 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10115
+    title="neutron source"
+    neutron
+    strength=1.02016E+16
+
+    cuboid  161.28 159.8464 161.3275 -161.3275  182.88	-182.88
+    mixture=101
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4301
+    title="neutron source"
+    neutron
+    strength=8.89552E+16
+
+    cuboid  119.7056 118.272 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4302
+    title="neutron source"
+    neutron
+    strength=8.63276E+16
+
+    cuboid  121.1392 119.7056 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4303
+    title="neutron source"
+    neutron
+    strength=8.35265E+16
+
+    cuboid  122.5728 121.1392 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4304
+    title="neutron source"
+    neutron
+    strength=7.9597E+16
+
+    cuboid  124.0064 122.5728 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4305
+    title="neutron source"
+    neutron
+    strength=7.4672E+16
+
+    cuboid  125.44 124.0064 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4306
+    title="neutron source"
+    neutron
+    strength=6.99036E+16
+
+    cuboid  126.8736 125.44 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4307
+    title="neutron source"
+    neutron
+    strength=6.51756E+16
+
+    cuboid  128.3072 126.8736 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4308
+    title="neutron source"
+    neutron
+    strength=6.01263E+16
+
+    cuboid  129.7408 128.3072 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4309
+    title="neutron source"
+    neutron
+    strength=5.58667E+16
+
+    cuboid  131.1744 129.7408 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4310
+    title="neutron source"
+    neutron
+    strength=5.13035E+16
+
+    cuboid  132.608 131.1744 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4311
+    title="neutron source"
+    neutron
+    strength=4.67011E+16
+
+    cuboid  134.0416 132.608 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4312
+    title="neutron source"
+    neutron
+    strength=4.20177E+16
+
+    cuboid  135.4752 134.0416 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4313
+    title="neutron source"
+    neutron
+    strength=3.62846E+16
+
+    cuboid  136.9088 135.4752 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4314
+    title="neutron source"
+    neutron
+    strength=2.90375E+16
+
+    cuboid  138.3424 136.9088 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 4315
+    title="neutron source"
+    neutron
+    strength=1.95333E+16
+
+    cuboid  139.776 138.3424 161.3275 -161.3275  182.88	-182.88
+    mixture=43
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5601
+    title="neutron source"
+    neutron
+    strength=1.21968E+17
+
+    cuboid  119.7056 118.272 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5602
+    title="neutron source"
+    neutron
+    strength=1.18366E+17
+
+    cuboid  121.1392 119.7056 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5603
+    title="neutron source"
+    neutron
+    strength=1.14525E+17
+
+    cuboid  122.5728 121.1392 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5604
+    title="neutron source"
+    neutron
+    strength=1.09137E+17
+
+    cuboid  124.0064 122.5728 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5605
+    title="neutron source"
+    neutron
+    strength=1.02384E+17
+
+    cuboid  125.44 124.0064 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5606
+    title="neutron source"
+    neutron
+    strength=9.58462E+16
+
+    cuboid  126.8736 125.44 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5607
+    title="neutron source"
+    neutron
+    strength=8.93636E+16
+
+    cuboid  128.3072 126.8736 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5608
+    title="neutron source"
+    neutron
+    strength=8.24404E+16
+
+    cuboid  129.7408 128.3072 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5609
+    title="neutron source"
+    neutron
+    strength=7.65999E+16
+
+    cuboid  131.1744 129.7408 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5610
+    title="neutron source"
+    neutron
+    strength=7.03432E+16
+
+    cuboid  132.608 131.1744 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5611
+    title="neutron source"
+    neutron
+    strength=6.40328E+16
+
+    cuboid  134.0416 132.608 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5612
+    title="neutron source"
+    neutron
+    strength=5.76113E+16
+
+    cuboid  135.4752 134.0416 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5613
+    title="neutron source"
+    neutron
+    strength=4.97505E+16
+
+    cuboid  136.9088 135.4752 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5614
+    title="neutron source"
+    neutron
+    strength=3.98139E+16
+
+    cuboid  138.3424 136.9088 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 5615
+    title="neutron source"
+    neutron
+    strength=2.67825E+16
+
+    cuboid  139.776 138.3424 161.3275 -161.3275  182.88	-182.88
+    mixture=56
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11401
+    title="neutron source"
+    neutron
+    strength=1.21968E+17
+
+    cuboid  119.7056 118.272 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11402
+    title="neutron source"
+    neutron
+    strength=1.18366E+17
+
+    cuboid  121.1392 119.7056 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11403
+    title="neutron source"
+    neutron
+    strength=1.14525E+17
+
+    cuboid  122.5728 121.1392 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11404
+    title="neutron source"
+    neutron
+    strength=1.09137E+17
+
+    cuboid  124.0064 122.5728 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11405
+    title="neutron source"
+    neutron
+    strength=1.02384E+17
+
+    cuboid  125.44 124.0064 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11406
+    title="neutron source"
+    neutron
+    strength=9.58462E+16
+
+    cuboid  126.8736 125.44 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11407
+    title="neutron source"
+    neutron
+    strength=8.93636E+16
+
+    cuboid  128.3072 126.8736 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11408
+    title="neutron source"
+    neutron
+    strength=8.24404E+16
+
+    cuboid  129.7408 128.3072 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11409
+    title="neutron source"
+    neutron
+    strength=7.65999E+16
+
+    cuboid  131.1744 129.7408 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11410
+    title="neutron source"
+    neutron
+    strength=7.03432E+16
+
+    cuboid  132.608 131.1744 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11411
+    title="neutron source"
+    neutron
+    strength=6.40328E+16
+
+    cuboid  134.0416 132.608 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11412
+    title="neutron source"
+    neutron
+    strength=5.76113E+16
+
+    cuboid  135.4752 134.0416 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11413
+    title="neutron source"
+    neutron
+    strength=4.97505E+16
+
+    cuboid  136.9088 135.4752 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11414
+    title="neutron source"
+    neutron
+    strength=3.98139E+16
+
+    cuboid  138.3424 136.9088 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 11415
+    title="neutron source"
+    neutron
+    strength=2.67825E+16
+
+    cuboid  139.776 138.3424 161.3275 -161.3275  182.88	-182.88
+    mixture=114
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src  
+  src 12701
+    title="neutron source"
+    neutron
+    strength=8.89552E+16
+
+    cuboid  119.7056 118.272 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12702
+    title="neutron source"
+    neutron
+    strength=8.63276E+16
+
+    cuboid  121.1392 119.7056 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12703
+    title="neutron source"
+    neutron
+    strength=8.35265E+16
+
+    cuboid  122.5728 121.1392 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12704
+    title="neutron source"
+    neutron
+    strength=7.9597E+16
+
+    cuboid  124.0064 122.5728 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12705
+    title="neutron source"
+    neutron
+    strength=7.4672E+16
+
+    cuboid  125.44 124.0064 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12706
+    title="neutron source"
+    neutron
+    strength=6.99036E+16
+
+    cuboid  126.8736 125.44 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12707
+    title="neutron source"
+    neutron
+    strength=6.51756E+16
+
+    cuboid  128.3072 126.8736 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12708
+    title="neutron source"
+    neutron
+    strength=6.01263E+16
+
+    cuboid  129.7408 128.3072 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12709
+    title="neutron source"
+    neutron
+    strength=5.58667E+16
+
+    cuboid  131.1744 129.7408 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12710
+    title="neutron source"
+    neutron
+    strength=5.13035E+16
+
+    cuboid  132.608 131.1744 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12711
+    title="neutron source"
+    neutron
+    strength=4.67011E+16
+
+    cuboid  134.0416 132.608 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12712
+    title="neutron source"
+    neutron
+    strength=4.20177E+16
+
+    cuboid  135.4752 134.0416 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12713
+    title="neutron source"
+    neutron
+    strength=3.62846E+16
+
+    cuboid  136.9088 135.4752 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12714
+    title="neutron source"
+    neutron
+    strength=2.90375E+16
+
+    cuboid  138.3424 136.9088 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 12715
+    title="neutron source"
+    neutron
+    strength=1.95333E+16
+
+    cuboid  139.776 138.3424 161.3275 -161.3275  182.88	-182.88
+    mixture=127
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 70
+    title="neutron source"
+    neutron
+    strength=1.41797E+18
+    cuboid  161.3275 -161.3275  161.3275 -161.3275  182.88	-182.88
+    mixture=70
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 85
+    title="neutron source"
+    neutron
+    strength=1.48145E+18
+    cuboid  161.3275 -161.3275  161.3275 -161.3275  182.88	-182.88
+    mixture=85
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 100
+    title="neutron source"
+    neutron
+    strength=1.42276E+18
+    cuboid  161.3275 -161.3275  161.3275 -161.3275  182.88	-182.88
+    mixture=100
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 10
+    title="neutron source"
+    neutron
+    strength=8.8743E+17
+    cuboid  161.3275 -161.3275  161.3275 -161.3275  182.88	-182.88
+    mixture=10
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 19
+    title="neutron source"
+    neutron
+    strength=1.01438E+18
+    cuboid  161.3275 -161.3275  161.3275 -161.3275  182.88	-182.88
+    mixture=19
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 30
+    title="neutron source"
+    neutron
+    strength=1.01438E+18
+    cuboid  161.3275 -161.3275  161.3275 -161.3275  182.88	-182.88
+    mixture=30
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 138
+    title="neutron source"
+    neutron
+    strength=1.01557E+18
+    cuboid  161.3275 -161.3275  161.3275 -161.3275  182.88	-182.88
+    mixture=138
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 147
+    title="neutron source"
+    neutron
+    strength=1.01557E+18
+    cuboid  161.3275 -161.3275  161.3275 -161.3275  182.88	-182.88
+    mixture=147
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+  src 154
+    title="neutron source"
+    neutron
+    strength=8.88628E+17
+    cuboid  161.3275 -161.3275  161.3275 -161.3275  182.88	-182.88
+    mixture=154
+    eDistributionID=1
+    zDistributionID=2 zScaleDist
+  end src
+end sources
+
+'-------------------------------------------------------------------------------
+' Tallies Block
+'-------------------------------------------------------------------------------
+read tallies
+  meshTally 1
+    neutron
+    cylGeometryID=1
+    responseID=7
+    energyBoundsID=1
+  end meshTally
+  meshTally 2
+    photon
+    cylGeometryID=1
+    responseID=8
+  end meshTally
+end tallies
+
+'-------------------------------------------------------------------------------
+' Parameters Block
+'-------------------------------------------------------------------------------
+read parameters
+  randomSeed=8655745262
+'  library="v7-200n47g"
+'  library="v7-27n19g"
+  ceLibrary="ce_v7.1_endf.xml"
+  neutrons   photons
+  fissionMult=0 secondaryMult=2
+  batches=20 perBatch=10000
+end parameters
+
+'-------------------------------------------------------------------------------
+' Importance Map Block
+'-------------------------------------------------------------------------------
+read importanceMap
+  gridGeometryID=1
+  subcells=4
+    macroMaterial
+        mmTolerance=0.001
+    end macroMaterial    
+  adjointSource 1
+    boundingBox 300 223 32.3 -32.3 0 -18.288
+    responseID=7
+  end adjointSource
+  adjointSource 10
+    boundingBox 300 223 32.3 -32.3 0 -18.288
+    responseID=8
+  end adjointSource
+  respWeighting
+  quadrature=4
+  legendre=0
+end importanceMap
+end data
+end

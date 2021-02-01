@@ -1,0 +1,38 @@
+environment
+  tabular_data
+    tabular_data_file = 'hb2.dat'
+
+method
+  polynomial_chaos
+    quadrature_order = 5
+    dimension_preference = 5 5 5 
+    samples_on_emulator = 10000
+    #response_levels = 1e-9 1e-8 1e-7 1e-6 1e-5 1e-4 1e-3
+    variance_based_decomp #interaction_order = 1
+
+variables
+   normal_uncertain = 3
+   means =                0.766			2.28		0.635	 
+   std_deviations =       0.0383		0.228		0.42545
+     lower_bounds =       0.6511		1.938		0
+     upper_bounds =       0.8809		2.622		1.91135
+     descriptors =        'h2oDens'		'concDens'	'linerR'
+
+interface
+  fork
+  asynchronous evaluation_concurr = 15
+  analysis_drivers = 'driver.bat'
+  parameters_file = 'hb2_input'
+  results_file = 'maxes.out'
+  work_directory
+    directory_tag
+    #directory_save
+    copy_files 'driver.bat' 'getMaxes.bat' 'hb2.template' 'getMax.pl' 'mtMaxN.inp' 'mtMaxP.inp'
+    named 'workdir'
+  file_save
+
+responses
+  num_response_functions = 6	
+  response_descriptors =  'maxN' 'maxNrelErr' 'statChkPassN' 'maxP' 'maxPrelErr' 'statChkPassP'
+  no_gradients				
+  no_hessians

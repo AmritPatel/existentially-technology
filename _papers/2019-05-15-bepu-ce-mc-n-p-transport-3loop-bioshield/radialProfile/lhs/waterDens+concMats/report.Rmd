@@ -1,0 +1,217 @@
+---
+title: "SCALE-MAVRIC/DAKOTA Input/Output Data Summaries"
+output:
+  word_document: default
+date: "`r Sys.time()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+```
+
+### Samples = `r length(readLines("hb2.dat")) - 1`
+
+- Parallel batches of 15
+- `r grep("Total wall clock =", readLines("hb2.out"), value=T)`
+
+```{r, fig.width=8}
+library(tidyverse)
+
+# Import DAKOTA output datafile
+data <- tbl_df(read.delim(paste0(getwd(), "/hb2.dat"), sep="")) %>% select(-X.eval_id, -interface)
+
+# Plot explanatory variables
+data[, 1:15] %>%
+  keep(is.numeric) %>%
+  gather() %>%
+  ggplot(aes(value)) +
+    facet_wrap(~ key, scales="free") +
+    geom_histogram() +
+    theme_minimal()
+
+# Build dataframe with responses
+response <- 
+  tbl_df(read.csv(paste0(getwd(), "/hb2.csv"))) %>%
+  gather(., case, value, -type, -rPos)
+
+## Neutron responses + errors
+nResponse <- 
+  response %>% 
+  filter(type == "maxNradial" | type == "maxNradialErr") %>%
+  spread (., type, value) %>%
+  mutate(particle = "E > 0.1 MeV Neutron Flux (#/cm2-s)") %>%
+  rename(maxRadial = maxNradial, maxRadialErr = maxNradialErr)
+
+## Photon responses + errors
+pResponse <-
+  response %>% 
+  filter(type == "maxPradial" | type == "maxPradialErr") %>%
+  spread (., type, value) %>%
+  mutate(particle = "Total Photon Dose Rate (rad/h)") %>%
+  rename(maxRadial = maxPradial, maxRadialErr = maxPradialErr)
+
+## Combined neutron + photon responses + errors
+allResponses <- bind_rows(nResponse, pResponse)
+
+# Plot response variables
+ggplot(allResponses, aes(rPos, maxRadial, color=case)) +
+  facet_wrap(~ particle, scales="free") + 
+  geom_line() +
+  geom_errorbar(aes(ymin=maxRadial-2*maxRadialErr, ymax=maxRadial+2*maxRadialErr),
+                #width=.2,
+                #position=position_dodge(0.05)
+                ) +
+  scale_y_log10() +
+  labs(x="Radial Position (cm)",
+       y="maxValue",
+       title="Axial Maximum Radial Response Throughout Turkey Point Unit-3,4 Bioshield",
+       subtitle="(Full-scale 3D CE (ENDF/B-VII.1) SCALE/MAVRIC model via DAKOTA; 240 samples; 15 inputs; 2-sig errs)") +
+  theme_minimal() +
+  #scale_colour_brewer(palette="Dark2") +
+  annotation_logticks(sides = "lr") + 
+  theme(panel.grid.minor = element_blank()) +
+  theme(legend.position="none")
+```
+
+### Response Summary Statistics
+
+```{r}
+# Produce summary statistics for all inputs/responses
+summResponse <- 
+  response %>% spread(., type, value) %>%
+  mutate(maxNradialRelErr = maxNradialErr / maxNradial,
+         maxPradialRelErr = maxPradialErr / maxPradial
+  ) %>%
+  summary()
+
+summResponse
+```
+
+### DAKOTA Input/Output Summary Statistics
+
+```{r}
+# Print raw data
+data %>% 
+  gather() %>%
+  group_by(key) %>%
+  summarize(average=mean(value), sd=sd(value), min=min(value), max=max(value)) %>%
+  print(n=Inf)
+
+```
+
+### Absolute/Relative Uncertainty Data 
+
+```{r}
+# Build dataframe (for plotting) summarizing the variation in relative uncertainty throughout bioshield
+## Neutron response data
+allSummN <-
+  data %>% 
+    gather() %>%
+    group_by(key) %>%
+    summarize(average=mean(value), sd=sd(value), min=min(value), max=max(value)) %>%
+    mutate(unc1Sig = sd*100/average, uncMax = (max-average)*100/average) %>% 
+    filter(grepl("maxNradial_", key)) %>%
+    separate(key, into = c("maxNradial", "ind"))
+
+## Photon response data
+allSummP <-
+  data %>% 
+    gather() %>%
+    group_by(key) %>%
+    summarize(average=mean(value), sd=sd(value), min=min(value), max=max(value)) %>%
+    mutate(unc1Sig = sd*100/average, uncMax = (max-average)*100/average)  %>% 
+    filter(grepl("maxPradial_", key)) %>%
+    separate(key, into = c("maxPradial", "ind"))
+
+## Sort by radial position index to append actual position information
+allSummN$ind <- as.integer(allSummN$ind)
+allSummP$ind <- as.integer(allSummP$ind)
+
+## Positioning information in radial coordinates
+rCoords <-
+  tibble(rCoords = 
+    c(237.6, 240.8, 244.0, 247.2, 250.4, 253.6, 256.8, 260.0, 263.2, 266.4,
+      269.6, 272.8, 276.0, 279.2, 282.4, 285.6, 288.8, 292.0, 295.2, 298.4)
+   )
+
+## Tidy data a bit more
+allSummN <- 
+  allSummN %>%
+  arrange(ind) %>%
+  bind_cols(rCoords) %>%
+  mutate(particle="E > 0.1 MeV Neutron Flux") %>%
+  select(-maxNradial, -ind)
+
+allSummP <- 
+  allSummP %>%
+  arrange(ind) %>% 
+  bind_cols(rCoords) %>%
+  mutate(particle="Total Photon Dose Rate") %>%
+  select(-maxPradial, -ind)
+
+## Combine back into single more useful dataframe
+allSumm <- bind_rows(allSummN, allSummP)
+
+# Print wide format of table plotted
+
+tSumm <- allSumm %>% rename(type=particle) %>% select(type, rCoords, everything()) %>% print(n=Inf)
+```
+
+### Neutron Fluence (E > 1 MeV) and Total Photon Dose Relative Uncertainty 
+
+```{r, fig.width=8}
+## Format for plotting
+plotSumm <-
+  allSumm %>% select(particle, rCoords, unc1Sig, uncMax) %>% gather(., key, value, -rCoords, -particle)
+
+# Final plot of relative uncertainty data
+ggplot(plotSumm, aes(rCoords, value, color = key)) +
+  facet_wrap(~ particle) +
+  geom_point() +
+  theme_minimal() +
+  theme(legend.position="bottom") +
+  labs(x = "Radial Position (cm)",
+       y = "Relative Uncertainty (%)",
+       title = "Axial Maximum Relative Uncertainty Throughout Turkey Point Unit-3,4 Bioshield",
+       subtitle = "(Monte Carlo errors, 1-sigma = ~5%, ignored)")
+```
+
+### Penetration Depth Underprediction Due to Lack of Analytic (Epistemic) Uncertainty Treatment of Bioshield Materials 
+
+```{r}
+# Extra comparisons
+
+library(knitr)
+
+nFluxThreshold <- 1E+19/(3600*24*365.25*72)
+pFluxThreshold <- 1E+10/(24*365.25*72)
+
+findDepth <-
+  tSumm %>%
+  group_by(type) %>%
+  select(rCoords, max) %>%
+  mutate(threshold=ifelse(type=="E > 0.1 MeV Neutron Flux", nFluxThreshold, pFluxThreshold)) %>%
+  group_by() %>%
+  mutate(type=ifelse(type=="E > 0.1 MeV Neutron Flux", "neutron", "photon"))
+
+nDepth <- findDepth %>% filter(type == "neutron")
+nDepthMax <- approx(nDepth$max, nDepth$rCoords, xout = nFluxThreshold)$y
+
+pDepth <- findDepth %>% filter(type == "photon")
+pDepthMax <- approx(pDepth$max, pDepth$rCoords, xout = pFluxThreshold)$y
+
+BEvUQ <- 
+  tribble(~org,  ~particle, ~time,             ~fluenceThresholds, ~BE,    ~maxUnc,
+          "NRC", "neutron", 3600*24*365.25*72,  1E+19,              245.6-238.02,  nDepthMax-238.02,   
+          "NRC", "photon",  24*365.25*72,       1.00E+10,           255.2-238.02,  pDepthMax-238.02
+          )
+
+BEvUQ <- BEvUQ %>% mutate(fluxThresholds = fluenceThresholds / time)
+
+tableBEvUQ <- BEvUQ %>% select(type=particle, BE, maxUnc) %>% mutate(absDiff = BE - maxUnc, relDiff = ((BE - maxUnc)/BE))
+
+kable(tableBEvUQ, caption="Radiation penetration depths (in centimeters) up to defined thresholds.")
+
+save(data, allResponses, tSumm, plotSumm, tableBEvUQ, file="1dLHS15vars.RData")
+```
+

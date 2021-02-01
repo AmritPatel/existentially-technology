@@ -1,0 +1,18 @@
+---
+title: "Amrit Patel"
+image: images/portrait.jpg
+links:
+  - label: LinkedIn
+    url: "https://linkedin.com/in/amritdpatel"
+  - label: Twitter
+    url: "https://twitter.com/im_apatel"
+  - label: GitHub
+    url: "https://github.com/amritpatel"
+  - label: Email
+    url: "mailto:amrit.david.patel@gmail.com"
+output:
+  postcards::jolla
+---
+ 
+I am a classically trained nuclear engineer living in the Kathmandu area. 
+Currently I'm working on completing the full curriculum at [`freeCodeCamp.org`](https://www.freecodecamp.org/amritpatel). I love talking about [analog photography](https://amritpatel.netlify.app/portfolio/), philosophy, and [software development](https://amritpatel.rbind.io/).

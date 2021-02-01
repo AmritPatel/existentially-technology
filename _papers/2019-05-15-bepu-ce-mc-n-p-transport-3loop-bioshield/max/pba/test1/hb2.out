@@ -1,0 +1,330 @@
+Dakota version 6.9 released Nov 13 2018.
+Repository revision 32b6d4be (2018-11-12) built Nov 13 2018 01:41:56.
+Running serial Dakota executable in serial mode.
+Start time: Mon May  6 19:48:02 2019
+
+-----------------------
+Begin DAKOTA input file
+hb2.in
+-----------------------
+environment
+  tabular_data
+    tabular_data_file = 'hb2.dat'
+
+method
+  global_interval_est ego
+
+variables
+   continuous_interval_uncertain = 3
+   num_intervals          = 1 1 1
+   interval_probabilities = 1 1 1    
+     lower_bounds =       0.6511		1.938		0
+     upper_bounds =       0.8809		2.622		12.91135
+     descriptors =        'h2oDens'		'concDens'	'linerR'
+
+interface
+  fork
+  asynchronous evaluation_concurr = 15
+  analysis_drivers = 'driver.bat'
+  parameters_file = 'hb2_input'
+  results_file = 'maxes.out'
+  work_directory
+    directory_tag
+    directory_save
+    copy_files 'driver.bat' 'getMaxes.bat' 'hb2.template' 'getMax.pl' 'mtMaxN.inp' 'mtMaxP.inp'
+    named 'workdir'
+  file_save
+
+responses
+  num_response_functions = 6	
+  response_descriptors =  'maxN' 'maxNrelErr' 'statChkPassN' 'maxP' 'maxPrelErr' 'statChkPassP'
+  no_gradients				
+  no_hessians
+---------------------
+End DAKOTA input file
+---------------------
+
+Using Dakota input file 'hb2.in'
+Writing new restart file 'dakota.rst'.
+
+>>>>> Executing environment.
+
+>>>>> Running global_interval_est iterator.
+
+>>>>> Building global_kriging approximations.
+
+NonD lhs Samples = 10 Seed (system-generated) = 926781
+
+---------------------
+Begin Evaluation    1
+---------------------
+Parameters for evaluation 1:
+                      6.8804642462e-01 h2oDens
+                      2.2824816141e+00 concDens
+                      1.0723474295e+01 linerR
+
+(Asynchronous job 1 added to queue)
+
+---------------------
+Begin Evaluation    2
+---------------------
+Parameters for evaluation 2:
+                      7.7341525805e-01 h2oDens
+                      2.4524168545e+00 concDens
+                      8.9782968817e+00 linerR
+
+(Asynchronous job 2 added to queue)
+
+---------------------
+Begin Evaluation    3
+---------------------
+Parameters for evaluation 3:
+                      8.3309007528e-01 h2oDens
+                      2.1400964713e+00 concDens
+                      1.2605901977e+01 linerR
+
+(Asynchronous job 3 added to queue)
+
+---------------------
+Begin Evaluation    4
+---------------------
+Parameters for evaluation 4:
+                      6.7125923472e-01 h2oDens
+                      2.1852113969e+00 concDens
+                      9.1401479530e+00 linerR
+
+(Asynchronous job 4 added to queue)
+
+---------------------
+Begin Evaluation    5
+---------------------
+Parameters for evaluation 5:
+                      7.9417340989e-01 h2oDens
+                      2.2357499614e+00 concDens
+                      1.4318797256e+00 linerR
+
+(Asynchronous job 5 added to queue)
+
+---------------------
+Begin Evaluation    6
+---------------------
+Parameters for evaluation 6:
+                      7.6590962428e-01 h2oDens
+                      2.4138994318e+00 concDens
+                      5.8681997687e+00 linerR
+
+(Asynchronous job 6 added to queue)
+
+---------------------
+Begin Evaluation    7
+---------------------
+Parameters for evaluation 7:
+                      7.2788924550e-01 h2oDens
+                      2.5603720530e+00 concDens
+                      2.9219762292e+00 linerR
+
+(Asynchronous job 7 added to queue)
+
+---------------------
+Begin Evaluation    8
+---------------------
+Parameters for evaluation 8:
+                      8.5332342425e-01 h2oDens
+                      2.5398027964e+00 concDens
+                      4.9657941311e+00 linerR
+
+(Asynchronous job 8 added to queue)
+
+---------------------
+Begin Evaluation    9
+---------------------
+Parameters for evaluation 9:
+                      8.6105603172e-01 h2oDens
+                      1.9392868992e+00 concDens
+                      7.7098043062e+00 linerR
+
+(Asynchronous job 9 added to queue)
+
+---------------------
+Begin Evaluation   10
+---------------------
+Parameters for evaluation 10:
+                      7.1329985511e-01 h2oDens
+                      2.0587488611e+00 concDens
+                      1.2759947062e-01 linerR
+
+(Asynchronous job 10 added to queue)
+
+Blocking synchronize of 10 asynchronous evaluations
+First pass: initiating 10 local asynchronous jobs
+Initiating evaluation 1
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 2
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 3
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 4
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 5
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 6
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 7
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 8
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 9
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 10
+nonblocking fork: driver.bat hb2_input maxes.out
+Waiting on completed jobs
+Evaluation 3 has completed
+Waiting on completed jobs
+Evaluation 9 has completed
+Waiting on completed jobs
+Evaluation 1 has completed
+Waiting on completed jobs
+Evaluation 4 has completed
+Waiting on completed jobs
+Evaluation 2 has completed
+Waiting on completed jobs
+Evaluation 8 has completed
+Waiting on completed jobs
+Evaluation 6 has completed
+Waiting on completed jobs
+Evaluation 10 has completed
+Waiting on completed jobs
+Evaluation 5 has completed
+Waiting on completed jobs
+Evaluation 7 has completed
+
+Active response data for evaluation 1:
+Active set vector = { 1 1 1 1 1 1 }
+                      4.3254600000e+10 maxN
+                      2.2000000000e-02 maxNrelErr
+                      2.0000000000e+00 statChkPassN
+                      1.1052040000e+04 maxP
+                      1.3790000000e-01 maxPrelErr
+                      1.0000000000e+00 statChkPassP
+
+
+Active response data for evaluation 2:
+Active set vector = { 1 1 1 1 1 1 }
+                      2.4790020000e+10 maxN
+                      2.6700000000e-02 maxNrelErr
+                      1.0000000000e+00 statChkPassN
+                      1.2015550000e+04 maxP
+                      1.4890000000e-01 maxPrelErr
+                      1.0000000000e+00 statChkPassP
+
+
+Active response data for evaluation 3:
+Active set vector = { 1 1 1 1 1 1 }
+                      1.9964210000e+10 maxN
+                      2.0600000000e-02 maxNrelErr
+                      1.0000000000e+00 statChkPassN
+                      4.6426650000e+03 maxP
+                      2.3390000000e-01 maxPrelErr
+                      1.0000000000e+00 statChkPassP
+
+
+Active response data for evaluation 4:
+Active set vector = { 1 1 1 1 1 1 }
+                      4.3264230000e+10 maxN
+                      2.1500000000e-02 maxNrelErr
+                      1.0000000000e+00 statChkPassN
+                      2.2650250000e+04 maxP
+                      1.8260000000e-01 maxPrelErr
+                      1.0000000000e+00 statChkPassP
+
+
+Active response data for evaluation 5:
+Active set vector = { 1 1 1 1 1 1 }
+                      1.5592130000e+10 maxN
+                      2.9300000000e-02 maxNrelErr
+                      1.0000000000e+00 statChkPassN
+                      2.4945230000e+04 maxP
+                      6.4400000000e-02 maxPrelErr
+                      1.0000000000e+00 statChkPassP
+
+
+Active response data for evaluation 6:
+Active set vector = { 1 1 1 1 1 1 }
+                      2.2916530000e+10 maxN
+                      2.1500000000e-02 maxNrelErr
+                      1.0000000000e+00 statChkPassN
+                      2.4568790000e+04 maxP
+                      1.7610000000e-01 maxPrelErr
+                      1.0000000000e+00 statChkPassP
+
+
+Active response data for evaluation 7:
+Active set vector = { 1 1 1 1 1 1 }
+                      2.4471560000e+10 maxN
+                      2.4900000000e-02 maxNrelErr
+                      1.0000000000e+00 statChkPassN
+                      4.5705700000e+04 maxP
+                      1.2150000000e-01 maxPrelErr
+                      1.0000000000e+00 statChkPassP
+
+
+Active response data for evaluation 8:
+Active set vector = { 1 1 1 1 1 1 }
+                      1.4334970000e+10 maxN
+                      2.6500000000e-02 maxNrelErr
+                      2.0000000000e+00 statChkPassN
+                      1.3208840000e+04 maxP
+                      8.6000000000e-02 maxPrelErr
+                      1.0000000000e+00 statChkPassP
+
+
+Active response data for evaluation 9:
+Active set vector = { 1 1 1 1 1 1 }
+                      1.5402300000e+10 maxN
+                      3.0700000000e-02 maxNrelErr
+                      1.0000000000e+00 statChkPassN
+                      1.2600880000e+04 maxP
+                      1.8080000000e-01 maxPrelErr
+                      1.0000000000e+00 statChkPassP
+
+
+Active response data for evaluation 10:
+Active set vector = { 1 1 1 1 1 1 }
+                      2.1327430000e+10 maxN
+                      2.8600000000e-02 maxNrelErr
+                      1.0000000000e+00 statChkPassN
+                      4.3035290000e+04 maxP
+                      1.0830000000e-01 maxPrelErr
+                      1.0000000000e+00 statChkPassP
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+Constructing global approximations with no anchor, 10 DACE samples, and 0 reused points.
+
+<<<<< global_kriging approximation builds completed.
+Beginning Approximate Fn Evaluations...
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 1
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.8089805416e-01
+                      1.9380057918e+00
+                      1.0932742299e-04
+Expected Improvement    =
+                      6.2752164656e+09
+
+---------------------
+Begin Evaluation   11
+---------------------
+Parameters for evaluation 11:
+                      8.8089805416e-01 h2oDens
+                      1.9380057918e+00 concDens
+                      1.0932742299e-04 linerR
+
+blocking fork: driver.bat hb2_input maxes.out

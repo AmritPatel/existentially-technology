@@ -1,0 +1,2666 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+  <!--radix_placeholder_meta_tags-->
+<title>Existentially, technology: Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall</title>
+
+<meta property="description" itemprop="description" content=""/>
+
+<link rel="canonical" href="https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
+<link rel="icon" type="image/vnd.microsoft.icon" href="../../images/favicon.ico"/>
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2019-05-15"/>
+<meta property="article:created" itemprop="dateCreated" content="2019-05-15"/>
+<meta name="article:author" content="Amrit Patel"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="Existentially, technology: Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:url" content="https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/"/>
+<meta property="og:image" content="https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-2-1.png"/>
+<meta property="og:image:width" content="1344"/>
+<meta property="og:image:height" content="537"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Existentially, technology"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:title" content="Existentially, technology: Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall"/>
+<meta property="twitter:description" content=""/>
+<meta property="twitter:url" content="https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/"/>
+<meta property="twitter:image" content="https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-2-1.png"/>
+<meta property="twitter:image:width" content="1344"/>
+<meta property="twitter:image:height" content="537"/>
+
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Existentially, technology: Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall"/>
+<meta name="citation_fulltext_html_url" content="https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/"/>
+<meta name="citation_fulltext_world_readable" content=""/>
+<meta name="citation_online_date" content="2019/05/15"/>
+<meta name="citation_publication_date" content="2019/05/15"/>
+<meta name="citation_author" content="Amrit Patel"/>
+<!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=NUREG-2192, standard review plan for review of subsequent license renewal applications for nuclear power plants - final report;citation_publication_date=2017;citation_author= NRC"/>
+  <meta name="citation_reference" content="citation_title=Regulatory guide 1.190, calculational and dosimetry methods for determining pressure vessel fluence;citation_publication_date=2001;citation_author= NRC"/>
+  <meta name="citation_reference" content="citation_title=NUREG/CR-7171, a review of the effects of radiation on microstructure and properties of concretes used in nuclear power plants;citation_publication_date=2013;citation_author= NRC"/>
+  <meta name="citation_reference" content="citation_title=Radiation-induced degradation of concrete in NPPs;citation_publication_date=2018;citation_publisher=ASTM International;citation_doi=http://dx.doi.org/10.1520/STP160820170059;citation_author=I. Remec;citation_author=T. M. Rosseel;citation_author=K. G. Field;citation_author=Y. Le Pape"/>
+  <meta name="citation_reference" content="citation_title=SCALE code system, ORNL/TM-2005/39, version 6.2.3;citation_publication_date=2018;citation_publisher=Oak Ridge National Laboratory"/>
+  <meta name="citation_reference" content="citation_title=Forward-weighted CADIS method for variance reduction of monte carlo calculations of distributions and multiple localized quantities;citation_publication_date=2009;citation_author=John C Wagner;citation_author=Edward D Blakeman;citation_author=Douglas E Peplow"/>
+  <meta name="citation_reference" content="citation_title=Radiation effects in concrete for nuclear power plants–part i: Quantification of radiation exposure and radiation effects;citation_publication_date=2015;citation_publisher=Elsevier;citation_volume=282;citation_author=Kevin G Field;citation_author=I Remec;citation_author=Y Le Pape"/>
+  <meta name="citation_reference" content="citation_title=Dakota, a multilevel parallel object-oriented framework for design optimization, parameter estimation, uncertainty quantification, and sensitivity analysis: Version 6.9.0 user’s manual;citation_publication_date=2019;citation_publisher=Sandia National Laboratories;citation_author=Brian M. Adams;citation_author=Michael S. Eldred;citation_author=Gianluca Geraci;citation_author=Russell W. Hooper;citation_author=John D. Jakeman;citation_author=Kathryn A. Maupin;citation_author=Jason A. Monschke;citation_author=Ahmad A. Rushdi;citation_author=J. Adam Stephens;citation_author=Laura P. Swiler;citation_author=Timothy M. Wildey;citation_author=William J. Bohnhoff;citation_author=Keith R. Dalbey;citation_author=Mohamed S. Ebeida;citation_author=John P. Eddy;citation_author=Patricia D. Hough;citation_author=Mohammad Khalil;citation_author=Kenneth T. Hu;citation_author=Elliott M. Ridgway;citation_author=Dena M. Vigil;citation_author=Justin G. Winokur"/>
+  <meta name="citation_reference" content="citation_title=Inverse uncertainty quantification of reactor simulations under the bayesian framework using surrogate models constructed by polynomial chaos expansion;citation_publication_date=2017;citation_publisher=Elsevier;citation_volume=313;citation_author=Xu Wu;citation_author=Tomasz Kozlowski"/>
+  <meta name="citation_reference" content="citation_title=Application of polynomial chaos expansion in inverse transport problems with neutron multiplication measurements and multiple unknowns;citation_publication_date=2018;citation_publisher=Oak Ridge National Lab, Oak Ridge, TN; American Nuclear Society;citation_author=Keith C Bledsoe;citation_author=Matthew Anderson Jessee;citation_author=Justin R Knowles"/>
+  <meta name="citation_reference" content="citation_title=Polynomial chaos functions and neutron diffusion;citation_publication_date=2007;citation_publisher=Taylor &amp; Francis;citation_volume=155;citation_doi=10.13182/NSE05-73TN;citation_author=M. M. R. Williams"/>
+  <meta name="citation_reference" content="citation_title=Global sensitivity indices for nonlinear mathematical models and their monte carlo estimates;citation_publication_date=2001;citation_publisher=Elsevier;citation_volume=55;citation_author=Ilya M Sobol"/>
+  <meta name="citation_reference" content="citation_title=A novel detector response formulation for rapid;citation_publication_date=2018;citation_author=Meng-Jen Wang;citation_author=Alireza Haghighat"/>
+  <meta name="citation_reference" content="citation_title=The RAPID fission matrix approach to reactor core criticality calculations;citation_publication_date=2018;citation_publisher=Taylor &amp; Francis;citation_volume=192;citation_author=William J Walters;citation_author=Nathan J Roskoff;citation_author=Alireza Haghighat"/>
+  <meta name="citation_reference" content="citation_title=Polynomial chaos expansion for probabilistic uncertainty propagation;citation_publication_date=2017;citation_publisher=IntechOpen;citation_author=Shuxing Yang;citation_author=Fenfen Xiong;citation_author=Fenggang Wang"/>
+  <meta name="citation_reference" content="citation_title=Propagation of nuclear data uncertainties for PWR core analysis;citation_publication_date=2014;citation_publisher=Elsevier;citation_volume=46;citation_author=O Cabellos;citation_author=E Castro;citation_author=C Ahnert;citation_author=C Holgado"/>
+  <meta name="citation_reference" content="citation_title=Comparison of nuclear data uncertainty propagation methodologies for PWR burn-up simulations;citation_publication_date=2015;citation_publisher=Elsevier;citation_volume=77;citation_author=Carlos Javier Diez;citation_author=Oliver Buss;citation_author=Axel Hoefer;citation_author=Dieter Porsch;citation_author=Oscar Cabellos"/>
+  <meta name="citation_reference" content="citation_title=Uncertainty in anything: The future with SCALE/sampler;citation_publication_date=2017;citation_author=Will Wieselquist"/>
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","author","date","output","bibliography","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall"]},{"type":"character","attributes":{},"value":[""]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Amrit Patel"]},{"type":"character","attributes":{},"value":["0000-0003-3911-6281"]}]}]},{"type":"character","attributes":{},"value":["05/15/2019"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["citations.bib"]},{"type":"character","attributes":{},"value":["https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/"]},{"type":"character","attributes":{},"value":["https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["0dMethodStats.csv","bepu-ce-mc-n-p-transport-3loop-bioshield_files/anchor-4.2.2/anchor.min.js","bepu-ce-mc-n-p-transport-3loop-bioshield_files/bowser-1.9.3/bowser.min.js","bepu-ce-mc-n-p-transport-3loop-bioshield_files/distill-2.2.21/template.v2.js","bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-10-1.png","bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-12-1.png","bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-13-1.png","bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-14-1.png","bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-15-1.png","bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-2-1.png","bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-6-1.png","bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-9-1.png","bepu-ce-mc-n-p-transport-3loop-bioshield_files/header-attrs-2.6.6/header-attrs.js","bepu-ce-mc-n-p-transport-3loop-bioshield_files/jquery-1.11.3/jquery.min.js","bepu-ce-mc-n-p-transport-3loop-bioshield_files/popper-2.6.0/popper.min.js","bepu-ce-mc-n-p-transport-3loop-bioshield_files/tippy-6.2.7/tippy-bundle.umd.min.js","bepu-ce-mc-n-p-transport-3loop-bioshield_files/tippy-6.2.7/tippy-light-border.css","bepu-ce-mc-n-p-transport-3loop-bioshield_files/tippy-6.2.7/tippy.css","bepu-ce-mc-n-p-transport-3loop-bioshield_files/tippy-6.2.7/tippy.umd.min.js","bepu-ce-mc-n-p-transport-3loop-bioshield_files/webcomponents-2.0.0/webcomponents.js","citations.bib","inputs.csv","max/lhs/0dLHS.RData","max/lhs/dakota.rst","max/lhs/data.xlsx","max/lhs/dprepro","max/lhs/driver.bat","max/lhs/generateReport.R","max/lhs/getMax.pl","max/lhs/getMaxes.bat","max/lhs/hb2.dat","max/lhs/hb2.in","max/lhs/hb2.out","max/lhs/hb2.template","max/lhs/LHS_2.out","max/lhs/LHS_3.out","max/lhs/LHS_7.out","max/lhs/LHS_8.out","max/lhs/LHS_9.out","max/lhs/LHS_distributions.out","max/lhs/LHS_samples.out","max/lhs/mtMaxN.inp","max/lhs/mtMaxP.inp","max/lhs/report.docx","max/lhs/report.Rmd","max/lhs/run.bat","max/lhs/screen.out","max/lhs/test/dakota.rst","max/lhs/test/dprepro","max/lhs/test/driver.bat","max/lhs/test/generateReport.R","max/lhs/test/getMax.pl","max/lhs/test/getMaxes.bat","max/lhs/test/hb2.dat","max/lhs/test/hb2.in","max/lhs/test/hb2.out","max/lhs/test/hb2.template","max/lhs/test/LHS_2.out","max/lhs/test/LHS_3.out","max/lhs/test/LHS_7.out","max/lhs/test/LHS_8.out","max/lhs/test/LHS_9.out","max/lhs/test/LHS_distributions.out","max/lhs/test/LHS_samples.out","max/lhs/test/mtMaxN.inp","max/lhs/test/mtMaxP.inp","max/lhs/test/report_files/figure-docx/unnamed-chunk-1-1.png","max/lhs/test/report_files/figure-docx/unnamed-chunk-1-2.png","max/lhs/test/report_files/figure-docx/unnamed-chunk-2-1.png","max/lhs/test/report.docx","max/lhs/test/report.Rmd","max/lhs/test/run.bat","max/lhs/test/screen.out","max/lhs/test/test_files/figure-html/pressure-1.png","max/pba/data.xlsx","max/pba/n/convergence.dat","max/pba/n/dakota.rst","max/pba/n/dprepro","max/pba/n/driver.bat","max/pba/n/fort.13","max/pba/n/generateReport.R","max/pba/n/getMax.pl","max/pba/n/getMaxes.bat","max/pba/n/hb2.dat","max/pba/n/hb2.in","max/pba/n/hb2.out","max/pba/n/hb2.template","max/pba/n/improvement.out","max/pba/n/LHS_2.out","max/pba/n/LHS_3.out","max/pba/n/LHS_7.out","max/pba/n/LHS_8.out","max/pba/n/LHS_9.out","max/pba/n/LHS_distributions.out","max/pba/n/LHS_samples.out","max/pba/n/maxN.out","max/pba/n/mtMaxN.inp","max/pba/n/mtMaxP.inp","max/pba/n/NCSUdirectConv.pl","max/pba/n/report.docx","max/pba/n/report.Rmd","max/pba/n/run.bat","max/pba/n/screen.out","max/pba/p/convergence.dat","max/pba/p/dakota.rst","max/pba/p/dprepro","max/pba/p/driver.bat","max/pba/p/fort.13","max/pba/p/generateReport.R","max/pba/p/getMax.pl","max/pba/p/getMaxes.bat","max/pba/p/hb2.dat","max/pba/p/hb2.in","max/pba/p/hb2.out","max/pba/p/hb2.template","max/pba/p/improvement.out","max/pba/p/LHS_2.out","max/pba/p/LHS_3.out","max/pba/p/LHS_7.out","max/pba/p/LHS_8.out","max/pba/p/LHS_9.out","max/pba/p/LHS_distributions.out","max/pba/p/LHS_samples.out","max/pba/p/maxN.out","max/pba/p/mtMaxN.inp","max/pba/p/mtMaxP.inp","max/pba/p/NCSUdirectConv.pl","max/pba/p/report.docx","max/pba/p/report.Rmd","max/pba/p/run.bat","max/pba/p/screen.out","max/pba/test1/dakota.rst","max/pba/test1/dprepro","max/pba/test1/driver.bat","max/pba/test1/fort.13","max/pba/test1/generateReport.R","max/pba/test1/getMax.pl","max/pba/test1/getMaxes.bat","max/pba/test1/hb2.dat","max/pba/test1/hb2.in","max/pba/test1/hb2.out","max/pba/test1/hb2.template","max/pba/test1/LHS_2.out","max/pba/test1/LHS_3.out","max/pba/test1/LHS_7.out","max/pba/test1/LHS_8.out","max/pba/test1/LHS_9.out","max/pba/test1/LHS_distributions.out","max/pba/test1/LHS_samples.out","max/pba/test1/mtMaxN.inp","max/pba/test1/mtMaxP.inp","max/pba/test1/report_files/figure-docx/unnamed-chunk-1-1.png","max/pba/test1/report_files/figure-docx/unnamed-chunk-1-2.png","max/pba/test1/report_files/figure-docx/unnamed-chunk-2-1.png","max/pba/test1/report.docx","max/pba/test1/report.Rmd","max/pba/test1/run.bat","max/pba/test1/screen.out","max/pba/test2/dakota.rst","max/pba/test2/data.xlsx","max/pba/test2/dprepro","max/pba/test2/driver.bat","max/pba/test2/fort.13","max/pba/test2/generateReport.R","max/pba/test2/getMax.pl","max/pba/test2/getMaxes.bat","max/pba/test2/hb2.dat","max/pba/test2/hb2.in","max/pba/test2/hb2.out","max/pba/test2/hb2.template","max/pba/test2/LHS_2.out","max/pba/test2/LHS_3.out","max/pba/test2/LHS_7.out","max/pba/test2/LHS_8.out","max/pba/test2/LHS_9.out","max/pba/test2/LHS_distributions.out","max/pba/test2/LHS_samples.out","max/pba/test2/mtMaxN.inp","max/pba/test2/mtMaxP.inp","max/pba/test2/report_files/figure-docx/unnamed-chunk-1-1.png","max/pba/test2/report_files/figure-docx/unnamed-chunk-1-2.png","max/pba/test2/report_files/figure-docx/unnamed-chunk-2-1.png","max/pba/test2/report.docx","max/pba/test2/report.Rmd","max/pba/test2/run.bat","max/pba/test2/screen.out","max/pba/test3/conv.dat","max/pba/test3/conv.out","max/pba/test3/dakota.rst","max/pba/test3/data.xlsx","max/pba/test3/dprepro","max/pba/test3/driver.bat","max/pba/test3/fort.13","max/pba/test3/generateReport.R","max/pba/test3/getMax.pl","max/pba/test3/getMaxes.bat","max/pba/test3/hb2.dat","max/pba/test3/hb2.in","max/pba/test3/hb2.out","max/pba/test3/hb2.template","max/pba/test3/LHS_2.out","max/pba/test3/LHS_3.out","max/pba/test3/LHS_7.out","max/pba/test3/LHS_8.out","max/pba/test3/LHS_9.out","max/pba/test3/LHS_distributions.out","max/pba/test3/LHS_samples.out","max/pba/test3/mtMaxN.inp","max/pba/test3/mtMaxP.inp","max/pba/test3/NCSUdirectConv.pl","max/pba/test3/report_files/figure-docx/unnamed-chunk-1-1.png","max/pba/test3/report_files/figure-docx/unnamed-chunk-1-2.png","max/pba/test3/report_files/figure-docx/unnamed-chunk-2-1.png","max/pba/test3/report.docx","max/pba/test3/report.Rmd","max/pba/test3/run.bat","max/pba/test3/screen.out","max/pce/3vars/dakota.rst","max/pce/3vars/dprepro","max/pce/3vars/driver.bat","max/pce/3vars/generateReport.R","max/pce/3vars/getMax.pl","max/pce/3vars/getMaxes.bat","max/pce/3vars/hb2.dat","max/pce/3vars/hb2.in","max/pce/3vars/hb2.out","max/pce/3vars/hb2.template","max/pce/3vars/mtMaxN.inp","max/pce/3vars/mtMaxP.inp","max/pce/3vars/report.docx","max/pce/3vars/report.Rmd","max/pce/3vars/run.bat","max/pce/3vars/screen.out","max/pce/4vars/dakota.rst","max/pce/4vars/dprepro","max/pce/4vars/driver.bat","max/pce/4vars/generateReport.R","max/pce/4vars/getMax.pl","max/pce/4vars/getMaxes.bat","max/pce/4vars/hb2.dat","max/pce/4vars/hb2.in","max/pce/4vars/hb2.out","max/pce/4vars/hb2.template","max/pce/4vars/mtMaxN.inp","max/pce/4vars/mtMaxP.inp","max/pce/4vars/report_files/figure-docx/unnamed-chunk-1-1.png","max/pce/4vars/report_files/figure-docx/unnamed-chunk-2-1.png","max/pce/4vars/report_files/figure-docx/unnamed-chunk-3-1.png","max/pce/4vars/report_files/figure-docx/unnamed-chunk-4-1.png","max/pce/4vars/report.docx","max/pce/4vars/report.Rmd","max/pce/4vars/run.bat","max/pce/4vars/screen.out","max/pce/data.xlsx","radialProfile/lhs/3vars/1dLHS3vars.RData","radialProfile/lhs/3vars/dakota.rst","radialProfile/lhs/3vars/dprepro","radialProfile/lhs/3vars/driver.bat","radialProfile/lhs/3vars/generateReport.R","radialProfile/lhs/3vars/getMax.pl","radialProfile/lhs/3vars/getMaxes.bat","radialProfile/lhs/3vars/getMaxRadial.pl","radialProfile/lhs/3vars/getMaxRadialErr.pl","radialProfile/lhs/3vars/hb2.csv","radialProfile/lhs/3vars/hb2.dat","radialProfile/lhs/3vars/hb2.in","radialProfile/lhs/3vars/hb2.out","radialProfile/lhs/3vars/hb2.template","radialProfile/lhs/3vars/LHS_2.out","radialProfile/lhs/3vars/LHS_3.out","radialProfile/lhs/3vars/LHS_7.out","radialProfile/lhs/3vars/LHS_8.out","radialProfile/lhs/3vars/LHS_9.out","radialProfile/lhs/3vars/LHS_distributions.out","radialProfile/lhs/3vars/LHS_samples.out","radialProfile/lhs/3vars/maxNradial.coords","radialProfile/lhs/3vars/maxNradialErr.coords","radialProfile/lhs/3vars/maxPradial.coords","radialProfile/lhs/3vars/maxPradialErr.coords","radialProfile/lhs/3vars/mtMaxN.inp","radialProfile/lhs/3vars/mtMaxP.inp","radialProfile/lhs/3vars/mtPullN.inp","radialProfile/lhs/3vars/mtPullP.inp","radialProfile/lhs/3vars/report.docx","radialProfile/lhs/3vars/report.Rmd","radialProfile/lhs/3vars/run.bat","radialProfile/lhs/3vars/screen.out","radialProfile/lhs/waterDens/1dLHS1var.RData","radialProfile/lhs/waterDens/dakota.rst","radialProfile/lhs/waterDens/dprepro","radialProfile/lhs/waterDens/driver.bat","radialProfile/lhs/waterDens/generateReport.R","radialProfile/lhs/waterDens/getMax.pl","radialProfile/lhs/waterDens/getMaxes.bat","radialProfile/lhs/waterDens/getMaxRadial.pl","radialProfile/lhs/waterDens/getMaxRadialErr.pl","radialProfile/lhs/waterDens/hb2.csv","radialProfile/lhs/waterDens/hb2.dat","radialProfile/lhs/waterDens/hb2.in","radialProfile/lhs/waterDens/hb2.out","radialProfile/lhs/waterDens/hb2.template","radialProfile/lhs/waterDens/LHS_2.out","radialProfile/lhs/waterDens/LHS_3.out","radialProfile/lhs/waterDens/LHS_7.out","radialProfile/lhs/waterDens/LHS_8.out","radialProfile/lhs/waterDens/LHS_9.out","radialProfile/lhs/waterDens/LHS_distributions.out","radialProfile/lhs/waterDens/LHS_samples.out","radialProfile/lhs/waterDens/maxNradial.coords","radialProfile/lhs/waterDens/maxNradialErr.coords","radialProfile/lhs/waterDens/maxPradial.coords","radialProfile/lhs/waterDens/maxPradialErr.coords","radialProfile/lhs/waterDens/mtMaxN.inp","radialProfile/lhs/waterDens/mtMaxP.inp","radialProfile/lhs/waterDens/mtPullN.inp","radialProfile/lhs/waterDens/mtPullP.inp","radialProfile/lhs/waterDens/report_files/figure-docx/unnamed-chunk-1-1.png","radialProfile/lhs/waterDens/report_files/figure-docx/unnamed-chunk-1-2.png","radialProfile/lhs/waterDens/report_files/figure-docx/unnamed-chunk-5-1.png","radialProfile/lhs/waterDens/report.docx","radialProfile/lhs/waterDens/report.Rmd","radialProfile/lhs/waterDens/run.bat","radialProfile/lhs/waterDens/screen.out","radialProfile/lhs/waterDens+concMats/1dLHS15vars.RData","radialProfile/lhs/waterDens+concMats/dakota.rst","radialProfile/lhs/waterDens+concMats/dprepro","radialProfile/lhs/waterDens+concMats/driver.bat","radialProfile/lhs/waterDens+concMats/generateReport.R","radialProfile/lhs/waterDens+concMats/getMax.pl","radialProfile/lhs/waterDens+concMats/getMaxes.bat","radialProfile/lhs/waterDens+concMats/getMaxRadial.pl","radialProfile/lhs/waterDens+concMats/getMaxRadialErr.pl","radialProfile/lhs/waterDens+concMats/hb2.csv","radialProfile/lhs/waterDens+concMats/hb2.dat","radialProfile/lhs/waterDens+concMats/hb2.in","radialProfile/lhs/waterDens+concMats/hb2.out","radialProfile/lhs/waterDens+concMats/hb2.template","radialProfile/lhs/waterDens+concMats/LHS_2.out","radialProfile/lhs/waterDens+concMats/LHS_3.out","radialProfile/lhs/waterDens+concMats/LHS_7.out","radialProfile/lhs/waterDens+concMats/LHS_8.out","radialProfile/lhs/waterDens+concMats/LHS_9.out","radialProfile/lhs/waterDens+concMats/LHS_distributions.out","radialProfile/lhs/waterDens+concMats/LHS_samples.out","radialProfile/lhs/waterDens+concMats/maxNradial.coords","radialProfile/lhs/waterDens+concMats/maxNradialErr.coords","radialProfile/lhs/waterDens+concMats/maxPradial.coords","radialProfile/lhs/waterDens+concMats/maxPradialErr.coords","radialProfile/lhs/waterDens+concMats/mtMaxN.inp","radialProfile/lhs/waterDens+concMats/mtMaxP.inp","radialProfile/lhs/waterDens+concMats/mtPullN.inp","radialProfile/lhs/waterDens+concMats/mtPullP.inp","radialProfile/lhs/waterDens+concMats/report.docx","radialProfile/lhs/waterDens+concMats/report.Rmd","radialProfile/lhs/waterDens+concMats/run.bat","radialProfile/lhs/waterDens+concMats/screen.out","radialProfile/lhs/waterDens+concMats/workdir.1/applet_resources/j3dcore.jar","radialProfile/lhs/waterDens+concMats/workdir.1/applet_resources/j3dutils.jar","radialProfile/lhs/waterDens+concMats/workdir.1/applet_resources/jai_codec.jar","radialProfile/lhs/waterDens+concMats/workdir.1/applet_resources/jai_core.jar","radialProfile/lhs/waterDens+concMats/workdir.1/applet_resources/javapeno.jar","radialProfile/lhs/waterDens+concMats/workdir.1/applet_resources/jhall.jar","radialProfile/lhs/waterDens+concMats/workdir.1/applet_resources/ornl.java.library.jar","radialProfile/lhs/waterDens+concMats/workdir.1/applet_resources/vecmath.jar","radialProfile/lhs/waterDens+concMats/workdir.1/driver.bat","radialProfile/lhs/waterDens+concMats/workdir.1/getMaxes.bat","radialProfile/lhs/waterDens+concMats/workdir.1/getMaxRadial.pl","radialProfile/lhs/waterDens+concMats/workdir.1/getMaxRadialErr.pl","radialProfile/lhs/waterDens+concMats/workdir.1/hb2_input","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.1.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.100.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10101.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10102.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10103.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10104.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10105.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10106.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10107.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10108.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10109.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10110.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10111.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10112.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10113.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10114.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.10115.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11401.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11402.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11403.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11404.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11405.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11406.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11407.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11408.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11409.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11410.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11411.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11412.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11413.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11414.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.11415.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12701.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12702.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12703.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12704.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12705.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12706.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12707.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12708.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12709.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12710.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12711.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12712.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12713.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12714.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.12715.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.138.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.147.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.154.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.19.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.30.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4301.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4302.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4303.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4304.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4305.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4306.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4307.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4308.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4309.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4310.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4311.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4312.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4313.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4314.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.4315.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5601.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5602.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5603.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5604.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5605.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5606.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5607.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5608.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5609.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5610.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5611.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5612.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5613.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5614.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.5615.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.70.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7101.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7102.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7103.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7104.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7105.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7106.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7107.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7108.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7109.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7110.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7111.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7112.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7113.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7114.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.7115.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.85.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8601.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8602.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8603.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8604.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8605.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8606.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8607.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8608.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8609.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8610.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8611.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8612.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8613.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8614.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.8615.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.adjoint.dff","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.dist1.chart","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.dist2.chart","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.forward.dff","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.inp","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.mim","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.mmt","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.msg","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.mt1.3dmap","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.mt1.flux.txt","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.mt1.resp7.txt","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.mt1.tflux.txt","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.mt2.3dmap","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.mt2.flux.txt","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.mt2.resp8.txt","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.mt2.tflux.txt","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.out","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.1.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.100.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10101.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10102.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10103.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10104.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10105.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10106.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10107.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10108.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10109.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10110.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10111.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10112.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10113.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10114.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.10115.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11401.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11402.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11403.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11404.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11405.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11406.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11407.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11408.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11409.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11410.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11411.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11412.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11413.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11414.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.11415.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12701.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12702.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12703.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12704.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12705.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12706.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12707.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12708.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12709.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12710.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12711.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12712.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12713.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12714.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.12715.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.138.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.147.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.154.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.19.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.30.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4301.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4302.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4303.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4304.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4305.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4306.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4307.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4308.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4309.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4310.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4311.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4312.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4313.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4314.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.4315.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5601.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5602.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5603.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5604.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5605.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5606.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5607.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5608.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5609.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5610.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5611.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5612.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5613.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5614.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.5615.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.70.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7101.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7102.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7103.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7104.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7105.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7106.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7107.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7108.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7109.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7110.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7111.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7112.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7113.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7114.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.7115.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.85.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8601.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8602.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8603.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8604.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8605.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8606.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8607.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8608.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8609.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8610.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8611.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8612.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8613.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8614.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.sampling.8615.msm","radialProfile/lhs/waterDens+concMats/workdir.1/hb2.template","radialProfile/lhs/waterDens+concMats/workdir.1/maxes.out","radialProfile/lhs/waterDens+concMats/workdir.1/mtPullN.inp","radialProfile/lhs/waterDens+concMats/workdir.1/mtPullN.msg","radialProfile/lhs/waterDens+concMats/workdir.1/mtPullN.out","radialProfile/lhs/waterDens+concMats/workdir.1/mtPullP.inp","radialProfile/lhs/waterDens+concMats/workdir.1/mtPullP.msg","radialProfile/lhs/waterDens+concMats/workdir.1/mtPullP.out","radialProfile/lhs/waterDens+concMats/workdir.1/radialMaxN.dat","radialProfile/lhs/waterDens+concMats/workdir.1/radialMaxP.dat","radialProfile/lhs/waterDens+concMats/workdir.1/screen.out","radialProfile/pce/3vars/1dPCE3vars.RData","radialProfile/pce/3vars/dakota.rst","radialProfile/pce/3vars/dprepro","radialProfile/pce/3vars/driver.bat","radialProfile/pce/3vars/generateReport.R","radialProfile/pce/3vars/getMax.pl","radialProfile/pce/3vars/getMaxes.bat","radialProfile/pce/3vars/getMaxRadial.pl","radialProfile/pce/3vars/getMaxRadialErr.pl","radialProfile/pce/3vars/hb2.csv","radialProfile/pce/3vars/hb2.dat","radialProfile/pce/3vars/hb2.in","radialProfile/pce/3vars/hb2.out","radialProfile/pce/3vars/hb2.template","radialProfile/pce/3vars/LHS_2.out","radialProfile/pce/3vars/LHS_3.out","radialProfile/pce/3vars/LHS_7.out","radialProfile/pce/3vars/LHS_8.out","radialProfile/pce/3vars/LHS_9.out","radialProfile/pce/3vars/LHS_distributions.out","radialProfile/pce/3vars/LHS_samples.out","radialProfile/pce/3vars/maxNradial.coords","radialProfile/pce/3vars/maxNradialErr.coords","radialProfile/pce/3vars/maxPradial.coords","radialProfile/pce/3vars/maxPradialErr.coords","radialProfile/pce/3vars/mtMaxN.inp","radialProfile/pce/3vars/mtMaxP.inp","radialProfile/pce/3vars/mtPullN.inp","radialProfile/pce/3vars/mtPullP.inp","radialProfile/pce/3vars/report_files/figure-docx/unnamed-chunk-1-1.png","radialProfile/pce/3vars/report_files/figure-docx/unnamed-chunk-1-2.png","radialProfile/pce/3vars/report_files/figure-docx/unnamed-chunk-5-1.png","radialProfile/pce/3vars/report.docx","radialProfile/pce/3vars/report.Rmd","radialProfile/pce/3vars/run.bat","radialProfile/pce/3vars/screen.out","radialSobol.csv","scratch.xlsx"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content="../.."/>
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      tolerance: 5,
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0F2E3D;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+  min-width: 150px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
+</style>
+
+<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+d-byline .byline {
+  grid-template-columns: 2fr 2fr;
+}
+
+d-byline .byline h3 {
+  margin-block-start: 1.5em;
+}
+
+d-byline .byline .authors-affiliations h3 {
+  margin-block-start: 0.5em;
+}
+
+.authors-affiliations .orcid-id {
+  width: 16px;
+  height:16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+d-title .dt-tags {
+  margin-top: 1em;
+  grid-column: text;
+}
+
+.dt-tags .dt-tag {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0em 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 70%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+d-article table.gt_table td,
+d-article table.gt_table th {
+  border-bottom: none;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-top: 2.5rem;
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article h2 {
+  margin: 1rem 0 1.5rem 0;
+}
+
+d-article h3 {
+  margin-top: 1.5rem;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+/* Tweak code blocks */
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: auto;
+}
+
+d-article div.sourceCode {
+  background-color: white;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+d-article pre {
+  font-size: 12px;
+  color: black;
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+d-article pre a {
+  border-bottom: none;
+}
+
+d-article pre a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
+}
+
+@media(min-width: 768px) {
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: visible !important;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+d-article pre {
+  font-size: 14px;
+}
+
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for d-contents */
+
+.d-contents {
+  grid-column: text;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.25em;
+  justify-self: start;
+}
+
+@media(min-width: 1000px) {
+  .d-contents.d-contents-float {
+    height: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-right: 3em;
+    padding-left: 2em;
+  }
+}
+
+.d-contents nav h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.d-contents li {
+  list-style-type: none
+}
+
+.d-contents nav > ul {
+  padding-left: 0;
+}
+
+.d-contents ul {
+  padding-left: 1em
+}
+
+.d-contents nav ul li {
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.d-contents nav a {
+  font-size: 13px;
+  border-bottom: none;
+  text-decoration: none
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents nav a:hover {
+  text-decoration: underline solid rgba(0, 0, 0, 0.6)
+}
+
+.d-contents nav > ul > li > a {
+  font-weight: 600;
+}
+
+.d-contents nav > ul > li > ul {
+  font-weight: inherit;
+}
+
+.d-contents nav > ul > li > ul > li {
+  margin-top: 0.2em;
+}
+
+
+.d-contents nav ul {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.d-article-with-toc h2:nth-child(2) {
+  margin-top: 0;
+}
+
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+/* Citations */
+
+d-article .citation {
+  color: inherit;
+  cursor: inherit;
+}
+
+div.hanging-indent{
+  margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
+}
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Include appendix styles here so they can be overridden */
+
+d-appendix {
+  contain: layout style;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-top: 60px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.5);
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+d-appendix h3 {
+  grid-column: page-start / text-start;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.65);
+}
+
+d-appendix h3 + * {
+  margin-top: 1em;
+}
+
+d-appendix ol {
+  padding: 0 0 0 15px;
+}
+
+@media (min-width: 768px) {
+  d-appendix ol {
+    padding: 0 0 0 30px;
+    margin-left: -30px;
+  }
+}
+
+d-appendix li {
+  margin-bottom: 1em;
+}
+
+d-appendix a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+d-appendix > * {
+  grid-column: text;
+}
+
+d-appendix > d-footnote-list,
+d-appendix > d-citation-list,
+d-appendix > distill-appendix {
+  grid-column: screen;
+}
+
+/* Include footnote styles here so they can be overridden */
+
+d-footnote-list {
+  contain: layout style;
+}
+
+d-footnote-list > * {
+  grid-column: text;
+}
+
+d-footnote-list a.footnote-backlink {
+  color: rgba(0,0,0,0.3);
+  padding-left: 0.5em;
+}
+
+
+
+/* Anchor.js */
+
+.anchorjs-link {
+  /*transition: all .25s linear; */
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+/* Styles for listing layout (hide title) */
+.layout-listing d-title, .layout-listing .d-title {
+  display: none;
+}
+
+/* Styles for posts lists (not auto-injected) */
+
+
+.posts-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.posts-list .description h2,
+.posts-list .description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.posts-list .description h2 {
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posts-list h2.post-tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px;
+}
+.posts-list {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.posts-list .post-preview {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.post-preview-last {
+  border-bottom: none !important;
+}
+
+.posts-list .posts-list-caption {
+  grid-column: screen;
+  font-weight: 400;
+}
+
+.posts-list .post-preview h2 {
+  margin: 0 0 6px 0;
+  line-height: 1.2em;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.posts-list .post-preview p {
+  margin: 0 0 12px 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.posts-list .post-preview .thumbnail {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 500px;
+}
+.posts-list .post-preview img {
+  width: 100%;
+  display: block;
+}
+
+.posts-list .metadata {
+  font-size: 12px;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+
+.posts-list .metadata > * {
+  display: inline-block;
+}
+
+.posts-list .metadata .publishedDate {
+  margin-right: 2em;
+}
+
+.posts-list .metadata .dt-authors {
+  display: block;
+  margin-top: 0.3em;
+  margin-right: 2em;
+}
+
+.posts-list .dt-tags {
+  display: block;
+  line-height: 1em;
+}
+
+.posts-list .dt-tags .dt-tag {
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0.3em 0.4em;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+  font-size: 60%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.posts-list img {
+  opacity: 1;
+}
+
+.posts-list img[data-src] {
+  opacity: 0;
+}
+
+.posts-more {
+  clear: both;
+}
+
+
+.posts-sidebar {
+  font-size: 16px;
+}
+
+.posts-sidebar h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+.categories li>a {
+  border-bottom: none;
+}
+
+.categories li>a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.categories .active {
+  font-weight: 600;
+}
+
+.categories .category-count {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media(min-width: 768px) {
+  .posts-list .post-preview h2 {
+    font-size: 26px;
+  }
+  .posts-list .post-preview .thumbnail {
+    float: right;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .posts-list .post-preview .description {
+    float: left;
+    width: 45%;
+  }
+  .posts-list .post-preview .metadata {
+    float: left;
+    width: 20%;
+    margin-top: 8px;
+  }
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .posts-with-sidebar .posts-list {
+    float: left;
+    width: 75%;
+  }
+  .posts-with-sidebar .posts-sidebar {
+    float: right;
+    width: 20%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.downlevel .posts-list .post-preview {
+  color: inherit;
+}
+
+
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // add anchors
+  if (window.anchors) {
+    window.anchors.options.placement = 'left';
+    window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+  }
+
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  // move refs into #references-listing
+  $('#references-listing').replaceWith($('#refs'));
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-contents a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // remove code block used to force  highlighting css
+  $('.distill-force-highlighting-css').parent().remove();
+
+  // remove empty line numbers inserted by pandoc when using a
+  // custom syntax highlighting theme
+  $('code.sourceCode a:empty').remove();
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // article with toc class
+    $('.d-contents').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // add orcid ids
+    $('.authors-affiliations').find('.author').each(function(i, el) {
+      var orcid_id = front_matter.authors[i].orcidID;
+      if (orcid_id) {
+        var a = $('<a></a>');
+        a.attr('href', 'https://orcid.org/' + orcid_id);
+        var img = $('<img></img>');
+        img.addClass('orcid-id');
+        img.attr('alt', 'ORCID ID');
+        img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+        a.append(img);
+        $(this).append(a);
+      }
+    });
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // remove d-appendix and d-footnote-list local styles
+    $('d-appendix > style:first-child').remove();
+    $('d-footnote-list > style:first-child').remove();
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-contents').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.6.6/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall","description":"","authors":[{"author":"Amrit Patel","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0003-3911-6281"}],"publishedDate":"2019-05-15T00:00:00.000+00:00","citationText":"Patel, 2019"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">Existentially, technology</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../papers.html">Papers</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+About
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="../../about.html">Me</a>
+<a href="../../cv.html">CV</a>
+</div>
+</div>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+
+</div>
+
+<div class="d-byline">
+  Amrit Patel  
+  
+<br/>05/15/2019
+</div>
+
+<div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#regulatory-background">Regulatory Background</a></li>
+<li><a href="#objectives">Objectives</a>
+<ul>
+<li><a href="#regulatory">Regulatory</a></li>
+<li><a href="#research">Research</a></li>
+</ul></li>
+<li><a href="#model-setup">Model Setup</a></li>
+<li><a href="#initial-be-work-with-scale-mavric">Initial BE Work with SCALE-MAVRIC</a></li>
+<li><a href="#uq-methods-studied">UQ Methods Studied</a>
+<ul>
+<li><a href="#latin-hypercube-sampling">Latin Hypercube Sampling</a></li>
+<li><a href="#polynomial-chaos-expansion">Polynomial Chaos Expansion</a></li>
+<li><a href="#probability-bounds-analyis">Probability Bounds Analyis</a></li>
+</ul></li>
+<li><a href="#uq-exploration-using-max-bioshield-0-dimension-responses">UQ Exploration Using Max Bioshield 0-Dimension Responses</a>
+<ul>
+<li><a href="#inputs-studied">Inputs Studied</a></li>
+<li><a href="#lhs-reference-results">LHS Reference Results</a></li>
+<li><a href="#pce-sobol-indeces-and-sensitivity-coefficients">PCE Sobol Indeces and Sensitivity Coefficients</a></li>
+<li><a href="#pba-convergence">PBA Convergence</a></li>
+</ul></li>
+<li><a href="#uq-exploration-using-max-bioshield-1-d-responses">UQ Exploration Using Max Bioshield 1-D Responses</a>
+<ul>
+<li><a href="#responses-with-uncertainties-through-bioshield">Responses with Uncertainties Through Bioshield</a></li>
+<li><a href="#uncertainties-through-the-bioshield">Uncertainties Through the Bioshield</a></li>
+<li><a href="#radiation-damage-depth-based-on-the-maximum-uncertainty">Radiation Damage Depth Based on the Maximum Uncertainty</a></li>
+</ul></li>
+<li><a href="#conclusions-and-future-study">Conclusions and Future Study</a></li>
+</ul>
+</nav>
+</div>
+<h2 id="regulatory-background">Regulatory Background</h2>
+<p>Guidance for subsequent license renewal applicants in NUREG-2192, “Standard Review Plan for Review of Subsequent License Renewal Applications for Nuclear Power Plants,” (or SRP-SLR), Section 3.5.2.2.2.6, “Reduction of Strength and Mechanical Properties of Concrete Due to Irradiation,” describes a method for determining whether the applicant has met the requirements of the NRC regulations in 10 CFR 54.21 by providing the acceptance criterion for the aging management of the reduction of strength and mechanical properties of concrete due to irradiation as it pertains to the reactor biological shield (or bioshield) wall <span class="citation" data-cites="nureg2192">(<a href="#ref-nureg2192" role="doc-biblioref">NRC 2017</a>)</span>.</p>
+<p>Regarding the assessment of irradiation damage, the guidance states:</p>
+<blockquote>
+<p>Reduction of strength, loss of mechanical properties, and cracking due to irradiation could occur in [pressurized water reactor (PWR)] and [boiling water reactor] Group 4 concrete structures that are exposed to high levels of neutron and gamma radiation. These structures include the reactor (primary/biological) shield wall, the sacrificial shield wall, and the reactor vessel support/pedestal structure. Data related to the effects and significance of neutron and gamma radiation on concrete mechanical and physical properties is limited, especially for conditions (dose, temperature, etc.) representative of light-water reactor (LWR) plants. However, based on literature review of existing research, radiation fluence limits of 1 × 10<sup>19</sup> [neutrons per square centimeter (n/cm<sup>2</sup>)] neutron radiation and 1 × 10<sup>8</sup> [Gray (Gy)] (1 × 10<sup>10</sup> rad) gamma dose are considered conservative radiation exposure levels beyond which concrete material properties may begin to degrade markedly.</p>
+</blockquote>
+<blockquote>
+<p>Further evaluation is recommended of a plant-specific program to manage aging effects of irradiation if the estimated (calculated) fluence levels or irradiation dose received by any portion of the concrete from neutron (fluence cutoff [energy greater than 0.1 million-electron-volts [(E &gt; 0.1 MeV)] or gamma radiation exceeds the respective threshold level during the subsequent period of extended operation or if plant-specific [operating experience] of concrete irradiation degradation exists that may impact intended functions. Higher fluence or dose levels may be allowed in the concrete if tests and/or calculations are provided to evaluate the reduction in strength and/or loss of mechanical properties of concrete from those fluence levels, at or above the operating temperature experienced by the concrete, and the effects are applied to the design calculations. Supporting calculations/analyses, test data, and other technical basis are provided to estimate and evaluate fluence levels and the plant-specific program. The acceptance criteria are described in BTP RLSB-1 (Appendix A.1 of this SRP-SLR).</p>
+</blockquote>
+<p>The NRC has performed confirmatory studies to evaluate the maximum fluence/dose levels throughout a representative Westinghouse 3-loop PWR bioshield in support of a first-of-a-kind review of the Florida Power &amp; Light Company’s Turkey Point Unit-3,4 subsequent license renewal application. The objective was to confirm the applicant’s best-estimate (BE) maximum fluence/dose estimates given that this type of fluence evaluation is not within the scope of existing regulatory guidance for calculational fluence methodologies, which is documented in <span class="citation" data-cites="rg1190"><a href="#ref-rg1190" role="doc-biblioref">NRC</a> (<a href="#ref-rg1190" role="doc-biblioref">2001</a>)</span>. Specifically, the existing guidance is geared toward BE plus uncertainty high energy neutron fluence (i.e., energies greater that 1 mega electron volt - E &gt; 1 MeV - evaluations) of reactor pressure vessels near the reactor core midplane. That is, the guidance does not consider the effect on calculation qualification due to:</p>
+<ol type="1">
+<li>The portion of the neutron spectrum between E &gt; 0.1 Mev and E &gt; 1 MeV,</li>
+<li>Coupled neutron and gamma transport, and</li>
+<li>Additional sensitivity/uncertainty of bioshield material characteristics.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+</ol>
+<h2 id="objectives">Objectives</h2>
+<h3 id="regulatory">Regulatory</h3>
+<p>The regulatory objective of the study is to perform high fidelity simulations to understand:</p>
+<ol type="1">
+<li>The range of calculational uncertainties for the maximum neutron flux and gamma dose rates (i.e. “the responses”) throughout a representative bioshield.</li>
+<li>The relative importance of bioshield material uncertainties on predicted “damage depth.”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+</ol>
+<h3 id="research">Research</h3>
+<p>Coupled neutron-gamma transport calculations for characterization of bioshield material degradation have not been extensively studied. This is partly due to the fact that nuclear reactors in the U.S. were not envisioned to receive multiple license extensions, resulting in irradiation damage increasing in scope (i.e., number of components affected) over time. However, it is now being predicted that some bioshields (PWRs in particular) will now exceed acceptable damage thresholds at least for some fraction of these massive structures. Research is also ongoing to refine understanding of radiation damage thresholds (<span class="citation" data-cites="cr7171"><a href="#ref-cr7171" role="doc-biblioref">NRC</a> (<a href="#ref-cr7171" role="doc-biblioref">2013</a>)</span>; <span class="citation" data-cites="remecISRD16"><a href="#ref-remecISRD16" role="doc-biblioref">Remec et al.</a> (<a href="#ref-remecISRD16" role="doc-biblioref">2018</a>)</span>). Therefore, the research objective is to glean insights into methods for extracting useful uncertainty information in support of the regulatory objective defined above, and further to determine the viability of various uncertainty quantification (UQ) methods to address:</p>
+<ol type="1">
+<li>Determining estimates of uncertainty from sampling a high dimension input space.</li>
+<li>Ranking important contributors to response uncertainty.</li>
+<li>Estimating sensitivity coefficients of important contributors to the responses.</li>
+</ol>
+<p>Finally, an approach to characterizing response uncertainty in light of Regulatory Objective 2 listed above will be recommended.</p>
+<h2 id="model-setup">Model Setup</h2>
+<p>Continuous energy Monte Carlo (CE-MC), using the MAVRIC sequence within the SCALE computer code package <span class="citation" data-cites="scale623">(<a href="#ref-scale623" role="doc-biblioref">Rearden and Jessee 2018</a>)</span>, was selected for this study because it requires less modeling time and less approximation over the problem domain (i.e., space, energy, angle) relative to the current industry-standard practice of using deterministic methods such as discrete ordinates (or the method of characteristics),<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> and solution acceleration techniques can now be utilized to get response statistics in a very reasonable amount of time on modest computational platforms <span class="citation" data-cites="wagner2009forward">(<a href="#ref-wagner2009forward" role="doc-biblioref">Wagner, Blakeman, and Peplow 2009</a>)</span>.</p>
+<p>For this work, all calculations were performed on an Amazon EC2 General Purpose compute M5 instance.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<h2 id="initial-be-work-with-scale-mavric">Initial BE Work with SCALE-MAVRIC</h2>
+<p>Internal studies at the NRC over the past several years have aimed at benchmarking the <code>SCALE/MAVRIC</code> simulation tool to standard shielding benchmarks discussed in Regulatory Guide 1.190 <span class="citation" data-cites="rg1190">(<a href="#ref-rg1190" role="doc-biblioref">NRC 2001</a>)</span> – namely VENUS-3 experimental and H.B. Robinson, Unit 2 (HBR-2) operating reactor benchmarks. <code>SCALE/MAVRIC</code> results compared very well for both benchmarks. The main finding of these studies was that <code>SCALE/MAVRIC</code> is well-suited for efficient (i.e., single processor wall clock time on the order of hours) and high-fidelity (i.e., three-dimensional space and continuous energy physics) shielding studies to inform regulatory activities – confirmatory analyses and guidance development in particular.</p>
+<p>A variant of the HBR-2 benchmark was modeled in this study mostly consistent with the model described in <span class="citation" data-cites="field2015radiation"><a href="#ref-field2015radiation" role="doc-biblioref">Field, Remec, and Le Pape</a> (<a href="#ref-field2015radiation" role="doc-biblioref">2015</a>)</span>.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<h2 id="uq-methods-studied">UQ Methods Studied</h2>
+<p>To address the research objectives, multiple UQ methods were studied using <code>DAKOTA</code> <span class="citation" data-cites="dakotaman">(<a href="#ref-dakotaman" role="doc-biblioref">Adams et al. 2019</a>)</span> to explore the types of resulting information available from each and its relative value to the regulatory problem being studied. Basic statistical quantities<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> are used to compare and contrast the various methods.</p>
+<h3 id="latin-hypercube-sampling">Latin Hypercube Sampling</h3>
+<p>Monte Carlo sampling is often considered the gold standard in forward UQ. However, for a high dimensional input space, there is risk of inadequately covering the sampling space. In general, it has been shown that Latin hypercube sampling (LHS) does a better job of covering the sampling space <span class="citation" data-cites="dakotaman">(see <a href="#ref-dakotaman" role="doc-biblioref">Adams et al. 2019</a>, Chapter 5.2)</span>, therefore LHS has been used instead of Monte Carlo sampling in this study as a similar but more robust option. Since the computational cost of a single <code>SCALE/MAVRIC</code> calculation does not depend on the number of inputs when LHS is used, it will serve as the reference UQ analysis.</p>
+<h3 id="polynomial-chaos-expansion">Polynomial Chaos Expansion</h3>
+<p>Polynomial chaos expansion (PCE) is a UQ method that has received some attention over the past several years in the nuclear engineering community among many others (<span class="citation" data-cites="wu2017inverse"><a href="#ref-wu2017inverse" role="doc-biblioref">Wu and Kozlowski</a> (<a href="#ref-wu2017inverse" role="doc-biblioref">2017</a>)</span>; <span class="citation" data-cites="bledsoe2018application"><a href="#ref-bledsoe2018application" role="doc-biblioref">Bledsoe, Jessee, and Knowles</a> (<a href="#ref-bledsoe2018application" role="doc-biblioref">2018</a>)</span>; <span class="citation" data-cites="pceneutdiff"><a href="#ref-pceneutdiff" role="doc-biblioref">Williams</a> (<a href="#ref-pceneutdiff" role="doc-biblioref">2007</a>)</span>). Attractive PCE characteristics are its high accuracy and cost-effective estimation of uncertainty.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Additionally, PCE produces measures of input relative importance via Sobol sensitivity indices <span class="citation" data-cites="sobol2001global">(<a href="#ref-sobol2001global" role="doc-biblioref">Sobol 2001</a>)</span>, and produces response sensitivity coefficients as a function of inputs for quick estimates of uncertainty. However, the main downside is that the number of simulations depends on the number of inputs and the desirable level of accuracy in the Gaussian quadrature procedure utilized in the method. Therefore, without further optimization, the particle transport simulation time practically limits the number of inputs that can be studied. Using a “hybrid method” such as is implemented in <code>SCALE/MAVRIC</code>, PCE becomes practical for the particle transport problem defined in this study. However, more efficient state-of-the-art particle transport methods in development now could allow for even larger scope UQ studies (<span class="citation" data-cites="wang2018novel"><a href="#ref-wang2018novel" role="doc-biblioref">Wang and Haghighat</a> (<a href="#ref-wang2018novel" role="doc-biblioref">2018</a>)</span>; <span class="citation" data-cites="walters2018rapid"><a href="#ref-walters2018rapid" role="doc-biblioref">Walters, Roskoff, and Haghighat</a> (<a href="#ref-walters2018rapid" role="doc-biblioref">2018</a>)</span>).</p>
+<h3 id="probability-bounds-analyis">Probability Bounds Analyis</h3>
+<p>Probability bounds analysis (PBA) is the simplest of the UQ methods in that it’s objective is to find the global minimum and maximum of the response. This is useful to check if other UQ methods can actually approach “true” minimum and maximum values of the response. It can also be useful if a bounding analysis is desired. However, the current implementation of this (at least in <code>DAKOTA</code>) is computationally expensive because it implements an iterative search method that constrains SCALE-MAVRIC simulations to be run serially versus the LHS and PCE methods, which can be run in parallel.</p>
+<h2 id="uq-exploration-using-max-bioshield-0-dimension-responses">UQ Exploration Using Max Bioshield 0-Dimension Responses</h2>
+<h3 id="inputs-studied">Inputs Studied</h3>
+<p>It is important to first note that there are many contributors to the response uncertainty being studied here, but this study is focusing on the contribution of bioshield material uncertainties on response uncertainty. For example, reactor source term uncertainty has been completely left out. Additional uncertainty studies can be combined with work here, but again the point of this study is to highlight the relative importance of bioshield material uncertainties. Core water density uncertainty has been chosen here as a known dominant core-originating contributor to response uncertainty for comparison purposes to judge the importance of the biosheild material uncertainties.</p>
+<p>Specific inputs of study that are included to better understand their importance are the thickness of the stainless steel liner that lines the concrete bioshield, the bioshield concrete density, and the weight percents of the materials that make up the concrete. Core soluble boron is also added to allow for an intuition check. Table 1 gives the inputs, means, standard deviation, and lower/upper bounds for sampling; all distributions were specified as Gaussian. Since most material information being sampled is not well characterized, we identify it as epistemic uncertainty. Modest standard deviations of 10% are specified for all but 2 inputs – core water density at 5% and the stainless steel liner thickness significantly more to obtain a more meaningful variation during sampling.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> While there may be some correlation between concrete density and concrete materials (and potentially others), this has been ignored, and all inputs are assumed to be independent. Since this study is more focused on relative importance and comparison of UQ methods, it was determined that the precise specification of input distributions are of less concern and reasonable simplifcations are therefore appropriate.</p>
+<div class="layout-chunk" data-layout="l-body">
+<table>
+<caption><span id="tab:unnamed-chunk-1">Table 1: </span>Input variable specifications.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">input</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">stdDev</th>
+<th style="text-align: right;">lwrBnd</th>
+<th style="text-align: right;">uprBnd</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">h2oDens</td>
+<td style="text-align: right;">0.766</td>
+<td style="text-align: right;">0.03830</td>
+<td style="text-align: right;">0.6511</td>
+<td style="text-align: right;">0.88090</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ppmB</td>
+<td style="text-align: right;">500.000</td>
+<td style="text-align: right;">50.00000</td>
+<td style="text-align: right;">350.0000</td>
+<td style="text-align: right;">650.00000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">concDens</td>
+<td style="text-align: right;">2.280</td>
+<td style="text-align: right;">0.22800</td>
+<td style="text-align: right;">1.9380</td>
+<td style="text-align: right;">2.62200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">concFe</td>
+<td style="text-align: right;">0.500</td>
+<td style="text-align: right;">0.05000</td>
+<td style="text-align: right;">0.3500</td>
+<td style="text-align: right;">0.65000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">concC</td>
+<td style="text-align: right;">0.100</td>
+<td style="text-align: right;">0.01000</td>
+<td style="text-align: right;">0.0700</td>
+<td style="text-align: right;">0.13000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">concSi</td>
+<td style="text-align: right;">8.500</td>
+<td style="text-align: right;">0.85000</td>
+<td style="text-align: right;">5.9500</td>
+<td style="text-align: right;">11.05000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">concCa</td>
+<td style="text-align: right;">29.400</td>
+<td style="text-align: right;">2.94000</td>
+<td style="text-align: right;">20.5800</td>
+<td style="text-align: right;">38.22000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">concK</td>
+<td style="text-align: right;">0.047</td>
+<td style="text-align: right;">0.00470</td>
+<td style="text-align: right;">0.0329</td>
+<td style="text-align: right;">0.06110</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">concAl</td>
+<td style="text-align: right;">0.530</td>
+<td style="text-align: right;">0.05300</td>
+<td style="text-align: right;">0.3710</td>
+<td style="text-align: right;">0.68900</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">concMg</td>
+<td style="text-align: right;">0.220</td>
+<td style="text-align: right;">0.02200</td>
+<td style="text-align: right;">0.1540</td>
+<td style="text-align: right;">0.28600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">concNa</td>
+<td style="text-align: right;">0.200</td>
+<td style="text-align: right;">0.02000</td>
+<td style="text-align: right;">0.1400</td>
+<td style="text-align: right;">0.26000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">concP</td>
+<td style="text-align: right;">0.200</td>
+<td style="text-align: right;">0.02000</td>
+<td style="text-align: right;">0.1400</td>
+<td style="text-align: right;">0.26000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">concS</td>
+<td style="text-align: right;">0.200</td>
+<td style="text-align: right;">0.02000</td>
+<td style="text-align: right;">0.1400</td>
+<td style="text-align: right;">0.26000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">concH</td>
+<td style="text-align: right;">0.600</td>
+<td style="text-align: right;">0.06000</td>
+<td style="text-align: right;">0.4200</td>
+<td style="text-align: right;">0.78000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">linerR</td>
+<td style="text-align: right;">0.635</td>
+<td style="text-align: right;">0.42545</td>
+<td style="text-align: right;">0.0000</td>
+<td style="text-align: right;">1.91135</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Below is a summary of all simulations showing the median results, distribution spread (50% of the data is in the white box), and the extremes.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> As expected, PBA produces the most extreme values. In terms of response coverage, LHS and PCE are similar, but PCE contains more spread. Although more spread is shown here, a higher standard deviation is not observed from the resulting PCE method <em>polynomial expansion</em> (refer to Table 2 below).</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<img src="bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-2-1.png" alt="Distribution of simulation responses by UQ method." width="672" />
+<p class="caption">
+Figure 1: Distribution of simulation responses by UQ method.
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 2: </span>UQ method summary statistics.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">response</th>
+<th style="text-align: left;">uqType</th>
+<th style="text-align: right;">samples</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">stdDev</th>
+<th style="text-align: right;">relStdDev</th>
+<th style="text-align: right;">wallTime</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">maxNeutronFluxE&gt;0.1MeV</td>
+<td style="text-align: left;">lhs</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">1.66e+10</td>
+<td style="text-align: right;">3.56e+09</td>
+<td style="text-align: right;">0.2144578</td>
+<td style="text-align: right;">20200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">maxNeutronFluxE&gt;0.1MeV</td>
+<td style="text-align: left;">lhs</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">1.66e+10</td>
+<td style="text-align: right;">3.67e+09</td>
+<td style="text-align: right;">0.2210843</td>
+<td style="text-align: right;">7160</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">maxNeutronFluxE&gt;0.1MeV</td>
+<td style="text-align: left;">pce</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">1.66e+10</td>
+<td style="text-align: right;">3.61e+09</td>
+<td style="text-align: right;">0.2174699</td>
+<td style="text-align: right;">10500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">maxPhotonDoseRate</td>
+<td style="text-align: left;">lhs</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">3.06e+04</td>
+<td style="text-align: right;">6.49e+03</td>
+<td style="text-align: right;">0.2120915</td>
+<td style="text-align: right;">20200</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">maxPhotonDoseRate</td>
+<td style="text-align: left;">lhs</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">3.08e+04</td>
+<td style="text-align: right;">7.46e+03</td>
+<td style="text-align: right;">0.2422078</td>
+<td style="text-align: right;">7160</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">maxPhotonDoseRate</td>
+<td style="text-align: left;">pce</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">3.06e+04</td>
+<td style="text-align: right;">6.51e+03</td>
+<td style="text-align: right;">0.2127451</td>
+<td style="text-align: right;">10500</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="lhs-reference-results">LHS Reference Results</h3>
+<p>LHS was conducted for 120 samples and 240 samples with little change in statistical moments.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> A look at the correlations quickly shows the most influential inputs.</p>
+<div class="layout-chunk" data-layout="l-body">
+<table>
+<caption><span id="tab:unnamed-chunk-4">Table 3: </span>Top four correlations with neutron flux.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">input</th>
+<th style="text-align: right;">maxN</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">h2oDens</td>
+<td style="text-align: right;">-0.9396423</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">concDens</td>
+<td style="text-align: right;">-0.1630374</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">linerR</td>
+<td style="text-align: right;">0.1630147</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">concH</td>
+<td style="text-align: right;">-0.1406189</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<table>
+<caption><span id="tab:unnamed-chunk-5">Table 4: </span>Top four correlations with gamma dose rate.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">input</th>
+<th style="text-align: right;">maxP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">h2oDens</td>
+<td style="text-align: right;">-0.8741187</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">concH</td>
+<td style="text-align: right;">0.1089407</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">concDens</td>
+<td style="text-align: right;">-0.0829845</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ppmB</td>
+<td style="text-align: right;">-0.0528148</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>For both bioshield maximum incident neutron flux and gamma dose rate, core water density is clearly the most important input parameter. Concrete density, the bioshield liner, and concrete hydrogen content may also have some influence, but are seen to be relatively minor in comparison to core water density for both responses of interest. It should also be noted that such low values of the correlation coefficients can be misleading<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> and are generally not useful (i.e., there is more noise than signal). A visual representation of the correlation structure in Figure 2 is also useful to get a sense of the input/output relationships and verify the numeric results.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> If one were to rank the 4 most influential input variables for this problem setup, one might choose core water density, concrete density, stainless steel liner thickness, and hydrogen content. Figure 2 shows strengths of correlations by distance and only draws lines where correlations exceed 0.3 giving a better impression of input influence – it is seen that concrete density, the stainless steel liner, and hyrogen content have little influence. This makes intuitive sense because the response of interest is at the concrete surface so the concrete material characteristics don’t yet have a chance to influence the responses; the liner is so thin that it’s influence is in the noise of the concrete concentration inputs. However, it is expected that the influence of the concrete material characteristics will change as the response location moves further into the concrete.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
+<img src="bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-6-1.png" alt="Correlation plot." width="672" />
+<p class="caption">
+Figure 2: Correlation plot.
+</p>
+</div>
+</div>
+<h3 id="pce-sobol-indeces-and-sensitivity-coefficients">PCE Sobol Indeces and Sensitivity Coefficients</h3>
+<p>Comparing the 240 sample LHS case to the 125 PCE method case, the moments are seen to agree well providing confidence in the PCE method that only used the 3 most influential inputs of the 15 as shown in Table 1.</p>
+<p>Selecting the 4 most influential inputs based on insights from the LHS study, the PCE method is implemented; although 3 inputs (not including hydrogen concentration variation) produced acceptable moments, additional comparison of LHS correlation indications with PCE Sobol index indications was desirable. Again, due to an exponential increase in computation time with an increasing number of inputs specified, using PCE with some type of algorithmic pruning (if available) of lower order interactions ahead of time, to limit the number of simulations that will still produce reliable polynomial coefficients, is essential for computationally expensive simulations (e.g., see <span class="citation" data-cites="yang2017polynomial"><a href="#ref-yang2017polynomial" role="doc-biblioref">Yang, Xiong, and Wang</a> (<a href="#ref-yang2017polynomial" role="doc-biblioref">2017</a>)</span>, Section 3); otherwise input variables must be manually chosen based on judgment. Given that it wasn’t clear from the LHS correlations alone which input variable is more important – stainless steel liner thickness or concrete hydrogen content – PCE is used to gain additional insight to determine if all 4 versus only 3 inputs are minimally necessary to capture the expected response variation.</p>
+<p>Using the <em>main</em> Sobol indeces, the inputs and their interactions that are most significant in predicting the response of interest can be identified. Comparing the difference between the main and total Sobol indeces is useful to identify if there are any major input interactions. If looking at neutron flux as the response, it is seen that the main and total Sobol indeces for the core water density are practically the same and very close to 1 – they are 0.961 and 0.969, respectively. This means that there are no signficant input interactions with core water density. Also, being so close to 1 means that core water density can practically predict the max bioshield neutron flux without consideration of any other inputs.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<p>The sensitivity coefficient was determined to be -9.15e+10 neutrons/cm<sup>2</sup>-s per gram/cm<sup>3</sup> of core water density for the neutron flux and -2.49e+05 rad per second for the gamma dose rate; note that the signs match intuition – increasing the core water density decreases neutron and gamma flux (and drastically).<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> An example of applying this sensitivity coefficient would be to check that the input standard deviation specified for core water density produces the standard deviation of the response. For core water density, the standard deviation of 10% is 0.0383 g/cm<sup>3</sup>. Multiplying this with the sensivitiy coefficients produces a reduction in neutron flux and gamma dose rate of 3.50e+09 and 9.54e+03, respectively. The neutron flux is similar to the actual response standard deviations given in Table 2 from the LHS study, but the gamma dose rate is noticeably different; -2% and 47%, respectively. It would be expected that the gamma dose rate is not as well explained by water density alone since the difference between its main and total Sobol indeces are not as close together as for the neutron flux – 0.788 and 0.939, respectively. Upon further inspection, of the input interactions, the following are observed: h2oDens * concDens (6.66%), h2oDens * linerR (2.31%), concDens * linerR (4.58%), and h2oDens * concDens * linerR (6.13%), which together add to the main Sobol index for a total sum of 98.5%. Using the corresponding polynomial coefficients, as shown in Table 5,<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> reduces the difference between the reference LHS response standard deviation and that based on the PCE polynomial coefficents to within -14% versus 47% if using only the gamma dose rate core water density sensitivity coefficient. It is noted that including concrete hydrogen content as a 4th input does not result in any meaningful contribution to any of the Sobol indeces indicating that the only input variables that matter (of the ones studied here) for predicting maximum neutron flux and gamma dose rate incident on the concrete bioshield are core water density, bioshield concrete density, and bioshield stainless steel liner thickness.</p>
+<div class="layout-chunk" data-layout="l-body">
+<table>
+<caption><span id="tab:unnamed-chunk-8">Table 5: </span>Dominating PCE polynomial coefficients.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;">polynomialCoeff</th>
+<th style="text-align: right;">h2oDens</th>
+<th style="text-align: right;">concDens</th>
+<th style="text-align: right;">linerR</th>
+<th style="text-align: right;">product</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">30600</td>
+<td style="text-align: right;">1.0000</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.00000</td>
+<td style="text-align: right;">30600</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">-150000</td>
+<td style="text-align: right;">0.0383</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">1.00000</td>
+<td style="text-align: right;">-5750</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">-54300</td>
+<td style="text-align: right;">0.0383</td>
+<td style="text-align: right;">0.228</td>
+<td style="text-align: right;">1.00000</td>
+<td style="text-align: right;">-474</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">25400</td>
+<td style="text-align: right;">0.0383</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">0.42545</td>
+<td style="text-align: right;">413</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">63600</td>
+<td style="text-align: right;">0.0383</td>
+<td style="text-align: right;">0.228</td>
+<td style="text-align: right;">0.42545</td>
+<td style="text-align: right;">236</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In summary, UQ with PCE compares well to UQ with LHS as long <em>as the important input variables are included for polynomial coefficient development</em> so some knowledge of input importance must be known a priori with this manual approach. PCE has the advantage of providing sensitivity coefficients for local uncertainty estimation, Sobol indeces to judge input importance, and polynomial coefficients related to each input variable and all interactions to serve as a surrogate model for future use (e.g., further forward UQ studies).</p>
+<h3 id="pba-convergence">PBA Convergence</h3>
+<p>The PBA method serves as a useful tool for bounding analysis in support of a conservative approach to UQ as seen by the sheer number of simulations needed for this type of analysis versus LHS and PCE – 552 and 869 cases if optimizing on the neutron flux and gamma dose rate, respectively.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> Additionally, the majority of these cases are run serially rather than in parallel making this method take even longer per simulation. It should be noted that all 15 input variables were included in the global searches.</p>
+<p>The log scale of Figure 3 accentuates the wild swings in the “expected improvement” of the “NCSU Direct” explore/exploit global minimum/maximum solver (see pg. 134 of <span class="citation" data-cites="dakotaman"><a href="#ref-dakotaman" role="doc-biblioref">Adams et al.</a> (<a href="#ref-dakotaman" role="doc-biblioref">2019</a>)</span>). The responses, however, do not change much on this scale, but a characteristic jump is observed for both responses. The evolution of the response is shown more clearly in Figure 4.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-9"></span>
+<img src="bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-9-1.png" alt="PBA method &quot;NCSU Direct&quot; solver convergence." width="672" />
+<p class="caption">
+Figure 3: PBA method “NCSU Direct” solver convergence.
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
+<img src="bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-10-1.png" alt="PBA method &quot;NCSU Direct&quot; solver response evolution." width="672" />
+<p class="caption">
+Figure 4: PBA method “NCSU Direct” solver response evolution.
+</p>
+</div>
+</div>
+<p>Comparing the extreme values of the various methods in Table 6 (also shown visually in Figure 1), it is seen that if the LHS maximum is used for a bounding analysis, it would underpredict the maximum neutron flux found by PBA by about 33% and the maximum gamma dose rate by about 47%.</p>
+<div class="layout-chunk" data-layout="l-body">
+<table>
+<caption><span id="tab:unnamed-chunk-11">Table 6: </span>UQ method extreme responses.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">response</th>
+<th style="text-align: left;">uqType</th>
+<th style="text-align: right;">samples</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">wallTime</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">maxNeutronFluxE&gt;0.1MeV</td>
+<td style="text-align: left;">lhs</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">8.88e+09</td>
+<td style="text-align: right;">2.83e+10</td>
+<td style="text-align: right;">20200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">maxNeutronFluxE&gt;0.1MeV</td>
+<td style="text-align: left;">lhs</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">9.23e+09</td>
+<td style="text-align: right;">3.15e+10</td>
+<td style="text-align: right;">7160</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">maxNeutronFluxE&gt;0.1MeV</td>
+<td style="text-align: left;">pce</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">8.83e+09</td>
+<td style="text-align: right;">3.10e+10</td>
+<td style="text-align: right;">10500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">maxNeutronFluxE&gt;0.1MeV</td>
+<td style="text-align: left;">pba</td>
+<td style="text-align: right;">552</td>
+<td style="text-align: right;">6.70e+09</td>
+<td style="text-align: right;">4.20e+10</td>
+<td style="text-align: right;">340000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">maxPhotonDoseRate</td>
+<td style="text-align: left;">lhs</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">1.78e+04</td>
+<td style="text-align: right;">5.17e+04</td>
+<td style="text-align: right;">20200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">maxPhotonDoseRate</td>
+<td style="text-align: left;">lhs</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">1.77e+04</td>
+<td style="text-align: right;">5.31e+04</td>
+<td style="text-align: right;">7160</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">maxPhotonDoseRate</td>
+<td style="text-align: left;">pce</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">1.61e+04</td>
+<td style="text-align: right;">5.30e+04</td>
+<td style="text-align: right;">10500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">maxPhotonDoseRate</td>
+<td style="text-align: left;">pba</td>
+<td style="text-align: right;">869</td>
+<td style="text-align: right;">1.23e+04</td>
+<td style="text-align: right;">9.79e+04</td>
+<td style="text-align: right;">665000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The values of the 15 inputs that produced the minimum/maximum values are also provided as part of the output, but are not shown here. This may be useful to help determine if minimizing/maximizing a given input variable would lead to a decrease/increase in a response of interest.</p>
+<h2 id="uq-exploration-using-max-bioshield-1-d-responses">UQ Exploration Using Max Bioshield 1-D Responses</h2>
+<p>To assume all of the bioshield concrete is exposed to the maximum amount of neutron fluence and gamma dose is overly conservative for estimating how much of the concrete will be degraded by the end of plant life. Therefore, understanding how far the radiation “penetrates” into the bioshield with respect to an assigned damage threshold – i.e., the damage depth – is of some merit.</p>
+<p>Based on the insights gained from the 0-D UQ study above, the UQ methods used are limited to LHS and PCE. Based on the performance of PCE from the 0-D study, it is of interest to see if PCE again provides similar results to LHS, but <em>throughout</em> the bioshield. To help understand the sensitivity of the response <em>uncertainty</em> to the inclusion of different numbers of inputs, 3 LHS cases were included: 1 input (core water density), 3 inputs (core water density, concrete density, and liner thickness), and all 15 inputs. Comparing these cases will give some idea of the relative importance of the various inputs. An additional case using PCE is also added with the same 3 input variables as the LHS case.</p>
+<h3 id="responses-with-uncertainties-through-bioshield">Responses with Uncertainties Through Bioshield</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-12"></span>
+<img src="bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-12-1.png" alt="Axial maximum radial response throughout bioshield." width="960" />
+<p class="caption">
+Figure 5: Axial maximum radial response throughout bioshield.
+</p>
+</div>
+</div>
+<ul>
+<li><p>The mesh tally is defined at the peak azimuthal location corresponding to the HBR-2 benchmark (a couple degrees above the core centerline to account for presence of detector well).</p></li>
+<li><p>Monte Carlo errors were extracted for each given mesh tally cell.</p></li>
+</ul>
+<h3 id="uncertainties-through-the-bioshield">Uncertainties Through the Bioshield</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-13"></span>
+<img src="bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-13-1.png" alt="Axial maximum relative uncertainty throughout bioshield." width="960" />
+<p class="caption">
+Figure 6: Axial maximum relative uncertainty throughout bioshield.
+</p>
+</div>
+</div>
+<h4 id="main-observations">Main Observations</h4>
+<p>The main goal of this study was to get a general idea of how much uncertainty the concrete adds to total response uncertainty. The main takeaways are:</p>
+<ol type="1">
+<li><p>Core based uncertainties will dominate total response uncertainty up to concrete depths corresponding to radiation damage thresholds, but will eventually switch over to concrete uncertainties dominating significantly past the damage depth. This is easiest to see by examining Figure 6 1-sigma uncertainties between <code>lhs1Var</code> and <code>lhs3Var</code><a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> cases (they start out similarly) and in Figure 7 below.</p></li>
+<li><p>The independence of core- and concrete-based uncertainties can be used to separate the core-based uncertainties in <code>lhs1Var</code> from core- plus conrete-based uncertainties in <code>lhs15Var</code> via root-mean-sum-of-squares as was done in Figure 7.</p></li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-14"></span>
+<img src="bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-14-1.png" alt="Axial maximum relative uncertainty throughout bioshield." width="672" />
+<p class="caption">
+Figure 7: Axial maximum relative uncertainty throughout bioshield.
+</p>
+</div>
+</div>
+<ol start="3" type="1">
+<li><p>Uncertainties up to concrete are likely less than 20-30%<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> for most methods at the axial maximum location (water density alone showed a ~20% 1-sigma from <code>lhs1Var</code> in Figure 6) and remain roughly constant throughout the concrete as seen in the <code>lhs1Var</code> case in Figure 6. Concrete-based uncertainties can be added directly to core-based uncertainties in future studies to estimate core- plus concrete-based uncertainties throughout the wall.</p></li>
+<li><p>Uncertainty is mostly captured by the 3 input models versus the 15 input model; however, <em>maximum</em> uncertainty – for the neutron case only – is not; this may be unimportant because the response is so low, but allows for understanding of relative contribution to overall response uncertainty.</p></li>
+<li><p>Again, moments derived from PCE <em>samples</em> are shown, but are not the same as the polynomial coefficient derived moments. Nonetheless, the polynomial coefficient derived red 1-sigma line for the <code>pce3Var</code> case is similar to but larger than the corresponding <code>lhs3Var</code> case.</p></li>
+<li><p>Sobol indeces from the <code>pce3Var</code> case provides a numerical basis for the influence of input variables on a given response as seen in Figure 8. The inherent advantage of Sobol indeces as shown in Figure 8 versus correlation coefficients provided in Figure 2 and corresponding tables from LHS in terms of interpretability is noted.</p></li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-15"></span>
+<img src="bepu-ce-mc-n-p-transport-3loop-bioshield_files/figure-html5/unnamed-chunk-15-1.png" alt="Axial maximum Sobol indeces throughout bioshield." width="672" />
+<p class="caption">
+Figure 8: Axial maximum Sobol indeces throughout bioshield.
+</p>
+</div>
+</div>
+<h3 id="radiation-damage-depth-based-on-the-maximum-uncertainty">Radiation Damage Depth Based on the Maximum Uncertainty</h3>
+<p>To get an idea of the variation in predicted radiation damage depth between UQ methods, the maximum uncertainty resulting from the implementation of each method studied was calculated. Looking only at the predicted maximum depths on an absolute basis (<code>maxUnc</code> column of Table 7), all methods give very similar results. The outcome of the study indicates underprediction in neutron damage depth of around ~5 cm and ~14 cm for gamma damage depth. These are plausible results, but are based on a limited set of core-based uncertainty and do not account for any nuclear data uncertainty. However, maximum flux/dose uncertainties were used to determine the damage depth uncertainty in this case, which may somewhat compensate for this. Nonetheless, the uncertainty and input importance information gleaned above can be used in future studies of this problem.</p>
+<div class="layout-chunk" data-layout="l-body">
+<table>
+<caption><span id="tab:unnamed-chunk-16">Table 7: </span>Damage depth by UQ method and radiation type.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">study</th>
+<th style="text-align: right;">BE</th>
+<th style="text-align: right;">maxUnc</th>
+<th style="text-align: right;">absDiff</th>
+<th style="text-align: right;">relDiff</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">neutron</td>
+<td style="text-align: left;">lhs15Var</td>
+<td style="text-align: right;">7.58</td>
+<td style="text-align: right;">12.62855</td>
+<td style="text-align: right;">-5.048547</td>
+<td style="text-align: right;">-0.6660352</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">neutron</td>
+<td style="text-align: left;">pce3Var</td>
+<td style="text-align: right;">7.58</td>
+<td style="text-align: right;">12.32498</td>
+<td style="text-align: right;">-4.744977</td>
+<td style="text-align: right;">-0.6259865</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">neutron</td>
+<td style="text-align: left;">lhs3Var</td>
+<td style="text-align: right;">7.58</td>
+<td style="text-align: right;">11.60333</td>
+<td style="text-align: right;">-4.023331</td>
+<td style="text-align: right;">-0.5307825</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">neutron</td>
+<td style="text-align: left;">lhs1Var</td>
+<td style="text-align: right;">7.58</td>
+<td style="text-align: right;">10.49239</td>
+<td style="text-align: right;">-2.912386</td>
+<td style="text-align: right;">-0.3842198</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">photon</td>
+<td style="text-align: left;">pce3Var</td>
+<td style="text-align: right;">17.18</td>
+<td style="text-align: right;">30.82339</td>
+<td style="text-align: right;">-13.643393</td>
+<td style="text-align: right;">-0.7941440</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">photon</td>
+<td style="text-align: left;">lhs15Var</td>
+<td style="text-align: right;">17.18</td>
+<td style="text-align: right;">29.75828</td>
+<td style="text-align: right;">-12.578284</td>
+<td style="text-align: right;">-0.7321469</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">photon</td>
+<td style="text-align: left;">lhs3Var</td>
+<td style="text-align: right;">17.18</td>
+<td style="text-align: right;">29.73675</td>
+<td style="text-align: right;">-12.556753</td>
+<td style="text-align: right;">-0.7308937</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">photon</td>
+<td style="text-align: left;">lhs1Var</td>
+<td style="text-align: right;">17.18</td>
+<td style="text-align: right;">26.49821</td>
+<td style="text-align: right;">-9.318210</td>
+<td style="text-align: right;">-0.5423871</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="conclusions-and-future-study">Conclusions and Future Study</h2>
+<p>The regulatory and research objectives outlined above have been achieved. Although the selection of core- and concrete-based input uncertainties were not exhaustive, for the coupled neutron-gamma transport problem defined in this study under the current regulatory framework, core-based uncertainties<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> clearly dominate and should be accounted for. A 20-30% underestimation in concrete damage (derived from <code>lhs1Var</code> results in Table 7) was observed assuming a single core-based uncertainty (i.e., core peripheral water density) is not accounted for; an additional 15-20% underestimation (derived from <code>lhs15Var</code> minus <code>lhs1Var</code> results in Table 7) was observed if the assumed concrete-based uncertainties are not accounted for. These uncertainty estimates pertain to a specific reactor and surrounding structures model, but it is expected that similar results could be expected for other reactor and surrounding structures models in the vicinity of the core midplane.</p>
+<p>It is well known that nuclear data uncertainties can be significant contributors to response uncertainty in radiation transport problems (<span class="citation" data-cites="cabellos2014propagation"><a href="#ref-cabellos2014propagation" role="doc-biblioref">Cabellos et al.</a> (<a href="#ref-cabellos2014propagation" role="doc-biblioref">2014</a>)</span>; <span class="citation" data-cites="diez2015comparison"><a href="#ref-diez2015comparison" role="doc-biblioref">Diez et al.</a> (<a href="#ref-diez2015comparison" role="doc-biblioref">2015</a>)</span>). Recently, in SCALE Version 6.2, the <code>SAMPLER</code> module has been released allowing any SCALE calculation to incorporate nuclear data uncertainty <span class="citation" data-cites="samplerpres">(<a href="#ref-samplerpres" role="doc-biblioref">Wieselquist 2017</a>)</span>. Therefore, it is of interest to update the current study with a follow-on study including nuclear data uncertainty to examine the effect on the uncertainty results. Additionally, since flux/dose calculations are fed into downstream stress calculations, it may be of interest to extend this study to consider 2-D or 3-D analyses, and to better understand the flux/dose impacts on the actual stress response.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-dakotaman" class="csl-entry" role="doc-biblioentry">
+Adams, Brian M., Michael S. Eldred, Gianluca Geraci, Russell W. Hooper, John D. Jakeman, Kathryn A. Maupin, Jason A. Monschke, et al. 2019. <em>Dakota, a Multilevel Parallel Object-Oriented Framework for Design Optimization, Parameter Estimation, Uncertainty Quantification, and Sensitivity Analysis: Version 6.9.0 User’s Manual</em>. Sandia National Laboratories.
+</div>
+<div id="ref-bledsoe2018application" class="csl-entry" role="doc-biblioentry">
+Bledsoe, Keith C, Matthew Anderson Jessee, and Justin R Knowles. 2018. <span>“Application of Polynomial Chaos Expansion in Inverse Transport Problems with Neutron Multiplication Measurements and Multiple Unknowns.”</span> In <em>Proceedings of the 20th Topical Meeting of the Radiation Protection &amp; Shielding Division of ANS, Sante Fe, NM, USA</em>. LaGrange Park, IL: Oak Ridge National Lab, Oak Ridge, TN; American Nuclear Society.
+</div>
+<div id="ref-cabellos2014propagation" class="csl-entry" role="doc-biblioentry">
+Cabellos, O, E Castro, C Ahnert, and C Holgado. 2014. <span>“Propagation of Nuclear Data Uncertainties for PWR Core Analysis.”</span> <em>Nuclear Engineering and Technology</em> 46 (3): 299–312.
+</div>
+<div id="ref-diez2015comparison" class="csl-entry" role="doc-biblioentry">
+Diez, Carlos Javier, Oliver Buss, Axel Hoefer, Dieter Porsch, and Oscar Cabellos. 2015. <span>“Comparison of Nuclear Data Uncertainty Propagation Methodologies for PWR Burn-up Simulations.”</span> <em>Annals of Nuclear Energy</em> 77: 101–14.
+</div>
+<div id="ref-field2015radiation" class="csl-entry" role="doc-biblioentry">
+Field, Kevin G, I Remec, and Y Le Pape. 2015. <span>“Radiation Effects in Concrete for Nuclear Power Plants–Part i: Quantification of Radiation Exposure and Radiation Effects.”</span> <em>Nuclear Engineering and Design</em> 282: 126–43.
+</div>
+<div id="ref-rg1190" class="csl-entry" role="doc-biblioentry">
+NRC. 2001. <span>“Regulatory Guide 1.190, Calculational and Dosimetry Methods for Determining Pressure Vessel Fluence.”</span> <a href="https://www.nrc.gov/docs/ML0108/ML010890301.pdf">https://www.nrc.gov/docs/ML0108/ML010890301.pdf</a>.
+</div>
+<div id="ref-cr7171" class="csl-entry" role="doc-biblioentry">
+———. 2013. <span>“NUREG/CR-7171, a Review of the Effects of Radiation on Microstructure and Properties of Concretes Used in Nuclear Power Plants.”</span> <a href="https://www.nrc.gov/docs/ML1332/ML13325B077.pdf">https://www.nrc.gov/docs/ML1332/ML13325B077.pdf</a>.
+</div>
+<div id="ref-nureg2192" class="csl-entry" role="doc-biblioentry">
+———. 2017. <span>“NUREG-2192, Standard Review Plan for Review of Subsequent License Renewal Applications for Nuclear Power Plants - Final Report.”</span> <a href="https://www.nrc.gov/docs/ML1718/ML17188A158.pdf">https://www.nrc.gov/docs/ML1718/ML17188A158.pdf</a>.
+</div>
+<div id="ref-scale623" class="csl-entry" role="doc-biblioentry">
+Rearden, B. T., and M. A. Jessee, eds. 2018. <em>SCALE Code System, ORNL/TM-2005/39, Version 6.2.3</em>. Oak Ridge, Tennessee: Oak Ridge National Laboratory.
+</div>
+<div id="ref-remecISRD16" class="csl-entry" role="doc-biblioentry">
+Remec, I., T. M. Rosseel, K. G. Field, and Y. Le Pape. 2018. <span>“Radiation-Induced Degradation of Concrete in NPPs.”</span> In <em>Proceedings of the 16th Int. Symposium on Reactor Dosimetry, Sante Fe, NM, USA, Astm1608</em>, edited by M. H. Sparks, K. R. DePriest, and D. W. Vehar, 201–11. West Conshohocken, PA: ASTM International. https://doi.org/<a href="http://dx.doi.org/10.1520/STP160820170059">http://dx.doi.org/10.1520/STP160820170059</a>.
+</div>
+<div id="ref-sobol2001global" class="csl-entry" role="doc-biblioentry">
+Sobol, Ilya M. 2001. <span>“Global Sensitivity Indices for Nonlinear Mathematical Models and Their Monte Carlo Estimates.”</span> <em>Mathematics and Computers in Simulation</em> 55 (1-3): 271–80.
+</div>
+<div id="ref-tyson2015uncertainty" class="csl-entry" role="doc-biblioentry">
+Tyson, S, D Donovan, B Thompson, S Lynch, and M Tas. 2015. <span>“Uncertainty Modelling with Polynomial Chaos Expansion: Stage 1–Final Report.”</span>
+</div>
+<div id="ref-wagner2009forward" class="csl-entry" role="doc-biblioentry">
+Wagner, John C, Edward D Blakeman, and Douglas E Peplow. 2009. <span>“Forward-Weighted CADIS Method for Variance Reduction of Monte Carlo Calculations of Distributions and Multiple Localized Quantities.”</span> In <em>Proceedings of the 2009 Int. Conference on Advances in Mathematics, Computational Methods, and Reactor Physics, Saratoga Springs, NY, USA</em>.
+</div>
+<div id="ref-walters2018rapid" class="csl-entry" role="doc-biblioentry">
+Walters, William J, Nathan J Roskoff, and Alireza Haghighat. 2018. <span>“The RAPID Fission Matrix Approach to Reactor Core Criticality Calculations.”</span> <em>Nuclear Science and Engineering</em> 192 (1): 21–39.
+</div>
+<div id="ref-wang2018novel" class="csl-entry" role="doc-biblioentry">
+Wang, Meng-Jen, and Alireza Haghighat. 2018. <span>“A Novel Detector Response Formulation for Rapid.”</span> In <em>Proceedings of PHYSOR</em>.
+</div>
+<div id="ref-samplerpres" class="csl-entry" role="doc-biblioentry">
+Wieselquist, Will. 2017. <span>“Uncertainty in Anything: The Future with SCALE/Sampler.”</span> Presentation. In <em>2017 SCALE Users’ Group Workshop</em>. <a href="https://www.ornl.gov/scale/scale/2017-scale-users-group-workshop">https://www.ornl.gov/scale/scale/2017-scale-users-group-workshop</a>.
+</div>
+<div id="ref-pceneutdiff" class="csl-entry" role="doc-biblioentry">
+Williams, M. M. R. 2007. <span>“Polynomial Chaos Functions and Neutron Diffusion.”</span> <em>Nuclear Science and Engineering</em> 155 (1): 109–18. <a href="https://doi.org/10.13182/NSE05-73TN">https://doi.org/10.13182/NSE05-73TN</a>.
+</div>
+<div id="ref-wu2017inverse" class="csl-entry" role="doc-biblioentry">
+Wu, Xu, and Tomasz Kozlowski. 2017. <span>“Inverse Uncertainty Quantification of Reactor Simulations Under the Bayesian Framework Using Surrogate Models Constructed by Polynomial Chaos Expansion.”</span> <em>Nuclear Engineering and Design</em> 313: 29–52.
+</div>
+<div id="ref-yang2017polynomial" class="csl-entry" role="doc-biblioentry">
+Yang, Shuxing, Fenfen Xiong, and Fenggang Wang. 2017. <span>“Polynomial Chaos Expansion for Probabilistic Uncertainty Propagation.”</span> In <em>Uncertainty Quantification and Model Calibration</em>. IntechOpen.
+</div>
+</div>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>For example, the presence of a stainless steel liner, concrete density, and concrete material composition.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>That is, with respect to the damage thresholds defined in SRP-SLR, Section 3.5.2.2.2.6.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>More specifically, special care in the selection of a suitable multigroup nuclear data library is not applicable, and space-angle meshing selection and companion studies justifying their suitability are not applicable.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>Intel Xeon Platinum 8175M processor with a 16 vCPU core clock speed of up to 2.5 GHz and 64 GiB of memory.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>The reactor vessel dimensions and base concrete material model were adapted to match Turkey Point Unit-3,4 as part of the confirmatory studies supporting 80 year license renewal.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>That is the mean, spread, and extremes of the response distributions.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p><span class="citation" data-cites=""><a href="#ref-tyson2015uncertainty" role="doc-biblioref">Tyson et al.</a> (<a href="#ref-tyson2015uncertainty" role="doc-biblioref">2015</a>)</span> provides a clear and concise overview of PCE with additional references.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p>The mean thickness is 1/4 inch so the selected variation allows for as low as 0 inches to approximately 3/4 inch.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>Only for LHS does the boxplot represent actual statistical moments (i.e., mean, variance). That is, the PCE method statistical moments are determined using the polynomial expansion and the PBA method doesn’t give moment information, only estimated global minimum and maximum response values.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10" role="doc-endnote"><p>The choice of samples was initially based on using the Wilks formula for determining the number of samples to take for 95% population coverage at 95% confidence for a single response (i.e., 59) multiplied by 2.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11" role="doc-endnote"><p>For example, the correlation for neutron flux and stainless steel liner lining the concrete bioshield in Table 3 shows as a positive relationship (0.163) when it is known that this relationship is negative. That is, a thicker liner will cause the neutron flux to decrease.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12" role="doc-endnote"><p>The observable correlation between oxygen concentration and calcium concentration is an artifact of the model setup as the oxygen content was not sampled but simply defined as the balance of the material after all other concrete elemental concentrations (11.1 wt% on average) were sampled. Since calcium (29.4 wt% on average) is the next largest elemental concentration after oxygen (59.5 wt% on average), there is a more clear and detectable linkage between these 2 variables and this is what is observable in the correlation figure.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13" role="doc-endnote"><p>Note that the neutron flux sensitivity coefficient for the stainless steel liner thickness is negative (-1.22e+09 neutrons/cm<sup>2</sup>-s per cm of liner thickness) as expected – recall this relationship showed as positive when looking at the corresponding correlation from the LHS method discussed previously.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14" role="doc-endnote"><p>The first column represents the polynomial coefficient for the row. A 1 in columns 2-4 represents a zeroth order contribution of the input variable, which is indicated by the table header. A number other than 1 means that there is a first order term; multiple first order terms in a row signifies a signficant interaction. The 5th column represents the product of Columns 1-4. The sum of Column 5 produces the estimated response.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15" role="doc-endnote"><p>It appears that multiple responses cannot be treated simultaneously in DAKOTA, therefore 2 separate PBA cases – one to find the neutron flux maximum/minimum and one for the gamma dose rate maximum/minimum was needed.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16" role="doc-endnote"><p>The difference between <code>lhs3Var</code> and <code>lhs15Var</code> is minimal as seen in Figure 5.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17" role="doc-endnote"><p>This is largely consistent with NRC approved calculational neutron fluence methodologies for estimates near the reactor pressure vessel core midplane.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18" role="doc-endnote"><p>See <span class="citation" data-cites=""><a href="#ref-rg1190" role="doc-biblioref">NRC</a> (<a href="#ref-rg1190" role="doc-biblioref">2001</a>)</span>.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+  <h3 id="references">References</h3>
+  <div id="references-listing"></div>
+  <h3 id="updates-and-corrections">Corrections</h3>
+  <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/AmritPatel/existentially-technology/issues/new">create an issue</a> on the source repository.</p>
+  <h3 id="reuse">Reuse</h3>
+  <p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source code is available at <a href="https://github.com/AmritPatel/existentially-technology/">https://github.com/AmritPatel/existentially-technology/</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">Patel (2019, May 15). Existentially, technology: Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall. Retrieved from https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{patel2019best-estimate,
+  author = {Patel, Amrit},
+  title = {Existentially, technology: Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall},
+  url = {https://existentially-tech.netlify.app/papers/2019-05-15-bepu-ce-mc-n-p-transport-3loop-bioshield/},
+  year = {2019}
+}</pre>
+</div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<div class="distill-site-nav distill-site-footer">
+  <p>Created and maintained by <a href="https://github.com/AmritPatel/existentially-technology">Amrit Patel</a>.</p>
+  <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+</div>
+<!--/radix_placeholder_navigation_after_body-->
+
+
+</body>
+
+</html>

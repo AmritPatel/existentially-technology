@@ -1,0 +1,53 @@
+---
+title: "SCALE-Monaco-MAVRIC/DAKOTA: Distribution Checks"
+output:
+  word_document: default
+date: "`r Sys.time()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+```
+
+### Samples = `r length(readLines("hb2.dat")) - 1`
+
+- Max parallel batches of 15
+- `r grep("Total wall clock =", readLines("hb2.out"), value=T)`
+
+```{r, fig.width=8}
+library(tidyverse)
+
+data <- tbl_df(read.delim(paste0(getwd(), "/hb2.dat"), sep="")) %>% select(-X.eval_id, -interface)
+
+# Plot explanatory variables
+data[1:(ncol(data)-6)] %>%
+  keep(is.numeric) %>%
+  gather() %>%
+  ggplot(aes(value)) +
+    facet_wrap(~ key, scales="free") +
+    geom_histogram()
+
+# Plot response variables
+data[, (ncol(data)-5):(ncol(data))] %>% 
+  keep(is.numeric) %>%
+  gather() %>%
+  ggplot(aes(value)) +
+    facet_wrap(~ key, scales="free") + 
+    geom_histogram(aes()) +
+    labs(x = "value")
+
+```
+
+```{r, warning=F, fig.width=12, fig.height=12}
+library(GGally)
+
+ggpairs(data)
+
+```
+
+
+#### Summary
+
+```{r, echo = FALSE}
+data %>% gather() %>% group_by(key) %>% summarize(average=mean(value), sd=sd(value), min=min(value), max=max(value)) %>% print(n=Inf)
+```

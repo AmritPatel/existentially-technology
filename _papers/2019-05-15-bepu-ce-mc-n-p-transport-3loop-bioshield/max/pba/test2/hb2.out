@@ -1,0 +1,289 @@
+Dakota version 6.9 released Nov 13 2018.
+Repository revision 32b6d4be (2018-11-12) built Nov 13 2018 01:41:56.
+Running serial Dakota executable in serial mode.
+Start time: Wed May  8 12:49:31 2019
+
+-----------------------
+Begin DAKOTA input file
+hb2.in
+-----------------------
+environment
+  tabular_data
+    tabular_data_file = 'hb2.dat'
+
+method
+  global_interval_est ego
+
+variables
+   continuous_interval_uncertain = 3
+   num_intervals          = 1 1 1
+   interval_probabilities = 1 1 1    
+     lower_bounds =       0.6511		1.938		0
+     upper_bounds =       0.8809		2.622		12.91135
+     descriptors =        'h2oDens'		'concDens'	'linerR'
+
+interface
+  fork
+  asynchronous evaluation_concurr = 15
+  analysis_drivers = 'driver.bat'
+  parameters_file = 'hb2_input'
+  results_file = 'maxes.out'
+  work_directory
+    directory_tag
+    #directory_save
+    copy_files 'driver.bat' 'getMaxes.bat' 'hb2.template' 'getMax.pl' 'mtMaxN.inp' 'mtMaxP.inp'
+    named 'workdir'
+  file_save
+
+responses
+  num_response_functions = 2	
+  response_descriptors =  'maxN' 'maxP'
+  no_gradients				
+  no_hessians
+---------------------
+End DAKOTA input file
+---------------------
+
+Using Dakota input file 'hb2.in'
+Writing new restart file 'dakota.rst'.
+
+>>>>> Executing environment.
+
+>>>>> Running global_interval_est iterator.
+
+>>>>> Building global_kriging approximations.
+
+NonD lhs Samples = 10 Seed (system-generated) = 483645
+
+---------------------
+Begin Evaluation    1
+---------------------
+Parameters for evaluation 1:
+                      7.3305002086e-01 h2oDens
+                      2.1555759822e+00 concDens
+                      1.9457132843e+00 linerR
+
+(Asynchronous job 1 added to queue)
+
+---------------------
+Begin Evaluation    2
+---------------------
+Parameters for evaluation 2:
+                      6.8913311387e-01 h2oDens
+                      2.1201106618e+00 concDens
+                      5.3290903913e+00 linerR
+
+(Asynchronous job 2 added to queue)
+
+---------------------
+Begin Evaluation    3
+---------------------
+Parameters for evaluation 3:
+                      8.3611491505e-01 h2oDens
+                      2.3026090498e+00 concDens
+                      1.2649583173e+01 linerR
+
+(Asynchronous job 3 added to queue)
+
+---------------------
+Begin Evaluation    4
+---------------------
+Parameters for evaluation 4:
+                      8.2552380027e-01 h2oDens
+                      2.6065081594e+00 concDens
+                      3.7424284494e+00 linerR
+
+(Asynchronous job 4 added to queue)
+
+---------------------
+Begin Evaluation    5
+---------------------
+Parameters for evaluation 5:
+                      6.6980770444e-01 h2oDens
+                      2.3707369281e+00 concDens
+                      1.0476175802e+01 linerR
+
+(Asynchronous job 5 added to queue)
+
+---------------------
+Begin Evaluation    6
+---------------------
+Parameters for evaluation 6:
+                      8.7334334109e-01 h2oDens
+                      1.9555228172e+00 concDens
+                      8.2341699811e+00 linerR
+
+(Asynchronous job 6 added to queue)
+
+---------------------
+Begin Evaluation    7
+---------------------
+Parameters for evaluation 7:
+                      7.1729671250e-01 h2oDens
+                      2.0708464397e+00 concDens
+                      7.0037860242e+00 linerR
+
+(Asynchronous job 7 added to queue)
+
+---------------------
+Begin Evaluation    8
+---------------------
+Parameters for evaluation 8:
+                      7.8176611850e-01 h2oDens
+                      2.2695587100e+00 concDens
+                      5.9053417319e-01 linerR
+
+(Asynchronous job 8 added to queue)
+
+---------------------
+Begin Evaluation    9
+---------------------
+Parameters for evaluation 9:
+                      7.5110818577e-01 h2oDens
+                      2.4991419900e+00 concDens
+                      9.2355946743e+00 linerR
+
+(Asynchronous job 9 added to queue)
+
+---------------------
+Begin Evaluation   10
+---------------------
+Parameters for evaluation 10:
+                      8.0821813761e-01 h2oDens
+                      2.4642467793e+00 concDens
+                      4.0872142612e+00 linerR
+
+(Asynchronous job 10 added to queue)
+
+Blocking synchronize of 10 asynchronous evaluations
+First pass: initiating 10 local asynchronous jobs
+Initiating evaluation 1
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 2
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 3
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 4
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 5
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 6
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 7
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 8
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 9
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 10
+nonblocking fork: driver.bat hb2_input maxes.out
+Waiting on completed jobs
+Evaluation 3 has completed
+Waiting on completed jobs
+Evaluation 5 has completed
+Evaluation 6 has completed
+Waiting on completed jobs
+Evaluation 7 has completed
+Waiting on completed jobs
+Evaluation 9 has completed
+Waiting on completed jobs
+Evaluation 2 has completed
+Waiting on completed jobs
+Evaluation 1 has completed
+Waiting on completed jobs
+Evaluation 4 has completed
+Waiting on completed jobs
+Evaluation 8 has completed
+Waiting on completed jobs
+Evaluation 10 has completed
+
+Active response data for evaluation 1:
+Active set vector = { 1 1 }
+                      2.3648230000e+10 maxN
+                      4.0190510000e+04 maxP
+
+
+Active response data for evaluation 2:
+Active set vector = { 1 1 }
+                      3.5918800000e+10 maxN
+                      2.7694500000e+04 maxP
+
+
+Active response data for evaluation 3:
+Active set vector = { 1 1 }
+                      1.9529510000e+10 maxN
+                      1.0299760000e+04 maxP
+
+
+Active response data for evaluation 4:
+Active set vector = { 1 1 }
+                      1.5111360000e+10 maxN
+                      1.8059490000e+04 maxP
+
+
+Active response data for evaluation 5:
+Active set vector = { 1 1 }
+                      4.1851530000e+10 maxN
+                      3.8714030000e+04 maxP
+
+
+Active response data for evaluation 6:
+Active set vector = { 1 1 }
+                      1.4726790000e+10 maxN
+                      8.3730380000e+03 maxP
+
+
+Active response data for evaluation 7:
+Active set vector = { 1 1 }
+                      3.2176400000e+10 maxN
+                      1.8465420000e+04 maxP
+
+
+Active response data for evaluation 8:
+Active set vector = { 1 1 }
+                      1.4562260000e+10 maxN
+                      2.5408440000e+04 maxP
+
+
+Active response data for evaluation 9:
+Active set vector = { 1 1 }
+                      2.7872340000e+10 maxN
+                      8.5966920000e+03 maxP
+
+
+Active response data for evaluation 10:
+Active set vector = { 1 1 }
+                      1.7581850000e+10 maxN
+                      2.2484190000e+04 maxP
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+Constructing global approximations with no anchor, 10 DACE samples, and 0 reused points.
+
+<<<<< global_kriging approximation builds completed.
+Beginning Approximate Fn Evaluations...
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 1
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.8089805416e-01
+                      2.6219942082e+00
+                      1.0932742299e-04
+Expected Improvement    =
+                      1.2715865520e+10
+
+---------------------
+Begin Evaluation   11
+---------------------
+Parameters for evaluation 11:
+                      8.8089805416e-01 h2oDens
+                      2.6219942082e+00 concDens
+                      1.0932742299e-04 linerR
+
+blocking fork: driver.bat hb2_input maxes.out

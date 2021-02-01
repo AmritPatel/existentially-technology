@@ -1,0 +1,32 @@
+=shell
+copy %RTNDIR%\hb2.mt2.3dmap %TMPDIR%\hb2.mt2.3dmap
+end
+=mtPull
+"hb2.mt2.3dmap"
+0
+20
+1 1 1
+2 1 1
+3 1 1
+4 1 1
+5 1 1
+6 1 1
+7 1 1
+8 1 1
+9 1 1
+10 1 1
+11 1 1
+12 1 1
+13 1 1
+14 1 1
+15 1 1
+16 1 1 
+17 1 1 
+18 1 1 
+19 1 1
+20 1 1
+"radialMaxP.dat"
+end
+=shell
+copy %TMPDIR%\radialMaxP.dat %RTNDIR%\radialMaxP.dat
+end

@@ -1,0 +1,21 @@
+---
+title: "Welcome to Existentially, technology!"
+description: |
+  Working towards a technological future that uses powerful
+  and far-reaching systems for the benefit of everybody.
+date: 01-29-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+
+

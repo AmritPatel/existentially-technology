@@ -1,0 +1,1792 @@
+SCALE Job started on Thu 09/05/2019 21:25:52
+With Host name RAVWYMPRES04098
+working directory C:\Users\AXP13\AppData\Local\Temp\2\scale.AXP13.1936
+and process id 1936.
+Input file named C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\dakota\radialProfile\lhs\workdir.1\hb2.inp
+and output file named C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\dakota\radialProfile\lhs\workdir.1\hb2.out
+##########################################################
+***Created 31 infinite homogeneous cells from unreferenced mixtures.
+***Warning: Nuclide 8018 is missing cross sections. Introducing zero cross sections.
+
+
+
+ MAVRIC, part  1, reading/checking detailed input                             
+ *******************************************************************************
+
+
+
+
+ MAVRIC, part  2, writing the forward discrete ordinates input                
+ *******************************************************************************
+
+     constructMacroMaterialRAYS (81 x-bins, 31 y-bins, 20 z-bins)
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =    -1.73736E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00    -1.73736E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =    -1.73736E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00    -1.73736E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =    -1.55448E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00    -1.55448E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =    -1.55448E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00    -1.55448E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =    -1.37160E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00    -1.37160E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =    -1.37160E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00    -1.37160E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =    -1.18872E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00    -1.18872E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =    -1.18872E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00    -1.18872E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =    -1.00584E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00    -1.00584E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =    -1.00584E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00    -1.00584E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =    -8.22960E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00    -8.22960E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =    -8.22960E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00    -8.22960E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =    -6.40080E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00    -6.40080E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =    -6.40080E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00    -6.40080E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =    -4.57200E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00    -4.57200E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =    -4.57200E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00    -4.57200E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =    -2.74320E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00    -2.74320E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =    -2.74320E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00    -2.74320E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =    -9.14400E+00
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00    -9.14400E+00
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =    -9.14400E+00
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00    -9.14400E+00
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =     9.14400E+00
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00     9.14400E+00
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =     9.14400E+00
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00     9.14400E+00
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =     2.74320E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00     2.74320E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =     2.74320E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00     2.74320E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =     4.57200E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00     4.57200E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =     4.57200E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00     4.57200E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =     6.40080E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00     6.40080E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =     6.40080E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00     6.40080E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =     8.22960E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00     8.22960E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =     8.22960E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00     8.22960E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =     1.00584E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00     1.00584E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =     1.00584E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00     1.00584E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =     1.18872E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00     1.18872E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =     1.18872E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00     1.18872E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =     1.37160E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00     1.37160E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =     1.37160E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00     1.37160E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =     1.55448E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00     1.55448E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =     1.55448E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00     1.55448E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =    -1.64185E+02 y =     0.00000E+00 z =     1.73736E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:    -1.64185E+02     0.00000E+00     1.73736E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     1.61328E+02 y =     0.00000E+00 z =     1.73736E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.61328E+02     0.00000E+00     1.73736E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =    -1.73736E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02    -1.73736E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =    -1.73736E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02    -1.73736E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =    -1.55448E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02    -1.55448E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =    -1.55448E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02    -1.55448E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =    -1.37160E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02    -1.37160E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =    -1.37160E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02    -1.37160E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =    -1.18872E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02    -1.18872E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =    -1.18872E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02    -1.18872E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =    -1.00584E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02    -1.00584E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =    -1.00584E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02    -1.00584E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =    -8.22960E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02    -8.22960E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =    -8.22960E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02    -8.22960E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =    -6.40080E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02    -6.40080E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =    -6.40080E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02    -6.40080E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =    -4.57200E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02    -4.57200E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =    -4.57200E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02    -4.57200E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =    -2.74320E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02    -2.74320E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =    -2.74320E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02    -2.74320E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =    -9.14400E+00
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02    -9.14400E+00
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =    -9.14400E+00
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02    -9.14400E+00
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =     9.14400E+00
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02     9.14400E+00
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =     9.14400E+00
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02     9.14400E+00
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =     2.74320E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02     2.74320E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =     2.74320E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02     2.74320E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =     4.57200E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02     4.57200E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =     4.57200E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02     4.57200E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =     6.40080E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02     6.40080E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =     6.40080E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02     6.40080E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =     8.22960E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02     8.22960E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =     8.22960E+01
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02     8.22960E+01
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =     1.00584E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02     1.00584E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =     1.00584E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02     1.00584E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =     1.18872E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02     1.18872E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =     1.18872E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02     1.18872E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =     1.37160E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02     1.37160E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =     1.37160E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02     1.37160E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =     1.55448E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02     1.55448E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =     1.55448E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02     1.55448E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =    -1.64185E+02 z =     1.73736E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00    -1.64185E+02     1.73736E+02
+ 
+  ****** error *****sggp message number k6-242 follows:
+  neutron 0 in generation 0 has leaked from unit 999
+  at x =     0.00000E+00 y =     1.61328E+02 z =     1.73736E+02
+  but is still within the volume defined by the unit boundary record.
+    ****  geometry definition error near unit:    999      at x,y,z:     0.00000E+00     1.61328E+02     1.73736E+02
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =  -1.73736E+02
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00    -1.73736E+02
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =  -1.55448E+02
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00    -1.55448E+02
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =  -1.37160E+02
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00    -1.37160E+02
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =  -1.18872E+02
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00    -1.18872E+02
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =  -1.00584E+02
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00    -1.00584E+02
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =  -8.22960E+01
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00    -8.22960E+01
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =  -6.40080E+01
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00    -6.40080E+01
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =  -4.57200E+01
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00    -4.57200E+01
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =  -2.74320E+01
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00    -2.74320E+01
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =  -9.14400E+00
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00    -9.14400E+00
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =   9.14400E+00
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00     9.14400E+00
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =   2.74320E+01
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00     2.74320E+01
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =   4.57200E+01
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00     4.57200E+01
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =   6.40080E+01
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00     6.40080E+01
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =   8.22960E+01
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00     8.22960E+01
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =   1.00584E+02
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00     1.00584E+02
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =   1.18872E+02
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00     1.18872E+02
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =   1.37160E+02
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00     1.37160E+02
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =   1.55448E+02
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00     1.55448E+02
+ 
+  ***** error ***** sggp message number k6-260 follows:
+  neutron 0 from generation 0 located in unit 999
+  a particle at position x =   1.63780E+02 y =   0.00000E+00 z =   1.73736E+02
+  traveling in direction u =   0.00000E+00 v =   1.00000E+00 w =   0.00000E+00
+  traveled  0.00000E+00 cm inside hole 12 before crossing the boundary.
+  This could be due to the hole overlapping another hole, unit, or array boundary.
+    ****  geometry definition error near unit:    999      at x,y,z:     1.63780E+02     0.00000E+00     1.73736E+02
+     Total numMacros:        340
+
+
+
+ MAVRIC, part  3, running the forward discrete ordinates calculation          
+ *******************************************************************************
+
+
+
+
+ MAVRIC, part  4, writing the adjoint discrete ordinates input                
+ *******************************************************************************
+
+
+
+
+ MAVRIC, part  5, running the adjoint discrete ordinates calculation          
+ *******************************************************************************
+
+
+
+
+ MAVRIC, part  6, creating the importance map and biased source               
+ *******************************************************************************
+
+      CADIS for multiple sources
+      Step One: info from adjoint flux file
+      Step Two: basics for importance map and biased sources
+      Step Three: constructing biased sources
+          Source            1
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.721179999999995E+020
+              R_i      =   0.110804635000825     
+                  check is     1.721180000000012E+020
+                  total is     1.721179999999995E+020
+              create mesh-based biased source distribution
+              saving hb2.1.msm
+          Source         7101
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.585810000000001E+016
+              R_i      =   2.078723031636720E-002
+                  check is     4.585810000000000E+016
+                  total is     4.585810000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.7101.msm
+          Source         7102
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.450359999999998E+016
+              R_i      =   2.430748798751207E-002
+                  check is     4.450359999999998E+016
+                  total is     4.450359999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.7102.msm
+          Source         7103
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.305960000000000E+016
+              R_i      =   2.836865695372495E-002
+                  check is     4.305960000000000E+016
+                  total is     4.305960000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.7103.msm
+          Source         7104
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.103379999999998E+016
+              R_i      =   3.264502838458912E-002
+                  check is     4.103379999999998E+016
+                  total is     4.103379999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.7104.msm
+          Source         7105
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.849490000000001E+016
+              R_i      =   3.705573441428557E-002
+                  check is     3.849490000000001E+016
+                  total is     3.849490000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.7105.msm
+          Source         7106
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.603659999999999E+016
+              R_i      =   4.208916934925878E-002
+                  check is     3.603659999999999E+016
+                  total is     3.603659999999999E+016
+              create mesh-based biased source distribution
+              saving hb2.7106.msm
+          Source         7107
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.359929999999999E+016
+              R_i      =   4.776261283993737E-002
+                  check is     3.359929999999999E+016
+                  total is     3.359929999999999E+016
+              create mesh-based biased source distribution
+              saving hb2.7107.msm
+          Source         7108
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.099630000000001E+016
+              R_i      =   5.381066216705417E-002
+                  check is     3.099630000000001E+016
+                  total is     3.099630000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.7108.msm
+          Source         7109
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.880040000000000E+016
+              R_i      =   6.128270141760059E-002
+                  check is     2.880040000000000E+016
+                  total is     2.880040000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.7109.msm
+          Source         7110
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.644790000000000E+016
+              R_i      =   6.925076856210462E-002
+                  check is     2.644790000000001E+016
+                  total is     2.644790000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.7110.msm
+          Source         7111
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.407530000000000E+016
+              R_i      =   7.790768149186558E-002
+                  check is     2.407530000000000E+016
+                  total is     2.407530000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.7111.msm
+          Source         7112
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.166090000000001E+016
+              R_i      =   8.704459974906803E-002
+                  check is     2.166090000000001E+016
+                  total is     2.166090000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.7112.msm
+          Source         7113
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.870540000000000E+016
+              R_i      =   9.384044119058307E-002
+                  check is     1.870540000000000E+016
+                  total is     1.870540000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.7113.msm
+          Source         7114
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.496940000000000E+016
+              R_i      =   9.436310712599361E-002
+                  check is     1.496940000000000E+016
+                  total is     1.496940000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.7114.msm
+          Source         7115
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.006980000000000E+016
+              R_i      =   8.055925154831534E-002
+                  check is     1.006980000000000E+016
+                  total is     1.006980000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.7115.msm
+          Source         8601
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   6.170440000000000E+016
+              R_i      =   2.981153759560015E-002
+                  check is     6.170439999999999E+016
+                  total is     6.170440000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.8601.msm
+          Source         8602
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   5.988180000000002E+016
+              R_i      =   3.490418411121257E-002
+                  check is     5.988180000000000E+016
+                  total is     5.988180000000002E+016
+              create mesh-based biased source distribution
+              saving hb2.8602.msm
+          Source         8603
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   5.793880000000002E+016
+              R_i      =   4.081938500399433E-002
+                  check is     5.793880000000001E+016
+                  total is     5.793880000000002E+016
+              create mesh-based biased source distribution
+              saving hb2.8603.msm
+          Source         8604
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   5.521300000000000E+016
+              R_i      =   4.710126813106387E-002
+                  check is     5.521300000000000E+016
+                  total is     5.521300000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.8604.msm
+          Source         8605
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   5.179680000000000E+016
+              R_i      =   5.360014256426145E-002
+                  check is     5.179680000000002E+016
+                  total is     5.179680000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.8605.msm
+          Source         8606
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.848910000000002E+016
+              R_i      =   6.098444115988452E-002
+                  check is     4.848910000000002E+016
+                  total is     4.848910000000002E+016
+              create mesh-based biased source distribution
+              saving hb2.8606.msm
+          Source         8607
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.520950000000001E+016
+              R_i      =   6.925259532923508E-002
+                  check is     4.520950000000001E+016
+                  total is     4.520950000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.8607.msm
+          Source         8608
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.170710000000002E+016
+              R_i      =   7.798882912015037E-002
+                  check is     4.170710000000002E+016
+                  total is     4.170710000000002E+016
+              create mesh-based biased source distribution
+              saving hb2.8608.msm
+          Source         8609
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.875230000000000E+016
+              R_i      =   8.866966044492305E-002
+                  check is     3.875230000000000E+016
+                  total is     3.875230000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.8609.msm
+          Source         8610
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.558700000000001E+016
+              R_i      =   9.988844930617818E-002
+                  check is     3.558700000000001E+016
+                  total is     3.558700000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.8610.msm
+          Source         8611
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.239460000000001E+016
+              R_i      =   0.111838777227389     
+                  check is     3.239460000000001E+016
+                  total is     3.239460000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.8611.msm
+          Source         8612
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.914590000000001E+016
+              R_i      =   0.124113951050661     
+                  check is     2.914590000000002E+016
+                  total is     2.914590000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.8612.msm
+          Source         8613
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.516910000000000E+016
+              R_i      =   0.132611686003150     
+                  check is     2.516910000000000E+016
+                  total is     2.516910000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.8613.msm
+          Source         8614
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.014210000000000E+016
+              R_i      =   0.131738772046365     
+                  check is     2.014210000000000E+016
+                  total is     2.014210000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.8614.msm
+          Source         8615
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.354940000000000E+016
+              R_i      =   0.110251706961048     
+                  check is     1.354940000000000E+016
+                  total is     1.354940000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.8615.msm
+          Source        10101
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.645840000000002E+016
+              R_i      =   2.105112021874139E-002
+                  check is     4.645840000000002E+016
+                  total is     4.645840000000002E+016
+              create mesh-based biased source distribution
+              saving hb2.10101.msm
+          Source        10102
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.508609999999998E+016
+              R_i      =   2.461587725539197E-002
+                  check is     4.508609999999998E+016
+                  total is     4.508609999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.10102.msm
+          Source        10103
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.362320000000002E+016
+              R_i      =   2.872820426481495E-002
+                  check is     4.362320000000002E+016
+                  total is     4.362320000000002E+016
+              create mesh-based biased source distribution
+              saving hb2.10103.msm
+          Source        10104
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.157090000000000E+016
+              R_i      =   3.305836003901851E-002
+                  check is     4.157090000000000E+016
+                  total is     4.157090000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.10104.msm
+          Source        10105
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.899870000000002E+016
+              R_i      =   3.752464932779341E-002
+                  check is     3.899870000000001E+016
+                  total is     3.899870000000002E+016
+              create mesh-based biased source distribution
+              saving hb2.10105.msm
+          Source        10106
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.650829999999998E+016
+              R_i      =   4.262186075275216E-002
+                  check is     3.650829999999998E+016
+                  total is     3.650829999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.10106.msm
+          Source        10107
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.403909999999999E+016
+              R_i      =   4.836714383641559E-002
+                  check is     3.403909999999999E+016
+                  total is     3.403909999999999E+016
+              create mesh-based biased source distribution
+              saving hb2.10107.msm
+          Source        10108
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.140200000000001E+016
+              R_i      =   5.449168443566664E-002
+                  check is     3.140200000000001E+016
+                  total is     3.140200000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.10108.msm
+          Source        10109
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.917730000000000E+016
+              R_i      =   6.205807772561672E-002
+                  check is     2.917729999999999E+016
+                  total is     2.917730000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.10109.msm
+          Source        10110
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.679410000000002E+016
+              R_i      =   7.012700775651398E-002
+                  check is     2.679410000000002E+016
+                  total is     2.679410000000002E+016
+              create mesh-based biased source distribution
+              saving hb2.10110.msm
+          Source        10111
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.439050000000000E+016
+              R_i      =   7.889336652719880E-002
+                  check is     2.439050000000000E+016
+                  total is     2.439050000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.10111.msm
+          Source        10112
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.194450000000000E+016
+              R_i      =   8.814555220957088E-002
+                  check is     2.194450000000000E+016
+                  total is     2.194450000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.10112.msm
+          Source        10113
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.895030000000001E+016
+              R_i      =   9.502687503711404E-002
+                  check is     1.895030000000001E+016
+                  total is     1.895030000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.10113.msm
+          Source        10114
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.516530000000001E+016
+              R_i      =   9.555511056811114E-002
+                  check is     1.516530000000001E+016
+                  total is     1.516530000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.10114.msm
+          Source        10115
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.020160000000000E+016
+              R_i      =   8.157657765577898E-002
+                  check is     1.020160000000000E+016
+                  total is     1.020160000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.10115.msm
+          Source         4301
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.895519999999997E+016
+              R_i      =   2.675598521351655E-003
+                  check is     8.895519999999998E+016
+                  total is     8.895519999999997E+016
+              create mesh-based biased source distribution
+              saving hb2.4301.msm
+          Source         4302
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.632760000000000E+016
+              R_i      =   3.138341604765242E-003
+                  check is     8.632759999999998E+016
+                  total is     8.632760000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.4302.msm
+          Source         4303
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.352650000000000E+016
+              R_i      =   3.643486581556640E-003
+                  check is     8.352650000000000E+016
+                  total is     8.352650000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.4303.msm
+          Source         4304
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   7.959700000000000E+016
+              R_i      =   4.148916191587660E-003
+                  check is     7.959700000000000E+016
+                  total is     7.959700000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.4304.msm
+          Source         4305
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   7.467200000000000E+016
+              R_i      =   4.643583917391047E-003
+                  check is     7.467200000000000E+016
+                  total is     7.467200000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.4305.msm
+          Source         4306
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   6.990360000000000E+016
+              R_i      =   5.186038198581617E-003
+                  check is     6.990360000000000E+016
+                  total is     6.990360000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.4306.msm
+          Source         4307
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   6.517559999999997E+016
+              R_i      =   5.772520006660453E-003
+                  check is     6.517559999999998E+016
+                  total is     6.517559999999997E+016
+              create mesh-based biased source distribution
+              saving hb2.4307.msm
+          Source         4308
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   6.012629999999998E+016
+              R_i      =   6.364379936974966E-003
+                  check is     6.012629999999997E+016
+                  total is     6.012629999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.4308.msm
+          Source         4309
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   5.586670000000004E+016
+              R_i      =   7.076467546908098E-003
+                  check is     5.586670000000005E+016
+                  total is     5.586670000000004E+016
+              create mesh-based biased source distribution
+              saving hb2.4309.msm
+          Source         4310
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   5.130349999999998E+016
+              R_i      =   7.787844647231545E-003
+                  check is     5.130349999999999E+016
+                  total is     5.130349999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.4310.msm
+          Source         4311
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.670110000000002E+016
+              R_i      =   8.509804868420050E-003
+                  check is     4.670110000000001E+016
+                  total is     4.670110000000002E+016
+              create mesh-based biased source distribution
+              saving hb2.4311.msm
+          Source         4312
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.201769999999998E+016
+              R_i      =   9.207010400626030E-003
+                  check is     4.201769999999998E+016
+                  total is     4.201769999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.4312.msm
+          Source         4313
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.628459999999999E+016
+              R_i      =   9.578636495684849E-003
+                  check is     3.628459999999999E+016
+                  total is     3.628459999999999E+016
+              create mesh-based biased source distribution
+              saving hb2.4313.msm
+          Source         4314
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.903750000000001E+016
+              R_i      =   9.256572807050157E-003
+                  check is     2.903750000000001E+016
+                  total is     2.903750000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.4314.msm
+          Source         4315
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.953330000000000E+016
+              R_i      =   7.549831664123948E-003
+                  check is     1.953330000000000E+016
+                  total is     1.953330000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.4315.msm
+          Source         5601
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.219680000000000E+017
+              R_i      =   3.754199201095083E-003
+                  check is     1.219680000000000E+017
+                  total is     1.219680000000000E+017
+              create mesh-based biased source distribution
+              saving hb2.5601.msm
+          Source         5602
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.183660000000000E+017
+              R_i      =   4.390836833041888E-003
+                  check is     1.183660000000000E+017
+                  total is     1.183660000000000E+017
+              create mesh-based biased source distribution
+              saving hb2.5602.msm
+          Source         5603
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.145250000000000E+017
+              R_i      =   5.091869359895739E-003
+                  check is     1.145250000000000E+017
+                  total is     1.145250000000000E+017
+              create mesh-based biased source distribution
+              saving hb2.5603.msm
+          Source         5604
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.091370000000000E+017
+              R_i      =   5.800005493892356E-003
+                  check is     1.091370000000000E+017
+                  total is     1.091370000000000E+017
+              create mesh-based biased source distribution
+              saving hb2.5604.msm
+          Source         5605
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.023840000000000E+017
+              R_i      =   6.496279485066590E-003
+                  check is     1.023840000000000E+017
+                  total is     1.023840000000000E+017
+              create mesh-based biased source distribution
+              saving hb2.5605.msm
+          Source         5606
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   9.584619999999998E+016
+              R_i      =   7.259322826704509E-003
+                  check is     9.584619999999997E+016
+                  total is     9.584619999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.5606.msm
+          Source         5607
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.936360000000000E+016
+              R_i      =   8.082481720658249E-003
+                  check is     8.936359999999998E+016
+                  total is     8.936360000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.5607.msm
+          Source         5608
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.244040000000000E+016
+              R_i      =   8.910964006090892E-003
+                  check is     8.244040000000000E+016
+                  total is     8.244040000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.5608.msm
+          Source         5609
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   7.659990000000000E+016
+              R_i      =   9.905095456929958E-003
+                  check is     7.659990000000002E+016
+                  total is     7.659990000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.5609.msm
+          Source         5610
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   7.034320000000000E+016
+              R_i      =   1.089482840306421E-002
+                  check is     7.034320000000000E+016
+                  total is     7.034320000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.5610.msm
+          Source         5611
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   6.403280000000003E+016
+              R_i      =   1.189442716175758E-002
+                  check is     6.403280000000002E+016
+                  total is     6.403280000000003E+016
+              create mesh-based biased source distribution
+              saving hb2.5611.msm
+          Source         5612
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   5.761129999999998E+016
+              R_i      =   1.285267429027403E-002
+                  check is     5.761129999999998E+016
+                  total is     5.761129999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.5612.msm
+          Source         5613
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.975049999999998E+016
+              R_i      =   1.334884216881490E-002
+                  check is     4.975049999999998E+016
+                  total is     4.975049999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.5613.msm
+          Source         5614
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.981390000000000E+016
+              R_i      =   1.287244260453240E-002
+                  check is     3.981390000000000E+016
+                  total is     3.981390000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.5614.msm
+          Source         5615
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.678250000000000E+016
+              R_i      =   1.047255402394585E-002
+                  check is     2.678249999999999E+016
+                  total is     2.678250000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.5615.msm
+          Source        11401
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.219680000000000E+017
+              R_i      =   3.751746424958537E-003
+                  check is     1.219680000000000E+017
+                  total is     1.219680000000000E+017
+              create mesh-based biased source distribution
+              saving hb2.11401.msm
+          Source        11402
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.183660000000000E+017
+              R_i      =   4.387929456258124E-003
+                  check is     1.183660000000000E+017
+                  total is     1.183660000000000E+017
+              create mesh-based biased source distribution
+              saving hb2.11402.msm
+          Source        11403
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.145250000000000E+017
+              R_i      =   5.088459129371442E-003
+                  check is     1.145250000000000E+017
+                  total is     1.145250000000000E+017
+              create mesh-based biased source distribution
+              saving hb2.11403.msm
+          Source        11404
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.091370000000000E+017
+              R_i      =   5.796075184354057E-003
+                  check is     1.091370000000000E+017
+                  total is     1.091370000000000E+017
+              create mesh-based biased source distribution
+              saving hb2.11404.msm
+          Source        11405
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.023840000000000E+017
+              R_i      =   6.491824938631688E-003
+                  check is     1.023840000000000E+017
+                  total is     1.023840000000000E+017
+              create mesh-based biased source distribution
+              saving hb2.11405.msm
+          Source        11406
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   9.584619999999998E+016
+              R_i      =   7.254291199735865E-003
+                  check is     9.584619999999997E+016
+                  total is     9.584619999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.11406.msm
+          Source        11407
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.936360000000000E+016
+              R_i      =   8.076827224641580E-003
+                  check is     8.936359999999998E+016
+                  total is     8.936360000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.11407.msm
+          Source        11408
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.244040000000000E+016
+              R_i      =   8.904681557533685E-003
+                  check is     8.244040000000000E+016
+                  total is     8.244040000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.11408.msm
+          Source        11409
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   7.659990000000000E+016
+              R_i      =   9.898072217317384E-003
+                  check is     7.659990000000002E+016
+                  total is     7.659990000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.11409.msm
+          Source        11410
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   7.034320000000000E+016
+              R_i      =   1.088708142006716E-002
+                  check is     7.034320000000000E+016
+                  total is     7.034320000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.11410.msm
+          Source        11411
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   6.403280000000003E+016
+              R_i      =   1.188597667009791E-002
+                  check is     6.403280000000002E+016
+                  total is     6.403280000000003E+016
+              create mesh-based biased source distribution
+              saving hb2.11411.msm
+          Source        11412
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   5.761129999999998E+016
+              R_i      =   1.284358582522453E-002
+                  check is     5.761129999999998E+016
+                  total is     5.761129999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.11412.msm
+          Source        11413
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.975049999999998E+016
+              R_i      =   1.333947890068397E-002
+                  check is     4.975049999999998E+016
+                  total is     4.975049999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.11413.msm
+          Source        11414
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.981390000000000E+016
+              R_i      =   1.286359803911757E-002
+                  check is     3.981390000000000E+016
+                  total is     3.981390000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.11414.msm
+          Source        11415
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.678250000000000E+016
+              R_i      =   1.046579567395332E-002
+                  check is     2.678249999999999E+016
+                  total is     2.678250000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.11415.msm
+          Source        12701
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.895519999999997E+016
+              R_i      =   2.673375828480894E-003
+                  check is     8.895519999999998E+016
+                  total is     8.895519999999997E+016
+              create mesh-based biased source distribution
+              saving hb2.12701.msm
+          Source        12702
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.632760000000000E+016
+              R_i      =   3.135697536859504E-003
+                  check is     8.632759999999998E+016
+                  total is     8.632760000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.12702.msm
+          Source        12703
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.352650000000000E+016
+              R_i      =   3.640346834182968E-003
+                  check is     8.352650000000000E+016
+                  total is     8.352650000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.12703.msm
+          Source        12704
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   7.959700000000000E+016
+              R_i      =   4.145270109511550E-003
+                  check is     7.959700000000000E+016
+                  total is     7.959700000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.12704.msm
+          Source        12705
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   7.467200000000000E+016
+              R_i      =   4.639465764392506E-003
+                  check is     7.467200000000000E+016
+                  total is     7.467200000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.12705.msm
+          Source        12706
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   6.990360000000000E+016
+              R_i      =   5.181425689011206E-003
+                  check is     6.990360000000000E+016
+                  total is     6.990360000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.12706.msm
+          Source        12707
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   6.517559999999997E+016
+              R_i      =   5.767379258103455E-003
+                  check is     6.517559999999998E+016
+                  total is     6.517559999999997E+016
+              create mesh-based biased source distribution
+              saving hb2.12707.msm
+          Source        12708
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   6.012629999999998E+016
+              R_i      =   6.358707701610514E-003
+                  check is     6.012629999999997E+016
+                  total is     6.012629999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.12708.msm
+          Source        12709
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   5.586670000000004E+016
+              R_i      =   7.070160566450981E-003
+                  check is     5.586670000000005E+016
+                  total is     5.586670000000004E+016
+              create mesh-based biased source distribution
+              saving hb2.12709.msm
+          Source        12710
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   5.130349999999998E+016
+              R_i      =   7.780914545067472E-003
+                  check is     5.130349999999999E+016
+                  total is     5.130349999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.12710.msm
+          Source        12711
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.670110000000002E+016
+              R_i      =   8.502263149555128E-003
+                  check is     4.670110000000001E+016
+                  total is     4.670110000000002E+016
+              create mesh-based biased source distribution
+              saving hb2.12711.msm
+          Source        12712
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   4.201769999999998E+016
+              R_i      =   9.198907657537544E-003
+                  check is     4.201769999999998E+016
+                  total is     4.201769999999998E+016
+              create mesh-based biased source distribution
+              saving hb2.12712.msm
+          Source        12713
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   3.628459999999999E+016
+              R_i      =   9.570289736254661E-003
+                  check is     3.628459999999999E+016
+                  total is     3.628459999999999E+016
+              create mesh-based biased source distribution
+              saving hb2.12713.msm
+          Source        12714
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   2.903750000000001E+016
+              R_i      =   9.248668928485219E-003
+                  check is     2.903750000000001E+016
+                  total is     2.903750000000001E+016
+              create mesh-based biased source distribution
+              saving hb2.12714.msm
+          Source        12715
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.953330000000000E+016
+              R_i      =   7.543724648239346E-003
+                  check is     1.953330000000000E+016
+                  total is     1.953330000000000E+016
+              create mesh-based biased source distribution
+              saving hb2.12715.msm
+          Source           70
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.417970000000001E+018
+              R_i      =   0.201203176481622     
+                  check is     1.417969999999999E+018
+                  total is     1.417970000000001E+018
+              create mesh-based biased source distribution
+              saving hb2.70.msm
+          Source           85
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.481450000000001E+018
+              R_i      =   0.223137003043553     
+                  check is     1.481450000000002E+018
+                  total is     1.481450000000001E+018
+              create mesh-based biased source distribution
+              saving hb2.85.msm
+          Source          100
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.422760000000001E+018
+              R_i      =   0.201810292550326     
+                  check is     1.422760000000002E+018
+                  total is     1.422760000000001E+018
+              create mesh-based biased source distribution
+              saving hb2.100.msm
+          Source           10
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.874299999999997E+017
+              R_i      =   4.048990267804494E-004
+                  check is     8.874299999999997E+017
+                  total is     8.874299999999997E+017
+              create mesh-based biased source distribution
+              saving hb2.10.msm
+          Source           19
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.014380000000000E+018
+              R_i      =   1.938882029562930E-003
+                  check is     1.014379999999999E+018
+                  total is     1.014380000000000E+018
+              create mesh-based biased source distribution
+              saving hb2.19.msm
+          Source           30
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.014380000000000E+018
+              R_i      =   1.027891160777731E-002
+                  check is     1.014379999999999E+018
+                  total is     1.014380000000000E+018
+              create mesh-based biased source distribution
+              saving hb2.30.msm
+          Source          138
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.015570000000000E+018
+              R_i      =   1.028062774153105E-002
+                  check is     1.015570000000000E+018
+                  total is     1.015570000000000E+018
+              create mesh-based biased source distribution
+              saving hb2.138.msm
+          Source          147
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   1.015570000000000E+018
+              R_i      =   1.939066594184086E-003
+                  check is     1.015570000000000E+018
+                  total is     1.015570000000000E+018
+              create mesh-based biased source distribution
+              saving hb2.147.msm
+          Source          154
+              create a mesh source from the source
+              convert mesh source group structure
+              strength =   8.886279999999995E+017
+              R_i      =   4.049565321782132E-004
+                  check is     8.886279999999996E+017
+                  total is     8.886279999999995E+017
+              create mesh-based biased source distribution
+              saving hb2.154.msm
+      Step Four: constructing importance map
+          saving hb2.mim
+      Step Five: garbage collection
+
+
+
+ MAVRIC, part  7, writing the Monte Carlo input                               
+ *******************************************************************************
+
+  Now executing monaco                          
+ Monaco has started.
+     call newUserInput()
+     call loadTheGame
+         call loadUserInput
+         call checkUserInput
+         call checkUserInput2
+         call checkUserInput3
+         call checkUserInput4
+         call preparePhysics
+>>> Loading SCALE Standard Composition Library from Z:/SCALE/WIN-SCALE-6.2.3/data\scale.rev39.sclib
+>>> Loading CE library Z:/SCALE/WIN-SCALE-6.2.3/data/ce_v7.1_endf.xml
+     call playTheGame
+         point detector tallies
+         region tallies
+         mesh tallies
+         mesh moment tallies
+
+
+
+ Starting the Monte Carlo game with 0000008655745262
+
+ '===========================================================================
+
+     batch    batches        batch time   elapsed time      next randomSeed
+     ----------------     -------------  -------------     ----------------
+          1 of     20      58.3 seconds   58.3 seconds     733EDC6D4454B1C5
+          2 of     20      56.4 seconds   1.91 minutes     675E6EE6567F1CF5
+          3 of     20      57.1 seconds   2.86 minutes     4062D0A951856B7C
+          4 of     20      57.0 seconds   3.81 minutes     5FDF97B36BB8EA72
+     Warning: history 3041 of batch 5 has more than 1000 particles in the bank
+              bank has 7 neutrons and 994 photons
+          5 of     20      59.3 seconds   4.80 minutes     5427AE9D5A93820A
+          6 of     20      59.0 seconds   5.78 minutes     1FEB65EB3B06FE1A
+          7 of     20      62.4 seconds   6.82 minutes     7EDA91F33274B9B9
+          8 of     20      56.1 seconds   7.76 minutes     35997458296A7615
+          9 of     20      59.3 seconds   8.75 minutes     11ABBBB34DB1071B
+         10 of     20      56.7 seconds   9.69 minutes     6D3A7FBA0D11CB62
+         11 of     20      52.5 seconds   10.6 minutes     5248D49D6DDA84A7
+         12 of     20      56.0 seconds   11.5 minutes     2DF54DE5112B7AD9
+         13 of     20      57.0 seconds   12.5 minutes     647B38DA4FF4BFD3
+         14 of     20      52.2 seconds   13.3 minutes     4F6D22E74FE239C8
+         15 of     20      51.1 seconds   14.2 minutes     655F91790A4C2176
+     Warning: history 4090 of batch 16 has more than 1000 particles in the bank
+              bank has 24 neutrons and 977 photons
+
+ '===========================================================================
+
+     batch    batches        batch time   elapsed time      next randomSeed
+     ----------------     -------------  -------------     ----------------
+         16 of     20      52.1 seconds   15.0 minutes     1FE2E07D7C20BE78
+     Warning: history 3816 of batch 17 has more than 1000 particles in the bank
+              bank has 3 neutrons and 998 photons
+         17 of     20      57.4 seconds   16.0 minutes     635890163CBE8E06
+         18 of     20      61.9 seconds   17.0 minutes     01D107CF036B3F6B
+         19 of     20      56.5 seconds   18.0 minutes     106507BB2652AD04
+         20 of     20      51.2 seconds   18.8 minutes     7B2C5B4710CDF463

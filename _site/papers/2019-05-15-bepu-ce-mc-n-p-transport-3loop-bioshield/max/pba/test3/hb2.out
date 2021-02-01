@@ -1,0 +1,5216 @@
+Dakota version 6.9 released Nov 13 2018.
+Repository revision 32b6d4be (2018-11-12) built Nov 13 2018 01:41:56.
+Running serial Dakota executable in serial mode.
+Start time: Wed May  8 13:43:26 2019
+
+-----------------------
+Begin DAKOTA input file
+hb2.in
+-----------------------
+environment
+  tabular_data
+    tabular_data_file = 'hb2.dat'
+
+method
+  global_interval_est ego
+
+variables
+   continuous_interval_uncertain = 3
+   num_intervals          = 1 1 1
+   interval_probabilities = 1 1 1    
+     lower_bounds =       0.6511		1.938		0
+     upper_bounds =       0.8809		2.622		12.91135
+     descriptors =        'h2oDens'		'concDens'	'linerR'
+
+interface
+  fork
+  asynchronous evaluation_concurr = 15
+  analysis_drivers = 'driver.bat'
+  parameters_file = 'hb2_input'
+  results_file = 'maxes.out'
+  work_directory
+    directory_tag
+    #directory_save
+    copy_files 'driver.bat' 'getMaxes.bat' 'hb2.template' 'getMax.pl' 'mtMaxN.inp' 'mtMaxP.inp'
+    named 'workdir'
+  file_save
+
+responses
+  num_response_functions = 1	
+  response_descriptors =  'maxN'
+  no_gradients				
+  no_hessians
+---------------------
+End DAKOTA input file
+---------------------
+
+Using Dakota input file 'hb2.in'
+Writing new restart file 'dakota.rst'.
+
+>>>>> Executing environment.
+
+>>>>> Running global_interval_est iterator.
+
+>>>>> Building global_kriging approximations.
+
+NonD lhs Samples = 10 Seed (system-generated) = 988414
+
+---------------------
+Begin Evaluation    1
+---------------------
+Parameters for evaluation 1:
+                      7.2160992402e-01 h2oDens
+                      2.0376992662e+00 concDens
+                      1.4842982668e+00 linerR
+
+(Asynchronous job 1 added to queue)
+
+---------------------
+Begin Evaluation    2
+---------------------
+Parameters for evaluation 2:
+                      8.7628798683e-01 h2oDens
+                      2.3253522791e+00 concDens
+                      9.5543825255e+00 linerR
+
+(Asynchronous job 2 added to queue)
+
+---------------------
+Begin Evaluation    3
+---------------------
+Parameters for evaluation 3:
+                      7.0225317483e-01 h2oDens
+                      2.2576517226e+00 concDens
+                      3.9475779385e+00 linerR
+
+(Asynchronous job 3 added to queue)
+
+---------------------
+Begin Evaluation    4
+---------------------
+Parameters for evaluation 4:
+                      6.5799525972e-01 h2oDens
+                      2.1184335004e+00 concDens
+                      5.5102228658e+00 linerR
+
+(Asynchronous job 4 added to queue)
+
+---------------------
+Begin Evaluation    5
+---------------------
+Parameters for evaluation 5:
+                      6.8721712366e-01 h2oDens
+                      2.6087987672e+00 concDens
+                      7.5847098294e+00 linerR
+
+(Asynchronous job 5 added to queue)
+
+---------------------
+Begin Evaluation    6
+---------------------
+Parameters for evaluation 6:
+                      8.2088929525e-01 h2oDens
+                      2.5054928309e+00 concDens
+                      1.4930753076e-01 linerR
+
+(Asynchronous job 6 added to queue)
+
+---------------------
+Begin Evaluation    7
+---------------------
+Parameters for evaluation 7:
+                      7.4873509829e-01 h2oDens
+                      2.2054482578e+00 concDens
+                      1.1706627981e+01 linerR
+
+(Asynchronous job 7 added to queue)
+
+---------------------
+Begin Evaluation    8
+---------------------
+Parameters for evaluation 8:
+                      7.8307727488e-01 h2oDens
+                      2.3567050520e+00 concDens
+                      1.0475127355e+01 linerR
+
+(Asynchronous job 8 added to queue)
+
+---------------------
+Begin Evaluation    9
+---------------------
+Parameters for evaluation 9:
+                      7.8922591076e-01 h2oDens
+                      2.4651689293e+00 concDens
+                      7.8689142238e+00 linerR
+
+(Asynchronous job 9 added to queue)
+
+---------------------
+Begin Evaluation   10
+---------------------
+Parameters for evaluation 10:
+                      8.3891199258e-01 h2oDens
+                      1.9730497789e+00 concDens
+                      3.1621767916e+00 linerR
+
+(Asynchronous job 10 added to queue)
+
+Blocking synchronize of 10 asynchronous evaluations
+First pass: initiating 10 local asynchronous jobs
+Initiating evaluation 1
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 2
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 3
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 4
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 5
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 6
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 7
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 8
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 9
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 10
+nonblocking fork: driver.bat hb2_input maxes.out
+Waiting on completed jobs
+Evaluation 7 has completed
+Evaluation 8 has completed
+Waiting on completed jobs
+Evaluation 2 has completed
+Waiting on completed jobs
+Evaluation 4 has completed
+Evaluation 10 has completed
+Waiting on completed jobs
+Evaluation 9 has completed
+Waiting on completed jobs
+Evaluation 5 has completed
+Waiting on completed jobs
+Evaluation 3 has completed
+Waiting on completed jobs
+Evaluation 1 has completed
+Waiting on completed jobs
+Evaluation 6 has completed
+
+Active response data for evaluation 1:
+Active set vector = { 1 }
+                      2.2006650000e+10 maxN
+
+
+Active response data for evaluation 2:
+Active set vector = { 1 }
+                      1.4109670000e+10 maxN
+
+
+Active response data for evaluation 3:
+Active set vector = { 1 }
+                      3.0568740000e+10 maxN
+
+
+Active response data for evaluation 4:
+Active set vector = { 1 }
+                      4.2127470000e+10 maxN
+
+
+Active response data for evaluation 5:
+Active set vector = { 1 }
+                      3.7824110000e+10 maxN
+
+
+Active response data for evaluation 6:
+Active set vector = { 1 }
+                      1.1147880000e+10 maxN
+
+
+Active response data for evaluation 7:
+Active set vector = { 1 }
+                      3.0487250000e+10 maxN
+
+
+Active response data for evaluation 8:
+Active set vector = { 1 }
+                      2.1409870000e+10 maxN
+
+
+Active response data for evaluation 9:
+Active set vector = { 1 }
+                      2.1422640000e+10 maxN
+
+
+Active response data for evaluation 10:
+Active set vector = { 1 }
+                      1.3619930000e+10 maxN
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+Constructing global approximations with no anchor, 10 DACE samples, and 0 reused points.
+
+<<<<< global_kriging approximation builds completed.
+Beginning Approximate Fn Evaluations...
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 1
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.8089805416e-01
+                      2.6219942082e+00
+                      1.0932742299e-04
+Expected Improvement    =
+                      9.2561397605e+09
+
+---------------------
+Begin Evaluation   11
+---------------------
+Parameters for evaluation 11:
+                      8.8089805416e-01 h2oDens
+                      2.6219942082e+00 concDens
+                      1.0932742299e-04 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 11:
+Active set vector = { 1 }
+                      7.6102860000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 2
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.6219980694e+00
+                      3.1117135555e+00
+Expected Improvement    =
+                      7.9487678778e+08
+
+---------------------
+Begin Evaluation   12
+---------------------
+Parameters for evaluation 12:
+                      8.8089935139e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      3.1117135555e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 12:
+Active set vector = { 1 }
+                      1.1393010000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 3
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.8089805416e-01
+                      2.0005340649e+00
+                      1.0932742299e-04
+Expected Improvement    =
+                      2.0256888104e+09
+
+---------------------
+Begin Evaluation   13
+---------------------
+Parameters for evaluation 13:
+                      8.8089805416e-01 h2oDens
+                      2.0005340649e+00 concDens
+                      1.0932742299e-04 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 13:
+Active set vector = { 1 }
+                      8.6881700000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 4
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.7394750800e-01
+                      2.3200329218e+00
+                      3.2798226896e-04
+Expected Improvement    =
+                      4.5612079896e+09
+
+---------------------
+Begin Evaluation   14
+---------------------
+Parameters for evaluation 14:
+                      8.7394750800e-01 h2oDens
+                      2.3200329218e+00 concDens
+                      3.2798226896e-04 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 14:
+Active set vector = { 1 }
+                      9.0651510000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 5
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.6219980694e+00
+                      1.0931649025e+00
+Expected Improvement    =
+                      5.8129292846e+08
+
+---------------------
+Begin Evaluation   15
+---------------------
+Parameters for evaluation 15:
+                      8.8089935139e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      1.0931649025e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 15:
+Active set vector = { 1 }
+                      9.0056000000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 6
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.1114740639e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      7.6448616031e+08
+
+---------------------
+Begin Evaluation   16
+---------------------
+Parameters for evaluation 16:
+                      8.8089935139e-01 h2oDens
+                      2.1114740639e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 16:
+Active set vector = { 1 }
+                      8.6901140000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 7
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.6219980694e+00
+                      1.2911313558e+01
+Expected Improvement    =
+                      1.1990216173e+10
+
+---------------------
+Begin Evaluation   17
+---------------------
+Parameters for evaluation 17:
+                      8.8089935139e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      1.2911313558e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 17:
+Active set vector = { 1 }
+                      1.6205360000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 8
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.4788750021e-01
+                      2.6219980694e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      3.7737708872e+07
+
+---------------------
+Begin Evaluation   18
+---------------------
+Parameters for evaluation 18:
+                      8.4788750021e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 18:
+Active set vector = { 1 }
+                      9.0972270000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 9
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.4362202916e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      3.6819248366e+08
+
+---------------------
+Begin Evaluation   19
+---------------------
+Parameters for evaluation 19:
+                      8.8089935139e-01 h2oDens
+                      2.4362202916e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 19:
+Active set vector = { 1 }
+                      7.7008930000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 10
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.1739097360e-01
+                      1.9380019306e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      5.4422421252e+07
+
+---------------------
+Begin Evaluation   20
+---------------------
+Parameters for evaluation 20:
+                      8.1739097360e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 20:
+Active set vector = { 1 }
+                      1.2632470000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 11
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089805416e-01
+                      2.0646608749e+00
+                      1.4336104976e+00
+Expected Improvement    =
+                      1.0743092663e+09
+
+---------------------
+Begin Evaluation   21
+---------------------
+Parameters for evaluation 21:
+                      8.8089805416e-01 h2oDens
+                      2.0646608749e+00 concDens
+                      1.4336104976e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 21:
+Active set vector = { 1 }
+                      9.3554210000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 12
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.5528825890e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      2.8935849100e+08
+
+---------------------
+Begin Evaluation   22
+---------------------
+Parameters for evaluation 22:
+                      8.8089935139e-01 h2oDens
+                      2.5528825890e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 22:
+Active set vector = { 1 }
+                      8.0853120000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 13
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.2342061678e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      4.4510845687e+07
+
+---------------------
+Begin Evaluation   23
+---------------------
+Parameters for evaluation 23:
+                      8.8089935139e-01 h2oDens
+                      2.2342061678e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 23:
+Active set vector = { 1 }
+                      8.2191970000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 14
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.4766161662e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      1.6577954195e+08
+
+---------------------
+Begin Evaluation   24
+---------------------
+Parameters for evaluation 24:
+                      8.8089935139e-01 h2oDens
+                      2.4766161662e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 24:
+Active set vector = { 1 }
+                      7.9241440000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 15
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6057827906e-01
+                      1.9380019306e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      5.3716903396e+07
+
+---------------------
+Begin Evaluation   25
+---------------------
+Parameters for evaluation 25:
+                      8.6057827906e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 25:
+Active set vector = { 1 }
+                      9.0081670000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 16
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6955120324e-01
+                      2.6219980694e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      6.8860394352e+07
+
+---------------------
+Begin Evaluation   26
+---------------------
+Parameters for evaluation 26:
+                      8.6955120324e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 26:
+Active set vector = { 1 }
+                      8.6897220000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 17
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.3697392335e-01
+                      2.2785906620e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      2.7588627098e+07
+
+---------------------
+Begin Evaluation   27
+---------------------
+Parameters for evaluation 27:
+                      8.3697392335e-01 h2oDens
+                      2.2785906620e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 27:
+Active set vector = { 1 }
+                      1.0068190000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 18
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.4405419228e-01
+                      2.4613258142e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      6.3239405284e+06
+
+---------------------
+Begin Evaluation   28
+---------------------
+Parameters for evaluation 28:
+                      8.4405419228e-01 h2oDens
+                      2.4613258142e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 28:
+Active set vector = { 1 }
+                      9.4687370000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 19
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.5536731528e-01
+                      2.0861561754e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      3.5670139153e+06
+
+---------------------
+Begin Evaluation   29
+---------------------
+Parameters for evaluation 29:
+                      8.5536731528e-01 h2oDens
+                      2.0861561754e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 29:
+Active set vector = { 1 }
+                      9.5232330000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 20
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.1081273180e-01
+                      2.2318469745e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      4.9908529709e+05
+
+---------------------
+Begin Evaluation   30
+---------------------
+Parameters for evaluation 30:
+                      8.1081273180e-01 h2oDens
+                      2.2318469745e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 30:
+Active set vector = { 1 }
+                      1.1535070000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 21
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      1.9380019306e+00
+                      6.3760117511e+00
+Expected Improvement    =
+                      4.9805670991e+05
+
+---------------------
+Begin Evaluation   31
+---------------------
+Parameters for evaluation 31:
+                      8.8089935139e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      6.3760117511e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 31:
+Active set vector = { 1 }
+                      1.2889690000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 22
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6979378482e-01
+                      2.0191450490e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      4.7919029808e+04
+
+---------------------
+Begin Evaluation   32
+---------------------
+Parameters for evaluation 32:
+                      8.6979378482e-01 h2oDens
+                      2.0191450490e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 32:
+Active set vector = { 1 }
+                      8.7822510000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 23
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.2419980694e+00
+                      4.3038197758e+00
+Expected Improvement    =
+                      8.0953441731e+04
+
+---------------------
+Begin Evaluation   33
+---------------------
+Parameters for evaluation 33:
+                      8.8089935139e-01 h2oDens
+                      2.2419980694e+00 concDens
+                      4.3038197758e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 33:
+Active set vector = { 1 }
+                      1.2031290000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 24
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      7.9997958306e-01
+                      2.6219980694e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      5.2348427030e+04
+
+---------------------
+Begin Evaluation   34
+---------------------
+Parameters for evaluation 34:
+                      7.9997958306e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 34:
+Active set vector = { 1 }
+                      1.3031960000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 25
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.4383755525e-01
+                      2.6219942082e+00
+                      3.5812383948e+00
+Expected Improvement    =
+                      1.0239033882e+04
+
+---------------------
+Begin Evaluation   35
+---------------------
+Parameters for evaluation 35:
+                      8.4383755525e-01 h2oDens
+                      2.6219942082e+00 concDens
+                      3.5812383948e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 35:
+Active set vector = { 1 }
+                      1.3988310000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 26
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.3357388948e-01
+                      2.0899980694e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      3.7273750676e+04
+
+---------------------
+Begin Evaluation   36
+---------------------
+Parameters for evaluation 36:
+                      8.3357388948e-01 h2oDens
+                      2.0899980694e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 36:
+Active set vector = { 1 }
+                      1.0383070000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 27
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6955120324e-01
+                      1.9380019306e+00
+                      2.5504265659e+00
+Expected Improvement    =
+                      3.2281316944e+03
+
+---------------------
+Begin Evaluation   37
+---------------------
+Parameters for evaluation 37:
+                      8.6955120324e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      2.5504265659e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 37:
+Active set vector = { 1 }
+                      1.1659160000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 28
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.4750352080e-01
+                      2.2841700960e+00
+                      3.7170230542e+00
+Expected Improvement    =
+                      3.6360403197e+02
+
+---------------------
+Begin Evaluation   38
+---------------------
+Parameters for evaluation 38:
+                      8.4750352080e-01 h2oDens
+                      2.2841700960e+00 concDens
+                      3.7170230542e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 38:
+Active set vector = { 1 }
+                      1.3520500000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 29
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.5889707192e-01
+                      2.4953314027e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      2.2071872145e+03
+
+---------------------
+Begin Evaluation   39
+---------------------
+Parameters for evaluation 39:
+                      8.5889707192e-01 h2oDens
+                      2.4953314027e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 39:
+Active set vector = { 1 }
+                      8.8249400000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 30
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6955120324e-01
+                      2.4258993040e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      4.2181173687e+06
+
+---------------------
+Begin Evaluation   40
+---------------------
+Parameters for evaluation 40:
+                      8.6955120324e-01 h2oDens
+                      2.4258993040e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 40:
+Active set vector = { 1 }
+                      8.8428660000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 31
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.4193352639e+00
+                      2.8692253314e+00
+Expected Improvement    =
+                      5.2450335065e+03
+
+---------------------
+Begin Evaluation   41
+---------------------
+Parameters for evaluation 41:
+                      8.8089935139e-01 h2oDens
+                      2.4193352639e+00 concDens
+                      2.8692253314e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 41:
+Active set vector = { 1 }
+                      1.1265450000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 32
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.4280625921e-01
+                      1.9380019306e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      6.2002714754e+04
+
+---------------------
+Begin Evaluation   42
+---------------------
+Parameters for evaluation 42:
+                      8.4280625921e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 42:
+Active set vector = { 1 }
+                      1.2082570000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 33
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      7.9578824028e-01
+                      2.3911832546e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      8.7546961755e+02
+
+---------------------
+Begin Evaluation   43
+---------------------
+Parameters for evaluation 43:
+                      7.9578824028e-01 h2oDens
+                      2.3911832546e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 43:
+Active set vector = { 1 }
+                      1.1793830000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 34
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      7.9242582601e-01
+                      2.0731130417e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      7.9586720297e+02
+
+---------------------
+Begin Evaluation   44
+---------------------
+Parameters for evaluation 44:
+                      7.9242582601e-01 h2oDens
+                      2.0731130417e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 44:
+Active set vector = { 1 }
+                      1.2758610000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 35
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.5206647361e+00
+                      7.1729357797e+00
+Expected Improvement    =
+                      2.2404768583e+02
+
+---------------------
+Begin Evaluation   45
+---------------------
+Parameters for evaluation 45:
+                      8.8089935139e-01 h2oDens
+                      2.5206647361e+00 concDens
+                      7.1729357797e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 45:
+Active set vector = { 1 }
+                      1.4328850000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 36
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      1.9380019306e+00
+                      1.2911313558e+01
+Expected Improvement    =
+                      1.2801517096e+02
+
+---------------------
+Begin Evaluation   46
+---------------------
+Parameters for evaluation 46:
+                      8.8089935139e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      1.2911313558e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 46:
+Active set vector = { 1 }
+                      1.6221250000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 37
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.5138612339e-01
+                      2.2419980694e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      4.9678087183e+03
+
+---------------------
+Begin Evaluation   47
+---------------------
+Parameters for evaluation 47:
+                      8.5138612339e-01 h2oDens
+                      2.2419980694e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 47:
+Active set vector = { 1 }
+                      9.2750630000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 38
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.6381356501e-01
+                      2.1322395976e+00
+                      2.5048005881e+00
+Expected Improvement    =
+                      1.8085766870e+02
+
+---------------------
+Begin Evaluation   48
+---------------------
+Parameters for evaluation 48:
+                      8.6381356501e-01 h2oDens
+                      2.1322395976e+00 concDens
+                      2.5048005881e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 48:
+Active set vector = { 1 }
+                      1.0983940000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 39
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.3165658690e-01
+                      2.6219980694e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      1.1732441041e+05
+
+---------------------
+Begin Evaluation   49
+---------------------
+Parameters for evaluation 49:
+                      8.3165658690e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 49:
+Active set vector = { 1 }
+                      9.3471740000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 40
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.5926029569e-01
+                      2.4599396433e+00
+                      1.9314875819e+00
+Expected Improvement    =
+                      1.1333881470e+02
+
+---------------------
+Begin Evaluation   50
+---------------------
+Parameters for evaluation 50:
+                      8.5926029569e-01 h2oDens
+                      2.4599396433e+00 concDens
+                      1.9314875819e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 50:
+Active set vector = { 1 }
+                      1.0858210000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 41
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.0666185033e+00
+                      4.3038197758e+00
+Expected Improvement    =
+                      1.1993235618e+02
+
+---------------------
+Begin Evaluation   51
+---------------------
+Parameters for evaluation 51:
+                      8.8089935139e-01 h2oDens
+                      2.0666185033e+00 concDens
+                      4.3038197758e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 51:
+Active set vector = { 1 }
+                      1.2969780000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 42
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.2645165879e+00
+                      1.4346308869e+00
+Expected Improvement    =
+                      3.0932078487e+06
+
+---------------------
+Begin Evaluation   52
+---------------------
+Parameters for evaluation 52:
+                      8.8089935139e-01 h2oDens
+                      2.2645165879e+00 concDens
+                      1.4346308869e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 52:
+Active set vector = { 1 }
+                      9.3773140000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 43
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.4478323426e-01
+                      2.1787709191e+00
+                      1.3404635333e+00
+Expected Improvement    =
+                      2.0623410971e+03
+
+---------------------
+Begin Evaluation   53
+---------------------
+Parameters for evaluation 53:
+                      8.4478323426e-01 h2oDens
+                      2.1787709191e+00 concDens
+                      1.3404635333e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 53:
+Active set vector = { 1 }
+                      1.1686610000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 44
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.7446639909e-01
+                      1.9380019306e+00
+                      4.7823459062e-01
+Expected Improvement    =
+                      3.3330303256e+04
+
+---------------------
+Begin Evaluation   54
+---------------------
+Parameters for evaluation 54:
+                      8.7446639909e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      4.7823459062e-01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 54:
+Active set vector = { 1 }
+                      9.6146740000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 45
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.4193352639e+00
+                      6.3763397334e-01
+Expected Improvement    =
+                      3.1914882650e+06
+
+---------------------
+Begin Evaluation   55
+---------------------
+Parameters for evaluation 55:
+                      8.8089935139e-01 h2oDens
+                      2.4193352639e+00 concDens
+                      6.3763397334e-01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 55:
+Active set vector = { 1 }
+                      9.6413380000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 46
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.5674237667e-01
+                      2.6219942082e+00
+                      1.0957887606e+00
+Expected Improvement    =
+                      1.4705714937e+06
+
+---------------------
+Begin Evaluation   56
+---------------------
+Parameters for evaluation 56:
+                      8.5674237667e-01 h2oDens
+                      2.6219942082e+00 concDens
+                      1.0957887606e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 56:
+Active set vector = { 1 }
+                      1.0115360000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 47
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.1744463750e+00
+                      2.2384789857e+00
+Expected Improvement    =
+                      1.5025223073e+06
+
+---------------------
+Begin Evaluation   57
+---------------------
+Parameters for evaluation 57:
+                      8.8089935139e-01 h2oDens
+                      2.1744463750e+00 concDens
+                      2.2384789857e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 57:
+Active set vector = { 1 }
+                      9.1302210000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 48
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.3637719860e-01
+                      2.6219942082e+00
+                      1.1355839426e+00
+Expected Improvement    =
+                      4.9268672292e+04
+
+---------------------
+Begin Evaluation   58
+---------------------
+Parameters for evaluation 58:
+                      8.3637719860e-01 h2oDens
+                      2.6219942082e+00 concDens
+                      1.1355839426e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 58:
+Active set vector = { 1 }
+                      1.1020600000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 49
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6968611492e-01
+                      2.1531595793e+00
+                      1.2873304057e+00
+Expected Improvement    =
+                      1.1652763721e+04
+
+---------------------
+Begin Evaluation   59
+---------------------
+Parameters for evaluation 59:
+                      8.6968611492e-01 h2oDens
+                      2.1531595793e+00 concDens
+                      1.2873304057e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 59:
+Active set vector = { 1 }
+                      9.6055830000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 50
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.5262497587e-01
+                      2.3776844993e+00
+                      7.9688758616e-01
+Expected Improvement    =
+                      6.3872569987e+03
+
+---------------------
+Begin Evaluation   60
+---------------------
+Parameters for evaluation 60:
+                      8.5262497587e-01 h2oDens
+                      2.3776844993e+00 concDens
+                      7.9688758616e-01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 60:
+Active set vector = { 1 }
+                      1.0903920000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 51
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6860552423e-01
+                      2.6219980694e+00
+                      2.0722284178e+00
+Expected Improvement    =
+                      8.3537724736e+03
+
+---------------------
+Begin Evaluation   61
+---------------------
+Parameters for evaluation 61:
+                      8.6860552423e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      2.0722284178e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 61:
+Active set vector = { 1 }
+                      1.0578900000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 52
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.5976232282e-01
+                      1.9974064929e+00
+                      1.2289495618e+00
+Expected Improvement    =
+                      1.6055955672e+03
+
+---------------------
+Begin Evaluation   62
+---------------------
+Parameters for evaluation 62:
+                      8.5976232282e-01 h2oDens
+                      1.9974064929e+00 concDens
+                      1.2289495618e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 62:
+Active set vector = { 1 }
+                      1.0335540000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 53
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.4699980694e+00
+                      4.7617559082e+00
+Expected Improvement    =
+                      6.8448012842e+02
+
+---------------------
+Begin Evaluation   63
+---------------------
+Parameters for evaluation 63:
+                      8.8089935139e-01 h2oDens
+                      2.4699980694e+00 concDens
+                      4.7617559082e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 63:
+Active set vector = { 1 }
+                      1.2359960000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 54
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6913738759e-01
+                      2.2882706904e+00
+                      2.5382547795e+00
+Expected Improvement    =
+                      4.5388870620e+02
+
+---------------------
+Begin Evaluation   64
+---------------------
+Parameters for evaluation 64:
+                      8.6913738759e-01 h2oDens
+                      2.2882706904e+00 concDens
+                      2.5382547795e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 64:
+Active set vector = { 1 }
+                      1.1584680000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 55
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.3520969364e-01
+                      2.4320695016e+00
+                      2.0633364540e+00
+Expected Improvement    =
+                      3.6609143291e+01
+
+---------------------
+Begin Evaluation   65
+---------------------
+Parameters for evaluation 65:
+                      8.3520969364e-01 h2oDens
+                      2.4320695016e+00 concDens
+                      2.0633364540e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 65:
+Active set vector = { 1 }
+                      1.3918930000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 56
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.2166647361e+00
+                      6.7361362824e+00
+Expected Improvement    =
+                      3.3258543606e+01
+
+---------------------
+Begin Evaluation   66
+---------------------
+Parameters for evaluation 66:
+                      8.8089935139e-01 h2oDens
+                      2.2166647361e+00 concDens
+                      6.7361362824e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 66:
+Active set vector = { 1 }
+                      1.3403940000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 57
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.6267719352e-01
+                      2.4824234111e+00
+                      3.8256945126e+00
+Expected Improvement    =
+                      2.9111033720e+01
+
+---------------------
+Begin Evaluation   67
+---------------------
+Parameters for evaluation 67:
+                      8.6267719352e-01 h2oDens
+                      2.4824234111e+00 concDens
+                      3.8256945126e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 67:
+Active set vector = { 1 }
+                      1.3616900000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 58
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.2217774391e-01
+                      2.1153314027e+00
+                      1.4346308869e+00
+Expected Improvement    =
+                      3.1109627369e+01
+
+---------------------
+Begin Evaluation   68
+---------------------
+Parameters for evaluation 68:
+                      8.2217774391e-01 h2oDens
+                      2.1153314027e+00 concDens
+                      1.4346308869e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 68:
+Active set vector = { 1 }
+                      1.3084580000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 59
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.5969746143e-01
+                      1.9380019306e+00
+                      4.6805620754e+00
+Expected Improvement    =
+                      2.9247476748e+00
+
+---------------------
+Begin Evaluation   69
+---------------------
+Parameters for evaluation 69:
+                      8.5969746143e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      4.6805620754e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 69:
+Active set vector = { 1 }
+                      1.3881100000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 60
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.1675533201e-01
+                      2.6219980694e+00
+                      1.4346308869e+00
+Expected Improvement    =
+                      5.7815635025e-01
+
+---------------------
+Begin Evaluation   70
+---------------------
+Parameters for evaluation 70:
+                      8.1675533201e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      1.4346308869e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 70:
+Active set vector = { 1 }
+                      1.2589840000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 61
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6670508561e-01
+                      2.5375497638e+00
+                      8.8741069239e-01
+Expected Improvement    =
+                      5.3817011724e-01
+
+---------------------
+Begin Evaluation   71
+---------------------
+Parameters for evaluation 71:
+                      8.6670508561e-01 h2oDens
+                      2.5375497638e+00 concDens
+                      8.8741069239e-01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 71:
+Active set vector = { 1 }
+                      8.9511180000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 62
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6671416620e-01
+                      2.1660019306e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      1.7470719107e+04
+
+---------------------
+Begin Evaluation   72
+---------------------
+Parameters for evaluation 72:
+                      8.6671416620e-01 h2oDens
+                      2.1660019306e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 72:
+Active set vector = { 1 }
+                      8.7661170000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 63
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.4258313604e-01
+                      2.5522532134e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      2.3324035884e+04
+
+---------------------
+Begin Evaluation   73
+---------------------
+Parameters for evaluation 73:
+                      8.4258313604e-01 h2oDens
+                      2.5522532134e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 73:
+Active set vector = { 1 }
+                      9.6091650000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 64
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.2130730410e-01
+                      2.3686647361e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      6.5635598027e+03
+
+---------------------
+Begin Evaluation   74
+---------------------
+Parameters for evaluation 74:
+                      8.2130730410e-01 h2oDens
+                      2.3686647361e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 74:
+Active set vector = { 1 }
+                      1.1703190000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 65
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.0646685973e+00
+                      2.5355580364e+00
+Expected Improvement    =
+                      2.2745752212e+02
+
+---------------------
+Begin Evaluation   75
+---------------------
+Parameters for evaluation 75:
+                      8.8089935139e-01 h2oDens
+                      2.0646685973e+00 concDens
+                      2.5355580364e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 75:
+Active set vector = { 1 }
+                      9.7421080000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 66
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.5371366154e+00
+                      1.8698998003e+00
+Expected Improvement    =
+                      4.6712353534e+02
+
+---------------------
+Begin Evaluation   76
+---------------------
+Parameters for evaluation 76:
+                      8.8089935139e-01 h2oDens
+                      2.5371366154e+00 concDens
+                      1.8698998003e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 76:
+Active set vector = { 1 }
+                      1.0247120000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 67
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.1795431591e+00
+                      9.3274513046e-01
+Expected Improvement    =
+                      3.2237749989e+04
+
+---------------------
+Begin Evaluation   77
+---------------------
+Parameters for evaluation 77:
+                      8.8089935139e-01 h2oDens
+                      2.1795431591e+00 concDens
+                      9.3274513046e-01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 77:
+Active set vector = { 1 }
+                      8.9192130000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 68
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.6219980694e+00
+                      5.1421424553e+00
+Expected Improvement    =
+                      2.1213007748e+00
+
+---------------------
+Begin Evaluation   78
+---------------------
+Parameters for evaluation 78:
+                      8.8089935139e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      5.1421424553e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 78:
+Active set vector = { 1 }
+                      1.3177220000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 69
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.5329434537e-01
+                      2.5133516232e+00
+                      9.0293518646e-01
+Expected Improvement    =
+                      3.0169593518e-01
+
+---------------------
+Begin Evaluation   79
+---------------------
+Parameters for evaluation 79:
+                      8.5329434537e-01 h2oDens
+                      2.5133516232e+00 concDens
+                      9.0293518646e-01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 79:
+Active set vector = { 1 }
+                      1.0798120000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 70
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.6219980694e+00
+                      2.1256895276e-01
+Expected Improvement    =
+                      8.1746897901e+05
+
+---------------------
+Begin Evaluation   80
+---------------------
+Parameters for evaluation 80:
+                      8.8089935139e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      2.1256895276e-01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 80:
+Active set vector = { 1 }
+                      7.2411170000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 71
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.7806231435e-01
+                      2.6219980694e+00
+                      4.7823459062e-01
+Expected Improvement    =
+                      1.3551552105e+07
+
+---------------------
+Begin Evaluation   81
+---------------------
+Parameters for evaluation 81:
+                      8.7806231435e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      4.7823459062e-01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 81:
+Active set vector = { 1 }
+                      8.7247600000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 72
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6786480719e-01
+                      2.4502789209e+00
+                      1.3135689872e+00
+Expected Improvement    =
+                      2.1884849717e+06
+
+---------------------
+Begin Evaluation   82
+---------------------
+Parameters for evaluation 82:
+                      8.6786480719e-01 h2oDens
+                      2.4502789209e+00 concDens
+                      1.3135689872e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 82:
+Active set vector = { 1 }
+                      1.1138920000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 73
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.6736278006e-01
+                      2.2435116598e+00
+                      6.7793934995e-01
+Expected Improvement    =
+                      4.3758648251e+06
+
+---------------------
+Begin Evaluation   83
+---------------------
+Parameters for evaluation 83:
+                      8.6736278006e-01 h2oDens
+                      2.2435116598e+00 concDens
+                      6.7793934995e-01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 83:
+Active set vector = { 1 }
+                      8.8721400000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 74
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.8089935139e-01
+                      2.5459980694e+00
+                      5.6190651168e-01
+Expected Improvement    =
+                      7.8653643130e+07
+
+---------------------
+Begin Evaluation   84
+---------------------
+Parameters for evaluation 84:
+                      8.8089935139e-01 h2oDens
+                      2.5459980694e+00 concDens
+                      5.6190651168e-01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 84:
+Active set vector = { 1 }
+                      8.6754240000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global minimization: response 1 cell 1 iteration 75
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      8.6432207827e-01
+                      2.5459980694e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      5.7048822935e+07
+
+---------------------
+Begin Evaluation   85
+---------------------
+Parameters for evaluation 85:
+                      8.6432207827e-01 h2oDens
+                      2.5459980694e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 85:
+Active set vector = { 1 }
+                      8.5786110000e+09 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 1
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      1.9380019306e+00
+                      1.2911313558e+01
+Expected Improvement    =
+                      4.3520473834e+09
+
+---------------------
+Begin Evaluation   86
+---------------------
+Parameters for evaluation 86:
+                      6.5110064861e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      1.2911313558e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 86:
+Active set vector = { 1 }
+                      5.4670830000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 2
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      1.9886685973e+00
+                      1.2911313558e+01
+Expected Improvement    =
+                      8.8922851621e+07
+
+---------------------
+Begin Evaluation   87
+---------------------
+Parameters for evaluation 87:
+                      6.5110064861e-01 h2oDens
+                      1.9886685973e+00 concDens
+                      1.2911313558e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 87:
+Active set vector = { 1 }
+                      5.4115240000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 3
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      1.9380019306e+00
+                      1.2433115409e+01
+Expected Improvement    =
+                      6.6829137933e+07
+
+---------------------
+Begin Evaluation   88
+---------------------
+Parameters for evaluation 88:
+                      6.5110064861e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      1.2433115409e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 88:
+Active set vector = { 1 }
+                      5.3025880000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 4
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.1575574862e+00
+                      1.2911313558e+01
+Expected Improvement    =
+                      5.7386860853e+06
+
+---------------------
+Begin Evaluation   89
+---------------------
+Parameters for evaluation 89:
+                      6.5110064861e-01 h2oDens
+                      2.1575574862e+00 concDens
+                      1.2911313558e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 89:
+Active set vector = { 1 }
+                      5.3140950000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 5
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.1069950719e+00
+                      1.2220582899e+01
+Expected Improvement    =
+                      6.7323878632e+06
+
+---------------------
+Begin Evaluation   90
+---------------------
+Parameters for evaluation 90:
+                      6.5110064861e-01 h2oDens
+                      2.1069950719e+00 concDens
+                      1.2220582899e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 90:
+Active set vector = { 1 }
+                      5.4205910000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 6
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.1650636590e+00
+                      1.1954917261e+01
+Expected Improvement    =
+                      4.0009742904e+07
+
+---------------------
+Begin Evaluation   91
+---------------------
+Parameters for evaluation 91:
+                      6.5110064861e-01 h2oDens
+                      2.1650636590e+00 concDens
+                      1.1954917261e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 91:
+Active set vector = { 1 }
+                      4.9901020000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 7
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.0856889702e+00
+                      1.2645720805e+01
+Expected Improvement    =
+                      4.5944510568e+08
+
+---------------------
+Begin Evaluation   92
+---------------------
+Parameters for evaluation 92:
+                      6.5110064861e-01 h2oDens
+                      2.0856889702e+00 concDens
+                      1.2645720805e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 92:
+Active set vector = { 1 }
+                      5.2037680000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 8
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.1243202764e+00
+                      1.2592587677e+01
+Expected Improvement    =
+                      4.8077930591e+07
+
+---------------------
+Begin Evaluation   93
+---------------------
+Parameters for evaluation 93:
+                      6.5110064861e-01 h2oDens
+                      2.1243202764e+00 concDens
+                      1.2592587677e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 93:
+Active set vector = { 1 }
+                      5.7022950000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 9
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.1237758472e+00
+                      1.2805120187e+01
+Expected Improvement    =
+                      1.1063425384e+08
+
+---------------------
+Begin Evaluation   94
+---------------------
+Parameters for evaluation 94:
+                      6.5110064861e-01 h2oDens
+                      2.1237758472e+00 concDens
+                      1.2805120187e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 94:
+Active set vector = { 1 }
+                      4.7874860000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 10
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.2202286237e+00
+                      1.2633549018e+01
+Expected Improvement    =
+                      1.8722081522e+10
+
+---------------------
+Begin Evaluation   95
+---------------------
+Parameters for evaluation 95:
+                      6.5110194584e-01 h2oDens
+                      2.2202286237e+00 concDens
+                      1.2633549018e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 95:
+Active set vector = { 1 }
+                      5.5425980000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 11
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.1675927450e+00
+                      1.2504324004e+01
+Expected Improvement    =
+                      8.5745851883e+09
+
+---------------------
+Begin Evaluation   96
+---------------------
+Parameters for evaluation 96:
+                      6.5110194584e-01 h2oDens
+                      2.1675927450e+00 concDens
+                      1.2504324004e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 96:
+Active set vector = { 1 }
+                      5.1593540000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 12
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.1353903368e+00
+                      1.2293176308e+01
+Expected Improvement    =
+                      6.8680137581e+09
+
+---------------------
+Begin Evaluation   97
+---------------------
+Parameters for evaluation 97:
+                      6.5110064861e-01 h2oDens
+                      2.1353903368e+00 concDens
+                      1.2293176308e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 97:
+Active set vector = { 1 }
+                      4.7818530000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 13
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.1918024691e+00
+                      1.1478395467e+01
+Expected Improvement    =
+                      1.7279752946e+10
+
+---------------------
+Begin Evaluation   98
+---------------------
+Parameters for evaluation 98:
+                      6.5110194584e-01 h2oDens
+                      2.1918024691e+00 concDens
+                      1.1478395467e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 98:
+Active set vector = { 1 }
+                      5.7209510000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 14
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.1852577351e+00
+                      1.1709513639e+01
+Expected Improvement    =
+                      3.5298231024e+09
+
+---------------------
+Begin Evaluation   99
+---------------------
+Parameters for evaluation 99:
+                      6.5110194584e-01 h2oDens
+                      2.1852577351e+00 concDens
+                      1.1709513639e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 99:
+Active set vector = { 1 }
+                      5.4894720000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 15
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.1735930498e+00
+                      1.1106026264e+01
+Expected Improvement    =
+                      1.1160082726e+10
+
+---------------------
+Begin Evaluation  100
+---------------------
+Parameters for evaluation 100:
+                      6.5110194584e-01 h2oDens
+                      2.1735930498e+00 concDens
+                      1.1106026264e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 100:
+Active set vector = { 1 }
+                      5.4192990000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 16
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.4661368694e+00
+                      8.7810692869e+00
+Expected Improvement    =
+                      2.6664390771e+10
+
+---------------------
+Begin Evaluation  101
+---------------------
+Parameters for evaluation 101:
+                      6.5110064861e-01 h2oDens
+                      2.4661368694e+00 concDens
+                      8.7810692869e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 101:
+Active set vector = { 1 }
+                      4.7218380000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 17
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      6.7605541838e-01
+                      2.4183429355e+00
+                      1.0767329908e+01
+Expected Improvement    =
+                      1.9790849174e+10
+
+---------------------
+Begin Evaluation  102
+---------------------
+Parameters for evaluation 102:
+                      6.7605541838e-01 h2oDens
+                      2.4183429355e+00 concDens
+                      1.0767329908e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 102:
+Active set vector = { 1 }
+                      4.4745800000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 18
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      7.7557354062e-01
+                      1.9380057918e+00
+                      1.2911240673e+01
+Expected Improvement    =
+                      4.0893076983e+10
+
+---------------------
+Begin Evaluation  103
+---------------------
+Parameters for evaluation 103:
+                      7.7557354062e-01 h2oDens
+                      1.9380057918e+00 concDens
+                      1.2911240673e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 103:
+Active set vector = { 1 }
+                      2.6429590000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 19
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.2264490169e+00
+                      1.0871409614e+01
+Expected Improvement    =
+                      4.6195564161e+09
+
+---------------------
+Begin Evaluation  104
+---------------------
+Parameters for evaluation 104:
+                      6.5110194584e-01 h2oDens
+                      2.2264490169e+00 concDens
+                      1.0871409614e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 104:
+Active set vector = { 1 }
+                      5.1368250000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 20
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.2420019306e+00
+                      1.2911313558e+01
+Expected Improvement    =
+                      4.4367782690e+09
+
+---------------------
+Begin Evaluation  105
+---------------------
+Parameters for evaluation 105:
+                      6.5110064861e-01 h2oDens
+                      2.2420019306e+00 concDens
+                      1.2911313558e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 105:
+Active set vector = { 1 }
+                      5.6074130000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 21
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      1.9717797084e+00
+                      1.2433115409e+01
+Expected Improvement    =
+                      1.2893360754e+09
+
+---------------------
+Begin Evaluation  106
+---------------------
+Parameters for evaluation 106:
+                      6.5110064861e-01 h2oDens
+                      1.9717797084e+00 concDens
+                      1.2433115409e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 106:
+Active set vector = { 1 }
+                      4.8765580000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 22
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.2662618503e+00
+                      1.2108996043e+01
+Expected Improvement    =
+                      1.2365678392e+09
+
+---------------------
+Begin Evaluation  107
+---------------------
+Parameters for evaluation 107:
+                      6.5110194584e-01 h2oDens
+                      2.2662618503e+00 concDens
+                      1.2108996043e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 107:
+Active set vector = { 1 }
+                      5.2629220000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 23
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.6219942082e+00
+                      1.2911240673e+01
+Expected Improvement    =
+                      1.2383408089e+09
+
+---------------------
+Begin Evaluation  108
+---------------------
+Parameters for evaluation 108:
+                      6.5110194584e-01 h2oDens
+                      2.6219942082e+00 concDens
+                      1.2911240673e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 108:
+Active set vector = { 1 }
+                      5.3867440000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 24
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.6219980694e+00
+                      1.1942308165e+01
+Expected Improvement    =
+                      1.6733511066e+09
+
+---------------------
+Begin Evaluation  109
+---------------------
+Parameters for evaluation 109:
+                      6.5110064861e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      1.1942308165e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 109:
+Active set vector = { 1 }
+                      5.1010580000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 25
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.5733662551e+00
+                      1.2745500299e+01
+Expected Improvement    =
+                      1.5771372445e+09
+
+---------------------
+Begin Evaluation  110
+---------------------
+Parameters for evaluation 110:
+                      6.5110194584e-01 h2oDens
+                      2.5733662551e+00 concDens
+                      1.2745500299e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 110:
+Active set vector = { 1 }
+                      5.2110830000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 26
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.6219942082e+00
+                      1.0285414627e+01
+Expected Improvement    =
+                      1.4253610208e+09
+
+---------------------
+Begin Evaluation  111
+---------------------
+Parameters for evaluation 111:
+                      6.5110194584e-01 h2oDens
+                      2.6219942082e+00 concDens
+                      1.0285414627e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 111:
+Active set vector = { 1 }
+                      4.7499730000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 27
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.5525736930e+00
+                      1.1562358928e+01
+Expected Improvement    =
+                      1.2973011783e+09
+
+---------------------
+Begin Evaluation  112
+---------------------
+Parameters for evaluation 112:
+                      6.5110194584e-01 h2oDens
+                      2.5525736930e+00 concDens
+                      1.1562358928e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 112:
+Active set vector = { 1 }
+                      5.3874720000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 28
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.5136296296e+00
+                      1.2155350870e+01
+Expected Improvement    =
+                      1.5092896008e+09
+
+---------------------
+Begin Evaluation  113
+---------------------
+Parameters for evaluation 113:
+                      6.5110194584e-01 h2oDens
+                      2.5136296296e+00 concDens
+                      1.2155350870e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 113:
+Active set vector = { 1 }
+                      5.3630420000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 29
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.5048955952e+00
+                      1.1210324626e+01
+Expected Improvement    =
+                      1.5532699647e+09
+
+---------------------
+Begin Evaluation  114
+---------------------
+Parameters for evaluation 114:
+                      6.5110194584e-01 h2oDens
+                      2.5048955952e+00 concDens
+                      1.1210324626e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 114:
+Active set vector = { 1 }
+                      5.0527990000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 30
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.4699980694e+00
+                      1.2911313558e+01
+Expected Improvement    =
+                      1.3600889207e+09
+
+---------------------
+Begin Evaluation  115
+---------------------
+Parameters for evaluation 115:
+                      6.5110064861e-01 h2oDens
+                      2.4699980694e+00 concDens
+                      1.2911313558e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 115:
+Active set vector = { 1 }
+                      5.0998060000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 31
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.4493174821e+00
+                      1.1902804523e+01
+Expected Improvement    =
+                      1.2638912238e+09
+
+---------------------
+Begin Evaluation  116
+---------------------
+Parameters for evaluation 116:
+                      6.5110194584e-01 h2oDens
+                      2.4493174821e+00 concDens
+                      1.1902804523e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 116:
+Active set vector = { 1 }
+                      5.0882160000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 32
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.3979557994e+00
+                      1.2911240673e+01
+Expected Improvement    =
+                      1.2345747439e+09
+
+---------------------
+Begin Evaluation  117
+---------------------
+Parameters for evaluation 117:
+                      6.5110194584e-01 h2oDens
+                      2.3979557994e+00 concDens
+                      1.2911240673e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 117:
+Active set vector = { 1 }
+                      5.0767090000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 33
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.3354275263e+00
+                      1.2407459907e+01
+Expected Improvement    =
+                      1.1823948294e+09
+
+---------------------
+Begin Evaluation  118
+---------------------
+Parameters for evaluation 118:
+                      6.5110194584e-01 h2oDens
+                      2.3354275263e+00 concDens
+                      1.2407459907e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 118:
+Active set vector = { 1 }
+                      5.6647280000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 34
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.3622898948e+00
+                      1.1918984982e+01
+Expected Improvement    =
+                      1.7375611753e+09
+
+---------------------
+Begin Evaluation  119
+---------------------
+Parameters for evaluation 119:
+                      6.5110194584e-01 h2oDens
+                      2.3622898948e+00 concDens
+                      1.1918984982e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 119:
+Active set vector = { 1 }
+                      4.9876140000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 35
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.3111483006e+00
+                      1.1476719113e+01
+Expected Improvement    =
+                      1.1770371770e+09
+
+---------------------
+Begin Evaluation  120
+---------------------
+Parameters for evaluation 120:
+                      6.5110064861e-01 h2oDens
+                      2.3111483006e+00 concDens
+                      1.1476719113e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 120:
+Active set vector = { 1 }
+                      4.8857090000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 36
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.5541953970e+00
+                      1.0497291173e+01
+Expected Improvement    =
+                      1.1119329239e+09
+
+---------------------
+Begin Evaluation  121
+---------------------
+Parameters for evaluation 121:
+                      6.5110194584e-01 h2oDens
+                      2.5541953970e+00 concDens
+                      1.0497291173e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 121:
+Active set vector = { 1 }
+                      5.3066640000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 37
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.5488206066e+00
+                      9.4503717705e+00
+Expected Improvement    =
+                      1.1325000643e+09
+
+---------------------
+Begin Evaluation  122
+---------------------
+Parameters for evaluation 122:
+                      6.5110194584e-01 h2oDens
+                      2.5488206066e+00 concDens
+                      9.4503717705e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 122:
+Active set vector = { 1 }
+                      4.9525680000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 38
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.4965090687e+00
+                      1.0042051784e+01
+Expected Improvement    =
+                      9.9111696535e+08
+
+---------------------
+Begin Evaluation  123
+---------------------
+Parameters for evaluation 123:
+                      6.5110194584e-01 h2oDens
+                      2.4965090687e+00 concDens
+                      1.0042051784e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 123:
+Active set vector = { 1 }
+                      4.9026820000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 39
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.5871044048e+00
+                      1.1117396316e+01
+Expected Improvement    =
+                      9.6418280175e+08
+
+---------------------
+Begin Evaluation  124
+---------------------
+Parameters for evaluation 124:
+                      6.5110194584e-01 h2oDens
+                      2.5871044048e+00 concDens
+                      1.1117396316e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 124:
+Active set vector = { 1 }
+                      4.9990630000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 40
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.6219980694e+00
+                      8.9712261180e+00
+Expected Improvement    =
+                      9.1088380885e+08
+
+---------------------
+Begin Evaluation  125
+---------------------
+Parameters for evaluation 125:
+                      6.5110064861e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      8.9712261180e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 125:
+Active set vector = { 1 }
+                      5.0625990000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 41
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.3932296906e+00
+                      9.5942466591e+00
+Expected Improvement    =
+                      8.6844936833e+08
+
+---------------------
+Begin Evaluation  126
+---------------------
+Parameters for evaluation 126:
+                      6.5110194584e-01 h2oDens
+                      2.3932296906e+00 concDens
+                      9.5942466591e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 126:
+Active set vector = { 1 }
+                      5.5575990000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 42
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.3543319616e+00
+                      9.5166241888e+00
+Expected Improvement    =
+                      1.2603754806e+09
+
+---------------------
+Begin Evaluation  127
+---------------------
+Parameters for evaluation 127:
+                      6.5110194584e-01 h2oDens
+                      2.3543319616e+00 concDens
+                      9.5166241888e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 127:
+Active set vector = { 1 }
+                      4.8633360000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 43
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.4269379668e+00
+                      9.7614447314e+00
+Expected Improvement    =
+                      1.3008914519e+09
+
+---------------------
+Begin Evaluation  128
+---------------------
+Parameters for evaluation 128:
+                      6.5110064861e-01 h2oDens
+                      2.4269379668e+00 concDens
+                      9.7614447314e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 128:
+Active set vector = { 1 }
+                      5.1409600000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 44
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.3994964182e+00
+                      8.9218830078e+00
+Expected Improvement    =
+                      1.1675356064e+09
+
+---------------------
+Begin Evaluation  129
+---------------------
+Parameters for evaluation 129:
+                      6.5110194584e-01 h2oDens
+                      2.3994964182e+00 concDens
+                      8.9218830078e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 129:
+Active set vector = { 1 }
+                      4.8232920000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 45
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.3855536250e+00
+                      1.0201596936e+01
+Expected Improvement    =
+                      1.1370920463e+09
+
+---------------------
+Begin Evaluation  130
+---------------------
+Parameters for evaluation 130:
+                      6.5110064861e-01 h2oDens
+                      2.3855536250e+00 concDens
+                      1.0201596936e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 130:
+Active set vector = { 1 }
+                      5.2387280000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 46
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.5321286389e+00
+                      8.1063004323e+00
+Expected Improvement    =
+                      7.0385528210e+08
+
+---------------------
+Begin Evaluation  131
+---------------------
+Parameters for evaluation 131:
+                      6.5110194584e-01 h2oDens
+                      2.5321286389e+00 concDens
+                      8.1063004323e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 131:
+Active set vector = { 1 }
+                      4.5769570000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 47
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5157283951e-01
+                      2.3137777778e+00
+                      1.2884783436e+01
+Expected Improvement    =
+                      1.5335287506e+09
+
+---------------------
+Begin Evaluation  132
+---------------------
+Parameters for evaluation 132:
+                      6.5157283951e-01 h2oDens
+                      2.3137777778e+00 concDens
+                      1.2884783436e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 132:
+Active set vector = { 1 }
+                      5.1797430000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 48
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      1.9380019306e+00
+                      1.0998520965e+01
+Expected Improvement    =
+                      6.2766227966e+08
+
+---------------------
+Begin Evaluation  133
+---------------------
+Parameters for evaluation 133:
+                      6.5110064861e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      1.0998520965e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 133:
+Active set vector = { 1 }
+                      5.0517090000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 49
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      1.9945569273e+00
+                      1.0471489901e+01
+Expected Improvement    =
+                      6.3903378510e+08
+
+---------------------
+Begin Evaluation  134
+---------------------
+Parameters for evaluation 134:
+                      6.5110194584e-01 h2oDens
+                      1.9945569273e+00 concDens
+                      1.0471489901e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 134:
+Active set vector = { 1 }
+                      5.2549530000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 50
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      1.9545819235e+00
+                      9.9145760085e+00
+Expected Improvement    =
+                      7.5736643385e+08
+
+---------------------
+Begin Evaluation  135
+---------------------
+Parameters for evaluation 135:
+                      6.5110194584e-01 h2oDens
+                      1.9545819235e+00 concDens
+                      9.9145760085e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 135:
+Active set vector = { 1 }
+                      5.1501210000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 51
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.0091985978e+00
+                      9.5848445008e+00
+Expected Improvement    =
+                      7.1799038670e+08
+
+---------------------
+Begin Evaluation  136
+---------------------
+Parameters for evaluation 136:
+                      6.5110194584e-01 h2oDens
+                      2.0091985978e+00 concDens
+                      9.5848445008e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 136:
+Active set vector = { 1 }
+                      5.0823250000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 52
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.0474515064e+00
+                      1.0362308248e+01
+Expected Improvement    =
+                      6.8208045797e+08
+
+---------------------
+Begin Evaluation  137
+---------------------
+Parameters for evaluation 137:
+                      6.5110064861e-01 h2oDens
+                      2.0474515064e+00 concDens
+                      1.0362308248e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 137:
+Active set vector = { 1 }
+                      5.1471250000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 53
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.0830092974e+00
+                      9.4916975364e+00
+Expected Improvement    =
+                      6.2655202401e+08
+
+---------------------
+Begin Evaluation  138
+---------------------
+Parameters for evaluation 138:
+                      6.5110194584e-01 h2oDens
+                      2.0830092974e+00 concDens
+                      9.4916975364e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 138:
+Active set vector = { 1 }
+                      5.5528300000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 54
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.1182350251e+00
+                      9.2647338062e+00
+Expected Improvement    =
+                      9.3016006089e+08
+
+---------------------
+Begin Evaluation  139
+---------------------
+Parameters for evaluation 139:
+                      6.5110064861e-01 h2oDens
+                      2.1182350251e+00 concDens
+                      9.2647338062e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 139:
+Active set vector = { 1 }
+                      4.6346040000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 55
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.0570311436e+00
+                      9.2451277551e+00
+Expected Improvement    =
+                      1.1065872254e+09
+
+---------------------
+Begin Evaluation  140
+---------------------
+Parameters for evaluation 140:
+                      6.5110064861e-01 h2oDens
+                      2.0570311436e+00 concDens
+                      9.2451277551e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 140:
+Active set vector = { 1 }
+                      4.8751820000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 56
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      1.9613506071e+00
+                      8.8436045729e+00
+Expected Improvement    =
+                      5.7908701526e+08
+
+---------------------
+Begin Evaluation  141
+---------------------
+Parameters for evaluation 141:
+                      6.5110064861e-01 h2oDens
+                      1.9613506071e+00 concDens
+                      8.8436045729e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 141:
+Active set vector = { 1 }
+                      5.1561630000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 57
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      1.9380019306e+00
+                      7.8904880993e+00
+Expected Improvement    =
+                      5.4387356703e+08
+
+---------------------
+Begin Evaluation  142
+---------------------
+Parameters for evaluation 142:
+                      6.5110064861e-01 h2oDens
+                      1.9380019306e+00 concDens
+                      7.8904880993e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 142:
+Active set vector = { 1 }
+                      4.9550380000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 58
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.0900019306e+00
+                      1.0042197554e+01
+Expected Improvement    =
+                      1.3637041134e+09
+
+---------------------
+Begin Evaluation  143
+---------------------
+Parameters for evaluation 143:
+                      6.5110064861e-01 h2oDens
+                      2.0900019306e+00 concDens
+                      1.0042197554e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 143:
+Active set vector = { 1 }
+                      4.7329850000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 59
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.0234502870e+00
+                      1.1170748099e+01
+Expected Improvement    =
+                      5.7022012031e+08
+
+---------------------
+Begin Evaluation  144
+---------------------
+Parameters for evaluation 144:
+                      6.5110064861e-01 h2oDens
+                      2.0234502870e+00 concDens
+                      1.1170748099e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 144:
+Active set vector = { 1 }
+                      5.4954760000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 60
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.2570104151e+00
+                      9.0476824291e+00
+Expected Improvement    =
+                      4.9899429424e+08
+
+---------------------
+Begin Evaluation  145
+---------------------
+Parameters for evaluation 145:
+                      6.5110064861e-01 h2oDens
+                      2.2570104151e+00 concDens
+                      9.0476824291e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 145:
+Active set vector = { 1 }
+                      5.0945520000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 61
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.2901356501e+00
+                      8.2156278553e+00
+Expected Improvement    =
+                      5.0454984854e+08
+
+---------------------
+Begin Evaluation  146
+---------------------
+Parameters for evaluation 146:
+                      6.5110064861e-01 h2oDens
+                      2.2901356501e+00 concDens
+                      8.2156278553e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 146:
+Active set vector = { 1 }
+                      4.9947640000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 62
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.2241747701e+00
+                      8.2493735865e+00
+Expected Improvement    =
+                      5.0331810870e+08
+
+---------------------
+Begin Evaluation  147
+---------------------
+Parameters for evaluation 147:
+                      6.5110064861e-01 h2oDens
+                      2.2241747701e+00 concDens
+                      8.2493735865e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 147:
+Active set vector = { 1 }
+                      4.9968380000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 63
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.6219980694e+00
+                      6.1266723418e+00
+Expected Improvement    =
+                      4.7426185371e+08
+
+---------------------
+Begin Evaluation  148
+---------------------
+Parameters for evaluation 148:
+                      6.5110064861e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      6.1266723418e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 148:
+Active set vector = { 1 }
+                      4.6669770000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 64
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.1913352639e+00
+                      1.1264186603e+01
+Expected Improvement    =
+                      1.1775162110e+09
+
+---------------------
+Begin Evaluation  149
+---------------------
+Parameters for evaluation 149:
+                      6.5110064861e-01 h2oDens
+                      2.1913352639e+00 concDens
+                      1.1264186603e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 149:
+Active set vector = { 1 }
+                      4.8301370000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 65
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.2420019306e+00
+                      1.1476719113e+01
+Expected Improvement    =
+                      2.4413620717e+10
+
+---------------------
+Begin Evaluation  150
+---------------------
+Parameters for evaluation 150:
+                      6.5110064861e-01 h2oDens
+                      2.2420019306e+00 concDens
+                      1.1476719113e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 150:
+Active set vector = { 1 }
+                      5.2140840000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 66
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.1472287761e+00
+                      1.1125923855e+01
+Expected Improvement    =
+                      2.3086371558e+10
+
+---------------------
+Begin Evaluation  151
+---------------------
+Parameters for evaluation 151:
+                      6.5110194584e-01 h2oDens
+                      2.1472287761e+00 concDens
+                      1.1125923855e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 151:
+Active set vector = { 1 }
+                      4.9946750000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 67
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.6219980694e+00
+                      3.6442474330e-05
+Expected Improvement    =
+                      3.6291176681e+11
+
+---------------------
+Begin Evaluation  152
+---------------------
+Parameters for evaluation 152:
+                      6.5110064861e-01 h2oDens
+                      2.6219980694e+00 concDens
+                      3.6442474330e-05 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 152:
+Active set vector = { 1 }
+                      3.1820310000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 68
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.2484810242e+00
+                      1.0427540277e+01
+Expected Improvement    =
+                      1.5964896350e+10
+
+---------------------
+Begin Evaluation  153
+---------------------
+Parameters for evaluation 153:
+                      6.5110194584e-01 h2oDens
+                      2.2484810242e+00 concDens
+                      1.0427540277e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 153:
+Active set vector = { 1 }
+                      5.0280320000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 69
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.2999817101e+00
+                      1.2290916875e+01
+Expected Improvement    =
+                      4.2543156930e+09
+
+---------------------
+Begin Evaluation  154
+---------------------
+Parameters for evaluation 154:
+                      6.5110194584e-01 h2oDens
+                      2.2999817101e+00 concDens
+                      1.2290916875e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 154:
+Active set vector = { 1 }
+                      5.2179220000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 70
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110064861e-01
+                      2.1660019306e+00
+                      9.9889915411e+00
+Expected Improvement    =
+                      2.0507490854e+09
+
+---------------------
+Begin Evaluation  155
+---------------------
+Parameters for evaluation 155:
+                      6.5110064861e-01 h2oDens
+                      2.1660019306e+00 concDens
+                      9.9889915411e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 155:
+Active set vector = { 1 }
+                      4.8249640000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 71
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      1.9957384545e+00
+                      7.9864775767e+00
+Expected Improvement    =
+                      1.6752682341e+09
+
+---------------------
+Begin Evaluation  156
+---------------------
+Parameters for evaluation 156:
+                      6.5110194584e-01 h2oDens
+                      1.9957384545e+00 concDens
+                      7.9864775767e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 156:
+Active set vector = { 1 }
+                      4.1749930000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 72
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      8.0667587258e-01
+                      2.6219942082e+00
+                      1.2911240673e+01
+Expected Improvement    =
+                      4.2644755080e+11
+
+---------------------
+Begin Evaluation  157
+---------------------
+Parameters for evaluation 157:
+                      8.0667587258e-01 h2oDens
+                      2.6219942082e+00 concDens
+                      1.2911240673e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 157:
+Active set vector = { 1 }
+                      2.2852520000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 73
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      7.0165880201e-01
+                      1.9380173754e+00
+                      9.2986253074e+00
+Expected Improvement    =
+                      2.1361659518e+11
+
+---------------------
+Begin Evaluation  158
+---------------------
+Parameters for evaluation 158:
+                      7.0165880201e-01 h2oDens
+                      1.9380173754e+00 concDens
+                      9.2986253074e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 158:
+Active set vector = { 1 }
+                      3.8734640000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 74
+
+NCSU DIRECT succeeded with code 1
+(maximum function evaluations exceeded)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      2.3487486664e+00
+                      7.5646923788e+00
+Expected Improvement    =
+                      1.5550638087e+09
+
+---------------------
+Begin Evaluation  159
+---------------------
+Parameters for evaluation 159:
+                      6.5110194584e-01 h2oDens
+                      2.3487486664e+00 concDens
+                      7.5646923788e+00 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 159:
+Active set vector = { 1 }
+                      4.6358270000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+
+>>>>> Initiating global maximization: response 1 cell 1 iteration 75
+
+NCSU DIRECT succeeded with code 2
+(maximum iterations reached)
+
+Results of interval optimization:
+Final point             =
+                      6.5110194584e-01
+                      1.9869349185e+00
+                      1.1275046460e+01
+Expected Improvement    =
+                      1.5267724137e+09
+
+---------------------
+Begin Evaluation  160
+---------------------
+Parameters for evaluation 160:
+                      6.5110194584e-01 h2oDens
+                      1.9869349185e+00 concDens
+                      1.1275046460e+01 linerR
+
+blocking fork: driver.bat hb2_input maxes.out
+
+Active response data for evaluation 160:
+Active set vector = { 1 }
+                      5.5312710000e+10 maxN
+
+
+
+>>>>> Appending to global_kriging approximations.
+
+<<<<< global_kriging approximation updates completed.
+<<<<< Function evaluation summary: 160 total (160 new, 0 duplicate)
+------------------------------------------------------------------
+Min and Max estimated values for each response function:
+maxN:  Min = 7.2411170000e+09  Max = 5.7209510000e+10
+-----------------------------------------------------------------
+
+<<<<< Iterator global_interval_est completed.
+<<<<< Environment execution completed.
+DAKOTA execution time in seconds:
+  Total CPU        =    58137.8 [parent =    58137.8, child =          0]
+  Total wall clock =    58137.8

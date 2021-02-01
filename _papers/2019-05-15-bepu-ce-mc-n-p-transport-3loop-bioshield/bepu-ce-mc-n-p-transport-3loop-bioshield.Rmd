@@ -1,0 +1,452 @@
+---
+title: Best-Estimate Plus Uncertainty Analysis for Continuous Energy Monte Carlo Coupled Neutron-Gamma Transport Simulations Through a 3-Loop Westinghouse PWR Concrete Biological Shield Wall
+description: ""
+author:
+  - name: Amrit Patel
+    orcid_id: 0000-0003-3911-6281
+date: 05/15/2019
+output:
+  distill::distill_article:
+    toc: true
+    self_contained: false
+bibliography: citations.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE, fig.width=7, fig.asp = .4, fig.align="center")
+```
+
+## Regulatory Background
+
+Guidance for subsequent license renewal applicants in NUREG-2192, "Standard Review Plan for Review of Subsequent License Renewal Applications for Nuclear Power Plants," (or SRP-SLR), Section 3.5.2.2.2.6, "Reduction of Strength and Mechanical Properties of Concrete Due to Irradiation," describes a method for determining whether the applicant has met the requirements of the NRC regulations in 10 CFR 54.21 by providing the acceptance criterion for the aging management of the reduction of strength and mechanical properties of concrete due to irradiation as it pertains to the reactor biological shield (or bioshield) wall [@nureg2192].
+
+Regarding the assessment of irradiation damage, the guidance states: 
+
+> Reduction of strength, loss of mechanical properties, and cracking due to irradiation could occur in [pressurized water reactor (PWR)] and [boiling water reactor] Group 4 concrete structures that are exposed to high levels of neutron and gamma radiation. These structures include the reactor (primary/biological) shield wall, the sacrificial shield wall, and the reactor vessel support/pedestal structure. Data related to the effects and significance of neutron and gamma radiation on concrete mechanical and physical properties is limited, especially for conditions (dose, temperature, etc.) representative of light-water reactor (LWR) plants. However, based on literature review of existing research, radiation fluence limits of 1 × 10^19^ [neutrons per square centimeter (n/cm^2^)] neutron radiation and 1 × 10^8^ [Gray (Gy)] (1 × 10^10^ rad) gamma dose are considered conservative radiation exposure levels beyond which concrete material properties may begin to degrade markedly.
+
+> Further evaluation is recommended of a plant-specific program to manage aging effects of irradiation if the estimated (calculated) fluence levels or irradiation dose received by any portion of the concrete from neutron (fluence cutoff [energy greater than 0.1 million-electron-volts [(E > 0.1 MeV)] or gamma radiation exceeds the respective threshold level during the subsequent period of extended operation or if plant-specific [operating experience] of concrete irradiation degradation exists that may impact intended functions. Higher fluence or dose levels may be allowed in the concrete if tests and/or calculations are provided to evaluate the reduction in strength and/or loss of mechanical properties of concrete from those fluence levels, at or above the operating temperature experienced by the concrete, and the effects are applied to the design calculations. Supporting calculations/analyses, test data, and other technical basis are provided to estimate and evaluate fluence levels and the plant-specific program. The acceptance criteria are described in BTP RLSB-1 (Appendix A.1 of this SRP-SLR).
+
+The NRC has performed confirmatory studies to evaluate the maximum fluence/dose levels throughout a representative Westinghouse 3-loop PWR bioshield in support of a first-of-a-kind review of the Florida Power & Light Company's Turkey Point Unit-3,4 subsequent license renewal application. The objective was to confirm the applicant's best-estimate (BE) maximum fluence/dose estimates given that this type of fluence evaluation is not within the scope of existing regulatory guidance for calculational fluence methodologies, which is documented in @rg1190. Specifically, the existing guidance is geared toward BE plus uncertainty high energy neutron fluence (i.e., energies greater that 1 mega electron volt - E > 1 MeV - evaluations) of reactor pressure vessels near the reactor core midplane. That is, the guidance does not consider the effect on calculation qualification due to:
+
+1. The portion of the neutron spectrum between E > 0.1 Mev and E > 1 MeV, 
+2. Coupled neutron and gamma transport, and
+3. Additional sensitivity/uncertainty of bioshield material characteristics.[^1]
+
+[^1]: For example, the presence of a stainless steel liner, concrete density, and concrete material composition.
+
+## Objectives
+
+### Regulatory
+
+The regulatory objective of the study is to perform high fidelity simulations to understand:
+
+1. The range of calculational uncertainties for the maximum neutron flux and gamma dose rates (i.e. "the responses") throughout a representative bioshield.
+2. The relative importance of bioshield material uncertainties on predicted "damage depth".[^2]
+
+[^2]: That is, with respect to the damage thresholds defined in SRP-SLR, Section 3.5.2.2.2.6.
+
+### Research
+
+Coupled neutron-gamma transport calculations for characterization of bioshield material degradation have not been extensively studied. This is partly due to the fact that nuclear reactors in the U.S. were not envisioned to receive multiple license extensions, resulting in irradiation damage increasing in scope (i.e., number of components affected) over time. However, it is now being predicted that some bioshields (PWRs in particular) will now exceed acceptable damage thresholds at least for some fraction of these massive structures. Research is also ongoing to refine understanding of radiation damage thresholds (@cr7171; @remecISRD16). Therefore, the research objective is to glean insights into methods for extracting useful uncertainty information in support of the regulatory objective defined above, and further to determine the viability of various uncertainty quantification (UQ) methods to address:
+
+1. Determining estimates of uncertainty from sampling a high dimension input space.
+2. Ranking important contributors to response uncertainty.
+3. Estimating sensitivity coefficients of important contributors to the responses.
+
+Finally, an approach to characterizing response uncertainty in light of Regulatory Objective 2 listed above will be recommended.
+
+## Model Setup
+
+Continuous energy Monte Carlo (CE-MC), using the MAVRIC sequence within the SCALE computer code package [@scale623], was selected for this study because it requires less modeling time and less approximation over the problem domain (i.e., space, energy, angle) relative to the current industry-standard practice of using deterministic methods such as discrete ordinates (or the method of characteristics),[^3] and solution acceleration techniques can now be utilized to get response statistics in a very reasonable amount of time on modest computational platforms [@wagner2009forward].
+
+[^3]: More specifically, special care in the selection of a suitable multigroup nuclear data library is not applicable, and space-angle meshing selection and companion studies justifying their suitability are not applicable.
+
+For this work, all calculations were performed on an Amazon EC2 General Purpose compute M5 instance.[^4]
+
+[^4]: Intel Xeon Platinum 8175M processor with a 16 vCPU core clock speed of up to 2.5 GHz and 64 GiB of memory.
+
+## Initial BE Work with SCALE-MAVRIC
+
+Internal studies at the NRC over the past several years have aimed at benchmarking the `SCALE/MAVRIC` simulation tool to standard shielding benchmarks discussed in Regulatory Guide 1.190 [@rg1190] -- namely VENUS-3 experimental and H.B. Robinson, Unit 2 (HBR-2) operating reactor benchmarks. `SCALE/MAVRIC` results compared very well for both benchmarks. The main finding of these studies was that `SCALE/MAVRIC` is well-suited for efficient (i.e., single processor wall clock time on the order of hours) and high-fidelity (i.e., three-dimensional space and continuous energy physics) shielding studies to inform regulatory activities -- confirmatory analyses and guidance development in particular.
+
+A variant of the HBR-2 benchmark was modeled in this study mostly consistent with the model described in @field2015radiation.[^45]
+
+[^45]: The reactor vessel dimensions and base concrete material model were adapted to match Turkey Point Unit-3,4 as part of the confirmatory studies supporting 80 year license renewal.
+
+## UQ Methods Studied
+
+To address the research objectives, multiple UQ methods were studied using `DAKOTA` [@dakotaman] to explore the types of resulting information available from each and its relative value to the regulatory problem being studied. Basic statistical quantities[^5] are used to compare and contrast the various methods.
+
+[^5]: That is the mean, spread, and extremes of the response distributions.
+
+### Latin Hypercube Sampling
+
+Monte Carlo sampling is often considered the gold standard in forward UQ. However, for a high dimensional input space, there is risk of inadequately covering the sampling space. In general, it has been shown that Latin hypercube sampling (LHS) does a better job of covering the sampling space [see @dakotaman, Chapter 5.2], therefore LHS has been used instead of Monte Carlo sampling in this study as a similar but more robust option. Since the computational cost of a single `SCALE/MAVRIC` calculation does not depend on the number of inputs when LHS is used, it will serve as the reference UQ analysis.
+
+### Polynomial Chaos Expansion
+
+Polynomial chaos expansion (PCE) is a UQ method that has received some attention over the past several years in the nuclear engineering community among many others (@wu2017inverse; @bledsoe2018application; @pceneutdiff). Attractive PCE characteristics are its high accuracy and cost-effective estimation of uncertainty.[^98] Additionally, PCE produces measures of input relative importance via Sobol sensitivity indices [@sobol2001global], and produces response sensitivity coefficients as a function of inputs for quick estimates of uncertainty. However, the main downside is that the number of simulations depends on the number of inputs and the desirable level of accuracy in the Gaussian quadrature procedure utilized in the method. Therefore, without further optimization, the particle transport simulation time practically limits the number of inputs that can be studied. Using a "hybrid method" such as is implemented in `SCALE/MAVRIC`, PCE becomes practical for the particle transport problem defined in this study. However, more efficient state-of-the-art particle transport methods in development now could allow for even larger scope UQ studies (@wang2018novel; @walters2018rapid).
+
+[^98]: @tyson2015uncertainty provides a clear and concise overview of PCE with additional references.
+
+### Probability Bounds Analyis
+
+Probability bounds analysis (PBA) is the simplest of the UQ methods in that it's objective is to find the global minimum and maximum of the response. This is useful to check if other UQ methods can actually approach "true" minimum and maximum values of the response. It can also be useful if a bounding analysis is desired. However, the current implementation of this (at least in `DAKOTA`) is computationally expensive because it implements an iterative search method that constrains SCALE-MAVRIC simulations to be run serially versus the LHS and PCE methods, which can be run in parallel.
+
+## UQ Exploration Using Max Bioshield 0-Dimension Responses
+
+### Inputs Studied
+
+It is important to first note that there are many contributors to the response uncertainty being studied here, but this study is focusing on the contribution of bioshield material uncertainties on response uncertainty. For example, reactor source term uncertainty has been completely left out. Additional uncertainty studies can be combined with work here, but again the point of this study is to highlight the relative importance of bioshield material uncertainties. Core water density uncertainty has been chosen here as a known dominant core-originating contributor to response uncertainty for comparison purposes to judge the importance of the biosheild material uncertainties.
+
+Specific inputs of study that are included to better understand their importance are the thickness of the stainless steel liner that lines the concrete bioshield, the bioshield concrete density, and the weight percents of the materials that make up the concrete. Core soluble boron is also added to allow for an intuition check. Table 1 gives the inputs, means, standard deviation, and lower/upper bounds for sampling; all distributions were specified as Gaussian. Since most material information being sampled is not well characterized, we identify it as epistemic uncertainty. Modest standard deviations of 10% are specified for all but 2 inputs -- core water density at 5% and the stainless steel liner thickness significantly more to obtain a more meaningful variation during sampling.[^6] While there may be some correlation between concrete density and concrete materials (and potentially others), this has been ignored, and all inputs are assumed to be independent. Since this study is more focused on relative importance and comparison of UQ methods, it was determined that the precise specification of input distributions are of less concern and reasonable simplifcations are therefore appropriate.
+
+[^6]: The mean thickness is 1/4 inch so the selected variation allows for as low as 0 inches to approximately 3/4 inch.
+
+```{r}
+library(tidyverse)
+library(knitr)
+kable(as_tibble(read.csv("inputs.csv")), caption="Input variable specifications.")
+```
+
+Below is a summary of all simulations showing the median results, distribution spread (50% of the data is in the white box), and the extremes.[^7] As expected, PBA produces the most extreme values. In terms of response coverage, LHS and PCE are similar, but PCE contains more spread. Although more spread is shown here, a higher standard deviation is not observed from the resulting PCE method *polynomial expansion* (refer to Table 2 below).
+
+[^7]: Only for LHS does the boxplot represent actual statistical moments (i.e., mean, variance). That is, the PCE method statistical moments are determined using the polynomial expansion and the PBA method doesn't give moment information, only estimated global minimum and maximum response values.
+
+```{r, fig.cap="Distribution of simulation responses by UQ method."}
+lhsMax <- 
+  tbl_df(read.delim(paste0(getwd(), "/max/lhs/hb2.dat"), sep="")) %>% select(-X.eval_id, -interface) %>% 
+    gather() %>% filter(key == "maxN" | key == "maxP") %>% mutate(method="lhs")
+pceMax <-
+  tbl_df(read.delim(paste0(getwd(), "/max/pce/4vars/hb2.dat"), sep="")) %>% select(-X.eval_id, -interface) %>% 
+    gather() %>% filter(key == "maxN" | key == "maxP") %>% mutate(method="pce")
+pbaMaxN <-
+  tbl_df(read.delim(paste0(getwd(), "/max/pba/n/hb2.dat"), sep="")) %>% select(-X.eval_id, -interface) %>% 
+    gather() %>% filter(key == "maxN" | key == "maxP") %>% mutate(method="pba")
+
+pbaMaxP <-
+  tbl_df(read.delim(paste0(getwd(), "/max/pba/p/hb2.dat"), sep="")) %>% select(-X.eval_id, -interface) %>% 
+    gather() %>% filter(key == "maxN" | key == "maxP") %>% mutate(method="pba")
+
+max <-
+  bind_rows(lhsMax, pceMax, pbaMaxN, pbaMaxP) %>%
+  mutate(key=ifelse(key == "maxN", "Neutron Flux E > 0.1 MeV (#/cm2-s)", "Total Gamma Dose Rate (rad/h)"))
+
+ggplot(max, aes(x=factor(method, levels = c("lhs", "pce", "pba")), y=value)) +
+  geom_boxplot() +
+  facet_wrap(~key, scale="free") +
+  labs(x="Method",
+       y="Value"
+       #title="Figure 1. Distribution of Simulation Responses by UQ Method"
+       ) +
+  theme_minimal()
+```
+
+```{r}
+summ0d <- as_tibble(read.csv("0dMethodStats.csv"))
+subSumm0d <- summ0d %>% mutate(relStdDev = stdDev/mean) %>% select(response:stdDev, relStdDev, wallTime) %>% filter(uqType != "pba") 
+kable(subSumm0d, caption = "UQ method summary statistics.")
+```
+
+### LHS Reference Results
+
+LHS was conducted for 120 samples and 240 samples with little change in statistical moments.[^8] A look at the correlations quickly shows the most influential inputs.
+
+[^8]: The choice of samples was initially based on using the Wilks formula for determining the number of samples to take for 95% population coverage at 95% confidence for a single response (i.e., 59) multiplied by 2.
+
+```{r}
+load("./max/lhs/0dLHS.RData")
+
+library(corrr)
+
+corrData <- correlate(data %>% select(-maxNrelErr, -maxPrelErr, -statChkPassN, -statChkPassP))
+kable(corrData %>%
+        focus(maxN) %>%
+        arrange(desc(abs(maxN))) %>%
+        slice(1:5) %>%
+        rename(input=term) %>%
+        filter(input != "maxP"),
+      caption="Top four correlations with neutron flux.")
+```
+
+```{r}
+kable(corrData %>%
+        focus(maxP) %>%
+        arrange(desc(abs(maxP))) %>%
+        slice(1:5) %>%
+        rename(input=term) %>%
+        filter(input != "maxN"),
+      caption="Top four correlations with gamma dose rate.")
+```
+
+For both bioshield maximum incident neutron flux and gamma dose rate, core water density is clearly the most important input parameter. Concrete density, the bioshield liner, and concrete hydrogen content may also have some influence, but are seen to be relatively minor in comparison to core water density for both responses of interest. It should also be noted that such low values of the correlation coefficients can be misleading[^60] and are generally not useful (i.e., there is more noise than signal). A visual representation of the correlation structure in Figure 2 is also useful to get a sense of the input/output relationships and verify the numeric results.[^100] If one were to rank the 4 most influential input variables for this problem setup, one might choose core water density, concrete density, stainless steel liner thickness, and hydrogen content. Figure 2 shows strengths of correlations by distance and only draws lines where correlations exceed 0.3 giving a better impression of input influence -- it is seen that concrete density, the stainless steel liner, and hyrogen content have little influence. This makes intuitive sense because the response of interest is at the concrete surface so the concrete material characteristics don't yet have a chance to influence the responses; the liner is so thin that it's influence is in the noise of the concrete concentration inputs. However, it is expected that the influence of the concrete material characteristics will change as the response location moves further into the concrete.
+
+[^60]: For example, the correlation for neutron flux and stainless steel liner lining the concrete bioshield in Table 3 shows as a positive relationship (0.163) when it is known that this relationship is negative. That is, a thicker liner will cause the neutron flux to decrease.
+
+[^100]: The observable correlation between oxygen concentration and calcium concentration is an artifact of the model setup as the oxygen content was not sampled but simply defined as the balance of the material after all other concrete elemental concentrations (11.1 wt% on average) were sampled. Since calcium (29.4 wt% on average) is the next largest elemental concentration after oxygen (59.5 wt% on average), there is a more clear and detectable linkage between these 2 variables and this is what is observable in the correlation figure.
+
+```{r, fig.cap="Correlation plot."}
+corrData %>% network_plot()
+```
+
+### PCE Sobol Indeces and Sensitivity Coefficients
+
+Comparing the 240 sample LHS case to the 125 PCE method case, the moments are seen to agree well providing confidence in the PCE method that only used the 3 most influential inputs of the 15 as shown in Table 1.
+
+Selecting the 4 most influential inputs based on insights from the LHS study, the PCE method is implemented; although 3 inputs (not including hydrogen concentration variation) produced acceptable moments, additional comparison of LHS correlation indications with PCE Sobol index indications was desirable. Again, due to an exponential increase in computation time with an increasing number of inputs specified, using PCE with some type of algorithmic pruning (if available) of lower order interactions ahead of time, to limit the number of simulations that will still produce reliable polynomial coefficients, is essential for computationally expensive simulations (e.g., see @yang2017polynomial, Section 3); otherwise input variables must be manually chosen based on judgment. Given that it wasn't clear from the LHS correlations alone which input variable is more important -- stainless steel liner thickness or concrete hydrogen content -- PCE is used to gain additional insight to determine if all 4 versus only 3 inputs are minimally necessary to capture the expected response variation.
+
+Using the *main* Sobol indeces, the inputs and their interactions that are most significant in predicting the response of interest can be identified. Comparing the difference between the main and total Sobol indeces is useful to identify if there are any major input interactions. If looking at neutron flux as the response, it is seen that the main and total Sobol indeces for the core water density are practically the same and very close to 1 -- they are 0.961 and 0.969, respectively. This means that there are no signficant input interactions with core water density. Also, being so close to 1 means that core water density can practically predict the max bioshield neutron flux without consideration of any other inputs.
+
+```{r}
+pceTableP <- 
+tribble(~polynomialCoeff,~h2oDens,~concDens,~linerR,~product,
+        3.06E+04,        1,       1,        1,       3.06E+04,
+       -1.50E+05,        0.0383,  1,        1,      -5.75E+03,
+       -5.43E+04,        0.0383,  0.228,    1,      -4.74E+02,
+        2.54E+04,        0.0383,  1,        0.42545, 4.13E+02,
+        6.36E+04,        0.0383,  0.228,    0.42545, 2.36E+02
+)
+
+pceSumP <- pceTableP %>% slice(2:5) %>% summarize(sum=sum(product))
+```
+
+The sensitivity coefficient was determined to be -9.15e+10 neutrons/cm^2^-s per gram/cm^3^ of core water density for the neutron flux and -2.49e+05 rad per second for the gamma dose rate; note that the signs match intuition -- increasing the core water density decreases neutron and gamma flux (and drastically).[^88] An example of applying this sensitivity coefficient would be to check that the input standard deviation specified for core water density produces the standard deviation of the response. For core water density, the standard deviation of 10% is 0.0383 g/cm^3^. Multiplying this with the sensivitiy coefficients produces a reduction in neutron flux and gamma dose rate of 3.50e+09 and 9.54e+03, respectively. The neutron flux is similar to the actual response standard deviations given in Table 2 from the LHS study, but the gamma dose rate is noticeably different; -2% and 47%, respectively. It would be expected that the gamma dose rate is not as well explained by water density alone since the difference between its main and total Sobol indeces are not as close together as for the neutron flux -- 0.788 and 0.939, respectively. Upon further inspection, of the input interactions, the following are observed: h2oDens * concDens (6.66%), h2oDens * linerR (2.31%), concDens * linerR (4.58%), and h2oDens * concDens * linerR (6.13%), which together add to the main Sobol index for a total sum of 98.5%. Using the corresponding polynomial coefficients, as shown in Table 5,[^101] reduces the difference between the reference LHS response standard deviation and that based on the PCE polynomial coefficents to within `r round((abs(pceSumP$sum[1])-subSumm0d$stdDev[4])/subSumm0d$stdDev[4]*100)`% versus 47% if using only the gamma dose rate core water density sensitivity coefficient. It is noted that including concrete hydrogen content as a 4th input does not result in any meaningful contribution to any of the Sobol indeces indicating that the only input variables that matter (of the ones studied here) for predicting maximum neutron flux and gamma dose rate incident on the concrete bioshield are core water density, bioshield concrete density, and bioshield stainless steel liner thickness.
+
+[^88]: Note that the neutron flux sensitivity coefficient for the stainless steel liner thickness is negative (-1.22e+09 neutrons/cm^2^-s per cm of liner thickness) as expected -- recall this relationship showed as positive when looking at the corresponding correlation from the LHS method discussed previously.
+
+[^101]: The first column represents the polynomial coefficient for the row. A 1 in columns 2-4 represents a zeroth order contribution of the input variable, which is indicated by the table header. A number other than 1 means that there is a first order term; multiple first order terms in a row signifies a signficant interaction. The 5th column represents the product of Columns 1-4. The sum of Column 5 produces the estimated response.
+
+```{r}
+kable(pceTableP, caption="Dominating PCE polynomial coefficients.")
+```
+
+In summary, UQ with PCE compares well to UQ with LHS as long *as the important input variables are included for polynomial coefficient development* so some knowledge of input importance must be known a priori with this manual approach. PCE has the advantage of providing sensitivity coefficients for local uncertainty estimation, Sobol indeces to judge input importance, and polynomial coefficients related to each input variable and all interactions to serve as a surrogate model for future use (e.g., further forward UQ studies).
+
+### PBA Convergence
+
+The PBA method serves as a useful tool for bounding analysis in support of a conservative approach to UQ as seen by the sheer number of simulations needed for this type of analysis versus LHS and PCE -- 552 and 869 cases if optimizing on the neutron flux and gamma dose rate, respectively.[^9] Additionally, the majority of these cases are run serially rather than in parallel making this method take even longer per simulation. It should be noted that all 15 input variables were included in the global searches.
+
+[^9]: It appears that multiple responses cannot be treated simultaneously in DAKOTA, therefore 2 separate PBA cases -- one to find the neutron flux maximum/minimum and one for the gamma dose rate maximum/minimum was needed.
+
+The log scale of Figure 3 accentuates the wild swings in the "expected improvement" of the "NCSU Direct" explore/exploit global minimum/maximum solver (see pg. 134 of @dakotaman). The responses, however, do not change much on this scale, but a characteristic jump is observed for both responses. The evolution of the response is shown more clearly in Figure 4.
+
+```{r, fig.cap="PBA method \"NCSU Direct\" solver convergence."}
+improveN <- tbl_df(read.csv("./max/pba/n/improvement.out", header = FALSE)) %>% rename(Improvement = V1) %>% mutate(sim=row_number()) 
+respN <- tbl_df(read.csv("./max/pba/n/maxN.out", header = FALSE)) %>% rename(Response = V1) %>% mutate(sim=row_number())
+
+nConverge <-
+  left_join(improveN, respN) %>%
+  mutate(particle = "Neutron Response") %>%
+  gather(., key="Key", value="Value", -sim, -particle)
+
+improveP <- tbl_df(read.csv("./max/pba/p/improvement.out", header = FALSE)) %>% rename(Improvement = V1) %>% mutate(sim=row_number()) 
+respP <- tbl_df(read.csv("./max/pba/p/maxN.out", header = FALSE)) %>% rename(Response = V1) %>% mutate(sim=row_number())
+
+pConverge <-
+  left_join(improveP, respP) %>%
+  mutate(particle = "Gamma Response") %>%
+  gather(., key="Key", value="Value", -sim, -particle)
+
+pbaConverge <- bind_rows(nConverge, pConverge)
+
+ggplot(pbaConverge, aes(sim, Value, color=Key)) +
+  geom_point() +
+  scale_y_log10() +
+  facet_wrap(~particle, scales="free") +
+  labs(
+       #title="Figure 3. PBA method \"NCSU Direct\" solver convergence.",
+       x="Simulation Number") +
+  theme_minimal() +
+  theme(panel.grid.minor = element_blank()) +
+  theme(legend.position = "bottom")
+```
+
+```{r, fig.cap="PBA method \"NCSU Direct\" solver response evolution."}
+gg_color_hue <- function(n) { 
+  hues = seq(15, 375, length = n + 1)
+  hcl(h = hues, l = 65, c = 100)[1:n]
+}
+
+cols = gg_color_hue(2)
+
+ggplot(pbaConverge %>% filter(Key=="Response"), aes(sim, Value)) +
+  geom_point(color=cols[2]) +
+  scale_y_log10() +
+  facet_wrap(~particle, scales="free") +
+  labs(
+       #title="Figure 4. PBA method \"NCSU Direct\" solver response evolution.",
+       x="Simulation Number") +
+  theme_minimal() +
+  annotation_logticks(sides = "lr") + 
+  theme(panel.grid.minor = element_blank())
+```
+
+Comparing the extreme values of the various methods in Table 6 (also shown visually in Figure 1), it is seen that if the LHS maximum is used for a bounding analysis, it would underpredict the maximum neutron flux found by PBA by about 33% and the maximum gamma dose rate by about 47%.
+
+```{r}
+kable(summ0d %>% select(response, uqType, samples, min, max, wallTime), caption="UQ method extreme responses.")
+```
+
+The values of the 15 inputs that produced the minimum/maximum values are also provided as part of the output, but are not shown here. This may be useful to help determine if minimizing/maximizing a given input variable would lead to a decrease/increase in a response of interest.
+
+## UQ Exploration Using Max Bioshield 1-D Responses
+
+To assume all of the bioshield concrete is exposed to the maximum amount of neutron fluence and gamma dose is overly conservative for estimating how much of the concrete will be degraded by the end of plant life. Therefore, understanding how far the radiation "penetrates" into the bioshield with respect to an assigned damage threshold -- i.e., the damage depth -- is of some merit.
+
+Based on the insights gained from the 0-D UQ study above, the UQ methods used are limited to LHS and PCE. Based on the performance of PCE from the 0-D study, it is of interest to see if PCE again provides similar results to LHS, but *throughout* the bioshield. To help understand the sensitivity of the response *uncertainty* to the inclusion of different numbers of inputs, 3 LHS cases were included: 1 input (core water density), 3 inputs (core water density, concrete density, and liner thickness), and all 15 inputs. Comparing these cases will give some idea of the relative importance of the various inputs. An additional case using PCE is also added with the same 3 input variables as the LHS case.
+
+### Responses with Uncertainties Through Bioshield
+
+```{r, fig.width=10, fig.asp=0.8, fig.cap="Axial maximum radial response throughout bioshield."}
+load("./radialProfile/lhs/waterDens/1dLHS1var.RData")
+allResponses1 <- allResponses %>% filter(!is.na(maxRadial)) %>% mutate(study = "lhs1Var") 
+load("./radialProfile/lhs/3vars/1dLHS3vars.RData")
+allResponses3 <- allResponses %>% filter(!is.na(maxRadial)) %>% mutate(study = "lhs3Var") 
+load("./radialProfile/lhs/waterDens+concMats/1dLHS15vars.RData")
+allResponses15 <- allResponses %>% filter(!is.na(maxRadial)) %>% mutate(study = "lhs15Var") 
+load("./radialProfile/pce/3vars/1dPCE3vars.RData")
+allResponsesPCE3 <- allResponses %>% filter(!is.na(maxRadial)) %>% mutate(study = "pce3Var") 
+
+allResponses <- bind_rows(allResponses1, allResponses3, allResponses15, allResponsesPCE3)
+
+# Plot response variables
+ggplot(allResponses, aes(rPos, maxRadial, color=case)) +
+  facet_grid(particle ~ study, scales="free") + 
+  geom_line() +
+  geom_errorbar(aes(ymin=maxRadial-2*maxRadialErr, ymax=maxRadial+2*maxRadialErr),
+                #width=.2,
+                #position=position_dodge(0.05)
+                ) +
+  scale_y_log10() +
+  labs(x="Radial Position (cm)",
+       y="maxValue",
+       #title="Figure 4. Axial maximum radial response throughout bioshield.",
+       subtitle="Full-scale 3-D CE (ENDF/B-VII.1) SCALE/MAVRIC models via DAKOTA; 240 LHS samples; 2-sigma errors shown.") +
+  theme_minimal() +
+  #scale_colour_brewer(palette="Dark2") +
+  annotation_logticks(sides = "lr") + 
+  theme(panel.grid.minor = element_blank()) +
+  theme(legend.position="none")
+```
+
+- The mesh tally is defined at the peak azimuthal location corresponding to the HBR-2 benchmark (a couple degrees above the core centerline to account for presence of detector well).
+
+- Monte Carlo errors were extracted for each given mesh tally cell.
+
+### Uncertainties Through the Bioshield
+
+```{r, fig.width=10, fig.asp=0.8, fig.cap="Axial maximum relative uncertainty throughout bioshield."}
+load("./radialProfile/lhs/waterDens/1dLHS1var.RData")
+plotSumm1 <- plotSumm %>% mutate(study = "lhs1Var") 
+load("./radialProfile/lhs/3vars/1dLHS3vars.RData")
+plotSumm3 <- plotSumm %>% mutate(study = "lhs3Var") 
+load("./radialProfile/lhs/waterDens+concMats/1dLHS15vars.RData")
+plotSumm15 <- plotSumm %>% mutate(study = "lhs15Var") 
+load("./radialProfile/pce/3vars/1dPCE3vars.RData")
+plotSummPCE3 <- plotSumm %>% mutate(study = "pce3Var") 
+
+plotSumm <- bind_rows(plotSumm1, plotSumm3, plotSumm15, plotSummPCE3)
+
+# Final plot of relative uncertainty data
+ggplot(plotSumm, aes(rCoords, value, color = key)) +
+  facet_grid(particle ~ study) +
+  geom_line(size=1) +
+  theme_minimal() +
+  theme(legend.position="bottom") +
+  labs(x = "Radial Position (cm)",
+       y = "Relative Uncertainty (%)",
+       #title = "Figure 5. Axial maximum relative uncertainty throughout bioshield.",
+       subtitle = "Monte Carlo 1-sigma errors are within ~5% and ignored.")
+```
+
+#### Main Observations
+
+The main goal of this study was to get a general idea of how much uncertainty the concrete adds to total response uncertainty. The main takeaways are:
+
+1. Core based uncertainties will dominate total response uncertainty up to concrete depths corresponding to radiation damage thresholds, but will eventually switch over to concrete uncertainties dominating significantly past the damage depth. This is easiest to see by examining Figure 6 1-sigma uncertainties between `lhs1Var` and `lhs3Var`[^199] cases (they start out similarly) and in Figure 7 below.
+
+2. The independence of core- and concrete-based uncertainties can be used to separate the core-based uncertainties in `lhs1Var` from core- plus conrete-based uncertainties in `lhs15Var` via root-mean-sum-of-squares as was done in Figure 7.
+
+```{r, fig.cap="Axial maximum relative uncertainty throughout bioshield."}
+forRMSS <- plotSumm %>% filter(study == "lhs15Var" | study == "lhs1Var")
+forRMSS <- spread(forRMSS, study, value)
+
+concreteOnly <- forRMSS %>% mutate(concUnc = sqrt(lhs15Var^2 - lhs1Var^2))
+
+ggplot(concreteOnly, aes(rCoords, concUnc, color=key)) +
+  geom_line() +
+  facet_grid(. ~ particle) +
+  geom_line(size=1) +
+  theme_minimal() +
+  labs(x="Radial Position (cm)",
+       y="Relative Uncertainty (%)",
+       #title="Figure 6. Axial maximum relative uncertainty throughout bioshield.",
+       subtitle="Concrete-based uncertainties only."
+       ) +
+  theme(legend.position = "bottom")
+  
+```
+
+
+3. Uncertainties up to concrete are likely less than 20-30%[^200] for most methods at the axial maximum location (water density alone showed a ~20% 1-sigma from `lhs1Var` in Figure 6) and remain roughly constant throughout the concrete as seen in the `lhs1Var` case in Figure 6. Concrete-based uncertainties can be added directly to core-based uncertainties in future studies to estimate core- plus concrete-based uncertainties throughout the wall.
+
+4. Uncertainty is mostly captured by the 3 input models versus the 15 input model; however, *maximum* uncertainty -- for the neutron case only -- is not; this may be unimportant because the response is so low, but allows for understanding of relative contribution to overall response uncertainty.
+
+5. Again, moments derived from PCE *samples* are shown, but are not the same as the polynomial coefficient derived moments. Nonetheless, the polynomial coefficient derived red 1-sigma line for the `pce3Var` case is similar to but larger than the corresponding `lhs3Var` case.
+
+6. Sobol indeces from the `pce3Var` case provides a numerical basis for the influence of input variables on a given response as seen in Figure 8. The inherent advantage of Sobol indeces as shown in Figure 8 versus correlation coefficients provided in Figure 2 and corresponding tables from LHS in terms of interpretability is noted.
+
+[^199]: The difference between `lhs3Var` and `lhs15Var` is minimal as seen in Figure 5.
+
+[^200]: This is largely consistent with NRC approved calculational neutron fluence methodologies for estimates near the reactor pressure vessel core midplane.
+
+```{r, fig.cap="Axial maximum Sobol indeces throughout bioshield."}
+# Radial dependent Sobol indeces
+
+radialSobol <- tbl_df(read.csv("radialSobol.csv"))
+radialSobol <- gather(radialSobol, key="key", value="value", -particle, -rPos) %>% filter(value != "NA")
+
+ggplot(radialSobol, aes(x=rPos, y=value, color=key)) +
+  geom_line() +
+  facet_grid(particle ~ .) +
+  geom_line(size=1) +
+  theme_minimal() +
+  labs(x="Radial Position (cm)",
+       y="Sobol Index",
+       #title="Figure 7. Axial maximum Sobol indeces throughout bioshield.",
+       color="Main Effects & Interactions"
+       )
+
+```
+
+### Radiation Damage Depth Based on the Maximum Uncertainty
+
+To get an idea of the variation in predicted radiation damage depth between UQ methods, the maximum uncertainty resulting from the implementation of each method studied was calculated. Looking only at the predicted maximum depths on an absolute basis (`maxUnc` column of Table 7), all methods give very similar results. The outcome of the study indicates underprediction in neutron damage depth of around ~5 cm and ~14 cm for gamma damage depth. These are plausible results, but are based on a limited set of core-based uncertainty and do not account for any nuclear data uncertainty. However, maximum flux/dose uncertainties were used to determine the damage depth uncertainty in this case, which may somewhat compensate for this. Nonetheless, the uncertainty and input importance information gleaned above can be used in future studies of this problem.
+
+```{r}
+load("./radialProfile/lhs/waterDens/1dLHS1var.RData")
+tableBEvUQ1 <- tableBEvUQ %>% mutate(study = "lhs1Var") 
+load("./radialProfile/lhs/3vars/1dLHS3vars.RData")
+tableBEvUQ3 <- tableBEvUQ %>% mutate(study = "lhs3Var") 
+load("./radialProfile/lhs/waterDens+concMats/1dLHS15vars.RData")
+tableBEvUQ15 <- tableBEvUQ %>% mutate(study = "lhs15Var") 
+load("./radialProfile/pce/3vars/1dPCE3vars.RData")
+tableBEvUQPCE3 <- tableBEvUQ %>% mutate(study = "pce3Var") 
+
+tableBE <-
+  bind_rows(tableBEvUQ1, tableBEvUQ3, tableBEvUQ15, tableBEvUQPCE3) %>%
+  select(type, study, everything()) %>%
+  group_by(type, study) %>% 
+  arrange(type, relDiff)
+
+kable(tableBE, caption = "Damage depth by UQ method and radiation type.")
+```
+
+
+## Conclusions and Future Study
+
+The regulatory and research objectives outlined above have been achieved. Although the selection of core- and concrete-based input uncertainties were not exhaustive, for the coupled neutron-gamma transport problem defined in this study under the current regulatory framework, core-based uncertainties[^77] clearly dominate and should be accounted for. A 20-30% underestimation in concrete damage (derived from `lhs1Var` results in Table 7) was observed assuming a single core-based uncertainty (i.e., core peripheral water density) is not accounted for; an additional 15-20% underestimation (derived from `lhs15Var` minus `lhs1Var` results in Table 7) was observed if the assumed concrete-based uncertainties are not accounted for. These uncertainty estimates pertain to a specific reactor and surrounding structures model, but it is expected that similar results could be expected for other reactor and surrounding structures models in the vicinity of the core midplane.
+
+[^77]: See @rg1190.
+
+It is well known that nuclear data uncertainties can be significant contributors to response uncertainty in radiation transport problems (@cabellos2014propagation; @diez2015comparison). Recently, in SCALE Version 6.2, the `SAMPLER` module has been released allowing any SCALE calculation to incorporate nuclear data uncertainty [@samplerpres]. Therefore, it is of interest to update the current study with a follow-on study including nuclear data uncertainty to examine the effect on the uncertainty results. Additionally, since flux/dose calculations are fed into downstream stress calculations, it may be of interest to extend this study to consider 2-D or 3-D analyses, and to better understand the flux/dose impacts on the actual stress response.

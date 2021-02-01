@@ -1,0 +1,9 @@
+=shell
+copy %RTNDIR%\hb2.mt2.3dmap %TMPDIR%\hb2.mt2.3dmap
+end
+=mtMinMax
+"hb2.mt2.3dmap" ! existing mesh tally file
+maximum ! find either minimums or maximums
+1 ! list top 1 maximum values in each realmesh
+"max.dat"
+end

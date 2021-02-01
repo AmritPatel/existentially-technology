@@ -1,0 +1,32 @@
+name: "existentially-technology"
+title: "Existentially, technology"
+description: |
+  Working towards a technological future that uses powerful
+  and far-reaching systems for the benefit of everybody.
+output_dir: "_site"
+base_url:  https://existentially-tech.netlify.app/
+repository_url: https://github.com/AmritPatel/existentially-technology/
+creative_commons: CC BY
+favicon: images/favicon.ico
+collections:
+  posts:
+    disqus: existentially-technology
+    share: [twitter, linkedin]
+    subscribe: _subscribe.html
+    categories: true
+  papers:
+    categories: true
+navbar:
+  search: false
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Papers"
+      href: papers.html
+    - text: "About"
+      menu:
+        - text: "Me"
+          href: about.html
+        - text: "CV"
+          href: cv.html
+output: distill::distill_article

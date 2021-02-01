@@ -1,0 +1,2882 @@
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.1>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.2>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.3>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.4>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.5>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.6>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.8>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.7>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.9>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.10>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.11>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.12>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.13>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.14>echo off 
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=10; used 10/10 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0453073, 2.52183, 4.76792]^T
+found by the "global" optimization_method;
+unadjusted variance=2.04187e+19; "per equation" log(likelihood)=2.35645;
+rcond(R)=0.013873; rcond(G_Rinv_Gtran)=0.658303; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was NOT sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 1;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0753347 -1.07469*x0 + 0.435373*x2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=11; used 11/11 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.081817, 2.45461, 2.69912]^T
+found by the "global" optimization_method;
+unadjusted variance=2.18044e+19; "per equation" log(likelihood)=2.35039;
+rcond(R)=0.0158478; rcond(G_Rinv_Gtran)=0.46585; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was NOT sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 1;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=0.0395129 -0.783063*x0 -0.0543517*x1 + ...
+               0.383477*x2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=12; used 12/12 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.801089, 0.213074, 1.41325]^T
+found by the "global" optimization_method;
+unadjusted variance=4.47964e+18; "per equation" log(likelihood)=3.05663;
+rcond(R)=0.0338004; rcond(G_Rinv_Gtran)=0.236794; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was NOT sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0677186 -0.857463*x0 -0.00359631*x1 + ...
+               0.378763*x2 + 0.730389*x0^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=13; used 13/13 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0773856, 0.088166, 29.96]^T
+found by the "global" optimization_method;
+unadjusted variance=4.51634e+18; "per equation" log(likelihood)=3.48214;
+rcond(R)=0.00184948; rcond(G_Rinv_Gtran)=0.0483031; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was NOT sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.120172 -0.908316*x0 -0.0342106*x1 + ...
+               0.439265*x2 + 0.905014*x0^2 + 0.305073*x1^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=14; used 14/14 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.167006, 2.26501, 1.34247]^T
+found by the "global" optimization_method;
+unadjusted variance=6.60045e+18; "per equation" log(likelihood)=3.58551;
+rcond(R)=3.72174e-05; rcond(G_Rinv_Gtran)=0.0343097;
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.15>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.16>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.17>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.18>echo off 
+ [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0665481 -0.860956*x0 -0.0217605*x1 + ...
+               0.362954*x2 + 0.72976*x0^2 -0.105171*x1^2 + ...
+               0.0741571*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=15; used 15/15 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.122706, 0.0695021, 7.87587]^T
+found by the "global" optimization_method;
+unadjusted variance=4.41323e+18; "per equation" log(likelihood)=3.75097;
+rcond(R)=9.0655e-05; rcond(G_Rinv_Gtran)=0.0241019; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0645342 -0.860165*x0 -0.00755422*x1 + ...
+               0.313302*x2 + 0.779183*x0^2 + 0.034535*x1^2 ...
+               -0.138409*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=16; used 16/16 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.727837, 0.920658, 8.72243]^T
+found by the "global" optimization_method;
+unadjusted variance=8.79567e+20; "per equation" log(likelihood)=3.71462;
+rcond(R)=7.47477e-07; rcond(G_Rinv_Gtran)=0.0328403; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.151861 -0.90147*x0 -0.713696*x1 + ...
+               0.265525*x2 + 0.622017*x0^2 + 0.113862*x1^2 ...
+               -0.0452519*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=17; used 17/17 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0223961, 0.671912, 3.95716]^T
+found by the "global" optimization_method;
+unadjusted variance=4.48499e+18; "per equation" log(likelihood)=3.60715;
+rcond(R)=0.00053492; rcond(G_Rinv_Gtran)=0.0176029; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0518998 -0.881487*x0 + 0.0161958*x1 + ...
+               0.280891*x2 + 0.709126*x0^2 -0.0204235*x1^2 ...
+               -0.204871*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=18; used 18/18 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.135084, 0.065404, 7.06738]^T
+found by the "global" optimization_method;
+unadjusted variance=3.8548e+18; "per equation" log(likelihood)=3.62637;
+rcond(R)=6.89047e-05; rcond(G_Rinv_Gtran)=0.0296288; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.19>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.20>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.21>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.22>echo off 
+ and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0483109 -0.850573*x0 -0.0102324*x1 + ...
+               0.254329*x2 + 0.699374*x0^2 -0.0460755*x1^2 ...
+               -0.193181*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=19; used 19/19 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.021581, 0.406324, 5.29352]^T
+found by the "global" optimization_method;
+unadjusted variance=4.74962e+18; "per equation" log(likelihood)=3.65285;
+rcond(R)=0.000192107; rcond(G_Rinv_Gtran)=0.0229462; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0505551 -0.887526*x0 + 0.0452398*x1 + ...
+               0.259122*x2 + 0.660997*x0^2 + 0.0350459*x1^2 ...
+               -0.246992*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=20; used 20/20 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.498416, 0.184037, 1.19198]^T
+found by the "global" optimization_method;
+unadjusted variance=3.62738e+18; "per equation" log(likelihood)=3.63526;
+rcond(R)=0.000210007; rcond(G_Rinv_Gtran)=0.00852872; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0574054 -0.858012*x0 -0.0475781*x1 + ...
+               0.287105*x2 + 0.657981*x0^2 + 0.0980458*x1^2 ...
+               -0.163097*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=21; used 21/21 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.152271, 0.0744297, 7.04027]^T
+found by the "global" optimization_method;
+unadjusted variance=3.5656e+18; "per equation" log(likelihood)=3.65154;
+rcond(R)=6.66755e-05; rcond(G_Rinv_Gtran)=0.0383598; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.051661 -0.854234*x0 -0.0342219*x1 + ...
+               0.257831*x2 + 0.696886*x0^2 -0.00886544*x1^2 ...
+               -0.169454*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=22; used 22/22 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.168049, 0.0805945, 6.99817]^T
+found by the "global" optimization_method;
+unadjusted variance=3.75754e+18; "per equation" log(likelihood)=3.68522;
+rcond(R)=5.87052e-05; rcond(G_Rinv_Gtran)=0.0403359; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+o
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.23>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.24>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.25>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.26>echo off 
+f order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0502221 -0.851186*x0 -0.0463739*x1 + ...
+               0.262502*x2 + 0.704977*x0^2 -0.0249316*x1^2 ...
+               -0.162535*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=23; used 23/23 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.163232, 0.0715233, 6.66955]^T
+found by the "global" optimization_method;
+unadjusted variance=3.08718e+18; "per equation" log(likelihood)=3.67086;
+rcond(R)=7.93385e-05; rcond(G_Rinv_Gtran)=0.0319909; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0528362 -0.856509*x0 -0.0336174*x1 + ...
+               0.262496*x2 + 0.702369*x0^2 -0.0108681*x1^2 ...
+               -0.16706*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=24; used 24/24 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0199642, 0.183352, 5.89451]^T
+found by the "global" optimization_method;
+unadjusted variance=4.49152e+18; "per equation" log(likelihood)=3.75727;
+rcond(R)=9.07735e-06; rcond(G_Rinv_Gtran)=0.0181068; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.051168 -0.895966*x0 -0.00349851*x1 + ...
+               0.251798*x2 + 0.615707*x0^2 -0.0218963*x1^2 ...
+               -0.115058*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=25; used 25/25 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0196944, 0.180017, 5.81485]^T
+found by the "global" optimization_method;
+unadjusted variance=4.11286e+18; "per equation" log(likelihood)=3.74693;
+rcond(R)=1.09799e-05; rcond(G_Rinv_Gtran)=0.0179113; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0508131 -0.895011*x0 + 0.00050754*x1 + ...
+               0.252372*x2 + 0.625139*x0^2 -0.0320525*x1^2 ...
+               -0.120063*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=26; used 26/26 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0194386, 0.179376, 5.55147]^T
+found by the "global" optimization_method;
+unadjusted variance=3.79482e+18; "per equation" log(likelihood)=3.77182;
+rcond(R)=1.048e-05; rcond(G_Rinv_Gtran)=0.0172857; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was suffici
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.27>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.28>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.29>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.30>echo off 
+ent to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0504975 -0.894656*x0 -0.000783469*x1 + ...
+               0.255284*x2 + 0.620649*x0^2 -0.0306592*x1^2 ...
+               -0.117546*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=27; used 27/27 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0191956, 0.177978, 4.98483]^T
+found by the "global" optimization_method;
+unadjusted variance=3.41407e+18; "per equation" log(likelihood)=3.74908;
+rcond(R)=1.14917e-05; rcond(G_Rinv_Gtran)=0.0168774; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0535761 -0.89604*x0 -0.0029035*x1 + ...
+               0.263515*x2 + 0.624911*x0^2 -0.00747559*x1^2 ...
+               -0.116886*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=28; used 28/28 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0189643, 0.178359, 4.92477]^T
+found by the "global" optimization_method;
+unadjusted variance=3.23233e+18; "per equation" log(likelihood)=3.76131;
+rcond(R)=1.10624e-05; rcond(G_Rinv_Gtran)=0.0276235; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0534868 -0.895917*x0 -0.0020206*x1 + ...
+               0.263214*x2 + 0.62114*x0^2 -0.00385633*x1^2 ...
+               -0.116342*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=29; used 29/29 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0187437, 0.176285, 4.66363]^T
+found by the "global" optimization_method;
+unadjusted variance=2.97108e+18; "per equation" log(likelihood)=3.77078;
+rcond(R)=1.25463e-05; rcond(G_Rinv_Gtran)=0.0284575; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.053842 -0.894772*x0 -0.00379836*x1 + ...
+               0.265831*x2 + 0.618842*x0^2 + 0.00620798*x1^2 ...
+               -0.117949*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=30; used 30/30 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0185331, 0.174304, 4.41808]^T
+found by the "global" optimization_method;
+unadjusted variance=2.76386e+18; "per equation" log(likelihood)=3.75599;
+rcond(R)=1.41997e-05; rcond(G_Rinv_Gtran)=0.0166818; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any t
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.31>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.32>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.33>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.34>echo off 
+erm in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0574608 -0.895754*x0 -0.0054562*x1 + ...
+               0.270349*x2 + 0.632047*x0^2 + 0.0212886*x1^2 ...
+               -0.118501*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=31; used 31/31 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0183317, 0.172409, 4.5611]^T
+found by the "global" optimization_method;
+unadjusted variance=2.63752e+18; "per equation" log(likelihood)=3.74735;
+rcond(R)=1.57221e-05; rcond(G_Rinv_Gtran)=0.0164467; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0583982 -0.893539*x0 -0.00975295*x1 + ...
+               0.271758*x2 + 0.640926*x0^2 + 0.0263912*x1^2 ...
+               -0.11891*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=32; used 32/32 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0184869, 0.170594, 4.53459]^T
+found by the "global" optimization_method;
+unadjusted variance=2.54296e+18; "per equation" log(likelihood)=3.7863;
+rcond(R)=1.72507e-05; rcond(G_Rinv_Gtran)=0.016368; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0603602 -0.894445*x0 -0.0123077*x1 + ...
+               0.271303*x2 + 0.649133*x0^2 + 0.0303216*x1^2 ...
+               -0.112337*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=33; used 33/33 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0179536, 0.168853, 3.65849]^T
+found by the "global" optimization_method;
+unadjusted variance=2.32179e+18; "per equation" log(likelihood)=3.76254;
+rcond(R)=1.93639e-05; rcond(G_Rinv_Gtran)=0.0160597; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0581254 -0.888354*x0 -0.0110798*x1 + ...
+               0.269719*x2 + 0.658731*x0^2 + 0.0190245*x1^2 ...
+               -0.129625*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=34; used 34/34 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0177758, 0.167181, 3.5204]^T
+found by the "global" optimization_method;
+unadjusted variance=2.16496e+18; "per equation" log(likelihood)=3.75601;
+rcond(R)=2.15942e-05; rcond(G_Rinv_Gtran)=0.0148181; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.35>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.36>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.37>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.38>echo off 
+ function is
+betaHat^T*g(x)=-0.0585035 -0.888097*x0 -0.0113799*x1 + ...
+               0.270582*x2 + 0.663751*x0^2 + 0.0150383*x1^2 ...
+               -0.129607*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=35; used 35/35 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0179429, 0.165574, 3.48655]^T
+found by the "global" optimization_method;
+unadjusted variance=2.13457e+18; "per equation" log(likelihood)=3.74103;
+rcond(R)=2.35722e-05; rcond(G_Rinv_Gtran)=0.0162565; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0527197 -0.880097*x0 -0.00766761*x1 + ...
+               0.268428*x2 + 0.642148*x0^2 + 0.0224889*x1^2 ...
+               -0.161758*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=36; used 36/36 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0189084, 0.164026, 3.50358]^T
+found by the "global" optimization_method;
+unadjusted variance=2.12403e+18; "per equation" log(likelihood)=3.75427;
+rcond(R)=2.52084e-05; rcond(G_Rinv_Gtran)=0.0161724; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0522114 -0.880156*x0 -0.00950233*x1 + ...
+               0.269471*x2 + 0.635052*x0^2 + 0.0299312*x1^2 ...
+               -0.164298*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=37; used 37/37 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0173641, 0.162535, 3.08268]^T
+found by the "global" optimization_method;
+unadjusted variance=2.03142e+18; "per equation" log(likelihood)=3.72175;
+rcond(R)=2.86869e-05; rcond(G_Rinv_Gtran)=0.0151717; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.050749 -0.876674*x0 -0.00775438*x1 + ...
+               0.265596*x2 + 0.632034*x0^2 + 0.0262425*x1^2 ...
+               -0.175071*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=38; used 38/38 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0172105, 0.161096, 3.0554]^T
+found by the "global" optimization_method;
+unadjusted variance=1.93233e+18; "per equation" log(likelihood)=3.72313;
+rcond(R)=3.12852e-05; rcond(G_Rinv_Gtran)=0.0163172; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0514594 -0.877286*x0 -0.00749918*x1 + ...
+          
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.39>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.40>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.41>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.42>echo off 
+     0.265672*x2 + 0.633889*x0^2 + 0.0273184*x1^2 ...
+               -0.172578*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=39; used 39/39 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0243715, 0.0877357, 3.93428]^T
+found by the "global" optimization_method;
+unadjusted variance=1.65907e+18; "per equation" log(likelihood)=3.70867;
+rcond(R)=0.000793566; rcond(G_Rinv_Gtran)=0.0122355; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0565754 -0.881516*x0 + 0.0045595*x1 + ...
+               0.259995*x2 + 0.645948*x0^2 + 0.0256635*x1^2 ...
+               -0.161416*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=40; used 40/40 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0168385, 0.149584, 2.93305]^T
+found by the "global" optimization_method;
+unadjusted variance=1.81851e+18; "per equation" log(likelihood)=3.75088;
+rcond(R)=4.91577e-05; rcond(G_Rinv_Gtran)=0.0157213; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0522344 -0.877294*x0 -0.00582365*x1 + ...
+               0.265683*x2 + 0.626786*x0^2 + 0.0380884*x1^2 ...
+               -0.171657*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=41; used 41/41 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0167004, 0.15265, 3.26059]^T
+found by the "global" optimization_method;
+unadjusted variance=1.8774e+18; "per equation" log(likelihood)=3.76461;
+rcond(R)=3.76406e-05; rcond(G_Rinv_Gtran)=0.0167173; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0517616 -0.877088*x0 -0.00640696*x1 + ...
+               0.265083*x2 + 0.62626*x0^2 + 0.0391211*x1^2 ...
+               -0.176639*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=42; used 42/42 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0165668, 0.155811, 2.57456]^T
+found by the "global" optimization_method;
+unadjusted variance=2.03968e+18; "per equation" log(likelihood)=3.68648;
+rcond(R)=3.31602e-05; rcond(G_Rinv_Gtran)=0.0149838; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0536953 -0.878611*x0 -0.00941001*x1 + ...
+               0.267204*x2 + 0.618363*x0^2 + 0.0483816*x1^2 ...
+               -0.156964*x2^
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.43>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.44>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.45>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.46>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.47>echo off 
+2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=43; used 43/43 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0164374, 0.154593, 2.55445]^T
+found by the "global" optimization_method;
+unadjusted variance=2.02563e+18; "per equation" log(likelihood)=3.67065;
+rcond(R)=3.58277e-05; rcond(G_Rinv_Gtran)=0.014745; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0572203 -0.878929*x0 -0.0107216*x1 + ...
+               0.270453*x2 + 0.631849*x0^2 + 0.0643304*x1^2 ...
+               -0.163338*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=44; used 44/44 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0163119, 0.153413, 2.53495]^T
+found by the "global" optimization_method;
+unadjusted variance=1.97321e+18; "per equation" log(likelihood)=3.66316;
+rcond(R)=3.86202e-05; rcond(G_Rinv_Gtran)=0.014608; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0597187 -0.879053*x0 -0.007985*x1 + ...
+               0.271933*x2 + 0.648837*x0^2 + 0.0651488*x1^2 ...
+               -0.16918*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=45; used 45/45 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0161902, 0.152268, 2.74082]^T
+found by the "global" optimization_method;
+unadjusted variance=1.95473e+18; "per equation" log(likelihood)=3.6657;
+rcond(R)=4.06029e-05; rcond(G_Rinv_Gtran)=0.0148427; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.059718 -0.878634*x0 -0.00673807*x1 + ...
+               0.270698*x2 + 0.652191*x0^2 + 0.0652975*x1^2 ...
+               -0.173255*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=46; used 46/46 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.016072, 0.151157, 2.79954]^T
+found by the "global" optimization_method;
+unadjusted variance=1.90335e+18; "per equation" log(likelihood)=3.6573;
+rcond(R)=4.32943e-05; rcond(G_Rinv_Gtran)=0.0142469; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0586206 -0.879313*x0 -0.00250578*x1 + ...
+               0.263023*x2 + 0.647787*x0^2 + 0.0598697*x1^2 ...
+               -0.185734*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inpu
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.48>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.49>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.50>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.51>echo off 
+ts=3; #pts=47; used 47/47 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0159572, 0.150077, 2.47982]^T
+found by the "global" optimization_method;
+unadjusted variance=1.83077e+18; "per equation" log(likelihood)=3.65689;
+rcond(R)=4.57721e-05; rcond(G_Rinv_Gtran)=0.013511; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0565001 -0.876725*x0 -0.00221481*x1 + ...
+               0.263603*x2 + 0.640648*x0^2 + 0.0590147*x1^2 ...
+               -0.195976*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=48; used 48/48 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0158456, 0.142786, 2.42761]^T
+found by the "global" optimization_method;
+unadjusted variance=1.69937e+18; "per equation" log(likelihood)=3.66427;
+rcond(R)=6.93597e-05; rcond(G_Rinv_Gtran)=0.0132272; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0572505 -0.876403*x0 -0.000484129*x1 + ...
+               0.262711*x2 + 0.645974*x0^2 + 0.0585825*x1^2 ...
+               -0.195516*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=49; used 49/49 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0157371, 0.148007, 2.41098]^T
+found by the "global" optimization_method;
+unadjusted variance=1.74367e+18; "per equation" log(likelihood)=3.66864;
+rcond(R)=5.12716e-05; rcond(G_Rinv_Gtran)=0.0131928; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0562468 -0.875789*x0 -0.00326215*x1 + ...
+               0.263946*x2 + 0.64884*x0^2 + 0.0500457*x1^2 ...
+               -0.199908*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=50; used 50/50 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0156314, 0.147013, 2.49949]^T
+found by the "global" optimization_method;
+unadjusted variance=1.71817e+18; "per equation" log(likelihood)=3.67994;
+rcond(R)=5.04012e-05; rcond(G_Rinv_Gtran)=0.0133313; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0568277 -0.87643*x0 -0.00283518*x1 + ...
+               0.263809*x2 + 0.650565*x0^2 + 0.0500764*x1^2 ...
+               -0.19595*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=51; used 51/51 pts;
+using the Gaussian correlation function with (unscal
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.52>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.53>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.54>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.55>echo off 
+ed)
+Correlation lengths=[0.0155286, 0.146046, 1.61869]^T
+found by the "global" optimization_method;
+unadjusted variance=1.54496e+18; "per equation" log(likelihood)=3.66157;
+rcond(R)=6.02506e-05; rcond(G_Rinv_Gtran)=0.0115185; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0549901 -0.870831*x0 -0.00541386*x1 + ...
+               0.261716*x2 + 0.651062*x0^2 + 0.0449584*x1^2 ...
+               -0.210641*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=52; used 52/52 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0154284, 0.145104, 1.75193]^T
+found by the "global" optimization_method;
+unadjusted variance=1.52668e+18; "per equation" log(likelihood)=3.67794;
+rcond(R)=6.03738e-05; rcond(G_Rinv_Gtran)=0.0117464; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0553446 -0.871615*x0 -0.00457011*x1 + ...
+               0.261542*x2 + 0.653359*x0^2 + 0.0436072*x1^2 ...
+               -0.207936*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=53; used 53/53 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0153308, 0.144186, 1.69189]^T
+found by the "global" optimization_method;
+unadjusted variance=1.50902e+18; "per equation" log(likelihood)=3.67635;
+rcond(R)=6.42435e-05; rcond(G_Rinv_Gtran)=0.0116118; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0541917 -0.870049*x0 -0.00493419*x1 + ...
+               0.261489*x2 + 0.649412*x0^2 + 0.0460598*x1^2 ...
+               -0.218005*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=54; used 54/54 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0152355, 0.14329, 1.24621]^T
+found by the "global" optimization_method;
+unadjusted variance=1.45117e+18; "per equation" log(likelihood)=3.66631;
+rcond(R)=7.22207e-05; rcond(G_Rinv_Gtran)=0.0109321; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0523287 -0.86515*x0 -0.00902459*x1 + ...
+               0.260397*x2 + 0.636243*x0^2 + 0.0574618*x1^2 ...
+               -0.233997*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=55; used 55/55 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0151426, 0.142416, 0.854849]^T
+found by the "global" op
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.56>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.57>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.58>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.59>echo off 
+timization_method;
+unadjusted variance=1.43395e+18; "per equation" log(likelihood)=3.64256;
+rcond(R)=7.62328e-05; rcond(G_Rinv_Gtran)=0.0101759; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0516019 -0.862318*x0 -0.0105912*x1 + ...
+               0.258386*x2 + 0.639367*x0^2 + 0.0493115*x1^2 ...
+               -0.236043*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=56; used 56/56 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.015052, 0.141563, 0.84973]^T
+found by the "global" optimization_method;
+unadjusted variance=1.39046e+18; "per equation" log(likelihood)=3.65123;
+rcond(R)=7.94599e-05; rcond(G_Rinv_Gtran)=0.0100955; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0518058 -0.862441*x0 -0.0105697*x1 + ...
+               0.258233*x2 + 0.640936*x0^2 + 0.0484961*x1^2 ...
+               -0.234945*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=57; used 57/57 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0149634, 0.140731, 1.06126]^T
+found by the "global" optimization_method;
+unadjusted variance=1.4255e+18; "per equation" log(likelihood)=3.66229;
+rcond(R)=7.9249e-05; rcond(G_Rinv_Gtran)=0.0105029; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0512496 -0.86324*x0 -0.0100107*x1 + ...
+               0.260069*x2 + 0.633746*x0^2 + 0.0550176*x1^2 ...
+               -0.239794*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=58; used 58/58 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0148769, 0.139917, 1.10125]^T
+found by the "global" optimization_method;
+unadjusted variance=1.40096e+18; "per equation" log(likelihood)=3.6714;
+rcond(R)=8.25719e-05; rcond(G_Rinv_Gtran)=0.0105929; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0510021 -0.863056*x0 -0.00957323*x1 + ...
+               0.260016*x2 + 0.632307*x0^2 + 0.0563644*x1^2 ...
+               -0.241585*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=59; used 59/59 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0147924, 0.139122, 1.14287]^T
+found by the "global" optimization_method;
+unadjusted variance=1.38886e+18; "per equation" log(likelihood)=3.683
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.60>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.61>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.62>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.63>echo off 
+92;
+rcond(R)=8.28514e-05; rcond(G_Rinv_Gtran)=0.010663; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0512291 -0.863415*x0 -0.00893207*x1 + ...
+               0.259954*x2 + 0.634701*x0^2 + 0.0552793*x1^2 ...
+               -0.240922*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=60; used 60/60 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0147097, 0.138345, 1.10452]^T
+found by the "global" optimization_method;
+unadjusted variance=1.36139e+18; "per equation" log(likelihood)=3.68888;
+rcond(R)=8.41738e-05; rcond(G_Rinv_Gtran)=0.0105499; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0511878 -0.862905*x0 -0.0086817*x1 + ...
+               0.259403*x2 + 0.636296*x0^2 + 0.0548924*x1^2 ...
+               -0.242685*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=61; used 61/61 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0146289, 0.135636, 1.17964]^T
+found by the "global" optimization_method;
+unadjusted variance=1.34303e+18; "per equation" log(likelihood)=3.70152;
+rcond(R)=9.57251e-05; rcond(G_Rinv_Gtran)=0.010632; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0513256 -0.863135*x0 -0.00792895*x1 + ...
+               0.259402*x2 + 0.636105*x0^2 + 0.0571371*x1^2 ...
+               -0.243358*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=62; used 62/62 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0145498, 0.138148, 1.20722]^T
+found by the "global" optimization_method;
+unadjusted variance=1.35604e+18; "per equation" log(likelihood)=3.7099;
+rcond(R)=8.15746e-05; rcond(G_Rinv_Gtran)=0.0107028; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0511031 -0.863165*x0 -0.00866365*x1 + ...
+               0.259881*x2 + 0.632944*x0^2 + 0.060129*x1^2 ...
+               -0.24484*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=63; used 63/63 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0144725, 0.136113, 1.23554]^T
+found by the "global" optimization_method;
+unadjusted variance=1.32414e+18; "per equation" log(likelihood)=3.71435;
+rcond(R)=9.17227e-05; rcond(G_Rinv_Gtran)=0.0105846; [if either rcond is less
+than
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.64>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.65>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.66>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.67>echo off 
+ 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0515555 -0.863674*x0 -0.00851527*x1 + ...
+               0.259789*x2 + 0.633938*x0^2 + 0.0612576*x1^2 ...
+               -0.242926*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=64; used 64/64 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0150976, 0.126081, 1.35167]^T
+found by the "global" optimization_method;
+unadjusted variance=1.32945e+18; "per equation" log(likelihood)=3.71672;
+rcond(R)=0.000149937; rcond(G_Rinv_Gtran)=0.0108183; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0526382 -0.864358*x0 -0.007043*x1 + ...
+               0.259342*x2 + 0.637249*x0^2 + 0.0669473*x1^2 ...
+               -0.242794*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=65; used 65/65 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0144593, 0.134064, 1.37052]^T
+found by the "global" optimization_method;
+unadjusted variance=1.38464e+18; "per equation" log(likelihood)=3.70902;
+rcond(R)=9.73129e-05; rcond(G_Rinv_Gtran)=0.0108055; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0496019 -0.862043*x0 -0.00691133*x1 + ...
+               0.259122*x2 + 0.624843*x0^2 + 0.0608603*x1^2 ...
+               -0.248417*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=66; used 66/66 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0143859, 0.133383, 1.37659]^T
+found by the "global" optimization_method;
+unadjusted variance=1.35513e+18; "per equation" log(likelihood)=3.71139;
+rcond(R)=0.000101796; rcond(G_Rinv_Gtran)=0.0106443; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0501713 -0.862863*x0 -0.00669756*x1 + ...
+               0.258948*x2 + 0.62479*x0^2 + 0.0627634*x1^2 ...
+               -0.245744*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=67; used 67/67 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0141785, 0.140508, 1.21622]^T
+found by the "global" optimization_method;
+unadjusted variance=1.34369e+18; "per equation" log(likelihood)=3.70323;
+rcond(R)=7.20046e-05; rcond(G_Rinv_Gtran)=0.0103945; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.68>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.69>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.70>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.71>echo off 
+ warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0481022 -0.860293*x0 -0.00787965*x1 + ...
+               0.258779*x2 + 0.617295*x0^2 + 0.0565842*x1^2 ...
+               -0.249831*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=68; used 68/68 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0141087, 0.139816, 1.22179]^T
+found by the "global" optimization_method;
+unadjusted variance=1.31601e+18; "per equation" log(likelihood)=3.70802;
+rcond(R)=7.53083e-05; rcond(G_Rinv_Gtran)=0.010481; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0476507 -0.859762*x0 -0.00794405*x1 + ...
+               0.258446*x2 + 0.615776*x0^2 + 0.0559004*x1^2 ...
+               -0.251002*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=69; used 69/69 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0140402, 0.13782, 1.23332]^T
+found by the "global" optimization_method;
+unadjusted variance=1.28105e+18; "per equation" log(likelihood)=3.71133;
+rcond(R)=8.49902e-05; rcond(G_Rinv_Gtran)=0.0107133; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.047997 -0.860004*x0 -0.0074749*x1 + ...
+               0.258158*x2 + 0.617878*x0^2 + 0.0554078*x1^2 ...
+               -0.249582*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=70; used 70/70 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.013973, 0.137161, 1.22742]^T
+found by the "global" optimization_method;
+unadjusted variance=1.25964e+18; "per equation" log(likelihood)=3.71298;
+rcond(R)=8.91353e-05; rcond(G_Rinv_Gtran)=0.0107545; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0492235 -0.861184*x0 -0.00869785*x1 + ...
+               0.258586*x2 + 0.626312*x0^2 + 0.0503643*x1^2 ...
+               -0.243884*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=71; used 71/71 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0139071, 0.120069, 1.15389]^T
+found by the "global" optimization_method;
+unadjusted variance=1.18287e+18; "per equation" log(likelihood)=3.6917;
+rcond(R)=0.000232372; rcond(G_Rinv_Gtran)=0.0101693; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 t
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.72>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.73>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.74>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.75>echo off 
+erms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0527047 -0.86184*x0 -0.00533119*x1 + ...
+               0.254214*x2 + 0.643428*x0^2 + 0.0521841*x1^2 ...
+               -0.231139*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=72; used 72/72 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0158133, 0.100233, 1.13226]^T
+found by the "global" optimization_method;
+unadjusted variance=1.12376e+18; "per equation" log(likelihood)=3.70208;
+rcond(R)=0.000673082; rcond(G_Rinv_Gtran)=0.00896396; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0540596 -0.862384*x0 -0.00373877*x1 + ...
+               0.253116*x2 + 0.651481*x0^2 + 0.0514997*x1^2 ...
+               -0.227826*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=73; used 73/73 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0154443, 0.0974299, 1.17633]^T
+found by the "global" optimization_method;
+unadjusted variance=1.12317e+18; "per equation" log(likelihood)=3.70523;
+rcond(R)=0.000797051; rcond(G_Rinv_Gtran)=0.00894485; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0531561 -0.861803*x0 -0.00505562*x1 + ...
+               0.253603*x2 + 0.651723*x0^2 + 0.0458881*x1^2 ...
+               -0.231066*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=74; used 74/74 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0137166, 0.106664, 1.17659]^T
+found by the "global" optimization_method;
+unadjusted variance=1.11538e+18; "per equation" log(likelihood)=3.70521;
+rcond(R)=0.000493688; rcond(G_Rinv_Gtran)=0.00885131; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0523336 -0.861135*x0 -0.00540727*x1 + ...
+               0.253276*x2 + 0.648761*x0^2 + 0.0424943*x1^2 ...
+               -0.230301*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=75; used 75/75 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0136553, 0.108226, 1.14927]^T
+found by the "global" optimization_method;
+unadjusted variance=1.10799e+18; "per equation" log(likelihood)=3.71359;
+rcond(R)=0.000455373; rcond(G_Rinv_Gtran)=0.0088019; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to 
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.76>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.77>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.78>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.79>echo off 
+use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0520576 -0.861056*x0 -0.00535396*x1 + ...
+               0.253508*x2 + 0.646565*x0^2 + 0.0421967*x1^2 ...
+               -0.230262*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=76; used 76/76 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0135952, 0.109297, 1.17732]^T
+found by the "global" optimization_method;
+unadjusted variance=1.10795e+18; "per equation" log(likelihood)=3.72567;
+rcond(R)=0.000395476; rcond(G_Rinv_Gtran)=0.0088995; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0517826 -0.860936*x0 -0.00542454*x1 + ...
+               0.253815*x2 + 0.644847*x0^2 + 0.0434065*x1^2 ...
+               -0.232186*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=77; used 77/77 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0135361, 0.11144, 1.21764]^T
+found by the "global" optimization_method;
+unadjusted variance=1.12413e+18; "per equation" log(likelihood)=3.74464;
+rcond(R)=0.000335097; rcond(G_Rinv_Gtran)=0.0100149; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0511004 -0.860623*x0 -0.00559417*x1 + ...
+               0.254458*x2 + 0.640941*x0^2 + 0.0451074*x1^2 ...
+               -0.236137*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=78; used 78/78 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.013478, 0.11149, 1.23569]^T
+found by the "global" optimization_method;
+unadjusted variance=1.1142e+18; "per equation" log(likelihood)=3.74912;
+rcond(R)=0.000332596; rcond(G_Rinv_Gtran)=0.00892562; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0510322 -0.860452*x0 -0.00535515*x1 + ...
+               0.254461*x2 + 0.640741*x0^2 + 0.0463201*x1^2 ...
+               -0.237624*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=79; used 79/79 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0134208, 0.120363, 0.970133]^T
+found by the "global" optimization_method;
+unadjusted variance=1.1121e+18; "per equation" log(likelihood)=3.73468;
+rcond(R)=0.000211935; rcond(G_Rinv_Gtran)=0.00832214; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term i
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.80>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.81>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.82>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.83>echo off 
+n the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0506991 -0.860295*x0 -0.00617409*x1 + ...
+               0.254535*x2 + 0.640555*x0^2 + 0.040009*x1^2 ...
+               -0.23448*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=80; used 80/80 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0133647, 0.116488, 0.7509]^T
+found by the "global" optimization_method;
+unadjusted variance=1.12554e+18; "per equation" log(likelihood)=3.70562;
+rcond(R)=0.000314685; rcond(G_Rinv_Gtran)=0.00756145; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0500169 -0.854075*x0 -0.00273621*x1 + ...
+               0.247884*x2 + 0.661843*x0^2 + 0.0336906*x1^2 ...
+               -0.206599*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=81; used 81/81 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0133095, 0.124582, 0.747798]^T
+found by the "global" optimization_method;
+unadjusted variance=2.58666e+18; "per equation" log(likelihood)=3.33585;
+rcond(R)=0.000176903; rcond(G_Rinv_Gtran)=0.00771247; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0444342 -0.850497*x0 -0.00672704*x1 + ...
+               0.252196*x2 + 0.623303*x0^2 + 0.0269695*x1^2 ...
+               -0.208979*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=82; used 82/82 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0132551, 0.0774952, 0.744745]^T
+found by the "global" optimization_method;
+unadjusted variance=2.06525e+18; "per equation" log(likelihood)=3.32351;
+rcond(R)=0.000510792; rcond(G_Rinv_Gtran)=0.00654254; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0492807 -0.851859*x0 -0.0044673*x1 + ...
+               0.247118*x2 + 0.653727*x0^2 + 0.0223136*x1^2 ...
+               -0.19188*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=83; used 83/83 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0132017, 0.0750122, 0.741742]^T
+found by the "global" optimization_method;
+unadjusted variance=2.00299e+18; "per equation" log(likelihood)=3.33416;
+rcond(R)=0.000542322; rcond(G_Rinv_Gtran)=0.00646772; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilize
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.84>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.85>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.86>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.87>echo off 
+d trend function is
+betaHat^T*g(x)=-0.0498533 -0.852335*x0 -0.0043619*x1 + ...
+               0.24691*x2 + 0.657245*x0^2 + 0.0216084*x1^2 ...
+               -0.189536*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=84; used 84/84 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0131491, 0.0620691, 0.738787]^T
+found by the "global" optimization_method;
+unadjusted variance=1.89322e+18; "per equation" log(likelihood)=3.34015;
+rcond(R)=0.00054887; rcond(G_Rinv_Gtran)=0.00608565; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.050605 -0.852564*x0 -0.00399582*x1 + ...
+               0.246021*x2 + 0.663319*x0^2 + 0.0194429*x1^2 ...
+               -0.18683*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=85; used 85/85 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0130973, 0.0618248, 0.735878]^T
+found by the "global" optimization_method;
+unadjusted variance=1.87357e+18; "per equation" log(likelihood)=3.3516;
+rcond(R)=0.000516655; rcond(G_Rinv_Gtran)=0.00606263; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0505513 -0.852453*x0 -0.00386824*x1 + ...
+               0.245927*x2 + 0.662836*x0^2 + 0.0190414*x1^2 ...
+               -0.186262*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=86; used 86/86 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0130464, 0.0830891, 0.733015]^T
+found by the "global" optimization_method;
+unadjusted variance=2.46425e+18; "per equation" log(likelihood)=3.56887;
+rcond(R)=0.00035364; rcond(G_Rinv_Gtran)=0.00736891; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.178763 -0.683794*x0 -0.0100663*x1 + ...
+               0.20107*x2 + 0.608458*x0^2 + 0.0389296*x1^2 ...
+               -0.052143*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=87; used 87/87 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0129962, 0.0827695, 0.730196]^T
+found by the "global" optimization_method;
+unadjusted variance=2.41031e+18; "per equation" log(likelihood)=3.58253;
+rcond(R)=0.000363249; rcond(G_Rinv_Gtran)=0.00733863; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.178783 -0.684843*x0 -0.0098486*x1 + ...
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.88>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.89>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.90>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.91>echo off 
+               0.201421*x2 + 0.611589*x0^2 + 0.0367673*x1^2 ...
+               -0.0501172*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=88; used 88/88 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0129468, 0.0824548, 0.727419]^T
+found by the "global" optimization_method;
+unadjusted variance=2.36911e+18; "per equation" log(likelihood)=3.59312;
+rcond(R)=0.00037299; rcond(G_Rinv_Gtran)=0.00731239; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.178756 -0.682471*x0 -0.00941286*x1 + ...
+               0.201409*x2 + 0.607214*x0^2 + 0.0350103*x1^2 ...
+               -0.0496288*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=89; used 89/89 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0128981, 0.0821448, 0.724685]^T
+found by the "global" optimization_method;
+unadjusted variance=2.38233e+18; "per equation" log(likelihood)=3.58408;
+rcond(R)=0.000382864; rcond(G_Rinv_Gtran)=0.00739231; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.179885 -0.694556*x0 -0.00824036*x1 + ...
+               0.205896*x2 + 0.63748*x0^2 + 0.0239994*x1^2 ...
+               -0.0274711*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=90; used 90/90 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0128502, 0.0818394, 0.721991]^T
+found by the "global" optimization_method;
+unadjusted variance=2.42554e+18; "per equation" log(likelihood)=3.57312;
+rcond(R)=0.00039287; rcond(G_Rinv_Gtran)=0.0073599; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.179724 -0.700873*x0 -0.00863963*x1 + ...
+               0.20606*x2 + 0.651402*x0^2 + 0.0229401*x1^2 ...
+               -0.0268193*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=91; used 91/91 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0128029, 0.0613031, 0.719336]^T
+found by the "global" optimization_method;
+unadjusted variance=2.34232e+18; "per equation" log(likelihood)=3.53784;
+rcond(R)=0.000585542; rcond(G_Rinv_Gtran)=0.00795417; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.180479 -0.695578*x0 -0.00913872*x1 + ...
+               0.206048*x2 + 0.643071*x0^2 + 0.0273449*x1^2 ...
+         
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.92>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.93>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.94>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.95>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.96>echo off 
+      -0.0247533*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=92; used 92/92 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0127564, 0.0381502, 0.71672]^T
+found by the "global" optimization_method;
+unadjusted variance=2.23511e+18; "per equation" log(likelihood)=3.51822;
+rcond(R)=0.000826795; rcond(G_Rinv_Gtran)=0.00621313; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.17965 -0.697068*x0 -0.00828523*x1 + ...
+               0.205537*x2 + 0.646568*x0^2 + 0.0222699*x1^2 ...
+               -0.0253551*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=93; used 93/93 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.012771, 0.0378327, 0.714142]^T
+found by the "global" optimization_method;
+unadjusted variance=2.74596e+18; "per equation" log(likelihood)=3.47156;
+rcond(R)=0.000834982; rcond(G_Rinv_Gtran)=0.00622422; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.194977 -0.65668*x0 -0.00830281*x1 + ...
+               0.194517*x2 + 0.599704*x0^2 + 0.0261927*x1^2 ...
+               -0.029585*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=94; used 94/94 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0590974, 0.0818204, 0.711601]^T
+found by the "global" optimization_method;
+unadjusted variance=7.84488e+19; "per equation" log(likelihood)=2.47834;
+rcond(R)=2.08972e-06; rcond(G_Rinv_Gtran)=0.010925; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.129035 -0.571072*x0 + 0.03119*x1 + ...
+               0.216967*x2 + 0.218772*x0^2 -0.118091*x1^2 ...
+               -0.174157*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=95; used 95/95 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0588893, 0.0554742, 0.709095]^T
+found by the "global" optimization_method;
+unadjusted variance=5.43742e+19; "per equation" log(likelihood)=2.47609;
+rcond(R)=3.01465e-06; rcond(G_Rinv_Gtran)=0.0368097; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.141765 -0.548375*x0 + 0.00981371*x1 + ...
+               0.208743*x2 + 0.177956*x0^2 + 0.0385112*x1^2 ...
+               -0.233357*x2^2
+------------------------------------
+--- Surfpack Kriging D
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.97>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.98>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.99>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.100>echo off 
+iagnostics ---
+KM: #real inputs=3; #pts=96; used 96/96 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0589638, 0.0374344, 0.706624]^T
+found by the "global" optimization_method;
+unadjusted variance=5.35813e+19; "per equation" log(likelihood)=2.36661;
+rcond(R)=3.61183e-06; rcond(G_Rinv_Gtran)=0.0149286; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.139122 -0.61834*x0 + 0.0133449*x1 + ...
+               0.240646*x2 + 0.316561*x0^2 -0.0489091*x1^2 ...
+               -0.0904191*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=97; used 97/97 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0668085, 0.0373054, 0.704188]^T
+found by the "global" optimization_method;
+unadjusted variance=1.52099e+20; "per equation" log(likelihood)=1.89279;
+rcond(R)=1.32634e-06; rcond(G_Rinv_Gtran)=0.0169954; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.117871 -0.593972*x0 + 0.0220217*x1 + ...
+               0.189998*x2 + 0.213947*x0^2 -0.0367895*x1^2 ...
+               -0.324254*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=98; used 98/98 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0665805, 0.037178, 0.701784]^T
+found by the "global" optimization_method;
+unadjusted variance=1.55878e+20; "per equation" log(likelihood)=1.88113;
+rcond(R)=1.36729e-06; rcond(G_Rinv_Gtran)=0.0174202; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.126642 -0.532584*x0 + 0.016967*x1 + ...
+               0.20254*x2 + 0.098669*x0^2 + 0.00451465*x1^2 ...
+               -0.274978*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=99; used 99/99 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0692563, 0.0370524, 0.699413]^T
+found by the "global" optimization_method;
+unadjusted variance=1.77197e+20; "per equation" log(likelihood)=1.84271;
+rcond(R)=9.9824e-07; rcond(G_Rinv_Gtran)=0.0182417; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0932904 -0.558363*x0 + 0.0205392*x1 + ...
+               0.220939*x2 + 0.0916592*x0^2 -0.0886473*x1^2 ...
+               -0.32116*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=100; used 63/100 pts;
+using the Gaussian 
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.101>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.102>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.103>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.104>echo off 
+correlation function with (unscaled)
+Correlation lengths=[0.287348, 0.851234, 13.9988]^T
+found by the "global" optimization_method;
+unadjusted variance=1.40292e+25; "per equation" log(likelihood)=2.08702;
+rcond(R)=2.00462e-12; rcond(G_Rinv_Gtran)=0.0425544; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=36.3741 + 8.09767*x0 + 8.32841*x1 ...
+               -15.3316*x2 -1.19139*x0^2 -31.4189*x1^2 ...
+               -10.1067*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=101; used 60/101 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.224734, 0.915468, 18.558]^T
+found by the "global" optimization_method;
+unadjusted variance=2.29901e+25; "per equation" log(likelihood)=1.71937;
+rcond(R)=1.52526e-12; rcond(G_Rinv_Gtran)=0.0431976; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=123.564 + 39.0463*x0 -2.88988*x1 ...
+               -29.1185*x2 -76.4085*x0^2 -55.9065*x1^2 ...
+               -19.4349*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=102; used 65/102 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.296523, 0.802548, 12.9495]^T
+found by the "global" optimization_method;
+unadjusted variance=1.62892e+25; "per equation" log(likelihood)=1.85083;
+rcond(R)=1.89642e-12; rcond(G_Rinv_Gtran)=0.0426704; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=5.17859 + 29.8124*x0 + 21.8223*x1 ...
+               -23.1447*x2 + 10.986*x0^2 -36.1638*x1^2 + ...
+               13.3328*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=103; used 103/103 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0683479, 0.0365664, 0.69024]^T
+found by the "global" optimization_method;
+unadjusted variance=1.65433e+20; "per equation" log(likelihood)=1.84964;
+rcond(R)=1.12267e-06; rcond(G_Rinv_Gtran)=0.0210266; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.100978 -0.567219*x0 + 0.0362137*x1 + ...
+               0.212208*x2 + 0.129516*x0^2 -0.0898939*x1^2 ...
+               -0.311527*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=104; used 104/104 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0681281, 0.0364489, 0.68802]^T
+found by the "global" o
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.105>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.106>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.107>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.108>echo off 
+ptimization_method;
+unadjusted variance=1.61715e+20; "per equation" log(likelihood)=1.85615;
+rcond(R)=1.15531e-06; rcond(G_Rinv_Gtran)=0.0146913; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.107477 -0.55266*x0 + 0.0353097*x1 + ...
+               0.211564*x2 + 0.107568*x0^2 -0.0634067*x1^2 ...
+               -0.297618*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=105; used 105/105 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0679112, 0.0363328, 0.685829]^T
+found by the "global" optimization_method;
+unadjusted variance=1.57552e+20; "per equation" log(likelihood)=1.86689;
+rcond(R)=1.18857e-06; rcond(G_Rinv_Gtran)=0.014586; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.108399 -0.550798*x0 + 0.0327675*x1 + ...
+               0.205264*x2 + 0.105686*x0^2 -0.0456436*x1^2 ...
+               -0.319234*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=106; used 106/106 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0657932, 0.0362182, 0.683666]^T
+found by the "global" optimization_method;
+unadjusted variance=1.51655e+20; "per equation" log(likelihood)=1.87747;
+rcond(R)=1.53827e-06; rcond(G_Rinv_Gtran)=0.019916; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.117199 -0.554258*x0 + 0.0319373*x1 + ...
+               0.203295*x2 + 0.135257*x0^2 -0.029035*x1^2 ...
+               -0.295739*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=107; used 107/107 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0655876, 0.036105, 0.681529]^T
+found by the "global" optimization_method;
+unadjusted variance=1.47767e+20; "per equation" log(likelihood)=1.88379;
+rcond(R)=1.58171e-06; rcond(G_Rinv_Gtran)=0.019797; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.116403 -0.560697*x0 + 0.0329763*x1 + ...
+               0.205374*x2 + 0.149649*x0^2 -0.0411792*x1^2 ...
+               -0.288578*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=108; used 108/108 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0653845, 0.0359932, 0.679419]^T
+found by the "global" optimization_method;
+unadjusted variance=1.44452e+20; "per equation" log(li
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.109>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.110>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.111>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.112>echo off 
+kelihood)=1.88669;
+rcond(R)=1.62596e-06; rcond(G_Rinv_Gtran)=0.0197809; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.124839 -0.575668*x0 + 0.0510778*x1 + ...
+               0.215214*x2 + 0.172538*x0^2 + 0.00972673*x1^2 ...
+               -0.24418*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=109; used 109/109 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.065184, 0.0358828, 0.677335]^T
+found by the "global" optimization_method;
+unadjusted variance=1.4058e+20; "per equation" log(likelihood)=1.89345;
+rcond(R)=1.67102e-06; rcond(G_Rinv_Gtran)=0.0198392; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.125782 -0.579524*x0 + 0.052763*x1 + ...
+               0.215396*x2 + 0.180365*x0^2 + 0.0173056*x1^2 ...
+               -0.242729*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=110; used 110/110 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0640656, 0.0357737, 0.675276]^T
+found by the "global" optimization_method;
+unadjusted variance=1.35901e+20; "per equation" log(likelihood)=1.90047;
+rcond(R)=1.92584e-06; rcond(G_Rinv_Gtran)=0.0193931; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.129659 -0.583605*x0 + 0.0544074*x1 + ...
+               0.21524*x2 + 0.199587*x0^2 + 0.0212435*x1^2 ...
+               -0.229027*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=111; used 111/111 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0638726, 0.035666, 0.673242]^T
+found by the "global" optimization_method;
+unadjusted variance=1.32301e+20; "per equation" log(likelihood)=1.90642;
+rcond(R)=1.97823e-06; rcond(G_Rinv_Gtran)=0.0142308; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.130187 -0.586065*x0 + 0.0546664*x1 + ...
+               0.214922*x2 + 0.205467*x0^2 + 0.02446*x1^2 ...
+               -0.228849*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=112; used 112/112 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0636819, 0.0355595, 0.671233]^T
+found by the "global" optimization_method;
+unadjusted variance=1.29203e+20; "per equation" log(likelihood)=1.91165;
+rcond(R)=2.03155e-06; rcond(G_Rinv_Gtran)=0.0141621;
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.113>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.114>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.115>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.116>echo off 
+ [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.130216 -0.59376*x0 + 0.0593333*x1 + ...
+               0.216214*x2 + 0.219443*x0^2 + 0.0275979*x1^2 ...
+               -0.226152*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=113; used 113/113 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0634935, 0.0354543, 0.669247]^T
+found by the "global" optimization_method;
+unadjusted variance=1.26015e+20; "per equation" log(likelihood)=1.91828;
+rcond(R)=2.08582e-06; rcond(G_Rinv_Gtran)=0.0140492; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.130788 -0.597036*x0 + 0.0613226*x1 + ...
+               0.218615*x2 + 0.227755*x0^2 + 0.0225262*x1^2 ...
+               -0.214943*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=114; used 114/114 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0633073, 0.0353503, 0.667284]^T
+found by the "global" optimization_method;
+unadjusted variance=1.22776e+20; "per equation" log(likelihood)=1.92587;
+rcond(R)=2.14104e-06; rcond(G_Rinv_Gtran)=0.0139593; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.131267 -0.597995*x0 + 0.0606665*x1 + ...
+               0.218628*x2 + 0.231703*x0^2 + 0.0217514*x1^2 ...
+               -0.212627*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=115; used 115/115 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0631233, 0.0352476, 0.665344]^T
+found by the "global" optimization_method;
+unadjusted variance=1.19713e+20; "per equation" log(likelihood)=1.93227;
+rcond(R)=2.19722e-06; rcond(G_Rinv_Gtran)=0.0137307; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.132095 -0.599965*x0 + 0.0618807*x1 + ...
+               0.221231*x2 + 0.238193*x0^2 + 0.0151882*x1^2 ...
+               -0.199034*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=116; used 116/116 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0629414, 0.035146, 0.663427]^T
+found by the "global" optimization_method;
+unadjusted variance=1.16731e+20; "per equation" log(likelihood)=1.93937;
+rcond(R)=2.25437e-06; rcond(G_Rinv_Gtran)=0.0136514; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then th
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.117>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.118>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.119>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.120>echo off 
+e matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.132346 -0.601858*x0 + 0.0616843*x1 + ...
+               0.221488*x2 + 0.244198*x0^2 + 0.011875*x1^2 ...
+               -0.19615*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=117; used 117/117 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0627615, 0.0350456, 0.661531]^T
+found by the "global" optimization_method;
+unadjusted variance=1.13891e+20; "per equation" log(likelihood)=1.94551;
+rcond(R)=2.3125e-06; rcond(G_Rinv_Gtran)=0.0176953; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.132735 -0.603575*x0 + 0.0621597*x1 + ...
+               0.224152*x2 + 0.250538*x0^2 + 0.00149388*x1^2 ...
+               -0.182788*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=118; used 118/118 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0625837, 0.0349463, 0.659657]^T
+found by the "global" optimization_method;
+unadjusted variance=1.11722e+20; "per equation" log(likelihood)=1.94929;
+rcond(R)=2.37161e-06; rcond(G_Rinv_Gtran)=0.0174737; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.131222 -0.608411*x0 + 0.0626228*x1 + ...
+               0.22893*x2 + 0.263629*x0^2 -0.0265574*x1^2 ...
+               -0.164724*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=119; used 119/119 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0624079, 0.0348481, 0.657804]^T
+found by the "global" optimization_method;
+unadjusted variance=1.09118e+20; "per equation" log(likelihood)=1.9572;
+rcond(R)=2.43172e-06; rcond(G_Rinv_Gtran)=0.0173883; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.13258 -0.607123*x0 + 0.0616007*x1 + ...
+               0.229132*x2 + 0.26314*x0^2 -0.0223727*x1^2 ...
+               -0.160044*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=120; used 120/120 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0622341, 0.0347511, 0.655972]^T
+found by the "global" optimization_method;
+unadjusted variance=1.06485e+20; "per equation" log(likelihood)=1.96459;
+rcond(R)=2.49282e-06; rcond(G_Rinv_Gtran)=0.0172812; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.121>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.122>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.123>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.124>echo off 
+ Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.133366 -0.607311*x0 + 0.0609408*x1 + ...
+               0.229007*x2 + 0.265511*x0^2 -0.0208821*x1^2 ...
+               -0.157774*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=121; used 121/121 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0620622, 0.0346551, 0.65416]^T
+found by the "global" optimization_method;
+unadjusted variance=1.04094e+20; "per equation" log(likelihood)=1.97089;
+rcond(R)=2.55494e-06; rcond(G_Rinv_Gtran)=0.0172174; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.133 -0.612196*x0 + 0.0624768*x1 + ...
+               0.227501*x2 + 0.274325*x0^2 -0.0161259*x1^2 ...
+               -0.164805*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=122; used 122/122 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0618922, 0.0345601, 0.652368]^T
+found by the "global" optimization_method;
+unadjusted variance=1.0163e+20; "per equation" log(likelihood)=1.97762;
+rcond(R)=2.61808e-06; rcond(G_Rinv_Gtran)=0.0172743; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.133212 -0.613959*x0 + 0.0622392*x1 + ...
+               0.226811*x2 + 0.278953*x0^2 -0.0150586*x1^2 ...
+               -0.166006*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=123; used 123/123 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.061724, 0.0344662, 0.650595]^T
+found by the "global" optimization_method;
+unadjusted variance=9.92428e+19; "per equation" log(likelihood)=1.98469;
+rcond(R)=2.68224e-06; rcond(G_Rinv_Gtran)=0.0172026; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.133595 -0.614857*x0 + 0.0616737*x1 + ...
+               0.226621*x2 + 0.282479*x0^2 -0.0153518*x1^2 ...
+               -0.164852*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=124; used 124/124 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0615576, 0.0343733, 0.648841]^T
+found by the "global" optimization_method;
+unadjusted variance=9.69697e+19; "per equation" log(likelihood)=1.99358;
+rcond(R)=2.74743e-06; rcond(G_Rinv_Gtran)=0.0171108; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was req
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.125>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.126>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.127>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.128>echo off 
+uested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.134021 -0.615079*x0 + 0.060622*x1 + ...
+               0.226431*x2 + 0.284995*x0^2 -0.0163434*x1^2 ...
+               -0.163278*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=125; used 125/125 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.061393, 0.0342814, 0.647106]^T
+found by the "global" optimization_method;
+unadjusted variance=9.48134e+19; "per equation" log(likelihood)=1.99949;
+rcond(R)=2.81367e-06; rcond(G_Rinv_Gtran)=0.0127758; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.134427 -0.620365*x0 + 0.0619454*x1 + ...
+               0.223431*x2 + 0.294027*x0^2 -0.00334719*x1^2 ...
+               -0.173753*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=126; used 126/126 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0612302, 0.0341905, 0.64539]^T
+found by the "global" optimization_method;
+unadjusted variance=9.31682e+19; "per equation" log(likelihood)=2.00309;
+rcond(R)=2.88096e-06; rcond(G_Rinv_Gtran)=0.0126922; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.130125 -0.631205*x0 + 0.0616701*x1 + ...
+               0.218145*x2 + 0.315187*x0^2 -0.0206404*x1^2 ...
+               -0.197664*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=127; used 127/127 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.061069, 0.0341005, 0.643692]^T
+found by the "global" optimization_method;
+unadjusted variance=9.11627e+19; "per equation" log(likelihood)=2.0103;
+rcond(R)=2.9493e-06; rcond(G_Rinv_Gtran)=0.0126464; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.132346 -0.628855*x0 + 0.0613871*x1 + ...
+               0.219394*x2 + 0.313386*x0^2 -0.014208*x1^2 ...
+               -0.188351*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=128; used 128/128 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0609096, 0.0340114, 0.642011]^T
+found by the "global" optimization_method;
+unadjusted variance=8.91856e+19; "per equation" log(likelihood)=2.01903;
+rcond(R)=3.01872e-06; rcond(G_Rinv_Gtran)=0.0125953; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the re
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.129>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.130>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.131>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.132>echo off 
+quested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.133137 -0.627957*x0 + 0.0606684*x1 + ...
+               0.220084*x2 + 0.313023*x0^2 -0.0127982*x1^2 ...
+               -0.183631*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=129; used 129/129 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0607518, 0.0339233, 0.640348]^T
+found by the "global" optimization_method;
+unadjusted variance=8.73842e+19; "per equation" log(likelihood)=2.02613;
+rcond(R)=3.0892e-06; rcond(G_Rinv_Gtran)=0.0125587; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.135864 -0.625009*x0 + 0.0598995*x1 + ...
+               0.222173*x2 + 0.311413*x0^2 -0.00767373*x1^2 ...
+               -0.170449*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=130; used 130/130 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0605956, 0.0338361, 0.638701]^T
+found by the "global" optimization_method;
+unadjusted variance=8.5497e+19; "per equation" log(likelihood)=2.0356;
+rcond(R)=3.16077e-06; rcond(G_Rinv_Gtran)=0.0125221; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.13616 -0.624033*x0 + 0.059478*x1 + ...
+               0.223129*x2 + 0.309818*x0^2 -0.00629359*x1^2 ...
+               -0.166946*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=131; used 131/131 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.060441, 0.0337498, 0.637072]^T
+found by the "global" optimization_method;
+unadjusted variance=8.36517e+19; "per equation" log(likelihood)=2.0417;
+rcond(R)=3.23343e-06; rcond(G_Rinv_Gtran)=0.0124286; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.137067 -0.622619*x0 + 0.0583722*x1 + ...
+               0.224478*x2 + 0.309926*x0^2 -0.0081882*x1^2 ...
+               -0.159803*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=132; used 132/132 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.060288, 0.0336644, 0.635459]^T
+found by the "global" optimization_method;
+unadjusted variance=8.19498e+19; "per equation" log(likelihood)=2.04985;
+rcond(R)=3.30719e-06; rcond(G_Rinv_Gtran)=0.0123228; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in 
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.133>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.134>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.135>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.136>echo off 
+the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.137421 -0.622901*x0 + 0.0574713*x1 + ...
+               0.22207*x2 + 0.311026*x0^2 -0.000170118*x1^2 ...
+               -0.168391*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=133; used 133/133 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0601365, 0.0335798, 0.633863]^T
+found by the "global" optimization_method;
+unadjusted variance=8.03175e+19; "per equation" log(likelihood)=2.05496;
+rcond(R)=3.38206e-06; rcond(G_Rinv_Gtran)=0.012292; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.13892 -0.62827*x0 + 0.0497023*x1 + ...
+               0.22106*x2 + 0.320625*x0^2 + 0.0206119*x1^2 ...
+               -0.173752*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=134; used 134/134 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0599866, 0.033496, 0.632282]^T
+found by the "global" optimization_method;
+unadjusted variance=7.88259e+19; "per equation" log(likelihood)=2.05983;
+rcond(R)=3.45804e-06; rcond(G_Rinv_Gtran)=0.0122289; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.138694 -0.634013*x0 + 0.0427903*x1 + ...
+               0.21937*x2 + 0.331164*x0^2 + 0.030083*x1^2 ...
+               -0.183339*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=135; used 135/135 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0598381, 0.0334131, 0.630717]^T
+found by the "global" optimization_method;
+unadjusted variance=7.72237e+19; "per equation" log(likelihood)=2.06615;
+rcond(R)=3.53514e-06; rcond(G_Rinv_Gtran)=0.0121856; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.139068 -0.636776*x0 + 0.0396313*x1 + ...
+               0.217944*x2 + 0.336745*x0^2 + 0.0376154*x1^2 ...
+               -0.188469*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=136; used 136/136 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0596911, 0.033331, 0.629167]^T
+found by the "global" optimization_method;
+unadjusted variance=7.56456e+19; "per equation" log(likelihood)=2.07266;
+rcond(R)=3.61337e-06; rcond(G_Rinv_Gtran)=0.0121337; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utili
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.137>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.138>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.139>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.140>echo off 
+zed trend function is
+betaHat^T*g(x)=-0.139005 -0.638904*x0 + 0.0375165*x1 + ...
+               0.216897*x2 + 0.341681*x0^2 + 0.0391037*x1^2 ...
+               -0.191924*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=137; used 137/137 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0595455, 0.0332497, 0.627633]^T
+found by the "global" optimization_method;
+unadjusted variance=7.41442e+19; "per equation" log(likelihood)=2.07887;
+rcond(R)=3.69275e-06; rcond(G_Rinv_Gtran)=0.0120826; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.138819 -0.641198*x0 + 0.0350034*x1 + ...
+               0.216429*x2 + 0.347209*x0^2 + 0.0387723*x1^2 ...
+               -0.194011*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=138; used 138/138 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0594013, 0.0331692, 0.626113]^T
+found by the "global" optimization_method;
+unadjusted variance=7.30566e+19; "per equation" log(likelihood)=2.08222;
+rcond(R)=3.77327e-06; rcond(G_Rinv_Gtran)=0.0120236; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.135959 -0.648469*x0 + 0.029137*x1 + ...
+               0.212672*x2 + 0.360242*x0^2 + 0.0337475*x1^2 ...
+               -0.212922*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=139; used 139/139 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0592585, 0.0330895, 0.624608]^T
+found by the "global" optimization_method;
+unadjusted variance=7.1869e+19; "per equation" log(likelihood)=2.08763;
+rcond(R)=3.85494e-06; rcond(G_Rinv_Gtran)=0.0119794; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.138912 -0.644463*x0 + 0.0314836*x1 + ...
+               0.214994*x2 + 0.355612*x0^2 + 0.0406379*x1^2 ...
+               -0.198154*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=140; used 140/140 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0591171, 0.0330105, 0.623117]^T
+found by the "global" optimization_method;
+unadjusted variance=7.09757e+19; "per equation" log(likelihood)=2.09305;
+rcond(R)=3.93778e-06; rcond(G_Rinv_Gtran)=0.0119628; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.141028 -0.640143*x0 + 0.03
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.141>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.142>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.143>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.144>echo off 
+47939*x1 + ...
+               0.218193*x2 + 0.35114*x0^2 + 0.03869*x1^2 ...
+               -0.181539*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=141; used 141/141 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.058977, 0.0329323, 0.621641]^T
+found by the "global" optimization_method;
+unadjusted variance=6.96647e+19; "per equation" log(likelihood)=2.09848;
+rcond(R)=4.02179e-06; rcond(G_Rinv_Gtran)=0.0119062; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.141201 -0.644342*x0 + 0.0304262*x1 + ...
+               0.215421*x2 + 0.358437*x0^2 + 0.0496199*x1^2 ...
+               -0.191532*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=142; used 142/142 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0588382, 0.0328548, 0.620178]^T
+found by the "global" optimization_method;
+unadjusted variance=6.83237e+19; "per equation" log(likelihood)=2.10423;
+rcond(R)=4.10698e-06; rcond(G_Rinv_Gtran)=0.0118712; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.141593 -0.647007*x0 + 0.0278447*x1 + ...
+               0.21336*x2 + 0.363533*x0^2 + 0.0569686*x1^2 ...
+               -0.197135*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=143; used 143/143 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0587007, 0.032778, 0.618729]^T
+found by the "global" optimization_method;
+unadjusted variance=6.81016e+19; "per equation" log(likelihood)=2.10521;
+rcond(R)=4.19336e-06; rcond(G_Rinv_Gtran)=0.0118267; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.144413 -0.642833*x0 + 0.0314375*x1 + ...
+               0.214091*x2 + 0.357706*x0^2 + 0.0654726*x1^2 ...
+               -0.1864*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=144; used 144/144 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0585645, 0.032702, 0.617293]^T
+found by the "global" optimization_method;
+unadjusted variance=6.70565e+19; "per equation" log(likelihood)=2.11001;
+rcond(R)=4.28093e-06; rcond(G_Rinv_Gtran)=0.0117649; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.145125 -0.645269*x0 + 0.0273449*x1 + ...
+               0.215186*x2 + 0.363913*x0^2 + 0.0684083*x1^
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.145>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.146>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.147>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.148>echo off 
+2 ...
+               -0.182506*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=145; used 145/145 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0584296, 0.0326266, 0.615871]^T
+found by the "global" optimization_method;
+unadjusted variance=6.58669e+19; "per equation" log(likelihood)=2.11505;
+rcond(R)=4.36971e-06; rcond(G_Rinv_Gtran)=0.0117529; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.142908 -0.648697*x0 + 0.0266466*x1 + ...
+               0.213339*x2 + 0.371132*x0^2 + 0.0565405*x1^2 ...
+               -0.191049*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=146; used 146/146 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0582959, 0.032552, 0.614462]^T
+found by the "global" optimization_method;
+unadjusted variance=6.46478e+19; "per equation" log(likelihood)=2.12083;
+rcond(R)=4.45969e-06; rcond(G_Rinv_Gtran)=0.0117311; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.142083 -0.650604*x0 + 0.0263923*x1 + ...
+               0.211942*x2 + 0.375624*x0^2 + 0.0513766*x1^2 ...
+               -0.19513*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=147; used 147/147 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0581634, 0.032478, 0.613065]^T
+found by the "global" optimization_method;
+unadjusted variance=6.34555e+19; "per equation" log(likelihood)=2.12673;
+rcond(R)=4.5509e-06; rcond(G_Rinv_Gtran)=0.0116967; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.141554 -0.652154*x0 + 0.0257314*x1 + ...
+               0.210841*x2 + 0.379599*x0^2 + 0.0475885*x1^2 ...
+               -0.198034*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=148; used 148/148 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0580321, 0.0324047, 0.611681]^T
+found by the "global" optimization_method;
+unadjusted variance=6.22739e+19; "per equation" log(likelihood)=2.13221;
+rcond(R)=4.64333e-06; rcond(G_Rinv_Gtran)=0.0116807; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.141876 -0.651924*x0 + 0.0250991*x1 + ...
+               0.211309*x2 + 0.381038*x0^2 + 0.0457193*x1^2 ...
+               -0.195342*x2^2
+--------------------------------
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.149>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.150>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.151>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.152>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.153>echo off 
+----
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=149; used 149/149 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.074849, 0.032332, 0.61031]^T
+found by the "global" optimization_method;
+unadjusted variance=1.42103e+20; "per equation" log(likelihood)=1.77545;
+rcond(R)=5.97758e-07; rcond(G_Rinv_Gtran)=0.0137599; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0821154 -0.661154*x0 + 0.0222935*x1 + ...
+               0.242253*x2 + 0.209066*x0^2 -0.0569073*x1^2 ...
+               -0.296059*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=150; used 150/150 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0746823, 0.03226, 0.60895]^T
+found by the "global" optimization_method;
+unadjusted variance=1.55212e+20; "per equation" log(likelihood)=1.73086;
+rcond(R)=6.09538e-07; rcond(G_Rinv_Gtran)=0.0137177; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0793472 -0.656996*x0 + 0.0220958*x1 + ...
+               0.239691*x2 + 0.194206*x0^2 -0.0350039*x1^2 ...
+               -0.323855*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=151; used 82/151 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.191013, 0.884674, 10.6812]^T
+found by the "global" optimization_method;
+unadjusted variance=8.25753e+25; "per equation" log(likelihood)=0.845643;
+rcond(R)=9.15555e-13; rcond(G_Rinv_Gtran)=0.0434442; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=91.5023 -107.302*x0 -19.7318*x1 ...
+               -81.6345*x2 + 3.64789*x0^2 -17.8302*x1^2 ...
+               -114.235*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=152; used 152/152 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0743533, 0.0321179, 0.606268]^T
+found by the "global" optimization_method;
+unadjusted variance=1.77591e+20; "per equation" log(likelihood)=1.66138;
+rcond(R)=5.62564e-07; rcond(G_Rinv_Gtran)=0.0141576; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0768537 -0.636435*x0 + 0.0303982*x1 + ...
+               0.248992*x2 + 0.166514*x0^2 -0.027175*x1^2 ...
+               -0.348467*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=153; used 153/153 pt
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.154>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.155>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.156>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.157>echo off 
+s;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.074191, 0.0320478, 0.604944]^T
+found by the "global" optimization_method;
+unadjusted variance=1.80904e+20; "per equation" log(likelihood)=1.65071;
+rcond(R)=5.74387e-07; rcond(G_Rinv_Gtran)=0.0141109; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0885608 -0.627919*x0 + 0.0316119*x1 + ...
+               0.247024*x2 + 0.15516*x0^2 + 0.0312609*x1^2 ...
+               -0.326573*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=154; used 154/154 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.07403, 0.0319783, 0.603632]^T
+found by the "global" optimization_method;
+unadjusted variance=1.78306e+20; "per equation" log(likelihood)=1.65812;
+rcond(R)=5.8637e-07; rcond(G_Rinv_Gtran)=0.0140681; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0893131 -0.628142*x0 + 0.0316012*x1 + ...
+               0.247507*x2 + 0.158077*x0^2 + 0.0293662*x1^2 ...
+               -0.321038*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=155; used 155/155 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0738705, 0.0319093, 0.602331]^T
+found by the "global" optimization_method;
+unadjusted variance=1.74652e+20; "per equation" log(likelihood)=1.66498;
+rcond(R)=5.98513e-07; rcond(G_Rinv_Gtran)=0.0140024; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0902296 -0.628093*x0 + 0.0314987*x1 + ...
+               0.247459*x2 + 0.160486*x0^2 + 0.0302445*x1^2 ...
+               -0.317796*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=156; used 84/156 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.188054, 0.838465, 10.7687]^T
+found by the "global" optimization_method;
+unadjusted variance=6.62648e+25; "per equation" log(likelihood)=0.883501;
+rcond(R)=9.16429e-13; rcond(G_Rinv_Gtran)=0.0430348; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=69.9246 -25.716*x0 + 3.58263*x1 ...
+               -44.3266*x2 -74.8777*x0^2 -17.5644*x1^2 ...
+               -16.5489*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=157; used 84/157 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.19
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.158>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.159>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.160>echo off 
+1256, 0.836681, 10.6948]^T
+found by the "global" optimization_method;
+unadjusted variance=5.93556e+25; "per equation" log(likelihood)=0.867905;
+rcond(R)=1.27771e-12; rcond(G_Rinv_Gtran)=0.042766; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=29.3759 -2.29858*x0 -10.6754*x1 ...
+               -1.16359*x2 -73.6662*x0^2 -8.7426*x1^2 + ...
+               41.4828*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=158; used 158/158 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0734, 0.0317061, 0.598494]^T
+found by the "global" optimization_method;
+unadjusted variance=1.64638e+20; "per equation" log(likelihood)=1.68601;
+rcond(R)=6.35916e-07; rcond(G_Rinv_Gtran)=0.0143966; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0983037 -0.628508*x0 + 0.0350609*x1 + ...
+               0.243841*x2 + 0.192357*x0^2 + 0.00859921*x1^2 ...
+               -0.296175*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=159; used 159/159 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0732458, 0.0316395, 0.597237]^T
+found by the "global" optimization_method;
+unadjusted variance=1.61367e+20; "per equation" log(likelihood)=1.69235;
+rcond(R)=6.48711e-07; rcond(G_Rinv_Gtran)=0.0144113; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0990097 -0.628546*x0 + 0.0346943*x1 + ...
+               0.243997*x2 + 0.19472*x0^2 + 0.00880228*x1^2 ...
+               -0.293162*x2^2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=160; used 160/160 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.0730928, 0.0315734, 0.59599]^T
+found by the "global" optimization_method;
+unadjusted variance=1.58397e+20; "per equation" log(likelihood)=1.69988;
+rcond(R)=6.61671e-07; rcond(G_Rinv_Gtran)=0.0143618; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A reduced_polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 2;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.100234 -0.629334*x0 + 0.0328051*x1 + ...
+               0.244723*x2 + 0.198714*x0^2 + 0.0118324*x1^2 ...
+               -0.287961*x2^2
+------------------------------------

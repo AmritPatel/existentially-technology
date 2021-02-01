@@ -1,0 +1,1349 @@
+Dakota version 6.9 released Nov 13 2018.
+Repository revision 32b6d4be (2018-11-12) built Nov 13 2018 01:41:56.
+Running serial Dakota executable in serial mode.
+Start time: Mon May 20 14:28:26 2019
+
+-----------------------
+Begin DAKOTA input file
+hb2.in
+-----------------------
+environment
+  tabular_data
+    tabular_data_file = 'hb2.dat'
+
+method
+  polynomial_chaos
+    quadrature_order = 5
+    dimension_preference = 5 5 5 
+    samples_on_emulator = 10000
+    #response_levels = 1e-9 1e-8 1e-7 1e-6 1e-5 1e-4 1e-3
+    variance_based_decomp #interaction_order = 1
+
+variables
+   normal_uncertain = 3
+   means =                0.766			2.28		0.635	 
+   std_deviations =       0.0383		0.228		0.42545
+     lower_bounds =       0.6511		1.938		0
+     upper_bounds =       0.8809		2.622		1.91135
+     descriptors =        'h2oDens'		'concDens'	'linerR'
+
+interface
+  fork
+  asynchronous evaluation_concurr = 15
+  analysis_drivers = 'driver.bat'
+  parameters_file = 'hb2_input'
+  results_file = 'maxes.out'
+  work_directory
+    directory_tag
+    #directory_save
+    copy_files 'driver.bat' 'getMaxes.bat' 'hb2.template' 'getMax.pl' 'mtMaxN.inp' 'mtMaxP.inp'
+    named 'workdir'
+  file_save
+
+responses
+  num_response_functions = 6	
+  response_descriptors =  'maxN' 'maxNrelErr' 'statChkPassN' 'maxP' 'maxPrelErr' 'statChkPassP'
+  no_gradients				
+  no_hessians
+---------------------
+End DAKOTA input file
+---------------------
+
+Using Dakota input file 'hb2.in'
+Writing new restart file 'dakota.rst'.
+
+>>>>> Executing environment.
+
+>>>>> Running polynomial_chaos iterator.
+
+>>>>> Building global_projection_orthogonal_polynomial approximations.
+
+Number of Gauss points per variable: { 5 5 5 }
+Total number of integration points: 125
+
+---------------------
+Begin Evaluation    1
+---------------------
+Parameters for evaluation 1:
+                      6.7333087588e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 1 added to queue)
+
+---------------------
+Begin Evaluation    2
+---------------------
+Parameters for evaluation 2:
+                      7.1949819443e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 2 added to queue)
+
+---------------------
+Begin Evaluation    3
+---------------------
+Parameters for evaluation 3:
+                      7.6600000000e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 3 added to queue)
+
+---------------------
+Begin Evaluation    4
+---------------------
+Parameters for evaluation 4:
+                      8.1250180557e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 4 added to queue)
+
+---------------------
+Begin Evaluation    5
+---------------------
+Parameters for evaluation 5:
+                      8.5866912412e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 5 added to queue)
+
+---------------------
+Begin Evaluation    6
+---------------------
+Parameters for evaluation 6:
+                      6.7333087588e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 6 added to queue)
+
+---------------------
+Begin Evaluation    7
+---------------------
+Parameters for evaluation 7:
+                      7.1949819443e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 7 added to queue)
+
+---------------------
+Begin Evaluation    8
+---------------------
+Parameters for evaluation 8:
+                      7.6600000000e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 8 added to queue)
+
+---------------------
+Begin Evaluation    9
+---------------------
+Parameters for evaluation 9:
+                      8.1250180557e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 9 added to queue)
+
+---------------------
+Begin Evaluation   10
+---------------------
+Parameters for evaluation 10:
+                      8.5866912412e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 10 added to queue)
+
+---------------------
+Begin Evaluation   11
+---------------------
+Parameters for evaluation 11:
+                      6.7333087588e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 11 added to queue)
+
+---------------------
+Begin Evaluation   12
+---------------------
+Parameters for evaluation 12:
+                      7.1949819443e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 12 added to queue)
+
+---------------------
+Begin Evaluation   13
+---------------------
+Parameters for evaluation 13:
+                      7.6600000000e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 13 added to queue)
+
+---------------------
+Begin Evaluation   14
+---------------------
+Parameters for evaluation 14:
+                      8.1250180557e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 14 added to queue)
+
+---------------------
+Begin Evaluation   15
+---------------------
+Parameters for evaluation 15:
+                      8.5866912412e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 15 added to queue)
+
+---------------------
+Begin Evaluation   16
+---------------------
+Parameters for evaluation 16:
+                      6.7333087588e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 16 added to queue)
+
+---------------------
+Begin Evaluation   17
+---------------------
+Parameters for evaluation 17:
+                      7.1949819443e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 17 added to queue)
+
+---------------------
+Begin Evaluation   18
+---------------------
+Parameters for evaluation 18:
+                      7.6600000000e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 18 added to queue)
+
+---------------------
+Begin Evaluation   19
+---------------------
+Parameters for evaluation 19:
+                      8.1250180557e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 19 added to queue)
+
+---------------------
+Begin Evaluation   20
+---------------------
+Parameters for evaluation 20:
+                      8.5866912412e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 20 added to queue)
+
+---------------------
+Begin Evaluation   21
+---------------------
+Parameters for evaluation 21:
+                      6.7333087588e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 21 added to queue)
+
+---------------------
+Begin Evaluation   22
+---------------------
+Parameters for evaluation 22:
+                      7.1949819443e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 22 added to queue)
+
+---------------------
+Begin Evaluation   23
+---------------------
+Parameters for evaluation 23:
+                      7.6600000000e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 23 added to queue)
+
+---------------------
+Begin Evaluation   24
+---------------------
+Parameters for evaluation 24:
+                      8.1250180557e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 24 added to queue)
+
+---------------------
+Begin Evaluation   25
+---------------------
+Parameters for evaluation 25:
+                      8.5866912412e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      9.9099342892e-02 linerR
+
+(Asynchronous job 25 added to queue)
+
+---------------------
+Begin Evaluation   26
+---------------------
+Parameters for evaluation 26:
+                      6.7333087588e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 26 added to queue)
+
+---------------------
+Begin Evaluation   27
+---------------------
+Parameters for evaluation 27:
+                      7.1949819443e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 27 added to queue)
+
+---------------------
+Begin Evaluation   28
+---------------------
+Parameters for evaluation 28:
+                      7.6600000000e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 28 added to queue)
+
+---------------------
+Begin Evaluation   29
+---------------------
+Parameters for evaluation 29:
+                      8.1250180557e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 29 added to queue)
+
+---------------------
+Begin Evaluation   30
+---------------------
+Parameters for evaluation 30:
+                      8.5866912412e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 30 added to queue)
+
+---------------------
+Begin Evaluation   31
+---------------------
+Parameters for evaluation 31:
+                      6.7333087588e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 31 added to queue)
+
+---------------------
+Begin Evaluation   32
+---------------------
+Parameters for evaluation 32:
+                      7.1949819443e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 32 added to queue)
+
+---------------------
+Begin Evaluation   33
+---------------------
+Parameters for evaluation 33:
+                      7.6600000000e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 33 added to queue)
+
+---------------------
+Begin Evaluation   34
+---------------------
+Parameters for evaluation 34:
+                      8.1250180557e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 34 added to queue)
+
+---------------------
+Begin Evaluation   35
+---------------------
+Parameters for evaluation 35:
+                      8.5866912412e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 35 added to queue)
+
+---------------------
+Begin Evaluation   36
+---------------------
+Parameters for evaluation 36:
+                      6.7333087588e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 36 added to queue)
+
+---------------------
+Begin Evaluation   37
+---------------------
+Parameters for evaluation 37:
+                      7.1949819443e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 37 added to queue)
+
+---------------------
+Begin Evaluation   38
+---------------------
+Parameters for evaluation 38:
+                      7.6600000000e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 38 added to queue)
+
+---------------------
+Begin Evaluation   39
+---------------------
+Parameters for evaluation 39:
+                      8.1250180557e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 39 added to queue)
+
+---------------------
+Begin Evaluation   40
+---------------------
+Parameters for evaluation 40:
+                      8.5866912412e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 40 added to queue)
+
+---------------------
+Begin Evaluation   41
+---------------------
+Parameters for evaluation 41:
+                      6.7333087588e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 41 added to queue)
+
+---------------------
+Begin Evaluation   42
+---------------------
+Parameters for evaluation 42:
+                      7.1949819443e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 42 added to queue)
+
+---------------------
+Begin Evaluation   43
+---------------------
+Parameters for evaluation 43:
+                      7.6600000000e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 43 added to queue)
+
+---------------------
+Begin Evaluation   44
+---------------------
+Parameters for evaluation 44:
+                      8.1250180557e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 44 added to queue)
+
+---------------------
+Begin Evaluation   45
+---------------------
+Parameters for evaluation 45:
+                      8.5866912412e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 45 added to queue)
+
+---------------------
+Begin Evaluation   46
+---------------------
+Parameters for evaluation 46:
+                      6.7333087588e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 46 added to queue)
+
+---------------------
+Begin Evaluation   47
+---------------------
+Parameters for evaluation 47:
+                      7.1949819443e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 47 added to queue)
+
+---------------------
+Begin Evaluation   48
+---------------------
+Parameters for evaluation 48:
+                      7.6600000000e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 48 added to queue)
+
+---------------------
+Begin Evaluation   49
+---------------------
+Parameters for evaluation 49:
+                      8.1250180557e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 49 added to queue)
+
+---------------------
+Begin Evaluation   50
+---------------------
+Parameters for evaluation 50:
+                      8.5866912412e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      4.2344658684e-01 linerR
+
+(Asynchronous job 50 added to queue)
+
+---------------------
+Begin Evaluation   51
+---------------------
+Parameters for evaluation 51:
+                      6.7333087588e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 51 added to queue)
+
+---------------------
+Begin Evaluation   52
+---------------------
+Parameters for evaluation 52:
+                      7.1949819443e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 52 added to queue)
+
+---------------------
+Begin Evaluation   53
+---------------------
+Parameters for evaluation 53:
+                      7.6600000000e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 53 added to queue)
+
+---------------------
+Begin Evaluation   54
+---------------------
+Parameters for evaluation 54:
+                      8.1250180557e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 54 added to queue)
+
+---------------------
+Begin Evaluation   55
+---------------------
+Parameters for evaluation 55:
+                      8.5866912412e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 55 added to queue)
+
+---------------------
+Begin Evaluation   56
+---------------------
+Parameters for evaluation 56:
+                      6.7333087588e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 56 added to queue)
+
+---------------------
+Begin Evaluation   57
+---------------------
+Parameters for evaluation 57:
+                      7.1949819443e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 57 added to queue)
+
+---------------------
+Begin Evaluation   58
+---------------------
+Parameters for evaluation 58:
+                      7.6600000000e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 58 added to queue)
+
+---------------------
+Begin Evaluation   59
+---------------------
+Parameters for evaluation 59:
+                      8.1250180557e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 59 added to queue)
+
+---------------------
+Begin Evaluation   60
+---------------------
+Parameters for evaluation 60:
+                      8.5866912412e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 60 added to queue)
+
+---------------------
+Begin Evaluation   61
+---------------------
+Parameters for evaluation 61:
+                      6.7333087588e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 61 added to queue)
+
+---------------------
+Begin Evaluation   62
+---------------------
+Parameters for evaluation 62:
+                      7.1949819443e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 62 added to queue)
+
+---------------------
+Begin Evaluation   63
+---------------------
+Parameters for evaluation 63:
+                      7.6600000000e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 63 added to queue)
+
+---------------------
+Begin Evaluation   64
+---------------------
+Parameters for evaluation 64:
+                      8.1250180557e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 64 added to queue)
+
+---------------------
+Begin Evaluation   65
+---------------------
+Parameters for evaluation 65:
+                      8.5866912412e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 65 added to queue)
+
+---------------------
+Begin Evaluation   66
+---------------------
+Parameters for evaluation 66:
+                      6.7333087588e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 66 added to queue)
+
+---------------------
+Begin Evaluation   67
+---------------------
+Parameters for evaluation 67:
+                      7.1949819443e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 67 added to queue)
+
+---------------------
+Begin Evaluation   68
+---------------------
+Parameters for evaluation 68:
+                      7.6600000000e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 68 added to queue)
+
+---------------------
+Begin Evaluation   69
+---------------------
+Parameters for evaluation 69:
+                      8.1250180557e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 69 added to queue)
+
+---------------------
+Begin Evaluation   70
+---------------------
+Parameters for evaluation 70:
+                      8.5866912412e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 70 added to queue)
+
+---------------------
+Begin Evaluation   71
+---------------------
+Parameters for evaluation 71:
+                      6.7333087588e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 71 added to queue)
+
+---------------------
+Begin Evaluation   72
+---------------------
+Parameters for evaluation 72:
+                      7.1949819443e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 72 added to queue)
+
+---------------------
+Begin Evaluation   73
+---------------------
+Parameters for evaluation 73:
+                      7.6600000000e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 73 added to queue)
+
+---------------------
+Begin Evaluation   74
+---------------------
+Parameters for evaluation 74:
+                      8.1250180557e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 74 added to queue)
+
+---------------------
+Begin Evaluation   75
+---------------------
+Parameters for evaluation 75:
+                      8.5866912412e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      8.3663655261e-01 linerR
+
+(Asynchronous job 75 added to queue)
+
+---------------------
+Begin Evaluation   76
+---------------------
+Parameters for evaluation 76:
+                      6.7333087588e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 76 added to queue)
+
+---------------------
+Begin Evaluation   77
+---------------------
+Parameters for evaluation 77:
+                      7.1949819443e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 77 added to queue)
+
+---------------------
+Begin Evaluation   78
+---------------------
+Parameters for evaluation 78:
+                      7.6600000000e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 78 added to queue)
+
+---------------------
+Begin Evaluation   79
+---------------------
+Parameters for evaluation 79:
+                      8.1250180557e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 79 added to queue)
+
+---------------------
+Begin Evaluation   80
+---------------------
+Parameters for evaluation 80:
+                      8.5866912412e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 80 added to queue)
+
+---------------------
+Begin Evaluation   81
+---------------------
+Parameters for evaluation 81:
+                      6.7333087588e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 81 added to queue)
+
+---------------------
+Begin Evaluation   82
+---------------------
+Parameters for evaluation 82:
+                      7.1949819443e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 82 added to queue)
+
+---------------------
+Begin Evaluation   83
+---------------------
+Parameters for evaluation 83:
+                      7.6600000000e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 83 added to queue)
+
+---------------------
+Begin Evaluation   84
+---------------------
+Parameters for evaluation 84:
+                      8.1250180557e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 84 added to queue)
+
+---------------------
+Begin Evaluation   85
+---------------------
+Parameters for evaluation 85:
+                      8.5866912412e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 85 added to queue)
+
+---------------------
+Begin Evaluation   86
+---------------------
+Parameters for evaluation 86:
+                      6.7333087588e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 86 added to queue)
+
+---------------------
+Begin Evaluation   87
+---------------------
+Parameters for evaluation 87:
+                      7.1949819443e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 87 added to queue)
+
+---------------------
+Begin Evaluation   88
+---------------------
+Parameters for evaluation 88:
+                      7.6600000000e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 88 added to queue)
+
+---------------------
+Begin Evaluation   89
+---------------------
+Parameters for evaluation 89:
+                      8.1250180557e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 89 added to queue)
+
+---------------------
+Begin Evaluation   90
+---------------------
+Parameters for evaluation 90:
+                      8.5866912412e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 90 added to queue)
+
+---------------------
+Begin Evaluation   91
+---------------------
+Parameters for evaluation 91:
+                      6.7333087588e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 91 added to queue)
+
+---------------------
+Begin Evaluation   92
+---------------------
+Parameters for evaluation 92:
+                      7.1949819443e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 92 added to queue)
+
+---------------------
+Begin Evaluation   93
+---------------------
+Parameters for evaluation 93:
+                      7.6600000000e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 93 added to queue)
+
+---------------------
+Begin Evaluation   94
+---------------------
+Parameters for evaluation 94:
+                      8.1250180557e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 94 added to queue)
+
+---------------------
+Begin Evaluation   95
+---------------------
+Parameters for evaluation 95:
+                      8.5866912412e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 95 added to queue)
+
+---------------------
+Begin Evaluation   96
+---------------------
+Parameters for evaluation 96:
+                      6.7333087588e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 96 added to queue)
+
+---------------------
+Begin Evaluation   97
+---------------------
+Parameters for evaluation 97:
+                      7.1949819443e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 97 added to queue)
+
+---------------------
+Begin Evaluation   98
+---------------------
+Parameters for evaluation 98:
+                      7.6600000000e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 98 added to queue)
+
+---------------------
+Begin Evaluation   99
+---------------------
+Parameters for evaluation 99:
+                      8.1250180557e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 99 added to queue)
+
+---------------------
+Begin Evaluation  100
+---------------------
+Parameters for evaluation 100:
+                      8.5866912412e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      1.2829403725e+00 linerR
+
+(Asynchronous job 100 added to queue)
+
+---------------------
+Begin Evaluation  101
+---------------------
+Parameters for evaluation 101:
+                      6.7333087588e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 101 added to queue)
+
+---------------------
+Begin Evaluation  102
+---------------------
+Parameters for evaluation 102:
+                      7.1949819443e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 102 added to queue)
+
+---------------------
+Begin Evaluation  103
+---------------------
+Parameters for evaluation 103:
+                      7.6600000000e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 103 added to queue)
+
+---------------------
+Begin Evaluation  104
+---------------------
+Parameters for evaluation 104:
+                      8.1250180557e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 104 added to queue)
+
+---------------------
+Begin Evaluation  105
+---------------------
+Parameters for evaluation 105:
+                      8.5866912412e-01 h2oDens
+                      1.9764043845e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 105 added to queue)
+
+---------------------
+Begin Evaluation  106
+---------------------
+Parameters for evaluation 106:
+                      6.7333087588e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 106 added to queue)
+
+---------------------
+Begin Evaluation  107
+---------------------
+Parameters for evaluation 107:
+                      7.1949819443e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 107 added to queue)
+
+---------------------
+Begin Evaluation  108
+---------------------
+Parameters for evaluation 108:
+                      7.6600000000e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 108 added to queue)
+
+---------------------
+Begin Evaluation  109
+---------------------
+Parameters for evaluation 109:
+                      8.1250180557e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 109 added to queue)
+
+---------------------
+Begin Evaluation  110
+---------------------
+Parameters for evaluation 110:
+                      8.5866912412e-01 h2oDens
+                      2.1087991694e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 110 added to queue)
+
+---------------------
+Begin Evaluation  111
+---------------------
+Parameters for evaluation 111:
+                      6.7333087588e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 111 added to queue)
+
+---------------------
+Begin Evaluation  112
+---------------------
+Parameters for evaluation 112:
+                      7.1949819443e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 112 added to queue)
+
+---------------------
+Begin Evaluation  113
+---------------------
+Parameters for evaluation 113:
+                      7.6600000000e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 113 added to queue)
+
+---------------------
+Begin Evaluation  114
+---------------------
+Parameters for evaluation 114:
+                      8.1250180557e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 114 added to queue)
+
+---------------------
+Begin Evaluation  115
+---------------------
+Parameters for evaluation 115:
+                      8.5866912412e-01 h2oDens
+                      2.2800000000e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 115 added to queue)
+
+---------------------
+Begin Evaluation  116
+---------------------
+Parameters for evaluation 116:
+                      6.7333087588e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 116 added to queue)
+
+---------------------
+Begin Evaluation  117
+---------------------
+Parameters for evaluation 117:
+                      7.1949819443e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 117 added to queue)
+
+---------------------
+Begin Evaluation  118
+---------------------
+Parameters for evaluation 118:
+                      7.6600000000e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 118 added to queue)
+
+---------------------
+Begin Evaluation  119
+---------------------
+Parameters for evaluation 119:
+                      8.1250180557e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 119 added to queue)
+
+---------------------
+Begin Evaluation  120
+---------------------
+Parameters for evaluation 120:
+                      8.5866912412e-01 h2oDens
+                      2.4512008306e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 120 added to queue)
+
+---------------------
+Begin Evaluation  121
+---------------------
+Parameters for evaluation 121:
+                      6.7333087588e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 121 added to queue)
+
+---------------------
+Begin Evaluation  122
+---------------------
+Parameters for evaluation 122:
+                      7.1949819443e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 122 added to queue)
+
+---------------------
+Begin Evaluation  123
+---------------------
+Parameters for evaluation 123:
+                      7.6600000000e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 123 added to queue)
+
+---------------------
+Begin Evaluation  124
+---------------------
+Parameters for evaluation 124:
+                      8.1250180557e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 124 added to queue)
+
+---------------------
+Begin Evaluation  125
+---------------------
+Parameters for evaluation 125:
+                      8.5866912412e-01 h2oDens
+                      2.5835956155e+00 concDens
+                      1.7228696059e+00 linerR
+
+(Asynchronous job 125 added to queue)
+
+Blocking synchronize of 125 asynchronous evaluations
+First pass: initiating 15 local asynchronous jobs
+Initiating evaluation 1
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 2
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 3
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 4
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 5
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 6
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 7
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 8
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 9
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 10
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 11
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 12
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 13
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 14
+nonblocking fork: driver.bat hb2_input maxes.out
+Initiating evaluation 15
+nonblocking fork: driver.bat hb2_input maxes.out
+Second pass: scheduling 110 remaining local asynchronous jobs
+Waiting on completed jobs
+
+Dakota caught signal 21

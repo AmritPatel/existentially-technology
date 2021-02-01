@@ -1,0 +1,52 @@
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.1>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.2>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.3>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.5>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.4>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.6>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.7>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.9>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.8>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.10>echo off 
+
+C:\Users\AXP13\Desktop\npCEmeshTallyV7.1ClaiborneTrubeySSlinerOolite7.75RPV\pba\workdir.11>echo off 
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=10; used 10/10 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.084458, 2.53385, 4.79064]^T
+found by the "global" optimization_method;
+unadjusted variance=9.67251e+18; "per equation" log(likelihood)=3.05273;
+rcond(R)=0.00113026; rcond(G_Rinv_Gtran)=0.715907; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was NOT sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 1;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.131995 -1.18825*x0 + 0.468513*x2
+------------------------------------
+--- Surfpack Kriging Diagnostics ---
+KM: #real inputs=3; #pts=10; used 10/10 pts;
+using the Gaussian correlation function with (unscaled)
+Correlation lengths=[0.084458, 2.53385, 2.55774]^T
+found by the "global" optimization_method;
+unadjusted variance=1.02485e+08; "per equation" log(likelihood)=1.50787;
+rcond(R)=0.00432643; rcond(G_Rinv_Gtran)=0.74898; [if either rcond is less
+than 2^-40 (approx 9.095*10^-13) then the matrix is ill-conditioned and
+that "voids the warranty" of the Kriging Model]; nugget=0.  A polynomial
+of order 2 (with 7 terms) was requested for the trend function; the build
+data was NOT sufficient to use the requested trend function; the highest total
+polynomial order of any term in the utlized trend function is 1;
+for SCALED inputs and outputs the utilized trend function is
+betaHat^T*g(x)=-0.0431801 -1.14923*x0 -0.336375*x1
+------------------------------------

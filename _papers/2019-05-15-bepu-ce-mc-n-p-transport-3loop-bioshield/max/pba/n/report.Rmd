@@ -1,0 +1,68 @@
+---
+title: "SCALE-Monaco-MAVRIC/DAKOTA: Distribution Checks"
+output:
+  word_document: default
+date: "`r Sys.time()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+```
+
+### Input(s) (Samples = `r length(readLines("hb2.dat")) - 1`)
+
+- Max parallel batches of 15
+- `r grep("Total wall clock =", readLines("hb2.out"), value=T)`
+
+```{r, fig.width=8}
+library(tidyverse)
+
+data <- tbl_df(read.delim(paste0(getwd(), "/hb2.dat"), sep="")) %>% select(-X.eval_id, -interface) %>%
+  mutate(concO = 100-concFe-concC-concSi-concCa-concK-concAl-concMg-concNa-concP-concS-concH) %>% select(concO, everything())
+
+# Plot explanatory variables
+data[1:(ncol(data)-1)] %>%
+  keep(is.numeric) %>%
+  gather() %>%
+  ggplot(aes(value)) +
+    facet_wrap(~ key, scales="free") +
+    geom_histogram()
+```
+
+### Output(s)
+
+```{r}
+
+# Plot response variables
+data[, (ncol(data)):(ncol(data))] %>% 
+  keep(is.numeric) %>%
+  gather() %>%
+  ggplot(aes(value)) +
+    facet_wrap(~ key, scales="free") + 
+    geom_histogram(aes()) +
+    labs(x = "value")
+
+```
+
+### Correlations
+
+```{r, warning=F, fig.width=12, fig.height=12}
+library(GGally)
+
+ggpairs(data)
+```
+
+```{r, fig.width=8}
+library(corrr)
+
+corrData <- correlate(data)
+corrData %>% focus(maxN) %>% arrange(desc(abs(maxN)))
+
+corrData %>% network_plot(min_cor = .3)
+```
+
+### Summary
+
+```{r, echo = FALSE}
+data %>% gather() %>% group_by(key) %>% summarize(average=mean(value), sd=sd(value), min=min(value), max=max(value)) %>% print(n=Inf)
+```

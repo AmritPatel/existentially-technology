@@ -1,0 +1,40 @@
+environment
+  tabular_data
+    tabular_data_file = 'hb2.dat'
+
+method
+  sampling
+  sample_type lhs
+    samples = 240
+
+variables
+   normal_uncertain = 1
+   means =                0.766	
+   std_deviations =       0.0383
+     lower_bounds =       0.6511
+     upper_bounds =       0.8809
+     descriptors =        'h2oDens'
+
+interface
+  fork
+  asynchronous evaluation_concurr = 13
+  analysis_drivers = 'driver.bat'
+  parameters_file = 'hb2_input'
+  results_file = 'maxes.out'
+  work_directory
+    directory_tag
+    #directory_save
+    copy_files 'driver.bat' 'getMaxes.bat' 'hb2.template' 'getMaxRadial.pl' 'getMaxRadialErr.pl' 'mtPullN.inp' 'mtPullP.inp'
+    named 'workdir'
+  file_save
+
+responses
+  response_functions = 4
+  field_responses = 4
+  lengths = 20 20 20 20
+  num_coordinates_per_field = 1
+  read_field_coordinates
+  #num_response_functions = 5	
+  response_descriptors = 'maxNradial' 'maxNradialErr' 'maxPradial' 'maxPradialErr'
+  no_gradients				
+  no_hessians
