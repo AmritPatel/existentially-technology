@@ -14,5 +14,6 @@ output:
   postcards::jolla
 ---
  
-I am a classically trained nuclear engineer living in the Kathmandu area. 
-Currently I'm working on completing the full curriculum at [`freeCodeCamp.org`](https://www.freecodecamp.org/amritpatel). I love talking about [analog photography](https://amritpatel.netlify.app/portfolio/), philosophy, and [software development](https://amritpatel.rbind.io/).
+Classically trained nuclear engineer living in the Bangkok area.  
+
+Currently working on completing the full curriculum at [`freeCodeCamp.org`](https://www.freecodecamp.org/amritpatel). I love talking about [analog photography](https://amritpatel.netlify.app/portfolio/), philosophy, and [software development](https://amritpatel.rbind.io/).
