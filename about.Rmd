@@ -14,6 +14,6 @@ output:
   postcards::jolla
 ---
  
-Classically trained nuclear engineer living in the Bangkok area.  
+Nuclear engineer in Kathmandu.
 
-Currently working on completing the full curriculum at [`freeCodeCamp.org`](https://www.freecodecamp.org/amritpatel). I love talking about [analog photography](https://amritpatel.netlify.app/portfolio/), philosophy, and [software development](https://amritpatel.rbind.io/).
+Other projects include [analog photography](https://apatel.netlify.app/portfolio/) and random [software development](https://amritpatel.rbind.io/).
